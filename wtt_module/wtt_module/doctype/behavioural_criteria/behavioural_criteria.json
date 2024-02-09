@@ -1,0 +1,350 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-03-03 13:08:46.089575",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "month",
+  "date",
+  "created_date",
+  "year",
+  "employee",
+  "employee_name",
+  "department",
+  "hod_id",
+  "hod_name",
+  "html_5",
+  "attitude",
+  "personal",
+  "skill",
+  "team",
+  "work_knowledge",
+  "work_performance",
+  "attitude_score",
+  "personal_score",
+  "skill_score",
+  "team_score",
+  "work_knowledge_score",
+  "work_performance_score",
+  "attitude_mg_score",
+  "personal_mg_score",
+  "skill_mg_score",
+  "team_mg_score",
+  "work_knowledge_mg_score",
+  "work_performance_mg_score",
+  "hod_remarks_tab",
+  "hod_appreciation",
+  "hod_improvements",
+  "hod_failure",
+  "md_remarks_tab",
+  "appreciation",
+  "improvements",
+  "failure",
+  "amended_from",
+  "total_points",
+  "employee_points",
+  "hod_points"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "attitude",
+   "fieldtype": "Table",
+   "label": "Attitude",
+   "options": "Attitude Table"
+  },
+  {
+   "fieldname": "html_5",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<div style=\"background: yellow; width: 485px; border: thick double #32a1ce;\">\n<h3 style=\"margin-left: 10px;\">It will help us to assess.</h3>\n<ul style=\"font-weight: bold; margin-left: 10px;\">\n<li>PMS Score</li>\n<li>Training Requirements</li>\n<li>Area of Improvement</li>\n</ul>\n<h3 style=\"margin-left: 10px;\">Kindly enter your score with atmost honesty</h3>\n<h3 style=\"margin-left: 10px;\">Select 0 -5 / Incremental of 0.5</h3>\n</div>\n<br>"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "personal",
+   "fieldtype": "Table",
+   "label": "Personal",
+   "options": "Personal Table"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "skill",
+   "fieldtype": "Table",
+   "label": "Skill",
+   "options": "Skill Table"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "team",
+   "fieldtype": "Table",
+   "label": "Team",
+   "options": "Team Table"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "work_knowledge",
+   "fieldtype": "Table",
+   "label": "Work knowledge",
+   "options": "Work knowledge"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "work_performance",
+   "fieldtype": "Table",
+   "label": "Work performance",
+   "options": "Work performance"
+  },
+  {
+   "fieldname": "attitude_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Attitude Score"
+  },
+  {
+   "fieldname": "personal_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Personal Score"
+  },
+  {
+   "fieldname": "skill_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Skill Score"
+  },
+  {
+   "fieldname": "team_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Team Score"
+  },
+  {
+   "fieldname": "work_knowledge_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Work knowledge Score"
+  },
+  {
+   "fieldname": "work_performance_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Work performance Score"
+  },
+  {
+   "fieldname": "attitude_mg_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Attitude MG Score"
+  },
+  {
+   "fieldname": "personal_mg_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Personal MG Score"
+  },
+  {
+   "fieldname": "skill_mg_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Skill MG Score"
+  },
+  {
+   "fieldname": "team_mg_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Team MG Score"
+  },
+  {
+   "fieldname": "work_knowledge_mg_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Work knowledge MG Score"
+  },
+  {
+   "fieldname": "work_performance_mg_score",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Work performance MG Score"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Behavioural Criteria",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "BEHV-"
+  },
+  {
+   "fieldname": "hod_id",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "HOD",
+   "options": "Employee",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "hod_id.employee_name",
+   "fieldname": "hod_name",
+   "fieldtype": "Data",
+   "label": "HOD Name",
+   "permlevel": 2,
+   "read_only": 1
+  },
+  {
+   "fieldname": "md_remarks_tab",
+   "fieldtype": "Tab Break",
+   "label": "MD Remarks"
+  },
+  {
+   "fieldname": "appreciation",
+   "fieldtype": "Rating",
+   "label": "Appreciation"
+  },
+  {
+   "fieldname": "improvements",
+   "fieldtype": "Small Text",
+   "label": "Improvements"
+  },
+  {
+   "fieldname": "failure",
+   "fieldtype": "Small Text",
+   "label": "Failure"
+  },
+  {
+   "default": "2024",
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Year",
+   "options": "Year"
+  },
+  {
+   "fieldname": "hod_remarks_tab",
+   "fieldtype": "Tab Break",
+   "label": "HOD Remarks"
+  },
+  {
+   "fieldname": "hod_appreciation",
+   "fieldtype": "Rating",
+   "label": "Appreciation"
+  },
+  {
+   "fieldname": "hod_improvements",
+   "fieldtype": "Small Text",
+   "label": "Improvements"
+  },
+  {
+   "fieldname": "hod_failure",
+   "fieldtype": "Small Text",
+   "label": "Failure"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Data",
+   "label": "Created date",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "total_points",
+   "fieldtype": "Float",
+   "label": "Total Points"
+  },
+  {
+   "fieldname": "employee_points",
+   "fieldtype": "Float",
+   "label": "Employee Points"
+  },
+  {
+   "fieldname": "hod_points",
+   "fieldtype": "Float",
+   "label": "HOD Points"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-03 10:42:32.088792",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Behavioural Criteria",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HOD",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "employee",
+ "sort_order": "DESC",
+ "states": []
+}

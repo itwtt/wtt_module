@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-07 17:40:20.710408",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_time",
+  "mf_tank_lt",
+  "mf_backwash",
+  "mf_per",
+  "mf_rej",
+  "mf_cip",
+  "nt_ph",
+  "rack1",
+  "rack2",
+  "dgt_ph",
+  "datetime1"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date Time"
+  },
+  {
+   "fieldname": "mf_tank_lt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mf Tank Lt"
+  },
+  {
+   "fieldname": "mf_backwash",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mf Backwash"
+  },
+  {
+   "fieldname": "mf_per",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mf Per"
+  },
+  {
+   "fieldname": "mf_rej",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mf Rej"
+  },
+  {
+   "fieldname": "mf_cip",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mf Cip"
+  },
+  {
+   "fieldname": "nt_ph",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nt pH"
+  },
+  {
+   "fieldname": "rack1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rack1"
+  },
+  {
+   "fieldname": "rack2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rack2"
+  },
+  {
+   "fieldname": "dgt_ph",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dgt pH"
+  },
+  {
+   "fieldname": "datetime1",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "datetime1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-07 17:46:06.441595",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Siddhi Table1",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

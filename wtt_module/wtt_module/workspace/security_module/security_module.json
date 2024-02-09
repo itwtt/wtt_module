@@ -1,0 +1,37 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-10-29 11:37:47.065129",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Security Module",
+ "links": [],
+ "modified": "2021-10-29 14:31:44.118272",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Security Module",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Visitor pass",
+   "link_to": "Visitor pass",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Material Movement",
+   "link_to": "Material Movement",
+   "type": "DocType"
+  }
+ ]
+}

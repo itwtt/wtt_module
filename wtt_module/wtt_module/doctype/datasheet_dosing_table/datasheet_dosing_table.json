@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-18 18:22:48.988032",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dosing_pump",
+  "chemical",
+  "flow",
+  "pressure",
+  "quantity",
+  "bulk_tank",
+  "dosing_tank",
+  "tank_qty",
+  "system",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "dosing_pump",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dosing pump"
+  },
+  {
+   "columns": 2,
+   "fieldname": "chemical",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Chemical",
+   "options": "Dosing Chemical"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tank_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tank qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Flow (lph)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "pressure",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pressure (bar)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity (no)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "bulk_tank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bulk tank (lit)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "dosing_tank",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dosing tank (lit)"
+  },
+  {
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "label": "System",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-27 12:41:44.428375",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Datasheet Dosing Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

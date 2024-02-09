@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-07 15:44:18.227189",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "questions",
+  "answers"
+ ],
+ "fields": [
+  {
+   "fieldname": "questions",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Questions"
+  },
+  {
+   "fieldname": "answers",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Answers"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-07 16:50:58.476633",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Experience Questions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

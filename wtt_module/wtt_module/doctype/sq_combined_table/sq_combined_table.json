@@ -1,0 +1,248 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-02-25 16:42:23.562384",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "supplier_part_no",
+  "item_name",
+  "column_break_3",
+  "section_break_5",
+  "description",
+  "technical_description",
+  "supplier_description",
+  "item_group",
+  "mr_qty",
+  "qty",
+  "stock_uom",
+  "col_break2",
+  "uom",
+  "conversion_factor",
+  "stock_qty",
+  "price_list_rate2",
+  "discount_percentage2",
+  "discount_amount2",
+  "rate2",
+  "amount2",
+  "approval",
+  "item_tax_template",
+  "material_request"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "oldfieldname": "item_code",
+   "oldfieldtype": "Link",
+   "options": "Item",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "supplier_part_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Supplier Part Number",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Item Name",
+   "oldfieldname": "item_name",
+   "oldfieldtype": "Data",
+   "print_hide": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "item_code.description",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Small Text",
+   "print_width": "300px",
+   "width": "300px"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "item_code.technical_description",
+   "fieldname": "technical_description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Technical Description",
+   "translatable": 1
+  },
+  {
+   "fetch_from": "item_code.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "oldfieldname": "item_group",
+   "oldfieldtype": "Link",
+   "options": "Item Group",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "columns": 1,
+   "default": "0",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quoted Qty",
+   "oldfieldname": "qty",
+   "oldfieldtype": "Currency",
+   "print_width": "60px",
+   "width": "60px"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "options": "UOM",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "print_hide": 1,
+   "print_width": "100px",
+   "width": "100px"
+  },
+  {
+   "default": "1",
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "UOM Conversion Factor",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_qty",
+   "fieldtype": "Float",
+   "label": "Qty as per Stock UOM",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "label": "Item Tax Template",
+   "options": "Item Tax Template",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "supplier_description",
+   "fieldtype": "Text Editor",
+   "label": "Supplier Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "approval",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Approval",
+   "options": "\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "rate2",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount2",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "oldfieldname": "import_amount",
+   "oldfieldtype": "Currency",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "price_list_rate2",
+   "fieldtype": "Currency",
+   "label": "Price List",
+   "options": "currency"
+  },
+  {
+   "depends_on": "price_list_rate2",
+   "fieldname": "discount_percentage2",
+   "fieldtype": "Percent",
+   "label": "Discount on Price List Rate (%)"
+  },
+  {
+   "depends_on": "price_list_rate2",
+   "fieldname": "discount_amount2",
+   "fieldtype": "Currency",
+   "label": "Discount Amount",
+   "options": "currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "mr_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "MR Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "material_request",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Material Request",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-31 15:47:46.356195",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "SQ Combined Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

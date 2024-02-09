@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-09-29 12:29:06.069890",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "name_of_designer",
+  "employee_name",
+  "date",
+  "project",
+  "system",
+  "system_iii",
+  "type_of_design",
+  "type_of_instrument",
+  "activity",
+  "total_hours",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PAS-SHT-.YYYY.-"
+  },
+  {
+   "fieldname": "name_of_designer",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Name of Designer",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name_of_designer.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "system",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "System",
+   "options": "System Module"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Table",
+   "label": "Activity Table",
+   "options": "Pending Activity Table"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "Total hours"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pending Activity",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "system_iii",
+   "fieldtype": "Link",
+   "label": "System II",
+   "options": "System3"
+  },
+  {
+   "fieldname": "type_of_design",
+   "fieldtype": "Link",
+   "label": "Type of Design",
+   "options": "Design type"
+  },
+  {
+   "fieldname": "type_of_instrument",
+   "fieldtype": "Link",
+   "label": "Type of Instrument",
+   "options": "Instrument type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-09-29 14:45:49.250444",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Pending Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

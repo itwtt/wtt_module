@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-05-11 12:41:50.256071",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "grievance",
+  "employee",
+  "employee_name",
+  "department",
+  "intra_personal",
+  "to",
+  "against_employee",
+  "against_name",
+  "against_department",
+  "description",
+  "section_break_11",
+  "investigated_by",
+  "name1",
+  "investigator_description",
+  "section_break_14",
+  "resolved_by",
+  "resolver_name",
+  "resolver_description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "GRV-"
+  },
+  {
+   "default": "Today",
+   "fieldname": "grievance",
+   "fieldtype": "Date",
+   "label": "Grievance Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "intra_personal",
+   "fieldtype": "Select",
+   "ignore_user_permissions": 1,
+   "label": "Intra Personal",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:(doc.intra_personal=='Yes');",
+   "fieldname": "against_employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Against Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "against_employee.employee_name",
+   "fieldname": "against_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "against_employee.department",
+   "fieldname": "against_department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "resolved_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Resolved by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "investigated_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Grievance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "investigated_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Investigated by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "investigator_description",
+   "fieldtype": "Small Text",
+   "label": "Investigator Description"
+  },
+  {
+   "fetch_from": "resolved_by.employee_name",
+   "fieldname": "resolver_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resolver_description",
+   "fieldtype": "Small Text",
+   "label": "Resolver Description"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Select",
+   "label": "To",
+   "options": "\nHR\nCompany"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-14 16:32:44.640900",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Grievance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name"
+}

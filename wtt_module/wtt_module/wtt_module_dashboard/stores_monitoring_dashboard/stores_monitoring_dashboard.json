@@ -1,0 +1,25 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Nandhakumar Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Nadhakumar Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 17:15:18.868821",
+ "dashboard_name": "Stores Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:24:20.497784",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "Stores Monitoring Dashboard",
+ "owner": "Administrator"
+}

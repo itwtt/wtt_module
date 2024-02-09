@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-01-12 16:16:00.649388",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "utilities_type",
+  "column_break_3",
+  "utility",
+  "section_break_5",
+  "utilities_table",
+  "total",
+  "remarks",
+  "md_remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "utilities_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Utilities Type",
+   "options": "Utilities types",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Utilities Expense",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "utilities_table",
+   "fieldtype": "Table",
+   "label": "Utilities Table",
+   "options": "Utilities Table"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "md_remarks",
+   "fieldtype": "Small Text",
+   "label": "MD Remarks"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "UT-.YY.-"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.utilities_type=='Others')",
+   "fieldname": "utility",
+   "fieldtype": "Data",
+   "label": "Utility",
+   "mandatory_depends_on": "eval:(doc.utilities_type=='Others')"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-01-17 11:32:00.836087",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Utilities Expense",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

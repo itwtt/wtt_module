@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:capacity",
+ "creation": "2023-04-28 11:26:31.608690",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "capacity",
+  "attachment",
+  "section_break_yufld",
+  "price_inr",
+  "column_break_p8ii4",
+  "price_usd",
+  "column_break_ljlxi",
+  "price_eur"
+ ],
+ "fields": [
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity",
+   "unique": 1
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "section_break_yufld",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "price_inr",
+   "fieldtype": "Data",
+   "label": "Price in Lakhs (INR)"
+  },
+  {
+   "fieldname": "column_break_p8ii4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_usd",
+   "fieldtype": "Data",
+   "label": "Price (USD)"
+  },
+  {
+   "fieldname": "column_break_ljlxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_eur",
+   "fieldtype": "Data",
+   "label": "Price (EUR)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-15 11:30:11.899442",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Proposal Document",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "creation": "2022-04-28 11:38:23.658834",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "creator",
+  "type_of_work",
+  "description",
+  "assign_date",
+  "expected_date",
+  "total_points",
+  "gained_points",
+  "status"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "creator",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Creator"
+  },
+  {
+   "columns": 1,
+   "fieldname": "type_of_work",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Task Description"
+  },
+  {
+   "columns": 2,
+   "default": "Today",
+   "fieldname": "assign_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Assigned Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "expected_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expected Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Points"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gained_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gained Points"
+  },
+  {
+   "columns": 1,
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPending\nPartially pending\nCompleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-28 11:38:23.658834",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Recruitment Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

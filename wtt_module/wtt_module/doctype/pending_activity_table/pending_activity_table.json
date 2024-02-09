@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "creation": "2021-09-29 12:29:47.061967",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "exp_date",
+  "expected_hrs",
+  "from_time",
+  "to_time",
+  "hours",
+  "completed",
+  "pending",
+  "incompleted",
+  "completed_reason",
+  "pending_reason",
+  "incompleted_reason",
+  "attach",
+  "attachment_2",
+  "attachment_3",
+  "link"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "task_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Task name",
+   "options": "Activity Type"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Exp Date"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "task_name.expected_hrs",
+   "fieldname": "expected_hrs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Expected Hrs"
+  },
+  {
+   "columns": 1,
+   "fieldname": "from_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "to_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "To date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Hrs"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "label": "Completed"
+  },
+  {
+   "default": "0",
+   "fieldname": "pending",
+   "fieldtype": "Check",
+   "label": "Pending"
+  },
+  {
+   "default": "0",
+   "fieldname": "incompleted",
+   "fieldtype": "Check",
+   "label": "Incompleted"
+  },
+  {
+   "fieldname": "completed_reason",
+   "fieldtype": "Small Text",
+   "label": "Completed reason"
+  },
+  {
+   "columns": 2,
+   "fieldname": "pending_reason",
+   "fieldtype": "Small Text",
+   "label": "Pending reason"
+  },
+  {
+   "fieldname": "incompleted_reason",
+   "fieldtype": "Small Text",
+   "label": "Incompleted reason"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attachment 1"
+  },
+  {
+   "fieldname": "attachment_2",
+   "fieldtype": "Attach",
+   "label": "Attachment 2"
+  },
+  {
+   "fieldname": "attachment_3",
+   "fieldtype": "Attach",
+   "label": "Attachment 3"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "label": "Link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-29 12:29:47.061967",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Pending Activity Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

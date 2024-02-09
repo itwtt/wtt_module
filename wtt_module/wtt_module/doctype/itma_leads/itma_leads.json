@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-20 10:19:10.355424",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organization_name",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "job_title",
+  "column_break_zs5ge",
+  "email",
+  "alternative_email",
+  "website",
+  "mobile_no",
+  "phone_no",
+  "section_break_tcf6t",
+  "location",
+  "city",
+  "state",
+  "country_list",
+  "country",
+  "requirement_type",
+  "requirement",
+  "status",
+  "naming_series",
+  "itma_same_company"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "requirement",
+   "fieldtype": "Data",
+   "label": "Requirement"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nHOT\nWARM\nCOLD"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Small Text",
+   "label": "Location"
+  },
+  {
+   "fieldname": "alternative_email",
+   "fieldtype": "Data",
+   "label": "Alternative Email"
+  },
+  {
+   "fieldname": "column_break_zs5ge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tcf6t",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "ITMA-DET-"
+  },
+  {
+   "fieldname": "itma_same_company",
+   "fieldtype": "Table",
+   "label": "ITMA Same Company",
+   "options": "ITMA Same Company"
+  },
+  {
+   "fieldname": "country_list",
+   "fieldtype": "Link",
+   "label": "Country List",
+   "options": "Country"
+  },
+  {
+   "fieldname": "requirement_type",
+   "fieldtype": "Select",
+   "label": "Requirement Type",
+   "options": "-- Select --\nETP\nCaRe\nBrineX\nAquanzer\nRewolutte\nFiltration\nEvaporator\nRevamping & Upgradation\nEquipment supply"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-21 10:07:11.180834",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "ITMA Leads",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

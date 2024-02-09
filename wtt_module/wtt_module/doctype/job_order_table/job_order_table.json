@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-01-18 09:27:21.549470",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fg_item",
+  "item_name",
+  "nesting_and_machining",
+  "subcontracted_item",
+  "section_break_8",
+  "description",
+  "technical_description",
+  "qty",
+  "uom",
+  "material_request",
+  "material_request_item",
+  "original_item",
+  "received_qty"
+ ],
+ "fields": [
+  {
+   "fetch_from": "fg_item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Item Name",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:parent.purpose == 'Send to Subcontractor'",
+   "fieldname": "subcontracted_item",
+   "fieldtype": "Link",
+   "label": "Subcontracted Item",
+   "options": "Item"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "fg_item.description",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Text",
+   "print_width": "300px",
+   "width": "300px"
+  },
+  {
+   "columns": 4,
+   "fetch_from": "fg_item.technical_description",
+   "fieldname": "technical_description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Technical Description"
+  },
+  {
+   "bold": 1,
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "oldfieldname": "qty",
+   "oldfieldtype": "Currency",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "oldfieldname": "uom",
+   "oldfieldtype": "Link",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "description": "Material Request used to make this Stock Entry",
+   "fieldname": "material_request",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Material Request",
+   "no_copy": 1,
+   "options": "Material Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "material_request_item",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Material Request Item",
+   "no_copy": 1,
+   "options": "Material Request Item",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "original_item",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Original Item",
+   "no_copy": 1,
+   "options": "Item",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "columns": 2,
+   "fieldname": "fg_item",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Item Code",
+   "oldfieldname": "item_code",
+   "oldfieldtype": "Link",
+   "options": "Item",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "nesting_and_machining",
+   "fieldtype": "Link",
+   "label": "Nesting And Machining",
+   "options": "Nesting and Machining"
+  },
+  {
+   "fieldname": "received_qty",
+   "fieldtype": "Float",
+   "label": "Received Qty"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-04 12:29:27.091554",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Job Order Table",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": []
+}

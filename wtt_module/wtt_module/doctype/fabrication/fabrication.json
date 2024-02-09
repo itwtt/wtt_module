@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-05 14:06:36.231872",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "min_flow",
+  "max_flow",
+  "fabrication_table",
+  "total_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "fabrication_table",
+   "fieldtype": "Table",
+   "label": "Fabrication Table",
+   "options": "Fabrication Table"
+  },
+  {
+   "fieldname": "min_flow",
+   "fieldtype": "Data",
+   "label": "Min Flow"
+  },
+  {
+   "fieldname": "max_flow",
+   "fieldtype": "Data",
+   "label": "Max Flow"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "FAB-COST-"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-06 11:37:31.875121",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Fabrication",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

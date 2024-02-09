@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-19 12:43:31.871801",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_description",
+  "renamed",
+  "min_flow",
+  "min_price",
+  "max_flow",
+  "max_price",
+  "req_flow",
+  "range",
+  "w_qty",
+  "sb_qty",
+  "ssb_qty",
+  "unit_price",
+  "total_price",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description"
+  },
+  {
+   "fieldname": "renamed",
+   "fieldtype": "Data",
+   "label": "Renamed"
+  },
+  {
+   "fieldname": "min_flow",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Min Flow"
+  },
+  {
+   "fieldname": "min_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Min Price"
+  },
+  {
+   "fieldname": "max_flow",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Max Flow"
+  },
+  {
+   "fieldname": "max_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Max Price"
+  },
+  {
+   "columns": 1,
+   "fieldname": "req_flow",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Flow"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "w_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "W Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "sb_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sb Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "ssb_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ssb Qty"
+  },
+  {
+   "columns": 2,
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "range",
+   "fieldtype": "Data",
+   "label": "Range"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-01 16:40:12.335675",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Degasser System Not linked items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

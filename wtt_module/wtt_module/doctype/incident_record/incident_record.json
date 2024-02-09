@@ -1,0 +1,271 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-05-04 15:44:11.513902",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "report_date",
+  "employee",
+  "employee_name",
+  "department",
+  "emp_user",
+  "col_break",
+  "against_employee",
+  "user",
+  "against_name",
+  "against_department",
+  "section_break_11",
+  "incident",
+  "description",
+  "incident_points",
+  "noted",
+  "issue",
+  "html_17",
+  "section_break_15",
+  "investigated_by",
+  "name1",
+  "investigator_description",
+  "resolver_description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "IR-"
+  },
+  {
+   "default": "Today",
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Issued By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Issued By",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break",
+   "fieldtype": "Column Break",
+   "ignore_user_permissions": 1
+  },
+  {
+   "fieldname": "against_employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_standard_filter": 1,
+   "label": "Against Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "against_employee.employee_name",
+   "fieldname": "against_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Against Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "against_employee.department",
+   "fieldname": "against_department",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "ignore_user_permissions": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "investigated_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Investigated by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "investigated_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "investigator_description",
+   "fieldtype": "Small Text",
+   "ignore_user_permissions": 1,
+   "label": "Investigator Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "noted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "ignore_user_permissions": 1,
+   "label": "Noted",
+   "read_only_depends_on": "eval:(frappe.session.user!='venkat@wttindia.com' && frappe.session.user!='Administrator')"
+  },
+  {
+   "fieldname": "resolver_description",
+   "fieldtype": "Small Text",
+   "ignore_user_permissions": 1,
+   "label": "Resolver Description",
+   "read_only_depends_on": "eval:frappe.session.user!='venkat@wttindia.com'"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Incident Record",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.noted!=1);",
+   "fieldname": "issue",
+   "fieldtype": "Select",
+   "ignore_user_permissions": 1,
+   "label": "Issue",
+   "options": "\nRed Card"
+  },
+  {
+   "depends_on": "eval:(doc.issue=='Red Card' && doc.noted==0);",
+   "fieldname": "html_17",
+   "fieldtype": "HTML",
+   "ignore_user_permissions": 1,
+   "options": "<meta name=\"viewport\">\n<style>\n* {\n  box-sizing: border-box;\n}\nbody {\n  \n}\n/* Float four columns side by side */\n.column {\n  float: left;\n  width: 25%;\n  padding: 0 10px;\n}\n/* Remove extra left and right margins, due to padding */\n.row {margin: 0 -5px;}\n/* Clear floats after the columns */\n.row:after {\n  content: \"\";\n  display: table;\n  clear: both;\n\n}\n.p{\n\tcolor:white\n}\n/* Style the counter cards */\n.card {\n    height:110%;\n    width: 150%;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  padding: 16px;\n  text-align: center;\n  color:white;\n  background-color: red;\n}\n</style>\n\n<div class=\"row\">\n  <div class=\"column\">\n    <div class=\"card\">\n    <p>You need to make\na difference, </p>\n      <p>Cheer Up</p>\n    </div>\n  </div>\n  \n</div>"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "against_employee.user_id",
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "User"
+  },
+  {
+   "fetch_from": "employee.user_id",
+   "fieldname": "emp_user",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Emp_user"
+  },
+  {
+   "fieldname": "incident",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Incident",
+   "options": "Incident"
+  },
+  {
+   "fieldname": "incident_points",
+   "fieldtype": "Select",
+   "ignore_user_permissions": 1,
+   "label": "Incident Points",
+   "options": "\n5\n4\n3\n2\n1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-06 14:11:29.561539",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Incident Record",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name",
+ "track_changes": 1
+}

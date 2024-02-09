@@ -1,0 +1,47 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-10-14 10:36:46.339518",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-10-14 11:14:18.465853",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Convert PO",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Material Request",
+ "report_name": "Convert PO",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "WTT - Buying"
+  },
+  {
+   "role": "HOD"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "Security"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}

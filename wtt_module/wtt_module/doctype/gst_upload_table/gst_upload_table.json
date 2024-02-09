@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-03 15:45:54.641046",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_dc",
+  "invoice_date",
+  "supplier",
+  "tax_id",
+  "amount",
+  "tax_amount",
+  "invoice_amount",
+  "tax_rate",
+  "tax_name",
+  "cgst",
+  "sgst"
+ ],
+ "fields": [
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Tax Rate"
+  },
+  {
+   "columns": 1,
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Invoice Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax ID"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Taxable Value"
+  },
+  {
+   "columns": 1,
+   "fieldname": "invoice_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Amount"
+  },
+  {
+   "fieldname": "tax_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax"
+  },
+  {
+   "columns": 2,
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier"
+  },
+  {
+   "columns": 2,
+   "fieldname": "supplier_dc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier DC"
+  },
+  {
+   "fieldname": "cgst",
+   "fieldtype": "Data",
+   "label": "CGST"
+  },
+  {
+   "fieldname": "sgst",
+   "fieldtype": "Data",
+   "label": "SGST"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-13 15:25:57.441373",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "GST Upload Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

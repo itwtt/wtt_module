@@ -1,0 +1,41 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Salamon Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Salamon Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Ramanathan Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Ramanathan Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Pranav Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Pranav Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 17:08:01.797725",
+ "dashboard_name": "Purchase Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:23:52.811952",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "Purchase Monitoring Dashboard",
+ "owner": "Administrator"
+}

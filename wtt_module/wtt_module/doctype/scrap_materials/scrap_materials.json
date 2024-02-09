@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "creation": "2022-09-14 10:40:12.327275",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "operation",
+  "description",
+  "technical_description",
+  "qty",
+  "uom"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "depends_on": "eval:parent.with_operations == 1",
+   "fieldname": "operation",
+   "fieldtype": "Link",
+   "label": "Item operation",
+   "options": "Operation"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Item Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Text",
+   "print_width": "250px",
+   "width": "250px"
+  },
+  {
+   "columns": 3,
+   "fieldname": "technical_description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Technical Description "
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "oldfieldname": "qty",
+   "oldfieldtype": "Currency",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-14 10:50:59.401602",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Scrap Materials",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

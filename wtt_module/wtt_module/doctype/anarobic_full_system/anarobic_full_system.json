@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-05 18:04:47.146568",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_description",
+  "w_qty",
+  "unit_price",
+  "bom_unit_price",
+  "full_total_price",
+  "motor_cost",
+  "pipe",
+  "erection",
+  "fabrication",
+  "total_price_with_erefab",
+  "selling_price"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "w_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "W Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Mech Unit Price"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "bom_unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "BOM Unit Price"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "full_total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "motor_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Motor Cost"
+  },
+  {
+   "fieldname": "pipe",
+   "fieldtype": "Currency",
+   "label": "Pipe"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "erection",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Erection"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "fabrication",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Fabrication"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "total_price_with_erefab",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Full Total Price"
+  },
+  {
+   "fieldname": "selling_price",
+   "fieldtype": "Currency",
+   "label": "Selling Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-05 18:04:47.146568",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Anarobic Full System",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,278 @@
+{
+ "actions": [],
+ "creation": "2022-04-28 14:23:49.454883",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "joint_task",
+  "self_allocation",
+  "user",
+  "assigned_by",
+  "employee",
+  "malpractice",
+  "employee_name",
+  "stat",
+  "alies_name",
+  "mr_inward",
+  "department",
+  "works_table",
+  "holded_tasks_section",
+  "holded_task",
+  "sec_break",
+  "split_task",
+  "task_split_table",
+  "allocate",
+  "total_section",
+  "total",
+  "out_of",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "User",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "works_table",
+   "fieldtype": "Table",
+   "ignore_user_permissions": 1,
+   "label": "Works Table",
+   "options": "Work Update",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Gained Points",
+   "read_only": 1
+  },
+  {
+   "fieldname": "out_of",
+   "fieldtype": "Float",
+   "label": "Total Points",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Task Allocation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "mr_inward",
+   "fieldtype": "Data",
+   "label": "MR Inward",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "self_allocation",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Self Allocation",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "joint_task",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Joint Task"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "split_task",
+   "fieldtype": "Button",
+   "label": "Split Task"
+  },
+  {
+   "fieldname": "task_split_table",
+   "fieldtype": "Table",
+   "options": "Task Split Table"
+  },
+  {
+   "fieldname": "allocate",
+   "fieldtype": "Button",
+   "label": "Allocate"
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Data",
+   "label": "Assigned by",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.alies_name",
+   "fieldname": "alies_name",
+   "fieldtype": "Data",
+   "label": "Alies Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(frappe.session.user==\"Administrator\")",
+   "fieldname": "holded_task",
+   "fieldtype": "Table",
+   "options": "Holded Task",
+   "read_only": 1
+  },
+  {
+   "fieldname": "holded_tasks_section",
+   "fieldtype": "Section Break",
+   "label": "Holded Tasks"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_break",
+   "fieldtype": "Section Break",
+   "label": "Split Task"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "malpractice",
+   "fieldtype": "Select",
+   "label": "Malpractice",
+   "options": "\nChanged Time\nAllocated for Self",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.status",
+   "fieldname": "stat",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-22 16:15:28.721047",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Task Allocation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Security",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name"
+}

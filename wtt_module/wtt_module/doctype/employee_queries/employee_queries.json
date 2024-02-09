@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-11-19 12:01:35.678753",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "employee_name",
+  "department",
+  "grievance_type",
+  "grievance_against",
+  "emp1",
+  "grievance_against_mangement",
+  "date",
+  "quries",
+  "resolution_details_section",
+  "resolved_by",
+  "emp",
+  "resolution_date",
+  "resolution_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Raised By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quries",
+   "fieldtype": "Small Text",
+   "label": "Queries"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "EMP-QUR-"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "grievance_type",
+   "fieldtype": "Select",
+   "label": "Queries Type",
+   "options": "\nEmployee\nManagement"
+  },
+  {
+   "depends_on": "eval:(doc.grievance_type=='Employee');",
+   "fieldname": "grievance_against",
+   "fieldtype": "Link",
+   "label": "Queries Against",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:(doc.grievance_type=='Management');",
+   "fieldname": "grievance_against_mangement",
+   "fieldtype": "Link",
+   "label": "Queries Against Mangement",
+   "options": "Company"
+  },
+  {
+   "fieldname": "resolution_details_section",
+   "fieldtype": "Section Break",
+   "label": "Resolution Details"
+  },
+  {
+   "fieldname": "resolved_by",
+   "fieldtype": "Link",
+   "label": "Resolved By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "resolved_by.employee_name",
+   "fieldname": "emp",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resolution_date",
+   "fieldtype": "Date",
+   "label": "Resolution Date"
+  },
+  {
+   "fieldname": "resolution_details",
+   "fieldtype": "Small Text",
+   "label": "Resolution Details"
+  },
+  {
+   "fetch_from": "grievance_against.employee_name",
+   "fieldname": "emp1",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-19 09:22:23.116308",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Employee Queries",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

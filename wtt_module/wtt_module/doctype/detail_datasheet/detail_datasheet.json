@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-04-18 16:54:26.543359",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "project",
+  "project_name",
+  "capacity",
+  "rev",
+  "column_break_4",
+  "cod",
+  "tds",
+  "temperature",
+  "section_break_8",
+  "system_table",
+  "get_queries",
+  "system_details",
+  "pump_list_details",
+  "dosing_pump_details",
+  "instrument_details",
+  "section_break_15",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "pump_list_details",
+   "fieldtype": "Table",
+   "label": "Pump List Details",
+   "options": "Datasheet Pump Table"
+  },
+  {
+   "fieldname": "dosing_pump_details",
+   "fieldtype": "Table",
+   "label": "Dosing Pump Details",
+   "options": "Datasheet Dosing Table"
+  },
+  {
+   "fieldname": "instrument_details",
+   "fieldtype": "Table",
+   "label": "Instrument Details",
+   "options": "Datasheet Instrument Table"
+  },
+  {
+   "fieldname": "system_table",
+   "fieldtype": "Table",
+   "label": "System Table",
+   "options": "System Table"
+  },
+  {
+   "fieldname": "system_details",
+   "fieldtype": "Table",
+   "label": "System Details",
+   "options": "System Parameters"
+  },
+  {
+   "description": "Before Click; Kindly Select the Systems, to get Queries.",
+   "fieldname": "get_queries",
+   "fieldtype": "Button",
+   "label": "Get Queries"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cod",
+   "fieldtype": "Data",
+   "label": "COD"
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Data",
+   "label": "TDS"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "label": "Temperature"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DS-.YY.-"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Link",
+   "label": "Revision",
+   "options": "Revision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-28 13:54:40.874654",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Detail datasheet",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "WTT Process User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_name"
+}

@@ -1,0 +1,78 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-08-02 15:11:52.262391",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "mandatory": 0,
+   "options": "Project",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-10-31 16:45:37.751217",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Tracking Shipment",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n`tabMaterial Request Item`.parent as \"Name:Link/Material Request:150\",\n`tabMaterial Request Item`.item_code as \"Item Code:Data:150\",\n`tabMaterial Request Item`.description as \"Description:Data:150\",\n`tabMaterial Request Item`.technical_description as \"Technical Description:Data:150\",\n`tabMaterial Request Item`.qty as \"Qty:Data:50\",\n`tabMaterial Request Item`.uom as \"UOM:Data:80\",\n`tabDelivery Note Item`.parent as \"Delivery Note Reference:Data:80\",\n`tabDelivery Note Item`.qty as \"DC Qty:Data:80\",\n`tabDelivery Note Item`.uom as \"DC UOM:Data:80\",\nCASE WHEN `tabDelivery Note Item`.parent IS NOT NULL THEN \"<p style='color:green;font-weight:bold'>Delivered</p>\" ELSE \"<p style='color:red;font-weight:bold'>Not Delivered</p>\" END as \"Status:HTML:100\"\nFROM `tabMaterial Request Item` LEFT OUTER JOIN `tabDelivery Note Item` ON `tabMaterial Request Item`.name=`tabDelivery Note Item`.material_request_item WHERE `tabMaterial Request Item`.docstatus=1 and `tabMaterial Request Item`.`project`=%(project)s",
+ "ref_doctype": "Material Request",
+ "report_name": "Tracking Shipment",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "WTT - Buying"
+  },
+  {
+   "role": "HOD"
+  },
+  {
+   "role": "WTT - Projects"
+  },
+  {
+   "role": "WTT Process Manager"
+  },
+  {
+   "role": "WTT Process User"
+  },
+  {
+   "role": "WTT"
+  },
+  {
+   "role": "Projects Manager"
+  },
+  {
+   "role": "MD"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}

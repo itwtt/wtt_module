@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-29 10:10:26.107793",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hod",
+  "category",
+  "hod_name",
+  "department",
+  "date",
+  "ot_table",
+  "no_of_persons",
+  "total_working_hours",
+  "grand_total",
+  "hod_remarks",
+  "gm_remarks",
+  "md_remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "hod",
+   "fieldtype": "Link",
+   "label": "Responsible Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "hod.employee_name",
+   "fieldname": "hod_name",
+   "fieldtype": "Data",
+   "label": "Responsible Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "hod.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "OT Prior Information",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "OT / OD Date"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "ot_table",
+   "fieldtype": "Table",
+   "label": "OT Table",
+   "options": "Overtime table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hod_remarks",
+   "fieldtype": "Small Text",
+   "label": "HOD remarks"
+  },
+  {
+   "fieldname": "md_remarks",
+   "fieldtype": "Small Text",
+   "label": "MD remarks"
+  },
+  {
+   "fieldname": "gm_remarks",
+   "fieldtype": "Small Text",
+   "label": "GM remarks"
+  },
+  {
+   "fieldname": "no_of_persons",
+   "fieldtype": "Float",
+   "label": "No of persons",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Tentative Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_working_hours",
+   "fieldtype": "Float",
+   "label": "Total Working Hours"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "\nSunday Working\nHoliday Working\nOver Time",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-09 12:54:19.073923",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "OT Prior Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GM",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HOD",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

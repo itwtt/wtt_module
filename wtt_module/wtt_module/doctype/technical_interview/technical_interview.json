@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-11-24 12:33:50.699063",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "hr_interview_id",
+  "job_id",
+  "candidate_name",
+  "interview_date",
+  "column_break_4",
+  "technical_interviewer",
+  "technical_interviewer_name",
+  "position",
+  "other_post",
+  "section_break_8",
+  "prior_work_experience",
+  "comments_about_prior_work_experience",
+  "technical_qualification",
+  "comments_about_technical_qualification",
+  "tech_overall_impression_and_recommendation",
+  "tech_comments_about_overall_impression_and_recommendation",
+  "tech_result",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job ID",
+   "options": "Job App",
+   "reqd": 1
+  },
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "technical_interviewer",
+   "fieldtype": "Link",
+   "label": "Technical Interviewer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Select",
+   "label": "Position",
+   "options": "-- Select --\nGRADUATE ENGINEER TRAINEE\nLAB CHEMIST\nRO OPERATOR\nSTP OPERATOR\nETP OPERATOR\nMECHANICAL JUNIOR MAINTENANCE\nMECHANICAL SENIOR MAINTENANCE\nELECTRICAL JUNIOR MAINTENANCE\nELECTRICAL SENIOR MAINTENANCE\nFITTER\nWELDER\nSHIFT IN CHARGE\nPROJECT ENGINEER\nMECHANICAL DESIGN ENGINEER\nELECTRICAL DESIGN ENGINEER\nO&M IN CHARGE\nSALES EXECUTIVE\nTELEMARKETING EXECUTIVE\nSOFTWARE DEVELOPER\n-- Select --\nGRADUATE ENGINEER TRAINEE\nLAB CHEMIST\nRO OPERATOR\nSTP OPERATOR\nETP OPERATOR\nMECHANICAL JUNIOR MAINTENANCE\nMECHANICAL SENIOR MAINTENANCE\nELECTRICAL JUNIOR MAINTENANCE\nELECTRICAL SENIOR MAINTENANCE\nFITTER\nWELDER\nSHIFT IN CHARGE\nPROJECT ENGINEER\nMECHANICAL DESIGN ENGINEER\nELECTRICAL DESIGN ENGINEER\nO&M IN CHARGE\nSALES EXECUTIVE\nTELEMARKETING EXECUTIVE\nSOFTWARE DEVELOPER\nACCOUNTANT\nOTHERS"
+  },
+  {
+   "fieldname": "prior_work_experience",
+   "fieldtype": "Select",
+   "label": "Prior Work Experience",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_prior_work_experience",
+   "fieldtype": "Small Text",
+   "label": "Comments about Prior Work Experience"
+  },
+  {
+   "fieldname": "technical_qualification",
+   "fieldtype": "Select",
+   "label": "Technical Qualification",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_technical_qualification",
+   "fieldtype": "Small Text",
+   "label": "Comments about technical qualification"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Technical Interview",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.position==\"OTHERS\");",
+   "fieldname": "other_post",
+   "fieldtype": "Data",
+   "label": "Other post"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TECH-INT-"
+  },
+  {
+   "fieldname": "hr_interview_id",
+   "fieldtype": "Link",
+   "label": "HR interview ID",
+   "options": "HR interview"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "tech_overall_impression_and_recommendation",
+   "fieldtype": "Select",
+   "label": "Overall Impression and Recommendation",
+   "options": "\nAdvance\nAdvance with reservations\nDo not advance"
+  },
+  {
+   "fieldname": "tech_comments_about_overall_impression_and_recommendation",
+   "fieldtype": "Data",
+   "label": "Comments About Overall Impression and Recommendation"
+  },
+  {
+   "fieldname": "tech_result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nSELECTED\nNOT SELECTED\nHOLD",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "technical_interviewer.employee_name",
+   "fieldname": "technical_interviewer_name",
+   "fieldtype": "Data",
+   "label": "Technical Interviewer Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-01-22 10:12:03.973860",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Technical Interview",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HOD",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

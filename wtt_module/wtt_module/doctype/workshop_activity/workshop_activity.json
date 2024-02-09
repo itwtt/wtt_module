@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-09-29 10:58:34.076089",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "name_of_employee",
+  "employee_name",
+  "date",
+  "project",
+  "skid",
+  "nature_of_job",
+  "tools_requirement_1",
+  "tools_requirement_2",
+  "tools_requirement_3",
+  "consumable_item",
+  "no_of_qty",
+  "activity",
+  "hours",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "WST-SHT-.YYYY.-"
+  },
+  {
+   "fieldname": "name_of_employee",
+   "fieldtype": "Link",
+   "label": "Name of Fitter",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "skid",
+   "fieldtype": "Link",
+   "label": "Skid",
+   "options": "Skid module"
+  },
+  {
+   "fieldname": "nature_of_job",
+   "fieldtype": "Link",
+   "label": "Nature of Job",
+   "options": "job Module"
+  },
+  {
+   "fieldname": "tools_requirement_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tools Requirement 1"
+  },
+  {
+   "fieldname": "tools_requirement_2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tools Requirement 2"
+  },
+  {
+   "fieldname": "tools_requirement_3",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tools requirement 3"
+  },
+  {
+   "fieldname": "consumable_item",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Consumable Item"
+  },
+  {
+   "fieldname": "no_of_qty",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "No of Qty"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Table",
+   "label": "Activity Table",
+   "options": "Workshop Table"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Workshop Activity",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "name_of_employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-05-23 16:49:27.504671",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Workshop Activity",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

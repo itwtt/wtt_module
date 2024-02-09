@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-24 11:42:45.563622",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "selected_system_name",
+  "selected_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "selected_system_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System Name"
+  },
+  {
+   "fieldname": "selected_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-25 10:13:33.844679",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Selected Process System",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

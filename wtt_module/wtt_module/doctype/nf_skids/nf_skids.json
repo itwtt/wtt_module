@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "creation": "2022-01-03 09:07:36.051526",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nf",
+  "stage",
+  "membrane_and_vessel_quantity",
+  "pump_capacity",
+  "pump_model_number",
+  "membrane_model_number",
+  "pressure_il",
+  "pressure_ol",
+  "recovery"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "nf",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "NF",
+   "options": "\nNF (SKID 1)\nNF (SKID 2)\nNF (SKID 3)\nNF (SKID 4)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stage",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "membrane_and_vessel_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Membrane and vessel quantity"
+  },
+  {
+   "columns": 2,
+   "fieldname": "pump_capacity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pump capacity (m\u00b3/hr)"
+  },
+  {
+   "columns": 2,
+   "fieldname": "pump_model_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pump model number"
+  },
+  {
+   "columns": 1,
+   "fieldname": "membrane_model_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Membrane model number"
+  },
+  {
+   "columns": 1,
+   "fieldname": "pressure_il",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pressure I/ L"
+  },
+  {
+   "columns": 1,
+   "fieldname": "pressure_ol",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pressure O/ L"
+  },
+  {
+   "columns": 1,
+   "fieldname": "recovery",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Recovery"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-03 09:08:13.409939",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "NF Skids",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-01-01 14:45:55.071877",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "employee_name",
+  "query_against",
+  "query_emp",
+  "department",
+  "project",
+  "system_1",
+  "system_2",
+  "date",
+  "queries",
+  "reply"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PRO-QUR-"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Raised By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "system_1",
+   "fieldtype": "Link",
+   "label": "System 1",
+   "options": "System Module"
+  },
+  {
+   "fieldname": "system_2",
+   "fieldtype": "Link",
+   "label": "System 2",
+   "options": "System3"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "query_against",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Query Against",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "queries",
+   "fieldtype": "Small Text",
+   "label": "Queries"
+  },
+  {
+   "fetch_from": "query_against.employee_name",
+   "fieldname": "query_emp",
+   "fieldtype": "Data",
+   "label": "Query Against Employee"
+  },
+  {
+   "fieldname": "reply",
+   "fieldtype": "Link",
+   "label": "Reply",
+   "options": "Query Reply",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-19 09:54:16.479695",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Project Queries",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name",
+ "track_changes": 1
+}

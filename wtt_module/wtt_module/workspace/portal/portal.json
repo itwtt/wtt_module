@@ -1,0 +1,111 @@
+{
+ "cards_label": "",
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-04-15 11:06:41.729378",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends": "",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "view",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "label": "Portal",
+ "links": [],
+ "modified": "2022-08-17 14:02:51.556354",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Portal",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "color": "#CB2929",
+   "doc_view": "List",
+   "format": "{} Grievance",
+   "icon": "",
+   "label": "Grievance",
+   "link_to": "Grievance",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "#29CD42",
+   "doc_view": "List",
+   "format": "{} Suggestion",
+   "label": "Idea/ Suggestion",
+   "link_to": "Suggestion",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "#f0e813",
+   "doc_view": "List",
+   "format": "{} Request",
+   "label": "Request",
+   "link_to": "Request",
+   "stats_filter": "{\"name\":[\"is\",\"set\"]}",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "My Hobbies",
+   "link_to": "My Hobbies",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Appreciation",
+   "link_to": "Appreciation",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Vacancies",
+   "link_to": "Vacancies",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Task Allocation",
+   "link_to": "Task Allocation",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Conference Hall Booking",
+   "link_to": "Conference Hall Booking",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Incident Record",
+   "link_to": "Incident Record",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Target Criteria",
+   "link_to": "Target Criteria",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Technical Criteria",
+   "link_to": "Technical Criteria",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Behavioural Criteria",
+   "link_to": "Behavioural Criteria",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "YOUR SHORTCUTS"
+}

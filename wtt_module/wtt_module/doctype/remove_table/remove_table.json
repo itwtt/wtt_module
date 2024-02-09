@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "creation": "2022-03-18 12:29:33.558538",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_no",
+  "supplier",
+  "transport",
+  "final_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order No / Invoice No"
+  },
+  {
+   "fieldname": "final_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier"
+  },
+  {
+   "fieldname": "transport",
+   "fieldtype": "Data",
+   "label": "Transport"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-19 13:38:01.145563",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Remove Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

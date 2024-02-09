@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-07-14 09:52:15.386985",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "report_date",
+  "inspection_type",
+  "material_series",
+  "for_site",
+  "project",
+  "material_movement",
+  "column_break_5",
+  "receipt_series",
+  "subcontracting_receipt",
+  "supplier",
+  "company",
+  "s_warehouse",
+  "is_subcontracted",
+  "section_break_10",
+  "items",
+  "total_qty",
+  "total",
+  "inspected_by",
+  "inspected_employee",
+  "verified_by",
+  "verified_employee",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "MAT-IN-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Report Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspection_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Inspection Type",
+   "options": "\nIncoming\nOutgoing\nIn Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "material_series",
+   "fieldtype": "Small Text",
+   "label": "Material Series",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receipt_series",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Receipt Series",
+   "options": "Purchase Receipt",
+   "read_only_depends_on": "eval:doc.is_subcontracted!=1"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "s_warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Item Inspection item",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inspected_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Inspected By",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Verified By",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Inspection",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "inspected_by.employee_name",
+   "fieldname": "inspected_employee",
+   "fieldtype": "Data",
+   "label": "Inspected Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "verified_employee",
+   "fieldtype": "Data",
+   "label": "Verified Employee",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "for_site",
+   "fieldtype": "Check",
+   "label": "For Site",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "material_movement",
+   "fieldtype": "Data",
+   "label": "Material Movement",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_subcontracted",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Is Subcontracted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subcontracting_receipt",
+   "fieldtype": "Data",
+   "label": "Subcontracting Receipt",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-04 09:54:44.278989",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Item Inspection",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "creation": "2021-12-02 12:18:37.076094",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "issue_date",
+  "amount",
+  "next_issue_date"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "next_issue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Next Issue Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-12-02 12:53:01.519822",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Shoes Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

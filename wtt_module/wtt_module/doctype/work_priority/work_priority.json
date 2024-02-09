@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-11 19:16:43.015763",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "date",
+  "month",
+  "year",
+  "column_break_m4zjy",
+  "employee_name",
+  "department",
+  "branch",
+  "section_break_htw8n",
+  "work_measure_table1",
+  "work_measure_table2",
+  "column_break_7xqz5",
+  "work_measure_table3",
+  "work_measure_table4",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "default": "2023",
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Year",
+   "options": "Year",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_m4zjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_htw8n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "WRK-PRY-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "work_measure_table1",
+   "fieldtype": "Table",
+   "label": "Important and Urgent",
+   "options": "Work Measure Table1"
+  },
+  {
+   "fieldname": "work_measure_table2",
+   "fieldtype": "Table",
+   "label": "Important, but not urgent",
+   "options": "Work Measure Table2"
+  },
+  {
+   "fieldname": "column_break_7xqz5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_measure_table3",
+   "fieldtype": "Table",
+   "label": "Urgent, but not important",
+   "options": "Work Measure Table3"
+  },
+  {
+   "fieldname": "work_measure_table4",
+   "fieldtype": "Table",
+   "label": "Not Urgent or Important ",
+   "options": "Work Measure Table4"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Work Priority",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-26 09:21:32.283071",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Work Priority",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

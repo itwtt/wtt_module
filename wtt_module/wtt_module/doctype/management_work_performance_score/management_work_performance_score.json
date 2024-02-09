@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-26 12:01:25.489268",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "analytical",
+  "appreciation",
+  "consistency",
+  "creativity",
+  "focus",
+  "language",
+  "organized_working",
+  "proactiveness",
+  "time_management"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "columns": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "analytical",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Analytical",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "appreciation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appreciation",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "consistency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Consistency",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "creativity",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Creativity",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "focus",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Focus",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Language",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "organized_working",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Organized Working",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "proactiveness",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Proactiveness",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "time_management",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Time Management",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-26 12:01:25.489268",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Management Work Performance Score",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

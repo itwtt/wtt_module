@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-04-12 11:20:15.800158",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "request_to",
+  "to_employee",
+  "to_employee_name",
+  "to_department",
+  "to_designation",
+  "request"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "REQ-"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "request_to",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Request To",
+   "options": "\nCompany\nEmployee\nHR\nGM\nMD"
+  },
+  {
+   "depends_on": "eval:(doc.request_to=='Employee' || doc.request_to=='Company');",
+   "fieldname": "to_employee",
+   "fieldtype": "Dynamic Link",
+   "ignore_user_permissions": 1,
+   "label": "Name",
+   "options": "request_to"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:(doc.request_to=='Employee');",
+   "fieldname": "to_employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "to_employee.department",
+   "fieldname": "to_department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "to_employee.designation",
+   "fieldname": "to_designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "request",
+   "fieldtype": "Small Text",
+   "label": "Request"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-25 11:36:59.044640",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name"
+}

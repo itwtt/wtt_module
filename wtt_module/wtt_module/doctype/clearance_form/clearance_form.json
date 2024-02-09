@@ -1,0 +1,679 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee_id",
+ "creation": "2022-08-23 17:12:25.382534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "user_id",
+  "employee_name",
+  "email_id",
+  "department",
+  "designation",
+  "column_break_5",
+  "location",
+  "date_of_joining",
+  "types",
+  "date_of_retirement",
+  "date_of_relieving",
+  "section_break_10",
+  "address_for_future_communication",
+  "column_break_14",
+  "mobile_no",
+  "department_clearance_section",
+  "hod1",
+  "hod2",
+  "hod3",
+  "cleared_by1",
+  "cleared_name1",
+  "column_break_19",
+  "hod4",
+  "hod5",
+  "hod6",
+  "remarks1",
+  "admin_clearance_section",
+  "admin1",
+  "admin2",
+  "admin3",
+  "admin4",
+  "cleared_by2",
+  "cleared_name2",
+  "column_break_28",
+  "admin5",
+  "admin6",
+  "admin7",
+  "admin8",
+  "remarks2",
+  "it_clearance_section",
+  "it1",
+  "it2",
+  "it3",
+  "cleared_by3",
+  "cleared_name3",
+  "column_break_37",
+  "it4",
+  "it5",
+  "it6",
+  "remarks3",
+  "accounts_clearance_section",
+  "accounts1",
+  "accounts2",
+  "accounts3",
+  "accounts4",
+  "cleared_by4",
+  "cleared_name4",
+  "column_break_46",
+  "accounts5",
+  "accounts6",
+  "accounts7",
+  "accounts8",
+  "remarks4",
+  "hr_clearance_section",
+  "amended_from",
+  "hr1",
+  "hr2",
+  "hr3",
+  "hr4",
+  "cleared_by5",
+  "cleared_name5",
+  "column_break_60",
+  "hr5",
+  "hr6",
+  "hr7",
+  "hr8",
+  "remarks5",
+  "stores_clearance_section",
+  "store1",
+  "cleared_by6",
+  "cleared_name6",
+  "column_break_81",
+  "remarks6"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee",
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.personal_email",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee_id.branch",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "types",
+   "fieldtype": "Select",
+   "label": "Types",
+   "options": "\nResignation\nRetirement\nTransfer"
+  },
+  {
+   "depends_on": "eval:(doc.types==\"Retirement\");",
+   "fieldname": "date_of_retirement",
+   "fieldtype": "Date",
+   "label": "Date of Retirement"
+  },
+  {
+   "depends_on": "eval:(doc.types==\"Resignation\");",
+   "fieldname": "date_of_relieving",
+   "fieldtype": "Date",
+   "label": "Date of Relieving"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address_for_future_communication",
+   "fieldtype": "Small Text",
+   "label": "Address For Future Communication"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:(frappe.session.user!=\"Administrator\")",
+   "fieldname": "department_clearance_section",
+   "fieldtype": "Section Break",
+   "label": "Department Clearance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cleared_by1",
+   "fieldtype": "Link",
+   "label": "Cleared by",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "cleared_by1.employee_name",
+   "fieldname": "cleared_name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks1",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin_clearance_section",
+   "fieldtype": "Section Break",
+   "label": "Admin Clearance"
+  },
+  {
+   "fieldname": "admin1",
+   "fieldtype": "Select",
+   "label": "Drawers cleared and keys returned",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin2",
+   "fieldtype": "Select",
+   "label": "Mobile handset and Sims Cards",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin3",
+   "fieldtype": "Select",
+   "label": "Office Stationary items-Calculators, Letter heads, etc.",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin4",
+   "fieldtype": "Select",
+   "label": "Release of Company Leased Accommodation",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cleared_by2",
+   "fieldtype": "Link",
+   "label": "Cleared by",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "cleared_by2.employee_name",
+   "fieldname": "cleared_name2",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "admin5",
+   "fieldtype": "Select",
+   "label": "Parking Sticker",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin6",
+   "fieldtype": "Select",
+   "label": "Balance Visiting Cards",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin7",
+   "fieldtype": "Select",
+   "label": "Vehicle ",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "admin8",
+   "fieldtype": "Select",
+   "label": "Mobile Phone",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks2",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it_clearance_section",
+   "fieldtype": "Section Break",
+   "label": "IT Clearance"
+  },
+  {
+   "fieldname": "it1",
+   "fieldtype": "Select",
+   "label": "Lap Top / Desktop and Accessories",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it2",
+   "fieldtype": "Select",
+   "label": "System password",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it3",
+   "fieldtype": "Select",
+   "label": "NT Account ",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cleared_by3",
+   "fieldtype": "Link",
+   "label": "Cleared by",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "cleared_by3.employee_name",
+   "fieldname": "cleared_name3",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "it4",
+   "fieldtype": "Select",
+   "label": "Remote Access Token",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it5",
+   "fieldtype": "Select",
+   "label": "Deactivation from Mailing List",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it6",
+   "fieldtype": "Select",
+   "label": "Calling Cards",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks3",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts_clearance_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts Clearance"
+  },
+  {
+   "fieldname": "accounts1",
+   "fieldtype": "Select",
+   "label": "Payments due if any, to travel agents completed.",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts2",
+   "fieldtype": "Select",
+   "label": "Loans  /  Deposits",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts3",
+   "fieldtype": "Select",
+   "label": "Company Leased Car, if any",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts4",
+   "fieldtype": "Select",
+   "label": "Submission of all expense vouchers due.",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cleared_by4",
+   "fieldtype": "Link",
+   "label": "Cleared by",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "cleared_by4.employee_name",
+   "fieldname": "cleared_name4",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accounts5",
+   "fieldtype": "Select",
+   "label": "Credit cards",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts6",
+   "fieldtype": "Select",
+   "label": "Petty cash",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts7",
+   "fieldtype": "Select",
+   "label": "Travel Advances",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accounts8",
+   "fieldtype": "Select",
+   "label": "Salary Advances",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks4",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr_clearance_section",
+   "fieldtype": "Section Break",
+   "label": "HR Clearance"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Clearance Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr1",
+   "fieldtype": "Select",
+   "label": "Employee ID Card/Access Card",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr2",
+   "fieldtype": "Select",
+   "label": "Library card / books, If any",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr3",
+   "fieldtype": "Select",
+   "label": "Employee Referral Amount, If any",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr4",
+   "fieldtype": "Select",
+   "label": "Joining Bonus, if Any",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cleared_by5",
+   "fieldtype": "Link",
+   "label": "Cleared by",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "cleared_by5.employee_name",
+   "fieldname": "cleared_name5",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hr5",
+   "fieldtype": "Select",
+   "label": "Relocation Expenses, if Any",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr6",
+   "fieldtype": "Select",
+   "label": "Balance leave status",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr7",
+   "fieldtype": "Select",
+   "label": "Company Uniform",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr8",
+   "fieldtype": "Select",
+   "label": "Involve  in any legal case",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks5",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stores_clearance_section",
+   "fieldtype": "Section Break",
+   "label": "Stores Clearance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "store1",
+   "fieldtype": "Select",
+   "label": "Equipment",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cleared_by6",
+   "fieldtype": "Link",
+   "label": "Cleared by",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "cleared_by6.employee_name",
+   "fieldname": "cleared_name6",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_81",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks6",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hod1",
+   "fieldtype": "Select",
+   "label": "Current Project Status",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hod2",
+   "fieldtype": "Select",
+   "label": "Pending work status",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hod3",
+   "fieldtype": "Select",
+   "label": "All official documents handed over, If any",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hod4",
+   "fieldtype": "Select",
+   "label": "File locations ",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hod5",
+   "fieldtype": "Select",
+   "label": "Project Plans / Business Plans / SOP manual",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hod6",
+   "fieldtype": "Select",
+   "label": "Data base of vendors / suppliers / other outside contacts.",
+   "options": "\nYes\nNo\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee_id.user_id",
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-11 15:22:45.251134",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Clearance Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ED",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name"
+}

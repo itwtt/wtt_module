@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YY}-{MM}-{#}",
+ "creation": "2022-04-26 12:06:57.587481",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "get_criteria",
+  "attitude",
+  "btn1",
+  "hide1",
+  "html1",
+  "personal",
+  "btn2",
+  "hide2",
+  "html2",
+  "skill",
+  "btn3",
+  "hide3",
+  "html3",
+  "team",
+  "btn4",
+  "hide4",
+  "html4",
+  "work_knowledge",
+  "btn5",
+  "hide5",
+  "html5",
+  "work_performance",
+  "btn6",
+  "hide6",
+  "btn7",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "get_criteria",
+   "fieldtype": "Button",
+   "label": "Get Criteria"
+  },
+  {
+   "fieldname": "attitude",
+   "fieldtype": "Table",
+   "label": "Attitude",
+   "options": "Management Attitude Score"
+  },
+  {
+   "fieldname": "personal",
+   "fieldtype": "Table",
+   "label": "Personal",
+   "options": "Management Personal Score"
+  },
+  {
+   "fieldname": "skill",
+   "fieldtype": "Table",
+   "label": "Skill",
+   "options": "Management Skill Score"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Table",
+   "label": "Team",
+   "options": "Management Team Score"
+  },
+  {
+   "fieldname": "work_knowledge",
+   "fieldtype": "Table",
+   "label": "Work Knowledge",
+   "options": "Management Work Knowledge Score"
+  },
+  {
+   "fieldname": "work_performance",
+   "fieldtype": "Table",
+   "label": "Work Performance",
+   "options": "Management Work Performance Score"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee TTB",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "btn1",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Points"
+  },
+  {
+   "fieldname": "hide1",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Hide"
+  },
+  {
+   "fieldname": "html1",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "btn2",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Points"
+  },
+  {
+   "fieldname": "hide2",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Hide"
+  },
+  {
+   "fieldname": "html2",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "btn3",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Points"
+  },
+  {
+   "fieldname": "hide3",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Hide"
+  },
+  {
+   "fieldname": "html3",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "btn4",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Points"
+  },
+  {
+   "fieldname": "hide4",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Hide"
+  },
+  {
+   "fieldname": "html4",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "btn5",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Points"
+  },
+  {
+   "fieldname": "hide5",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Hide"
+  },
+  {
+   "fieldname": "html5",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "btn6",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Points"
+  },
+  {
+   "fieldname": "hide6",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Hide"
+  },
+  {
+   "fieldname": "btn7",
+   "fieldtype": "HTML"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-04-27 10:51:56.425420",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Employee TTB",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

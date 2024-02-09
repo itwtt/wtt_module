@@ -1,0 +1,55 @@
+{
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>This child doctype linked with project doctype</p></div>\", \"by\": \"Administrator\", \"name\": \"6cbd7b48c7\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-21 14:18:36.597875",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "proposal_status",
+  "proposal_request_date",
+  "proposal_sent_date",
+  "revision"
+ ],
+ "fields": [
+  {
+   "fieldname": "proposal_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Proposal Status",
+   "options": "\nSent\nProcessing"
+  },
+  {
+   "fieldname": "proposal_request_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Proposal Request Date"
+  },
+  {
+   "fieldname": "proposal_sent_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Proposal Sent Date"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Revision",
+   "options": "Revision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-24 16:07:34.531789",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Proposal Details Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

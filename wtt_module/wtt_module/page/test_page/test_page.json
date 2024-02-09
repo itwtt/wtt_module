@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2021-11-19 10:19:04.153008",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-11-19 10:19:10.177271",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "test-page",
+ "owner": "Administrator",
+ "page_name": "test page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "test"
+}

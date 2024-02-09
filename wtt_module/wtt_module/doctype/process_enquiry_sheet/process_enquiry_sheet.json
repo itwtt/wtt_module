@@ -1,0 +1,661 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-04-24 10:21:45.932278",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_details_section",
+  "industry_name",
+  "reference",
+  "sector_industry",
+  "telephone",
+  "email",
+  "attach_card",
+  "column_break_k3uj4",
+  "address",
+  "district",
+  "state",
+  "country",
+  "pincode",
+  "attach_notes",
+  "section_break_vrkc0",
+  "enquiry_attachment",
+  "existing_plant_details_section",
+  "yes_or_no",
+  "layout",
+  "tank_layout",
+  "column_break_hr72q",
+  "plant_cap",
+  "cur_flow",
+  "cur_plant",
+  "enquiry_tab",
+  "naming_series",
+  "project",
+  "project_name",
+  "client_name",
+  "column_break_kkxhk",
+  "revision",
+  "plant_requirement_details_section",
+  "peak_duration",
+  "column_break_txydc",
+  "capacity_to_be_treated_avg",
+  "column_break_qnrqg",
+  "treatment_required",
+  "column_break_5tad0",
+  "recovery_of_salt",
+  "column_break_abd5u",
+  "area_availability_for_plant",
+  "current_industrial_process_details_section",
+  "work_process",
+  "column_break_zemmq",
+  "processed_fibers",
+  "column_break_kvzas",
+  "is_bleaching_done",
+  "column_break_51ret",
+  "do_you_do_printing",
+  "column_break_bk71c",
+  "printing_with",
+  "column_break_36",
+  "is_urea_used",
+  "column_break_l0eza",
+  "amount_used",
+  "column_break_abviz",
+  "printing_effluent_flow",
+  "column_break_w39mp",
+  "is_desizing_done",
+  "column_break_oo2q9",
+  "desizing_effluent_flow",
+  "section_break_lkpcf",
+  "additional_requirements",
+  "section_break_p5f8z",
+  "parameters",
+  "sec_brea",
+  "ph",
+  "tds_mgl",
+  "tss_mgl",
+  "column_break_up6fd",
+  "cod_mgl",
+  "hardness",
+  "ro_recovery",
+  "daf_with_dosing",
+  "mbr_with_dosing",
+  "section_break_23",
+  "raw_water",
+  "capacity_to_be_treated",
+  "water_source",
+  "tds_of_raw_water",
+  "column_break_ojshe",
+  "hardness_of_raw_water",
+  "iron_content_in_raw_water",
+  "treatment_for_raw_water",
+  "section_break_owvjt",
+  "column_break_gab3e",
+  "revision_remarks",
+  "section_break_tgtse",
+  "head1",
+  "system_details",
+  "head2",
+  "selected_system",
+  "get_flowchart",
+  "flow",
+  "html_editor",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "industry_name",
+   "fieldtype": "Data",
+   "label": "Industry Name"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "sector_industry",
+   "fieldtype": "Data",
+   "label": "Sector / Industry"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "existing_plant_details_section",
+   "fieldtype": "Section Break",
+   "label": "Existing Plant Details"
+  },
+  {
+   "fieldname": "yes_or_no",
+   "fieldtype": "Select",
+   "label": "Is there an existing plant?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes')",
+   "fieldname": "plant_cap",
+   "fieldtype": "Data",
+   "label": "Plant Capacity (m3/day)"
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes')",
+   "fieldname": "cur_flow",
+   "fieldtype": "Data",
+   "label": "Current Flow Stream"
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes')",
+   "fieldname": "cur_plant",
+   "fieldtype": "Select",
+   "label": "Current Plant Is",
+   "options": "\nDischarge\nReuse - MF\nFiltration system (upto 90% Recovery)\nPartial recovery (upto 95% Recovery)\nZLD"
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes')",
+   "fieldname": "layout",
+   "fieldtype": "Attach",
+   "label": "Existing Plant Layout"
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes')",
+   "fieldname": "tank_layout",
+   "fieldtype": "Attach",
+   "label": "Existing Plant Tank Capacities"
+  },
+  {
+   "fieldname": "plant_requirement_details_section",
+   "fieldtype": "Section Break",
+   "label": "Plant Requirement Details"
+  },
+  {
+   "fieldname": "capacity_to_be_treated_avg",
+   "fieldtype": "Data",
+   "label": "Capacity to be treated"
+  },
+  {
+   "fieldname": "peak_duration",
+   "fieldtype": "Data",
+   "label": "Peak Duration (Hours)"
+  },
+  {
+   "fieldname": "treatment_required",
+   "fieldtype": "Select",
+   "label": "Treatment Required",
+   "options": "\nDischarge\nDischarge - future ZLD\nReuse - MF\nFiltration system (upto 90% Recovery)\nPartial recovery (upto 95% Recovery)\nZLD"
+  },
+  {
+   "fieldname": "recovery_of_salt",
+   "fieldtype": "Select",
+   "label": "Recovery of Salt",
+   "options": "\nSodium chloride\nSodium sulphate\nNot Required"
+  },
+  {
+   "fieldname": "area_availability_for_plant",
+   "fieldtype": "Data",
+   "label": "Area availability for plant"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break",
+   "label": "Raw water Treatment details"
+  },
+  {
+   "fieldname": "raw_water",
+   "fieldtype": "Select",
+   "label": "Is Raw Water Treatment Required?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "capacity_to_be_treated",
+   "fieldtype": "Data",
+   "label": "Capacity to be treated (m3/day)"
+  },
+  {
+   "fieldname": "water_source",
+   "fieldtype": "Select",
+   "label": "Water Source                                               ",
+   "options": "\nBore Water\nRiver Water\nOthers"
+  },
+  {
+   "fieldname": "tds_of_raw_water",
+   "fieldtype": "Data",
+   "label": "TDS of Raw Water (mg/l)           "
+  },
+  {
+   "fieldname": "hardness_of_raw_water",
+   "fieldtype": "Data",
+   "label": "Hardness of Raw Water (mg/l)"
+  },
+  {
+   "fieldname": "iron_content_in_raw_water",
+   "fieldtype": "Data",
+   "label": "Iron Content in Raw Water (mg/l)"
+  },
+  {
+   "fieldname": "treatment_for_raw_water",
+   "fieldtype": "Data",
+   "label": "Treatment for Raw Water"
+  },
+  {
+   "fieldname": "work_process",
+   "fieldtype": "Select",
+   "label": "Work Process",
+   "options": "\nKnitting\nWeaving\nOthers"
+  },
+  {
+   "fieldname": "processed_fibers",
+   "fieldtype": "Select",
+   "label": "Processed fibers",
+   "options": "\nCotton\nPolyester\nTerry Towel\nWooven\nYarn\nOthers"
+  },
+  {
+   "fieldname": "is_bleaching_done",
+   "fieldtype": "Select",
+   "label": "Is bleaching done?       ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "do_you_do_printing",
+   "fieldtype": "Select",
+   "label": "Do you do printing             ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "printing_with",
+   "fieldtype": "Select",
+   "label": "Printing with",
+   "options": "\nReactive dyes\nPigments\nBoth\nNA"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "is_urea_used",
+   "fieldtype": "Select",
+   "label": "Is urea used?                      ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "amount_used",
+   "fieldtype": "Data",
+   "label": "Amount used"
+  },
+  {
+   "fieldname": "printing_effluent_flow",
+   "fieldtype": "Data",
+   "label": "Printing effluent flow"
+  },
+  {
+   "fieldname": "is_desizing_done",
+   "fieldtype": "Select",
+   "label": "Is desizing done?          ",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:(doc.is_desizing_done==\"Yes\");",
+   "fieldname": "desizing_effluent_flow",
+   "fieldtype": "Data",
+   "label": "Desizing effluent flow"
+  },
+  {
+   "fieldname": "additional_requirements",
+   "fieldtype": "Small Text",
+   "label": "Additional Requirements"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_brea",
+   "fieldtype": "Section Break",
+   "label": "Required Treated Water Parameters"
+  },
+  {
+   "fieldname": "ph",
+   "fieldtype": "Data",
+   "label": "PH "
+  },
+  {
+   "fieldname": "tds_mgl",
+   "fieldtype": "Data",
+   "label": "TDS (mg/l)"
+  },
+  {
+   "fieldname": "tss_mgl",
+   "fieldtype": "Data",
+   "label": "TSS (mg/l)"
+  },
+  {
+   "fieldname": "cod_mgl",
+   "fieldtype": "Data",
+   "label": "COD (mg/l)"
+  },
+  {
+   "fieldname": "hardness",
+   "fieldtype": "Data",
+   "label": "HARDNESS (mg/l) (CaCO3)"
+  },
+  {
+   "fieldname": "system_details",
+   "fieldtype": "Table",
+   "options": "Process Sysem Details"
+  },
+  {
+   "fieldname": "get_flowchart",
+   "fieldtype": "Button",
+   "label": "Get Flowchart"
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "selected_system",
+   "fieldtype": "Table",
+   "options": "Selected Process System"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "options": "System Parameter Details"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Client Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "client_details_section",
+   "fieldtype": "Tab Break",
+   "label": "Client Details"
+  },
+  {
+   "fieldname": "column_break_k3uj4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ojshe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_up6fd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_p5f8z",
+   "fieldtype": "Section Break",
+   "label": "Plant Inlet Parameter"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "PES-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Process Enquiry Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_editor",
+   "fieldtype": "HTML Editor",
+   "label": "HTML Editor"
+  },
+  {
+   "fieldname": "ro_recovery",
+   "fieldtype": "Float",
+   "label": "RO Recovery"
+  },
+  {
+   "default": "0",
+   "fieldname": "daf_with_dosing",
+   "fieldtype": "Check",
+   "label": "DAF with dosing"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_with_dosing",
+   "fieldtype": "Check",
+   "label": "MBR with dosing"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "default": "REV - 00",
+   "fieldname": "revision",
+   "fieldtype": "Link",
+   "label": "Revision",
+   "options": "Revision"
+  },
+  {
+   "depends_on": "eval:(doc.revision!='REV - 00')",
+   "fieldname": "revision_remarks",
+   "fieldtype": "Small Text",
+   "label": "Revision Remarks"
+  },
+  {
+   "fieldname": "column_break_kkxhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qnrqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_abd5u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_industrial_process_details_section",
+   "fieldtype": "Section Break",
+   "label": "Current Industrial process details"
+  },
+  {
+   "fieldname": "enquiry_attachment",
+   "fieldtype": "Table",
+   "label": "Enquiry Attachment",
+   "options": "Enquiry Attachment"
+  },
+  {
+   "fieldname": "section_break_tgtse",
+   "fieldtype": "Tab Break",
+   "label": "Systems & Flowchart"
+  },
+  {
+   "fieldname": "enquiry_tab",
+   "fieldtype": "Tab Break",
+   "label": "Enquiry"
+  },
+  {
+   "fieldname": "head1",
+   "fieldtype": "Section Break",
+   "label": "System Details"
+  },
+  {
+   "fieldname": "head2",
+   "fieldtype": "Section Break",
+   "label": "Selected Process System"
+  },
+  {
+   "fieldname": "attach_card",
+   "fieldtype": "Attach",
+   "label": "Attach Card"
+  },
+  {
+   "fieldname": "attach_notes",
+   "fieldtype": "Attach",
+   "label": "Attach Notes"
+  },
+  {
+   "fieldname": "section_break_owvjt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_gab3e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hr72q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_txydc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5tad0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zemmq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kvzas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_51ret",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bk71c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_l0eza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_abviz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_w39mp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oo2q9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lkpcf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_vrkc0",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-02 20:25:03.113869",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Process Enquiry Sheet",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "WTT Process Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "WTT Process User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "industry_name",
+ "track_changes": 1
+}

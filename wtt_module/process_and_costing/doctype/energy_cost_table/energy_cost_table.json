@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-13 17:28:49.033359",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_description",
+  "w_qty",
+  "sb_qty",
+  "kw",
+  "running_hours",
+  "installed_hours",
+  "absorbed_power",
+  "kw_per_day",
+  "cost_per_day",
+  "kw_m3",
+  "kw_m3_90",
+  "kw_m3_80",
+  "kw_m3_70",
+  "kw_m3_60",
+  "kw_m3_50"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "w_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "W Qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sb_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sb Qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kw",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Kw"
+  },
+  {
+   "fieldname": "running_hours",
+   "fieldtype": "Float",
+   "label": "Running Hours"
+  },
+  {
+   "fieldname": "installed_hours",
+   "fieldtype": "Float",
+   "label": "Installed Hours"
+  },
+  {
+   "fieldname": "absorbed_power",
+   "fieldtype": "Float",
+   "label": "Absorbed Power"
+  },
+  {
+   "fieldname": "kw_per_day",
+   "fieldtype": "Float",
+   "label": "KW (per day)"
+  },
+  {
+   "fieldname": "cost_per_day",
+   "fieldtype": "Float",
+   "label": "Cost (per day)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kw_m3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "kW/ m\u00b3"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kw_m3_90",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "kW/ m\u00b3 (90%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kw_m3_80",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "kW/ m\u00b3 (80%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kw_m3_70",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "kW/ m\u00b3 (70%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kw_m3_60",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "kW/ m\u00b3 (60%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kw_m3_50",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "kW/ m\u00b3 (50%)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-31 12:13:34.705857",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Energy Cost Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

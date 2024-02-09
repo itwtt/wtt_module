@@ -1,0 +1,22 @@
+{
+ "attach_print": 0,
+ "channel": "Telegram",
+ "creation": "2022-02-16 11:38:01.410701",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Telegram Notification",
+ "document_type": "Telegram Messages",
+ "dynamic_recipients": 0,
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Kindly Check this message\n\nhttps://erp.wttindia.com/{{ doc.images }}\n\nMessage:\n{{ doc.message }}",
+ "modified": "2022-02-16 11:38:01.410701",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "MD sir",
+ "owner": "Administrator",
+ "subject": "{{ doc.employee_name }} send this message",
+ "telegram_user": "venkat@wttindia.com-Venkat"
+}

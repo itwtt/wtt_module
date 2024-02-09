@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "creation": "2022-09-29 10:37:22.359029",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "conversation",
+  "wtt_representative",
+  "employee_name",
+  "client_side_representative",
+  "mode_of_communication",
+  "response",
+  "result"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "conversation",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Conversation"
+  },
+  {
+   "columns": 1,
+   "default": "WTT1387",
+   "fieldname": "wtt_representative",
+   "fieldtype": "Link",
+   "label": "WTT Representative",
+   "options": "Employee"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "wtt_representative.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "client_side_representative",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Side Representative"
+  },
+  {
+   "columns": 1,
+   "fieldname": "mode_of_communication",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mode of Communication"
+  },
+  {
+   "columns": 2,
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Result"
+  },
+  {
+   "columns": 2,
+   "fieldname": "response",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Response",
+   "options": "\nAnswered\nNot Answered"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-17 16:13:33.145651",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Inquiries Follow up",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

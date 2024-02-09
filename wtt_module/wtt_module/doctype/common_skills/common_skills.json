@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-21 17:31:11.578654",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "performance_index",
+  "criteria",
+  "goal",
+  "your_points",
+  "hod_points",
+  "management_points",
+  "technical_data"
+ ],
+ "fields": [
+  {
+   "default": "COMMON SKILLS",
+   "fieldname": "performance_index",
+   "fieldtype": "Data",
+   "label": "Performance Index",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "columns": 6,
+   "fieldname": "criteria",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Criteria",
+   "read_only": 1
+  },
+  {
+   "default": "5",
+   "fieldname": "goal",
+   "fieldtype": "Float",
+   "label": "Goal",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "your_points",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Your Points",
+   "read_only_depends_on": "eval:(frappe.session.user=='venkat@wttindia.com')"
+  },
+  {
+   "columns": 2,
+   "fieldname": "management_points",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Management Points",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "hod_points",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HOD Points",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "technical_data",
+   "fieldtype": "Data",
+   "label": "Technical Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-10 10:19:16.368559",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Common Skills",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

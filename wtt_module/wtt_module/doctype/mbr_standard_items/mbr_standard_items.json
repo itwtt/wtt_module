@@ -1,0 +1,425 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-25 17:42:33.026684",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_startup_sheet",
+  "column_break_zk5lv",
+  "panel",
+  "column_break_yvhdh",
+  "startup_sheet",
+  "section_break_qt662",
+  "project",
+  "project_name",
+  "mbr_koch_items",
+  "section_break_nizp0",
+  "cost",
+  "pipes_fittings_valves",
+  "pipe_cost",
+  "section_break_qgciu",
+  "not_linked_items",
+  "mbr_koch_not_linked",
+  "mbr_electrical_items",
+  "section_break_bapaf",
+  "digital_input",
+  "column_break_oeequ",
+  "digital_output",
+  "column_break_abupg",
+  "analog_input",
+  "column_break_bmpeb",
+  "analog_input2",
+  "column_break_m9wrc",
+  "analog_output",
+  "section_break_7kfup",
+  "mbr_koch_cost",
+  "column_break_pty1z",
+  "mbr_not_linked_cost",
+  "column_break_0dbb2",
+  "electrical_cost",
+  "column_break_nrk61",
+  "mbr_overall_cost",
+  "section_break_0tdb2",
+  "mbr_tax_cost",
+  "mbr_transport_cost",
+  "include_tax_cost",
+  "column_break_106yj",
+  "mbr_tax",
+  "mbr_transport",
+  "additional_cost_section",
+  "margin_for_expense_calculation_cost",
+  "e_c",
+  "mbr_overhead_cost",
+  "mbr_agent_commission_cost",
+  "mbr_guarantee_clause_cost",
+  "column_break_0opi8",
+  "margin_for_expense_calculation",
+  "e_c_",
+  "overhead_percentage",
+  "agent_commission",
+  "guarantee_clause_charge",
+  "section_break_e4a2w",
+  "grand_total",
+  "mbr_selling_price",
+  "column_break_vk0md",
+  "margin_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_startup_sheet",
+   "fieldtype": "Link",
+   "label": "Startup Sheet",
+   "options": "Startup Sheet"
+  },
+  {
+   "fetch_from": "project_startup_sheet.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_koch_items",
+   "fieldtype": "Table",
+   "label": "MBR KOCH Items",
+   "options": "KOCH Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_koch_cost",
+   "fieldtype": "Currency",
+   "label": "MBR KOCH Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_koch_not_linked",
+   "fieldtype": "Table",
+   "label": "MBR KOCH Not linked",
+   "options": "MBR KOCH Not linked"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_not_linked_cost",
+   "fieldtype": "Currency",
+   "label": "MBR Not linked Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_overall_cost",
+   "fieldtype": "Currency",
+   "label": "MBR Overall Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "not_linked_items",
+   "fieldtype": "Button",
+   "label": "Not Linked Items"
+  },
+  {
+   "fieldname": "column_break_zk5lv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yvhdh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "startup_sheet",
+   "fieldtype": "Button",
+   "label": "Startup Sheet"
+  },
+  {
+   "fieldname": "section_break_qt662",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mbr_electrical_items",
+   "fieldtype": "Table",
+   "label": "MBR Electrical Items",
+   "options": "MBR Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "panel",
+   "fieldtype": "Float",
+   "label": "Panel"
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_bapaf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_oeequ",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_abupg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bmpeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_m9wrc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7kfup",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_pty1z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0dbb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nrk61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_0tdb2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Total MBR Cost"
+  },
+  {
+   "fieldname": "column_break_106yj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_for_expense_calculation_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "MBR Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "MBR Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "MBR Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_0opi8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_for_expense_calculation",
+   "fieldtype": "Percent",
+   "hidden": 1,
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "e_c_",
+   "fieldtype": "Percent",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "overhead_percentage",
+   "fieldtype": "Percent",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "agent_commission",
+   "fieldtype": "Percent",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "guarantee_clause_charge",
+   "fieldtype": "Percent",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_e4a2w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_selling_price",
+   "fieldtype": "Currency",
+   "label": "MBR Selling Price"
+  },
+  {
+   "fieldname": "column_break_vk0md",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_percentage",
+   "fieldtype": "Percent",
+   "label": "Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "2",
+   "fieldname": "mbr_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "3",
+   "fieldname": "mbr_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "pipes_fittings_valves",
+   "fieldtype": "Percent",
+   "label": "Pipes, Fittings & Valves (%)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_nizp0",
+   "fieldtype": "Section Break",
+   "label": "Pipes, Fittings & Valves"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_qgciu",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-17 11:36:41.505010",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "MBR Standard Items",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_startup_sheet"
+}

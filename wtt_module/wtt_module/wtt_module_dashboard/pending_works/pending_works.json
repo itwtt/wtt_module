@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Pending Works-1",
+   "width": "Full"
+  }
+ ],
+ "creation": "2022-01-29 11:12:45.922059",
+ "dashboard_name": "Pending Works",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-01-29 11:15:27.792758",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Pending Works",
+ "owner": "Administrator"
+}

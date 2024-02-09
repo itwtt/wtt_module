@@ -1,0 +1,227 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-22 14:49:12.182337",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "inward_outward",
+  "time",
+  "if_vehicle",
+  "vehicle_type",
+  "vehicle_no",
+  "contact",
+  "alternative_contact",
+  "column_break_fxysz",
+  "receive_person",
+  "courier_receive_person_name",
+  "responsible",
+  "responsible_person_name",
+  "responsible_person",
+  "amended_from",
+  "purpose",
+  "remarks",
+  "status",
+  "attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "GATE-ENT-"
+  },
+  {
+   "fieldname": "inward_outward",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Inward & Outward",
+   "options": "\nInward Courier\nOutward Courier\nInward Parcel\nOutward Parcel"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Date and Time",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:(doc.if_vehicle == 1);",
+   "fieldname": "vehicle_type",
+   "fieldtype": "Data",
+   "label": "Vehicle Type",
+   "mandatory_depends_on": "eval:(doc.if_vehicle == 1);"
+  },
+  {
+   "depends_on": "eval:(doc.if_vehicle == 1);",
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "label": "Vehicle No",
+   "mandatory_depends_on": "eval:(doc.if_vehicle == 1);"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternative_contact",
+   "fieldtype": "Data",
+   "label": "Alternative Contact"
+  },
+  {
+   "fieldname": "column_break_fxysz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "receive_person",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Courier Receive Person",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "receive_person.employee_name",
+   "fieldname": "courier_receive_person_name",
+   "fieldtype": "Data",
+   "label": "Courier Receive Person Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Responsible Person",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "responsible.employee_name",
+   "fieldname": "responsible_person_name",
+   "fieldtype": "Data",
+   "label": "Responsible Person Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "responsible_person",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Responsible person"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gate Entries",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "if_vehicle",
+   "fieldtype": "Check",
+   "label": "If Vehicle"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "label": "Purpose",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nDelivered\nNot Delivered"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-23 11:19:27.480069",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Gate Entries",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Security",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

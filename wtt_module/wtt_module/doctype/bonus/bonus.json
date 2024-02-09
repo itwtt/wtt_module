@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-10-25 14:08:23.613943",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "from_date",
+  "to_date",
+  "ho_percentage",
+  "workshop_percentage",
+  "get_items",
+  "bonus_table",
+  "ho",
+  "workshop",
+  "total_basic",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To date"
+  },
+  {
+   "fieldname": "get_items",
+   "fieldtype": "Button",
+   "label": "Get Items"
+  },
+  {
+   "fieldname": "bonus_table",
+   "fieldtype": "Table",
+   "label": "Bonus Table",
+   "options": "Bonus Table"
+  },
+  {
+   "fieldname": "ho",
+   "fieldtype": "Currency",
+   "label": "HO",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workshop",
+   "fieldtype": "Currency",
+   "label": "Workshop",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_basic",
+   "fieldtype": "Currency",
+   "label": "Total Bonus",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bonus",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "EMP-BON-.YYYY.-"
+  },
+  {
+   "default": "8.33",
+   "fieldname": "ho_percentage",
+   "fieldtype": "Float",
+   "label": "HO Percentage"
+  },
+  {
+   "default": "8.33",
+   "fieldname": "workshop_percentage",
+   "fieldtype": "Float",
+   "label": "Workshop Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-25 15:28:33.933682",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Bonus",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-05-16 17:10:19.177356",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "month",
+  "date",
+  "created_date",
+  "year",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "hod_id",
+  "hod_name",
+  "position_specific",
+  "industry_specific",
+  "common_skills",
+  "hod_remarks_tab",
+  "hod_appreciation",
+  "hod_improvements",
+  "hod_failure",
+  "md_remarks_tab",
+  "appreciation",
+  "improvements",
+  "failure",
+  "amended_from",
+  "employee_points",
+  "hod_points",
+  "total_points"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "position_specific",
+   "fieldtype": "Table",
+   "label": "Position Specific",
+   "options": "Position Specific"
+  },
+  {
+   "fieldname": "industry_specific",
+   "fieldtype": "Table",
+   "label": "Industry Specific",
+   "options": "Industry Specific"
+  },
+  {
+   "fieldname": "common_skills",
+   "fieldtype": "Table",
+   "label": "Common Skills",
+   "options": "Common Skills"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "TECH-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Technical Criteria",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hod_id",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "HOD",
+   "options": "Employee",
+   "permlevel": 2
+  },
+  {
+   "fetch_from": "hod_id.employee_name",
+   "fieldname": "hod_name",
+   "fieldtype": "Data",
+   "label": "HOD Name",
+   "permlevel": 5,
+   "read_only": 1
+  },
+  {
+   "fieldname": "md_remarks_tab",
+   "fieldtype": "Tab Break",
+   "label": "MD Remarks"
+  },
+  {
+   "fieldname": "appreciation",
+   "fieldtype": "Rating",
+   "label": "Appreciation"
+  },
+  {
+   "fieldname": "improvements",
+   "fieldtype": "Small Text",
+   "label": "Improvements"
+  },
+  {
+   "fieldname": "failure",
+   "fieldtype": "Small Text",
+   "label": "Failure"
+  },
+  {
+   "default": "2024",
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Year",
+   "options": "Year"
+  },
+  {
+   "fieldname": "hod_remarks_tab",
+   "fieldtype": "Tab Break",
+   "label": "HOD Remarks"
+  },
+  {
+   "fieldname": "hod_appreciation",
+   "fieldtype": "Rating",
+   "label": "Appreciation"
+  },
+  {
+   "fieldname": "hod_improvements",
+   "fieldtype": "Small Text",
+   "label": "Improvements"
+  },
+  {
+   "fieldname": "hod_failure",
+   "fieldtype": "Small Text",
+   "label": "Failure"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Data",
+   "label": "Created date",
+   "permlevel": 3
+  },
+  {
+   "fieldname": "employee_points",
+   "fieldtype": "Float",
+   "label": "Employee Points"
+  },
+  {
+   "fieldname": "hod_points",
+   "fieldtype": "Float",
+   "label": "HOD Points"
+  },
+  {
+   "fieldname": "total_points",
+   "fieldtype": "Float",
+   "label": "Total Points"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-03 10:43:10.960410",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Technical Criteria",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Master Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name"
+}

@@ -1,0 +1,263 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-07 16:39:59.140735",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "practically_possible",
+  "yes1",
+  "no1",
+  "cost_reduction",
+  "yes2",
+  "no2",
+  "time_reduction",
+  "yes3",
+  "no3",
+  "effort_reduction",
+  "yes4",
+  "no4",
+  "quality_improvement",
+  "yes5",
+  "no5",
+  "customer_satisfaction",
+  "yes10",
+  "no10",
+  "value_proportion",
+  "yes11",
+  "no11",
+  "safety",
+  "yes12",
+  "no12",
+  "can_be_approved",
+  "yes6",
+  "explanation_needed",
+  "yes7",
+  "modification_needed",
+  "yes8",
+  "cant_be_approved",
+  "yes9"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Evaluator Name",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "practically_possible",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Practically Possible"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cost_reduction",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Reduction"
+  },
+  {
+   "columns": 1,
+   "fieldname": "time_reduction",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Time Reduction"
+  },
+  {
+   "columns": 1,
+   "fieldname": "effort_reduction",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Effort Reduction"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quality_improvement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quality Improvement"
+  },
+  {
+   "columns": 1,
+   "fieldname": "can_be_approved",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Can be Approved"
+  },
+  {
+   "columns": 1,
+   "fieldname": "explanation_needed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Explanation Needed"
+  },
+  {
+   "columns": 1,
+   "fieldname": "modification_needed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Modification Needed"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cant_be_approved",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cant be Approved"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes1",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no1",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes2",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no2",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes3",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no3",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes4",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no4",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes5",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no5",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes6",
+   "fieldtype": "Check",
+   "label": "Sure"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes7",
+   "fieldtype": "Check",
+   "label": "Need"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes8",
+   "fieldtype": "Check",
+   "label": "Need"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes9",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "fieldname": "customer_satisfaction",
+   "fieldtype": "Data",
+   "label": "Customer Satisfaction"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes10",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no10",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "value_proportion",
+   "fieldtype": "Data",
+   "label": "Value Proportion"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes11",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no11",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "safety",
+   "fieldtype": "Data",
+   "label": "Safety"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes12",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no12",
+   "fieldtype": "Check",
+   "label": "No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-08 16:19:30.549664",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Kaizen Evaluation Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

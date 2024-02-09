@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-04-26 17:29:54.596186",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "grade_a",
+  "bags",
+  "ton",
+  "kg",
+  "common",
+  "bags1",
+  "ton1",
+  "kg1",
+  "purchase1",
+  "bags2",
+  "ton2",
+  "kg2",
+  "amount",
+  "godown",
+  "purchase",
+  "total",
+  "payment_date",
+  "lorry",
+  "rent",
+  "paid_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "RIC-ENT-",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "bags",
+   "fieldtype": "Data",
+   "label": "Bags"
+  },
+  {
+   "fieldname": "ton",
+   "fieldtype": "Data",
+   "label": "Ton"
+  },
+  {
+   "fieldname": "kg",
+   "fieldtype": "Data",
+   "label": "Kg"
+  },
+  {
+   "fieldname": "bags1",
+   "fieldtype": "Data",
+   "label": "Bags1"
+  },
+  {
+   "fieldname": "ton1",
+   "fieldtype": "Data",
+   "label": "Ton1"
+  },
+  {
+   "fieldname": "kg1",
+   "fieldtype": "Data",
+   "label": "Kg1"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "grade_a",
+   "fieldtype": "Section Break",
+   "label": "Grade A"
+  },
+  {
+   "fieldname": "common",
+   "fieldtype": "Section Break",
+   "label": "Common"
+  },
+  {
+   "fieldname": "purchase1",
+   "fieldtype": "Section Break",
+   "label": "Purchase"
+  },
+  {
+   "fieldname": "bags2",
+   "fieldtype": "Data",
+   "label": "Bags2"
+  },
+  {
+   "fieldname": "ton2",
+   "fieldtype": "Data",
+   "label": "Ton2"
+  },
+  {
+   "fieldname": "kg2",
+   "fieldtype": "Data",
+   "label": "Kg2"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Section Break",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "godown",
+   "fieldtype": "Data",
+   "label": "Godown"
+  },
+  {
+   "fieldname": "purchase",
+   "fieldtype": "Data",
+   "label": "Purchase"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  },
+  {
+   "fieldname": "lorry",
+   "fieldtype": "Section Break",
+   "label": "Lorry"
+  },
+  {
+   "fieldname": "rent",
+   "fieldtype": "Data",
+   "label": "Rent"
+  },
+  {
+   "fieldname": "paid_on",
+   "fieldtype": "Date",
+   "label": "Paid On"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-15 17:28:01.218231",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Ricemill Entries",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

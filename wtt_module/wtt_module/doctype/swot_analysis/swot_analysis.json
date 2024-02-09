@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "autoname": "field:employee",
+ "creation": "2021-12-22 10:04:01.167739",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "company",
+  "amended_from",
+  "html_6",
+  "small_text_7",
+  "html_8",
+  "small_text_9",
+  "html_10",
+  "small_text_11",
+  "html_12",
+  "small_text_13"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SWOT Analysis",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_6",
+   "fieldtype": "HTML",
+   "options": "<h5 style=\"color: #20B2AA;\">STRENGTH: </h5>"
+  },
+  {
+   "fieldname": "small_text_7",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "html_8",
+   "fieldtype": "HTML",
+   "options": "<h5 style=\"color: #20B2AA;\">WEAKNESS: </h5>"
+  },
+  {
+   "fieldname": "small_text_9",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "html_10",
+   "fieldtype": "HTML",
+   "options": "<h5 style=\"color: #20B2AA;\">OPPORTUNITY: </h5>"
+  },
+  {
+   "fieldname": "small_text_11",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "html_12",
+   "fieldtype": "HTML",
+   "options": "<h5 style=\"color: #20B2AA;\">THREAT: </h5>"
+  },
+  {
+   "fieldname": "small_text_13",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-12-22 10:30:02.303951",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "SWOT Analysis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

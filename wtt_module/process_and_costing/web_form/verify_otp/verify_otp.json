@@ -1,0 +1,77 @@
+{
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 0,
+ "allow_incomplete": 0,
+ "allow_multiple": 0,
+ "allow_print": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 0,
+ "banner_image": "/files/background.jpg",
+ "button_label": "Submit",
+ "client_script": "frappe.web_form.on('capacity', (field, value) => {\r\n    frappe.call({\r\n        method:\"wtt_module.process_and_costing.doctype.proposal.proposal.get_attachment\",\r\n        args:{\r\n            \"capacity\":value\r\n        },\r\n        callback(r){\r\n            frappe.web_form.set_value(\"attach\", r.message)\r\n        }\r\n    });\r\n});",
+ "creation": "2023-05-11 17:19:07.397409",
+ "custom_css": "main.container.my-4{\n    width:inherit;\n}\n.ellipsis{\n    display:none;\n}\n.web-form-banner-image{\n    height:380px !important;\n    border-radius:10px;\n}",
+ "doc_type": "Verify OTP",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "introduction_text": "<div class=\"ql-editor read-mode\"><p style=\"text-align: center;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style=\"font-size: 32px;\">OTP VALIDATION</strong></p><p><br></p><p><strong><img src=\"/files/B60H6ig.png\" width=\"136\" style=\"display: block; margin: auto;\" align=\"center\"></strong></p><p><br></p><p><strong style=\"font-size: 15px; color: rgb(29, 28, 29);\"><em>Aquanzer is a container-based industrial effluent treatment plant that stands as a cost-effective and efficient solution for treating effluents. It enables water recovery &amp; reuse and reduction of impact on the environment due to industrial activities thereby promoting sustainable water management practices.</em></strong></p></div>",
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "proposal_no",
+   "fieldtype": "Data",
+   "label": "Proposal No"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Link",
+   "label": "Capacity"
+  }
+ ],
+ "list_title": "Proposals",
+ "login_required": 0,
+ "max_attachment_size": 0,
+ "meta_image": "/private/files/top-view.jpg",
+ "modified": "2023-05-27 15:05:38.136637",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "verify-otp",
+ "owner": "Administrator",
+ "published": 1,
+ "route": "verify-otp",
+ "show_attachments": 0,
+ "show_list": 0,
+ "show_sidebar": 0,
+ "title": "Verify OTP",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "otp",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "OTP",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  }
+ ]
+}

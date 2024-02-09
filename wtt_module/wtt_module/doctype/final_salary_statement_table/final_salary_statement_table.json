@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "creation": "2022-01-08 10:37:36.792333",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "account_no",
+  "ifsc_code",
+  "bank_name",
+  "branch",
+  "charges",
+  "amount"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "columns": 2,
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account No"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IFSC Code"
+  },
+  {
+   "columns": 2,
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "columns": 1,
+   "fieldname": "charges",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Charges"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-08 14:53:03.469369",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Final Salary Statement Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

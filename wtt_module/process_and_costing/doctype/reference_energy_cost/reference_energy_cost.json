@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-21 15:26:52.094812",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system",
+  "flow_100",
+  "elcost100",
+  "flow_90",
+  "elcost90",
+  "flow_80",
+  "elcost80",
+  "flow_70",
+  "elcost70",
+  "flow_60",
+  "elcost60",
+  "flow_50",
+  "elcost50"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow_100",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "KW (100%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow_90",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "KW (90%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow_80",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "KW (80%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow_70",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "KW (70%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow_60",
+   "fieldtype": "Currency",
+   "label": "KW (60%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow_50",
+   "fieldtype": "Currency",
+   "label": "KW (50%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "elcost100",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rs. (100%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "elcost90",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rs. (90%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "elcost80",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rs. (80%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "elcost70",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rs. (70%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "elcost60",
+   "fieldtype": "Currency",
+   "label": "Rs. (60%)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "elcost50",
+   "fieldtype": "Currency",
+   "label": "Rs. (50%)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-25 13:15:58.177045",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Reference Energy Cost",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-01 12:06:13.868671",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "category",
+  "employees",
+  "employees2",
+  "get_employee",
+  "att_employee",
+  "late_entries",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nDaily\nPrayer\nMeeting\nSite Information"
+  },
+  {
+   "depends_on": "eval:doc.category==\"Prayer\" || doc.category==\"Meeting\";",
+   "fieldname": "employees",
+   "fieldtype": "Table",
+   "label": "Employees",
+   "options": "HR Updates Table"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "depends_on": "eval:doc.category==\"Site Information\"",
+   "fieldname": "employees2",
+   "fieldtype": "Table",
+   "label": "Employees",
+   "options": "HR Updates Table2"
+  },
+  {
+   "depends_on": "eval:doc.category==\"Daily\"",
+   "fieldname": "att_employee",
+   "fieldtype": "Table",
+   "label": "Att Employee",
+   "options": "HR Updates Table3"
+  },
+  {
+   "depends_on": "eval:doc.category==\"Daily\" && doc.docstatus==0",
+   "fieldname": "get_employee",
+   "fieldtype": "Button",
+   "label": "Get Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HR Updates",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.category==\"Daily\"",
+   "fieldname": "late_entries",
+   "fieldtype": "Table",
+   "label": "Late Entries",
+   "options": "Late Entries"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-24 09:26:06.532405",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "HR Updates",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "category"
+}

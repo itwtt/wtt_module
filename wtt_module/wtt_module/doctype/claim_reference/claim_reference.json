@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-04 10:26:38.183043",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "claim_request",
+  "posting_date",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "claim_request",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Claim Request",
+   "options": "Claim Request"
+  },
+  {
+   "fetch_from": "claim_request.grand_total",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-09 12:26:25.748880",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Claim Reference",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

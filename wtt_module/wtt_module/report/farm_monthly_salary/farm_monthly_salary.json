@@ -1,0 +1,47 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-10-31 17:26:50.950122",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "posting",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-10-31 17:32:44.083777",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Farm Monthly Salary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \nemployee_name as \"EMPLOYEE:Data:200\",\n(SELECT date_of_joining FROM `tabFarm Employee` WHERE employee_name = `tabFarm Salary Slip`.`employee_name`)as \"DOJ\",\nMONTHNAME(posting_date) as \"POSTING DATE\",\nworking_days as \"WORKING DAYS:Data:100\",\npayment_days as \"PAYMENT DAYS:Data:100\",\n(working_days-payment_days) as \"LOSS OF PAY\",\ntotal as \"TOTAL:Currency:150\",\nadvance as \"ADVANCE:Currency:150\",\nadditional as \"ADDITIONAL\",\nnet_total as \"NET TOTAL:Currency:150\",\nremarks as \"REMARKS\",\nname as \"REF:Data:2\"\nFROM `tabFarm Salary Slip`\nWHERE docstatus=0 and posting_date=%(posting)s ORDER BY company DESC,DOJ ASC;",
+ "ref_doctype": "Farm Salary Slip",
+ "report_name": "Farm Monthly Salary",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Agriculture Manager"
+  },
+  {
+   "role": "Purchase Master Manager"
+  },
+  {
+   "role": "Accounts Notify"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ]
+}

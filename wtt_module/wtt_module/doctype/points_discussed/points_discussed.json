@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "creation": "2022-02-03 12:18:15.794435",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "remarks",
+  "priority"
+ ],
+ "fields": [
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Discussed Points"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "\nHot\nWarm\nCold"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-12 10:14:11.527915",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Points Discussed",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

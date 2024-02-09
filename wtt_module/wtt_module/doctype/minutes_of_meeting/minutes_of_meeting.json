@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-02-03 12:13:30.589491",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "meeting_date",
+  "from_time",
+  "to_time",
+  "company",
+  "participants",
+  "remarks",
+  "column_break_4",
+  "conference_hall_booking",
+  "get_participants",
+  "meeting_with",
+  "venue",
+  "discussion_about",
+  "deliverables",
+  "project",
+  "review_no",
+  "section_break_15",
+  "points_discussed",
+  "section_break_10",
+  "points_agreed",
+  "section_break_13",
+  "prepared_by",
+  "name1",
+  "designation",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "meeting_with",
+   "fieldtype": "Data",
+   "label": "Meeting With"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Minutes of Meeting",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "discussion_about",
+   "fieldtype": "Data",
+   "label": "Discussion About"
+  },
+  {
+   "fieldname": "deliverables",
+   "fieldtype": "Data",
+   "label": "Deliverables"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Small Text",
+   "label": "Participants"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Prepared by",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "prepared_by.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "points_discussed",
+   "fieldtype": "Table",
+   "label": "Points Discussed",
+   "options": "Points Discussed"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "points_agreed",
+   "fieldtype": "Table",
+   "label": "Points Agreed",
+   "options": "Points Agreed"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "MIN-MEET-"
+  },
+  {
+   "fetch_from": "prepared_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "default": "Today",
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Datetime",
+   "label": "From Time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Datetime",
+   "label": "To Time"
+  },
+  {
+   "fieldname": "conference_hall_booking",
+   "fieldtype": "Link",
+   "label": "Meeting Slot Booking",
+   "options": "Meeting Slot Booking"
+  },
+  {
+   "depends_on": "eval:(doc.conference_hall_booking!=undefined)",
+   "fieldname": "get_participants",
+   "fieldtype": "Button",
+   "label": "Get Participants"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "review_no",
+   "fieldtype": "Data",
+   "label": "Review No",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-15 17:25:00.461600",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Minutes of Meeting",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

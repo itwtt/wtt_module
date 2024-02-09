@@ -1,0 +1,56 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-12-15 14:07:25.626037",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-12-15 15:22:27.228443",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Active Vendor List",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Supplier",
+ "report_name": "Active Vendor List",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Purchase Master Manager"
+  },
+  {
+   "role": "WTT - Buying"
+  },
+  {
+   "role": "WTT - Accounts"
+  },
+  {
+   "role": "Security"
+  },
+  {
+   "role": "HR User"
+  }
+ ]
+}

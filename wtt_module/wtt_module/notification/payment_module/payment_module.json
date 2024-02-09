@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "creation": "2022-08-27 12:28:56.624567",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Payment Module",
+ "enabled": 0,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear Sir,\n\n{{ doc.name }} has been Approved. \nKindly Check it.\n",
+ "modified": "2023-09-05 10:19:00.135628",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Payment Module",
+ "owner": "Administrator",
+ "print_format": "",
+ "recipients": [
+  {
+   "cc": "accounts@wttindia.com",
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Accounts Notify"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "WTT INTERNATIONAL",
+ "sender_email": "noreply@wttint.com",
+ "slack_webhook_url": "Gokul-test",
+ "subject": "{{ doc.name }} is Approved."
+}

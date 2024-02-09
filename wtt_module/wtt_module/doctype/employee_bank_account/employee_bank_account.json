@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-18 09:03:31.594001",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "employee_type",
+  "employee",
+  "employee_name",
+  "department",
+  "branch",
+  "farm_employee",
+  "farm_employee_name",
+  "farm_employee_company",
+  "column_break_gepx7",
+  "bank_name",
+  "bank_ac_no",
+  "ifsc_code",
+  "bank_branch",
+  "esi_applicable",
+  "esi_no",
+  "pf_applicable",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.employee_type == 'Office Employee'",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "mandatory_depends_on": "eval:doc.employee_type == 'Office Employee'",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.employee_type == 'Office Employee'",
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.employee_type == 'Office Employee'",
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.employee_type == 'Office Employee'",
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_ac_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank A/C No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IFSC Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gepx7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "esi_applicable",
+   "fieldtype": "Select",
+   "label": "ESI Applicable",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "esi_no",
+   "fieldtype": "Data",
+   "label": "ESI No"
+  },
+  {
+   "fieldname": "pf_applicable",
+   "fieldtype": "Select",
+   "label": "PF Applicable",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Bank Account",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "EMP-BANK-.YY.-"
+  },
+  {
+   "fieldname": "employee_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Employee Type",
+   "options": "\nOffice Employee\nFarm Employee",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.employee_type == 'Farm Employee'",
+   "fieldname": "farm_employee",
+   "fieldtype": "Link",
+   "label": "Farm Employee",
+   "mandatory_depends_on": "eval:doc.employee_type == 'Farm Employee'",
+   "options": "Farm Employee"
+  },
+  {
+   "depends_on": "eval:doc.employee_type == 'Farm Employee'",
+   "fetch_from": "farm_employee.employee_name",
+   "fieldname": "farm_employee_name",
+   "fieldtype": "Data",
+   "label": "Farm Employee Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.employee_type == 'Farm Employee'",
+   "fetch_from": "farm_employee.company",
+   "fieldname": "farm_employee_company",
+   "fieldtype": "Data",
+   "label": "Farm Employee Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_branch",
+   "fieldtype": "Data",
+   "label": "Bank Branch"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-30 18:40:27.935204",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Employee Bank Account",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

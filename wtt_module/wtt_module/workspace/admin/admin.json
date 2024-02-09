@@ -1,0 +1,49 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-02-18 17:34:07.658310",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Admin",
+ "links": [],
+ "modified": "2022-02-18 17:38:01.418076",
+ "modified_by": "venkat@wttindia.com",
+ "module": "wtt_module",
+ "name": "Admin",
+ "owner": "venkat@wttindia.com",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Utilities Expenses",
+   "link_to": "Utilities Expense",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Task Assignment",
+   "link_to": "Task Assignment",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Work Updates",
+   "link_to": "Work Updates",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Minutes of Meeting",
+   "link_to": "Minutes of Meeting",
+   "type": "DocType"
+  }
+ ]
+}

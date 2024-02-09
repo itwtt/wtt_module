@@ -1,0 +1,330 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-09 12:12:41.486323",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "contact_person",
+  "mobile_number",
+  "email_id",
+  "factory_address",
+  "plant_requirement_section",
+  "capacity",
+  "existing",
+  "current_requirenment",
+  "column_break_10",
+  "requirenment",
+  "discharge",
+  "partial_recovery",
+  "zld",
+  "column_break_15",
+  "salt_recovery",
+  "brine",
+  "salt",
+  "industrial_details_section",
+  "type_of_industry",
+  "textile",
+  "fabrics",
+  "cotton",
+  "woven",
+  "denim",
+  "column_break_28",
+  "if_others",
+  "process",
+  "dyeing",
+  "printing",
+  "knitting",
+  "de_sizing",
+  "data_33",
+  "ph",
+  "cod",
+  "bod",
+  "tds",
+  "tss",
+  "tkn",
+  "column_break_40",
+  "pva",
+  "oil_greeze",
+  "temperature",
+  "hardness",
+  "alkalinity"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "factory_address",
+   "fieldtype": "Small Text",
+   "label": "Factory Address"
+  },
+  {
+   "fieldname": "plant_requirement_section",
+   "fieldtype": "Section Break",
+   "label": "Plant Requirement"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Heading",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "existing",
+   "fieldtype": "Data",
+   "label": "Existing"
+  },
+  {
+   "fieldname": "current_requirenment",
+   "fieldtype": "Data",
+   "label": "Current Requirenment"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requirenment",
+   "fieldtype": "Heading",
+   "label": "Requirenment"
+  },
+  {
+   "default": "0",
+   "fieldname": "discharge",
+   "fieldtype": "Check",
+   "label": "Discharge"
+  },
+  {
+   "default": "0",
+   "fieldname": "partial_recovery",
+   "fieldtype": "Check",
+   "label": "Partial Recovery"
+  },
+  {
+   "default": "0",
+   "fieldname": "zld",
+   "fieldtype": "Check",
+   "label": "ZLD"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salt_recovery",
+   "fieldtype": "Heading",
+   "label": "Salt Recovery"
+  },
+  {
+   "default": "0",
+   "fieldname": "brine",
+   "fieldtype": "Check",
+   "label": "Brine"
+  },
+  {
+   "default": "0",
+   "fieldname": "salt",
+   "fieldtype": "Check",
+   "label": "Salt"
+  },
+  {
+   "fieldname": "industrial_details_section",
+   "fieldtype": "Section Break",
+   "label": "Industrial Details"
+  },
+  {
+   "fieldname": "type_of_industry",
+   "fieldtype": "Heading",
+   "label": "Type Of Industry"
+  },
+  {
+   "default": "0",
+   "fieldname": "textile",
+   "fieldtype": "Check",
+   "label": "Textile"
+  },
+  {
+   "fieldname": "if_others",
+   "fieldtype": "Data",
+   "label": "If Others"
+  },
+  {
+   "fieldname": "fabrics",
+   "fieldtype": "Heading",
+   "label": "Fabrics"
+  },
+  {
+   "default": "0",
+   "fieldname": "woven",
+   "fieldtype": "Check",
+   "label": "Woven"
+  },
+  {
+   "default": "0",
+   "fieldname": "denim",
+   "fieldtype": "Check",
+   "label": "Denim"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "process",
+   "fieldtype": "Heading",
+   "label": "Process"
+  },
+  {
+   "default": "0",
+   "fieldname": "dyeing",
+   "fieldtype": "Check",
+   "label": "Dyeing"
+  },
+  {
+   "default": "0",
+   "fieldname": "printing",
+   "fieldtype": "Check",
+   "label": "Printing"
+  },
+  {
+   "default": "0",
+   "fieldname": "knitting",
+   "fieldtype": "Check",
+   "label": "Knitting"
+  },
+  {
+   "default": "0",
+   "fieldname": "de_sizing",
+   "fieldtype": "Check",
+   "label": "De Sizing"
+  },
+  {
+   "fieldname": "data_33",
+   "fieldtype": "Section Break",
+   "label": "Parameters and Value"
+  },
+  {
+   "fieldname": "ph",
+   "fieldtype": "Data",
+   "label": " pH"
+  },
+  {
+   "fieldname": "cod",
+   "fieldtype": "Data",
+   "label": " COD (mg/ l)"
+  },
+  {
+   "fieldname": "bod",
+   "fieldtype": "Data",
+   "label": " BOD (mg/ l)"
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Data",
+   "label": " TDS (mg/ l)"
+  },
+  {
+   "fieldname": "tss",
+   "fieldtype": "Data",
+   "label": " TSS (mg/ l)"
+  },
+  {
+   "fieldname": "tkn",
+   "fieldtype": "Data",
+   "label": " TKN (mg/ l)"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pva",
+   "fieldtype": "Data",
+   "label": "PVA (mg/ l)"
+  },
+  {
+   "fieldname": "oil_greeze",
+   "fieldtype": "Data",
+   "label": "Oil & Greeze (mg/ l)"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "label": "Temperature (\u02daC)"
+  },
+  {
+   "fieldname": "hardness",
+   "fieldtype": "Data",
+   "label": "Hardness (mg/l of CaCO3)"
+  },
+  {
+   "fieldname": "alkalinity",
+   "fieldtype": "Data",
+   "label": "Alkalinity (mg/l of CaCO3)"
+  },
+  {
+   "default": "0",
+   "fieldname": "cotton",
+   "fieldtype": "Check",
+   "label": "Cotton"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-26 10:29:45.531805",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Enquiry Sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company_name"
+}

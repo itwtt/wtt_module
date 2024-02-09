@@ -1,0 +1,78 @@
+<style>
+.myfavourite_table {
+  font-size: 11px;
+  font-family: Arial;
+  border-collapse: collapse;
+  border: 1px solid silver;
+  border-spacing: 0px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.myfavourite_table .vs {
+  writing-mode: vertical-rl;
+  padding: 0;
+  margin: 0;
+  white-space: no-wrap;
+  font-size: 11px;
+  text-align: center;
+  transform:scale(-1);
+  /*padding:0.25em 1em;*/
+  /*line-height:0.5;  */
+  vertical-align: top;
+
+}
+
+.myfavourite_table td {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  text-align: left;
+}
+
+th
+{
+  text-align: center;
+  background: white;
+}
+</style>
+<table border="1" class="dataframe myfavourite_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th class="vs">Lead</th>
+      <th class="vs">Enquiry</th>
+      <th class="vs">Clarification</th>
+      <th class="vs">Questionnaire</th>
+      <th class="vs">PP Meeting</th>
+      <th class="vs">TCP</th>
+      <th>Convo Date</th>
+      <th>Organization</th>
+      <th>Contact Person</th>
+      <th>Location</th>
+      <th>Designation</th>
+      <th>Conversation</th>
+      <th>Followed By</th>
+      <th>Next Contact Date</th>
+    </tr>
+  </thead>
+  <tbody>
+  	{% for(var i=0, l=data.length; i<l; i++) { %}
+	    <tr>
+	      <td>{%= data[i]["ll"] %}</td>
+	      <td>{%= data[i]["ee"] %}</td>
+	      <td>{%= data[i]["cc"] %}</td>
+	      <td>{%= data[i]["qq"] %}</td>
+	      <td>{%= data[i]["pp"] %}</td>
+	      <td>{%= data[i]["tt"] %}</td>
+
+	      <td>{%= data[i]["convo_date"] %}</td>
+	      <td>{%= data[i]["organization"] %}</td>
+	      <td>{%= data[i]["contact_person"] %}</td>
+	      <td>{%= data[i]["location"] %}</td>
+	      <td>{%= data[i]["designation"] %}</td>
+	      <td>{%= data[i]["follow_up_details"] %}</td>
+	      <td>{%= data[i]["followed_by"] %}</td>
+	      <td>{%= data[i]["next_follow_up_date"] %}</td>
+	    </tr>
+   {% } %}
+  </tbody>
+</table>

@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-17 12:39:18.886661",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "state_rate_chemical"
+ ],
+ "fields": [
+  {
+   "fieldname": "state_rate_chemical",
+   "fieldtype": "Table",
+   "label": "State rate chemical",
+   "options": "State rate chemical"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-17 12:39:18.886661",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Chemical rate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

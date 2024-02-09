@@ -1,0 +1,31 @@
+{
+ "chart_name": "Pending Works-1",
+ "chart_type": "Report",
+ "creation": "2022-01-29 11:14:57.860744",
+ "custom_options": "{\"x_field\": \"type_work\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"pending_days\"}], \"y_fields\": [\"pending_days\"], \"colors\": [null]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{\"from_date\":\"2021-12-31T18:30:00.000Z\",\"to_date\":\"2022-01-29\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-01-29 12:59:32.503664",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Pending Works-1",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Pending works",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "type_work",
+ "y_axis": [
+  {
+   "y_field": "pending_days"
+  }
+ ]
+}

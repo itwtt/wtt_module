@@ -1,0 +1,92 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "mr",
+   "fieldtype": "Link",
+   "label": "MR",
+   "options": "Material Request",
+   "width": 150
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Approved Date",
+   "width": 150
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project",
+   "width": 150
+  }
+ ],
+ "creation": "2022-11-22 15:36:38.022411",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-11-22 16:18:16.444241",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Pending MR",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT distinct(`tabMaterial Request`.`name`) as \"mr\",\n`tabMaterial Request`.`approved_date` as \"date\",\n`tabMaterial Request`.`project` as \"project\"\nFROM `tabMaterial Request` INNER JOIN `tabMaterial Request Item` ON `tabMaterial Request`.`name`=`tabMaterial Request Item`.`parent`\nWHERE `tabMaterial Request`.`status` IN (\"Pending\",\"Partially Ordered\") and `tabMaterial Request`.`docstatus`=1 and `tabMaterial Request`.`workflow_state`=\"Approved\"\n\nORDER BY `tabMaterial Request`.`approved_date`",
+ "ref_doctype": "Material Request",
+ "report_name": "Pending MR",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "WTT - Buying"
+  },
+  {
+   "role": "HOD"
+  },
+  {
+   "role": "WTT - Projects"
+  },
+  {
+   "role": "WTT Process Manager"
+  },
+  {
+   "role": "WTT Process User"
+  },
+  {
+   "role": "WTT"
+  },
+  {
+   "role": "Projects Manager"
+  },
+  {
+   "role": "MD"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Purchase User"
+  }
+ ]
+}

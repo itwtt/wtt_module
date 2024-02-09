@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-08 11:18:53.847248",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "to_date",
+  "mark_half_day",
+  "data_changed"
+ ],
+ "fields": [
+  {
+   "description": "Make Half Day for \nHO Employee In Time >10.30 and for Saturday>10:30\nWS Employee In Time>10:30\nBased On Hours:\nHO:Normal Days:7.5\n       Saturday:7\nWS:8.5",
+   "fieldname": "mark_half_day",
+   "fieldtype": "Button",
+   "label": "Mark Half Day"
+  },
+  {
+   "fieldname": "data_changed",
+   "fieldtype": "Text Editor",
+   "label": "Data Changed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-08 11:20:45.629982",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Mark Status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

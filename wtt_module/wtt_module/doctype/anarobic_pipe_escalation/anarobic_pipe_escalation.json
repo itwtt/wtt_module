@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-05 16:45:52.552631",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system_name",
+  "default_pipe_escalation",
+  "actual_pipe_escalation"
+ ],
+ "fields": [
+  {
+   "fieldname": "system_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System Name"
+  },
+  {
+   "fieldname": "default_pipe_escalation",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Default Pipe Escalation"
+  },
+  {
+   "fieldname": "actual_pipe_escalation",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Pipe Escalation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-05 16:45:52.552631",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Anarobic Pipe Escalation",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

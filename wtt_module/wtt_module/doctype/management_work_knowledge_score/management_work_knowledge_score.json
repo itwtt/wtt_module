@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-26 12:00:35.463575",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "attendance",
+  "punctuality",
+  "reporting",
+  "result_driven",
+  "safety"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "columns": 2,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "attendance",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Attendance",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 2,
+   "fieldname": "punctuality",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Punctuality",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 2,
+   "fieldname": "reporting",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Reporting",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "result_driven",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Result Driven",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "safety",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Safety",
+   "options": "\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-26 12:03:51.296134",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Management Work Knowledge Score",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

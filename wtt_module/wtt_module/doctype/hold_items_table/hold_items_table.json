@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-20 17:17:55.923878",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "description",
+  "technical_description",
+  "qty",
+  "uom",
+  "parent1",
+  "child",
+  "project",
+  "hold_reason"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "columns": 1,
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "technical_description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Technical Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "UOM"
+  },
+  {
+   "columns": 1,
+   "fieldname": "parent1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parent",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "child",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Child",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "columns": 1,
+   "fieldname": "hold_reason",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Reason "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-20 17:59:51.095607",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Hold Items Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

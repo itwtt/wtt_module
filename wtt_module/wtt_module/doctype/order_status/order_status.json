@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "creation": "2022-02-21 09:50:45.569941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "po_no",
+  "po_status",
+  "shipment_date",
+  "expected_reached_date",
+  "update_date",
+  "supplier",
+  "order_status_table",
+  "order_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "PO NO",
+   "options": "Purchase Order"
+  },
+  {
+   "fetch_from": "po_no.supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "order_status_table",
+   "fieldtype": "Table",
+   "label": "Order Status Table",
+   "options": "Order Status Table"
+  },
+  {
+   "fetch_from": "po_no.workflow_state",
+   "fieldname": "po_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PO Status"
+  },
+  {
+   "default": "Not Ordered",
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Order Status",
+   "options": "\nOrdered\nPartially Ordered\nNot Ordered"
+  },
+  {
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "label": "Dispatch Date"
+  },
+  {
+   "fieldname": "expected_reached_date",
+   "fieldtype": "Date",
+   "label": "Expected Reached Date"
+  },
+  {
+   "fieldname": "update_date",
+   "fieldtype": "Button",
+   "label": "Update Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-25 18:20:30.449370",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Order Status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-06-24 13:04:04.070482",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "title",
+  "purpose",
+  "system_name",
+  "column_break_5",
+  "posting_date",
+  "required_by",
+  "project",
+  "set_warehouse",
+  "section_break_7",
+  "combo_table",
+  "get_related_items",
+  "show_combo_items",
+  "section_break_10",
+  "items",
+  "preview",
+  "hide",
+  "html",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "PREMR-",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:frappe.session.user==\"Administrator\"",
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Pre MR Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pre MR",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Purpose",
+   "options": "Request Purpose",
+   "reqd": 1
+  },
+  {
+   "fieldname": "required_by",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Required By",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "set_warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_related_items",
+   "fieldtype": "Button",
+   "label": "Get Related Items"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "Button",
+   "label": "Preview"
+  },
+  {
+   "fieldname": "hide",
+   "fieldtype": "Button",
+   "label": "Hide"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "combo_table",
+   "fieldtype": "Table",
+   "label": "Combo Table",
+   "options": "Combo Table"
+  },
+  {
+   "fieldname": "system_name",
+   "fieldtype": "Select",
+   "label": "System Name",
+   "options": "\nRotary Brush Screener\nBar Screener\nDrum Screener\nAnaerobic Screener\nAnaerobic Equalization\nAnaerobic Neutralization\nAnaerobic System\nAmmonia Striper\nLifting sump\nOil & grease trap\nDAF (Dissolved Air Flotation)\nEqualization System\nNeutralization System\nCooling Tower\nDe-Nitrification System\nDistribution system\nBiological Oxidation System\nClarifier Feed Tank\nCircular Clarifier System\nLamella Settler\nDO increase system\nSRS System\nSand Filter\nActivated Carbon Filter\nSelf-Cleaning Filter\nMicro Filtration - ASAHI\nSubmerged MBR system - KOCH\nSubmerged MBR system - OVIVO\nSulphur Black Removal System\nSludge Thickener\nSludge Thickener with mech\nScrew Press\nBelt Press\nDegasser System\nReverse Osmosis\nHardness and Silica Removal System\nChlorination system\nHardness and Color Removal System\nReject Reverse Osmosis\nEvaporator\nAgitated Thin film dryer\nCentrifuge\nCrystallizer\nNano Filtration\nCare system\nCIP system\nPre-Treatment System\nOthers"
+  },
+  {
+   "fieldname": "show_combo_items",
+   "fieldtype": "Button",
+   "label": "Show Combo Items"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-31 10:36:32.474919",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Pre MR",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

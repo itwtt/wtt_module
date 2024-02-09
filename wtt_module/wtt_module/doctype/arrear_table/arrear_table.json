@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-11 12:43:05.691772",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "present_days",
+  "old_gross",
+  "extra_working",
+  "current_gross",
+  "current_gross_with_payment",
+  "old_deduction",
+  "arrear_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "columns": 2,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "present_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Present days"
+  },
+  {
+   "fieldname": "old_gross",
+   "fieldtype": "Currency",
+   "label": "Old Gross"
+  },
+  {
+   "fieldname": "old_deduction",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Old Deduction"
+  },
+  {
+   "columns": 2,
+   "fieldname": "current_gross",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Current Gross"
+  },
+  {
+   "columns": 2,
+   "fieldname": "arrear_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Arrear amount"
+  },
+  {
+   "fieldname": "current_gross_with_payment",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Current Gross with payment"
+  },
+  {
+   "fieldname": "extra_working",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Extra Working"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-10 12:13:06.193120",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Arrear Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

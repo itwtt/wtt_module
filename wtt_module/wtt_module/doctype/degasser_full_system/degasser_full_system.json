@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-23 14:28:59.896421",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_description",
+  "renamed",
+  "flow",
+  "range",
+  "w_qty",
+  "sb_qty",
+  "ssb_qty",
+  "unit_price",
+  "motor_cost",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description"
+  },
+  {
+   "fieldname": "renamed",
+   "fieldtype": "Data",
+   "label": "Renamed"
+  },
+  {
+   "columns": 1,
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Flow",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "range",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Range",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "w_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "W Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "sb_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sb Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "ssb_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ssb Qty"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "motor_cost",
+   "fieldtype": "Currency",
+   "label": "Motor Cost"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-24 16:44:26.980689",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Degasser Full System",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

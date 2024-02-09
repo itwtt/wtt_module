@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "creation": "2022-01-01 13:59:38.602472",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tank",
+  "ph",
+  "cod",
+  "temp",
+  "tds",
+  "hardness",
+  "alkalinity",
+  "chloride",
+  "sulphate",
+  "mlss",
+  "sv30",
+  "tss",
+  "pva",
+  "tkn"
+ ],
+ "fields": [
+  {
+   "fieldname": "tank",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "TANK",
+   "options": "\nPlant inlet water\nBiological tank I/l\nBiological tank\nSecondary clarifier o/l"
+  },
+  {
+   "fieldname": "ph",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "pH"
+  },
+  {
+   "fieldname": "cod",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "COD"
+  },
+  {
+   "fieldname": "temp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TEMP"
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TDS"
+  },
+  {
+   "fieldname": "hardness",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hardness"
+  },
+  {
+   "fieldname": "alkalinity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Alkalinity"
+  },
+  {
+   "fieldname": "chloride",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chloride"
+  },
+  {
+   "fieldname": "sulphate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sulphate"
+  },
+  {
+   "fieldname": "mlss",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MLSS"
+  },
+  {
+   "fieldname": "sv30",
+   "fieldtype": "Data",
+   "label": "SV30"
+  },
+  {
+   "fieldname": "tss",
+   "fieldtype": "Data",
+   "label": "TSS"
+  },
+  {
+   "fieldname": "pva",
+   "fieldtype": "Data",
+   "label": "PVA"
+  },
+  {
+   "fieldname": "tkn",
+   "fieldtype": "Data",
+   "label": "TKN"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-01 14:04:32.336932",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Parameters",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

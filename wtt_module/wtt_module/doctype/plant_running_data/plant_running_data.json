@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-01 11:20:20.146928",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "plant_name",
+  "main_ro",
+  "rsl_table",
+  "siddhi_table1",
+  "siddhi_table2"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant_name",
+   "fieldtype": "Select",
+   "label": "Plant Name",
+   "options": "\nKANCHAN\nSIDDHI\nRSL"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "depends_on": "eval:(doc.plant_name==\"KANCHAN\");",
+   "fieldname": "main_ro",
+   "fieldtype": "Table",
+   "label": "Main Ro",
+   "options": "Reject RO Data"
+  },
+  {
+   "depends_on": "eval:(doc.plant_name==\"RSL\");",
+   "fieldname": "rsl_table",
+   "fieldtype": "Table",
+   "label": "RSL Table",
+   "options": "RSL Table"
+  },
+  {
+   "depends_on": "eval:doc.plant_name==\"SIDDHI\"",
+   "fieldname": "siddhi_table1",
+   "fieldtype": "Table",
+   "label": "Siddhi Table",
+   "options": "Siddhi Table1"
+  },
+  {
+   "depends_on": "eval:doc.plant_name==\"SIDDHI\"",
+   "fieldname": "siddhi_table2",
+   "fieldtype": "Table",
+   "label": "Siddhi Table",
+   "options": "Siddhi Table2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-07 17:45:16.062789",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Plant Running Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "plant_name"
+}

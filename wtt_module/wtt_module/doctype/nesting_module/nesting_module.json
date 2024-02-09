@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-06 15:31:54.171878",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "company",
+  "sheet_material_table",
+  "total_weight_sheet",
+  "total_amount_sheet",
+  "raw_material_table",
+  "total_weight_raw_material",
+  "total_amount_raw",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "sheet_material_table",
+   "fieldtype": "Table",
+   "label": "Inward Items",
+   "options": "Sheet Material Table"
+  },
+  {
+   "fieldname": "total_weight_sheet",
+   "fieldtype": "Float",
+   "label": "Total Weight"
+  },
+  {
+   "fieldname": "total_amount_sheet",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "raw_material_table",
+   "fieldtype": "Table",
+   "label": "Outward Items",
+   "options": "Raw Material Table"
+  },
+  {
+   "fieldname": "total_weight_raw_material",
+   "fieldtype": "Float",
+   "label": "Total Weight"
+  },
+  {
+   "fieldname": "total_amount_raw",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "NEST-MOD-"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-06 16:32:57.983254",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Nesting Module",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,70 @@
+{
+ "cards": [
+  {
+   "card": "Material Request Created"
+  },
+  {
+   "card": "Material Request Approved by HOD"
+  },
+  {
+   "card": "Material Request Approved"
+  },
+  {
+   "card": "Purchase Order Created"
+  },
+  {
+   "card": "Purchase Order Approved by HOD"
+  },
+  {
+   "card": "Purchase Order Approved"
+  },
+  {
+   "card": "Purchase Receipt Created"
+  },
+  {
+   "card": "Purchase Receipt Submitted"
+  },
+  {
+   "card": "Purchase Invoice Created"
+  },
+  {
+   "card": "Purchase Invoice Paid"
+  },
+  {
+   "card": "Purchase Invoice Overdue"
+  },
+  {
+   "card": "Purchase Invoice Return"
+  },
+  {
+   "card": "Journal Entry For WTT"
+  },
+  {
+   "card": "Journal Entry For THENI THOTTAM"
+  },
+  {
+   "card": "Journal Entry For SATHY THOTTAM"
+  },
+  {
+   "card": "Sales Invoice Created"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Top Suppliers",
+   "width": "Full"
+  }
+ ],
+ "creation": "2021-09-25 11:24:16.185569",
+ "dashboard_name": "Overall Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2021-09-25 12:50:02.519489",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Overall Dashboard",
+ "owner": "Administrator"
+}

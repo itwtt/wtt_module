@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-07-12 16:36:35.236912",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction_date",
+  "mode_of_payment",
+  "cash_status",
+  "partially_amount",
+  "cash_purpose",
+  "column_break_ciguh",
+  "company",
+  "party_type",
+  "party",
+  "transaction_details",
+  "grand_total",
+  "column_break_18",
+  "currency",
+  "section_break_30",
+  "remarks",
+  "md_remarks",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date"
+  },
+  {
+   "default": "Petty cash",
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Mode of Payment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "depends_on": "eval:(doc.cash_purpose == 'Purchase');",
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "mandatory_depends_on": "eval:(doc.cash_purpose == 'Purchase');",
+   "options": "DocType"
+  },
+  {
+   "depends_on": "eval:(doc.cash_purpose == 'Purchase');",
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "mandatory_depends_on": "eval:(doc.cash_purpose == 'Purchase');",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "transaction_details",
+   "fieldtype": "Section Break",
+   "label": "Transaction Details"
+  },
+  {
+   "description": "Amount in customer's currency",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "options": "currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Transaction Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.payment_channel != \"Phone\"",
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "fieldname": "md_remarks",
+   "fieldtype": "Small Text",
+   "label": "MD Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cash Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ciguh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CASH-REQ-"
+  },
+  {
+   "fieldname": "cash_purpose",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cash Purpose",
+   "options": "Cash Purpose",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Not Given",
+   "fieldname": "cash_status",
+   "fieldtype": "Select",
+   "label": "Cash Status",
+   "options": "\nGiven\nPartially Given\nNot Given",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.cash_status=='Partially Given')",
+   "fieldname": "partially_amount",
+   "fieldtype": "Currency",
+   "label": "Partially Amount"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-09 15:08:37.770401",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Cash Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

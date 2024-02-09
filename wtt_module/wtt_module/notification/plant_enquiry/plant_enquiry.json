@@ -1,0 +1,31 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "creation": "2022-02-25 12:02:32.702045",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "New Plant Enquiry",
+ "enabled": 0,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear Sir,\n\nNew Enquiry is Received from {{ doc.industry_name }}\nKindly Check it.",
+ "modified": "2022-08-18 10:22:22.539746",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Plant Enquiry",
+ "owner": "Administrator",
+ "print_format": "New Plant Enquiry",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "WTT - OANDM"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "",
+ "sender_email": "",
+ "subject": "New Enquiry from {{ doc.industry_name}}"
+}

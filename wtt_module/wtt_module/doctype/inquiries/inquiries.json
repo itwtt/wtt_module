@@ -1,0 +1,500 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-29 10:23:41.455741",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "email_append_to": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "lead_name",
+  "company_name",
+  "email_id",
+  "lead_owner",
+  "status",
+  "last_conversation",
+  "col_break123",
+  "category",
+  "salutation",
+  "designation",
+  "gender",
+  "source",
+  "customer",
+  "campaign_name",
+  "image",
+  "source_table",
+  "contact_section",
+  "phone",
+  "mobile_no",
+  "title",
+  "section_break_12",
+  "contact_by",
+  "column_break_14",
+  "contact_date",
+  "ends_on",
+  "section_break_20",
+  "inquiries_follow_up",
+  "notes_section",
+  "notes",
+  "address_info",
+  "address_html",
+  "address_type",
+  "address_title",
+  "address_line1",
+  "address_line2",
+  "city",
+  "county",
+  "column_break2",
+  "contact_html",
+  "state",
+  "country",
+  "pincode",
+  "mail_section",
+  "sender",
+  "mail_id",
+  "mail_cc",
+  "subject",
+  "message",
+  "send_message",
+  "attachement"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "oldfieldname": "naming_series",
+   "oldfieldtype": "Select",
+   "options": "INQ-LEAD-.YYYY.-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Person Name",
+   "oldfieldname": "lead_name",
+   "oldfieldtype": "Data",
+   "search_index": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organization Name",
+   "oldfieldname": "company_name",
+   "oldfieldtype": "Data"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "oldfieldname": "email_id",
+   "oldfieldtype": "Data",
+   "options": "Email",
+   "search_index": 1
+  },
+  {
+   "fieldname": "col_break123",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "default": "trading@wttindia.com",
+   "fieldname": "lead_owner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lead Owner",
+   "oldfieldname": "lead_owner",
+   "oldfieldtype": "Link",
+   "search_index": 1
+  },
+  {
+   "default": "Lead",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "oldfieldname": "status",
+   "oldfieldtype": "Select",
+   "options": "\nLead\nOpen\nRate Quoted\nClosed\nOrder Received\nOrder Lost",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Source",
+   "oldfieldname": "source",
+   "oldfieldtype": "Select",
+   "options": "Lead Source"
+  },
+  {
+   "depends_on": "eval:doc.source == 'Existing Customer'",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "From Customer",
+   "no_copy": 1,
+   "oldfieldname": "customer",
+   "oldfieldtype": "Link",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "campaign_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Campaign Name",
+   "oldfieldname": "campaign_name",
+   "oldfieldtype": "Link",
+   "options": "Campaign"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Follow Up"
+  },
+  {
+   "default": "trading@wttindia.com",
+   "fieldname": "contact_by",
+   "fieldtype": "Data",
+   "label": "Next Contact By",
+   "oldfieldname": "contact_by",
+   "oldfieldtype": "Link",
+   "width": "100px"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "contact_date",
+   "fieldtype": "Datetime",
+   "label": "Next Contact Date",
+   "no_copy": 1,
+   "oldfieldname": "contact_date",
+   "oldfieldtype": "Date",
+   "width": "100px"
+  },
+  {
+   "bold": 1,
+   "fieldname": "ends_on",
+   "fieldtype": "Datetime",
+   "label": "Ends On",
+   "no_copy": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval: doc.__islocal",
+   "fieldname": "address_info",
+   "fieldtype": "Section Break",
+   "label": "Address & Contact",
+   "oldfieldtype": "Column Break",
+   "options": "fa fa-map-marker"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML",
+   "read_only": 1
+  },
+  {
+   "default": "Billing",
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "address_type",
+   "fieldtype": "Select",
+   "label": "Address Type",
+   "options": "Billing\nShipping\nOffice\nPersonal\nPlant\nPostal\nShop\nSubsidiary\nWarehouse\nCurrent\nPermanent\nOther"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "description": "Home, Work, etc.",
+   "fieldname": "address_title",
+   "fieldtype": "Data",
+   "label": "Address Title"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "address_line1",
+   "fieldtype": "Data",
+   "label": "Address Line 1",
+   "mandatory_depends_on": "eval: doc.address_title && doc.address_type"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City/Town",
+   "mandatory_depends_on": "eval: doc.address_title && doc.address_type"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "county",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "County"
+  },
+  {
+   "fieldname": "column_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "mandatory_depends_on": "eval: doc.address_title && doc.address_type",
+   "options": "Country"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval: doc.__islocal",
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "oldfieldname": "contact_no",
+   "oldfieldtype": "Data",
+   "options": "Phone"
+  },
+  {
+   "depends_on": "eval: doc.__islocal",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No.",
+   "oldfieldname": "mobile_no",
+   "oldfieldtype": "Data",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "mail_section",
+   "fieldtype": "Section Break",
+   "label": "Mail"
+  },
+  {
+   "fieldname": "mail_id",
+   "fieldtype": "Data",
+   "label": "To"
+  },
+  {
+   "fetch_from": "subject.response",
+   "fieldname": "message",
+   "fieldtype": "Text Editor",
+   "label": "Message"
+  },
+  {
+   "fieldname": "mail_cc",
+   "fieldtype": "Data",
+   "label": "Mail CC"
+  },
+  {
+   "fieldname": "send_message",
+   "fieldtype": "Button",
+   "label": "Send Message"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "label": "Subject",
+   "options": "Email Template"
+  },
+  {
+   "fieldname": "inquiries_follow_up",
+   "fieldtype": "Table",
+   "label": "Inquiries Follow up",
+   "options": "Inquiries Follow up"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "Follow Up Table"
+  },
+  {
+   "fieldname": "sender",
+   "fieldtype": "Data",
+   "label": "From"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "\nIndiamart Enquiry\nIndiamart Buylead\nIndiamart Call\nPrabhu Sir\nCatalogue View\nRate Quoted Enquiry\nOwn Source"
+  },
+  {
+   "depends_on": "eval:doc.status==\"Rate Quoted\" || doc.status==\"Order Received\" || doc.status==\"Order Lost\";",
+   "fieldname": "source_table",
+   "fieldtype": "Table",
+   "label": "Source Table",
+   "options": "Inquiries Rate Table"
+  },
+  {
+   "fieldname": "attachement",
+   "fieldtype": "Table",
+   "label": "Attachement",
+   "options": "Reference Attachment"
+  },
+  {
+   "fieldname": "last_conversation",
+   "fieldtype": "Small Text",
+   "label": "Last Conversation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date"
+  }
+ ],
+ "icon": "fa fa-user",
+ "image_field": "image",
+ "links": [],
+ "modified": "2022-11-10 10:48:07.949305",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Inquiries",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "permlevel": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All"
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager"
+  },
+  {
+   "permlevel": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User"
+  }
+ ],
+ "search_fields": "lead_name,lead_owner,status",
+ "sender_field": "email_id",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "subject_field": "title",
+ "title_field": "title"
+}

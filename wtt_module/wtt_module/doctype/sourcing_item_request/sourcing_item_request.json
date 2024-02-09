@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-31 11:34:29.253768",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "raised_by",
+  "status",
+  "employee_name",
+  "department",
+  "branch",
+  "exististing_item",
+  "item_code",
+  "description",
+  "technical_description",
+  "extra_specification",
+  "new_item",
+  "specification",
+  "reference_image1",
+  "reference_image2",
+  "attachment",
+  "amended_from",
+  "naming_series",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "raised_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Raised By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "raised_by.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raised_by.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raised_by.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "exististing_item",
+   "fieldtype": "Check",
+   "label": "Exististing Item"
+  },
+  {
+   "depends_on": "eval:doc.exististing_item == 1;",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "depends_on": "eval:doc.exististing_item == 1;",
+   "fetch_from": "item_code.description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.exististing_item == 1;",
+   "fetch_from": "item_code.technical_description",
+   "fieldname": "technical_description",
+   "fieldtype": "Text Editor",
+   "label": "Technical Description",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.exististing_item == 1;",
+   "fieldname": "extra_specification",
+   "fieldtype": "Small Text",
+   "label": "Extra Specification"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sourcing Item Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.exististing_item == 0;",
+   "fieldname": "new_item",
+   "fieldtype": "Data",
+   "label": "New Item"
+  },
+  {
+   "depends_on": "eval:doc.exististing_item == 0;",
+   "fieldname": "specification",
+   "fieldtype": "Small Text",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "reference_image1",
+   "fieldtype": "Attach Image",
+   "label": "Reference Image"
+  },
+  {
+   "fieldname": "reference_image2",
+   "fieldtype": "Attach Image",
+   "label": "Reference Image"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nClosed"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "IRS-.YY."
+  },
+  {
+   "depends_on": "eval:doc.status == 'Closed'",
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "mandatory_depends_on": "eval:doc.status == 'Closed'"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-01 12:29:15.258162",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Sourcing Item Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

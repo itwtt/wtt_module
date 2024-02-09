@@ -1,0 +1,1955 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-13 10:26:11.541093",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "summary_tab",
+  "cost_working_tool",
+  "column_break_p0l3j",
+  "startup_sheet",
+  "column_break_ujxyl",
+  "flow",
+  "section_break_9yozz",
+  "ro_standard_items",
+  "column_break_wbjja",
+  "rro_standard_items",
+  "column_break_vf5yd",
+  "rewolutte",
+  "section_break_m4qfn",
+  "total_cost",
+  "selected_system",
+  "replacement_tab",
+  "naming_series",
+  "mf_section",
+  "mf_membrane",
+  "mf_actual_qty",
+  "mf_spares",
+  "mf_life_time",
+  "column_break_iqcsz",
+  "mbr_koch_section",
+  "koch_membrane",
+  "koch_actual_qty",
+  "koch_spares",
+  "koch_life_time",
+  "column_break_pxl55",
+  "mbr_ovivo_section",
+  "ovivo_membrane",
+  "ovivo_actual_qty",
+  "ovivo_no_of_stacks",
+  "ovivo_spares",
+  "ovivo_life_time",
+  "column_break_6sqb7",
+  "mbr_cts_head",
+  "mbr_cts_membrane",
+  "mbr_cts_actual_qty",
+  "mbr_cts_no_of_stacks",
+  "mbr_cts_spares",
+  "mbr_cts_life_time",
+  "column_break_sjy9a",
+  "biological",
+  "bio_membrane",
+  "bio_actual_qty",
+  "bio_spares",
+  "bio_life_time",
+  "section_break_opn0q",
+  "ro_without_dgt",
+  "ro_with_dgt_section",
+  "ro_degt_membrane1",
+  "ro_dgt_actual_qty1",
+  "ro_dgt_spares1",
+  "ro_dgt_life_time1",
+  "column_break_ofx2w",
+  "ro_degt_membrane2",
+  "ro_dgt_actual_qty2",
+  "ro_dgt_spares2",
+  "ro_dgt_life_time2",
+  "column_break_3gi5s",
+  "ro_degt_membrane3",
+  "ro_dgt_actual_qty3",
+  "ro_dgt_spares3",
+  "ro_dgt_life_time3",
+  "column_break_phxgs",
+  "ro_degt_membrane4",
+  "ro_dgt_actual_qty4",
+  "ro_dgt_spares4",
+  "ro_dgt_life_time4",
+  "column_break_wmfsg",
+  "ro_degt_membrane5",
+  "ro_dgt_actual_qty5",
+  "ro_dgt_spares5",
+  "ro_dgt_life_time5",
+  "ro_without_dgt_section",
+  "ro_membrane1",
+  "ro_actual_qty1",
+  "ro_spares1",
+  "ro_life_time1",
+  "column_break_ekc1c",
+  "ro_membrane2",
+  "ro_actual_qty2",
+  "ro_spares2",
+  "ro_life_time2",
+  "column_break_jfelf",
+  "ro_membrane3",
+  "ro_actual_qty3",
+  "ro_spares3",
+  "ro_life_time3",
+  "column_break_ibinb",
+  "ro_membrane4",
+  "ro_actual_qty_4",
+  "ro_spares4",
+  "ro_life_time4",
+  "column_break_tf0ia",
+  "ro_membrane5",
+  "ro_actual_qty_5",
+  "ro_spares5",
+  "ro_life_time5",
+  "reject_reverse_osmosis_section",
+  "rro_membrane",
+  "actual_qty",
+  "rro_spares",
+  "life_time_years",
+  "column_break_ufk5o",
+  "rro_membrane1",
+  "actual_qty1",
+  "rro_spares1",
+  "life_time_years1",
+  "column_break_lrb42",
+  "rro_membrane02",
+  "rroactual_qty_2",
+  "rrospares_2",
+  "rrolife_time2",
+  "rewolutte_section",
+  "rew_membrane",
+  "rew_actual_qty",
+  "rew_spares",
+  "rew_life_time",
+  "column_break_mojq8",
+  "rew_membrane1",
+  "rew_actual_qty1",
+  "rew_spares1",
+  "rew_life_time1",
+  "column_break_ar58z",
+  "rew_membrane2",
+  "rew_actual_qty2",
+  "rew_spares2",
+  "rew_life_time2",
+  "column_break_qcnk7",
+  "rew_membrane3",
+  "rew_actual_qty3",
+  "rew_spares3",
+  "rew_life_time3",
+  "column_break_cakbq",
+  "rew_membrane4",
+  "rew_actual_qty4",
+  "rew_spares4",
+  "rew_life_time4",
+  "section_break_za4vb",
+  "add_ro_cartridge_filter",
+  "cartridge_filter_qty",
+  "ro_cat_life_time_days",
+  "ro_cat_life_time_years",
+  "section_break_v9njs",
+  "replacement_cost",
+  "reference_replacment_cost",
+  "section_break_2t8i6",
+  "mf_select",
+  "column_break_9kiny",
+  "mbrk_select",
+  "column_break_qsjr6",
+  "mbro_select",
+  "column_break_1vh6s",
+  "cts_mbr_select",
+  "column_break_vsq3d",
+  "bio_select",
+  "column_break_0nf5a",
+  "ro_select",
+  "column_break_bh2ao",
+  "rro_select",
+  "column_break_3bwny",
+  "rew_select",
+  "final_cost_section",
+  "total_cost_for_100_flow",
+  "column_break_taf1a",
+  "total_cost_for_90_flow",
+  "column_break_pwoi6",
+  "total_cost_for_80_flow",
+  "column_break_p3nqf",
+  "total_cost_for_70_flow",
+  "column_break_hpzg2",
+  "total_cost_for_60_flow",
+  "column_break_mqmns",
+  "total_cost_for_50_flow",
+  "chemical_cost_tab",
+  "edit_energy",
+  "electricity_cost_per_unit",
+  "reference_energy_cost",
+  "section_break_zdkho",
+  "enmf",
+  "column_break_gd0ut",
+  "enmbrk",
+  "column_break_qpcyy",
+  "enmbro",
+  "column_break_aihhg",
+  "enbio",
+  "column_break_bakzi",
+  "endgt",
+  "column_break_ivxom",
+  "enro",
+  "column_break_sgabi",
+  "encts",
+  "column_break_bax5d",
+  "ensbrs",
+  "column_break_9hynd",
+  "enrro",
+  "column_break_bpttm",
+  "enrewolutte",
+  "section_break_ilgka",
+  "energy_cost_for_100_kw",
+  "column_break_j1osi",
+  "energy_cost_for_90_kw",
+  "column_break_dcuav",
+  "energy_cost_for_80_kw",
+  "column_break_duv01",
+  "energy_cost_for_70_kw",
+  "column_break_ykb92",
+  "energy_cost_for_60_kw",
+  "column_break_16jt7",
+  "energy_cost_for_50_kw",
+  "mf_system",
+  "mf",
+  "mbr_system",
+  "mbr",
+  "mbr_ovivo_system_section",
+  "mbr_ovivo",
+  "biological_system",
+  "biot",
+  "degasser_tower_system",
+  "dgt",
+  "reverse_osmosis",
+  "ro",
+  "ro_cip_section",
+  "eng_ro_cip",
+  "chemical_treatment_system",
+  "cts",
+  "color_removal",
+  "sbrs",
+  "reject_reverse_osmosis",
+  "rro",
+  "rro_cip_section",
+  "eng_rro_cip",
+  "rewollute_section",
+  "eng_rew",
+  "rewolutte_cip_section",
+  "eng_rew_cip",
+  "chemical_cost_t_tab",
+  "get_cleaning",
+  "running_chemical",
+  "section_break_qa5iy",
+  "mf_cip_tank",
+  "ro_1_cip_tank_1",
+  "ro_1_cip_tank_2",
+  "rew_ro_cip_tank_1",
+  "rew_ro_cip_tank_2",
+  "mbr_ovivo_cip_tank",
+  "cts_mbr_cip_tank",
+  "column_break_orhq1",
+  "ruf_cip_tank",
+  "ro_2_cip_tank_1",
+  "mbr_cip",
+  "transport_per",
+  "state",
+  "section_break_cqjsq",
+  "cleaning_chemical",
+  "section_break_nq5vc",
+  "total_cost_m3",
+  "total_mf",
+  "total_mbr",
+  "total_mbr_ovivo",
+  "total_ro_wo_dgt",
+  "column_break_itmjc",
+  "total_ro",
+  "total_rewolutte",
+  "total_r_mf",
+  "total_cts_mbr",
+  "total_r_ro",
+  "section_break_wnamw",
+  "consumables",
+  "section_break_2z6eu",
+  "total_ro_consumables",
+  "column_break_jzgoi",
+  "total_rewolutte_consumables",
+  "column_break_spqyi",
+  "total_ro_wo_consumables",
+  "column_break_lxgih",
+  "total_r_ro_consumables",
+  "section_break_rlh80",
+  "final_chemical",
+  "chemical_consumption_per_day",
+  "section_break_cufwk",
+  "mf_che",
+  "column_break_cdyg1",
+  "mbrk_che",
+  "column_break_7npfk",
+  "mbro_che",
+  "column_break_mdjpx",
+  "bio_che",
+  "column_break_qomxf",
+  "dgt_che",
+  "column_break_ldo5e",
+  "ro_che",
+  "column_break_gvbwg",
+  "cts_che",
+  "column_break_c1yan",
+  "sbrs_che",
+  "column_break_2tklg",
+  "rro_che",
+  "column_break_mop7o",
+  "rewolutte_che",
+  "section_break_dozib",
+  "total_chemical_100",
+  "total_chemical_90",
+  "ro_template"
+ ],
+ "fields": [
+  {
+   "fieldname": "replacement_tab",
+   "fieldtype": "Tab Break",
+   "label": "Replacement"
+  },
+  {
+   "fieldname": "mf_section",
+   "fieldtype": "Heading",
+   "label": "Micro Filtration"
+  },
+  {
+   "default": "MF MEMBRANE",
+   "fieldname": "mf_membrane",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "DIFFUSER MEMBRANE\nUF MEMBRANE-MAX80\nUF MEMBRANE-I\nUF MEMBRANE-D\nMF MEMBRANE\nSOFTNER RESIN\nBELT - 8"
+  },
+  {
+   "fieldname": "mf_actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "3",
+   "fieldname": "mf_life_time",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "mbr_koch_section",
+   "fieldtype": "Heading",
+   "label": "MBR (KOCH)"
+  },
+  {
+   "default": "MBR MODULE - S - 36",
+   "fieldname": "koch_membrane",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "MBR MODULE - S - 36\nMBR MODULE - S - 40\nMBR MODULE - S - 44\nMBR MODULE - S - 16\nMBR MODULE - S - 8\nMBR MODULE - S - 2\nMBR MODULE - H - 50\nMBR MODULE - H - 46\nMBR MODULE -H - 42\nMBR MODULE - H - 38\nNF MEMBRANE -D"
+  },
+  {
+   "fieldname": "koch_actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "7",
+   "fieldname": "koch_life_time",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "mbr_ovivo_section",
+   "fieldtype": "Heading",
+   "label": "MBR (OVIVO)"
+  },
+  {
+   "default": "MBR OVIVO",
+   "fieldname": "ovivo_membrane",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "MBR OVIVO\nMBR MODULE - S - 36\nMBR MODULE - S - 40\nMBR MODULE - S - 44\nMBR MODULE - S - 16\nMBR MODULE - S - 8\nMBR MODULE - S - 2\nMBR MODULE - H - 50\nMBR MODULE - H - 46\nMBR MODULE -H - 42\nMBR MODULE - H - 38\nNF MEMBRANE -D"
+  },
+  {
+   "fieldname": "ovivo_actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "15",
+   "fieldname": "ovivo_life_time",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_iqcsz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pxl55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_degt_membrane1",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "3",
+   "fieldname": "ro_dgt_life_time1",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_ofx2w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_degt_membrane2",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "3",
+   "fieldname": "ro_dgt_life_time2",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_3gi5s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_degt_membrane3",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "2.5",
+   "fieldname": "ro_dgt_life_time3",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fetch_from": "cost_working_tool.project_startup_sheet",
+   "fieldname": "startup_sheet",
+   "fieldtype": "Link",
+   "label": "Startup Sheet",
+   "options": "Startup Sheet"
+  },
+  {
+   "fieldname": "section_break_m4qfn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ro_without_dgt_section",
+   "fieldtype": "Section Break",
+   "label": "RO without DGT"
+  },
+  {
+   "fieldname": "ro_membrane1",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "ro_actual_qty1",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "2.5",
+   "fieldname": "ro_life_time1",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_ekc1c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_membrane2",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "ro_actual_qty2",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "2.5",
+   "fieldname": "ro_life_time2",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_jfelf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_membrane3",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "ro_actual_qty3",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "2",
+   "fieldname": "ro_life_time3",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_ujxyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vf5yd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reject_reverse_osmosis_section",
+   "fieldtype": "Section Break",
+   "label": "Reject Reverse Osmosis"
+  },
+  {
+   "fieldname": "rro_membrane",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "2",
+   "fieldname": "life_time_years",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "replacement_cost",
+   "fieldtype": "Table",
+   "label": "Replacement Cost",
+   "options": "Replacement Cost"
+  },
+  {
+   "fieldname": "column_break_6sqb7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "biological",
+   "fieldtype": "Heading",
+   "label": "Biological"
+  },
+  {
+   "default": "DIFFUSER MEMBRANE",
+   "fieldname": "bio_membrane",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "DIFFUSER MEMBRANE\nMBR MODULE - S - 36\nMBR MODULE - S - 40\nMBR MODULE - S - 44\nMBR MODULE - S - 16\nMBR MODULE - S - 8\nMBR MODULE - S - 2\nMBR MODULE - H - 50\nMBR MODULE - H - 46\nMBR MODULE -H - 42\nMBR MODULE - H - 38\nNF MEMBRANE -D"
+  },
+  {
+   "fieldname": "bio_actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "5",
+   "fieldname": "bio_life_time",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "ro_dgt_actual_qty1",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "ro_dgt_actual_qty2",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "ro_dgt_actual_qty3",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "column_break_phxgs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_degt_membrane4",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "ro_dgt_actual_qty4",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "2",
+   "fieldname": "ro_dgt_life_time4",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_ibinb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_membrane4",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "ro_life_time4",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "ro_actual_qty_4",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "chemical_cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Energy Cost"
+  },
+  {
+   "fieldname": "mf_system",
+   "fieldtype": "Section Break",
+   "label": "MF System"
+  },
+  {
+   "fieldname": "mbr_system",
+   "fieldtype": "Section Break",
+   "label": "MBR Koch System"
+  },
+  {
+   "fieldname": "biological_system",
+   "fieldtype": "Section Break",
+   "label": "Biological System"
+  },
+  {
+   "fieldname": "degasser_tower_system",
+   "fieldtype": "Section Break",
+   "label": "Degasser Tower System"
+  },
+  {
+   "fieldname": "reverse_osmosis",
+   "fieldtype": "Section Break",
+   "label": "Reverse Osmosis"
+  },
+  {
+   "fieldname": "chemical_treatment_system",
+   "fieldtype": "Section Break",
+   "label": "Chemical Treatment System"
+  },
+  {
+   "fieldname": "color_removal",
+   "fieldtype": "Section Break",
+   "label": "Color Removal"
+  },
+  {
+   "fieldname": "reject_reverse_osmosis",
+   "fieldtype": "Section Break",
+   "label": "Reject Reverse Osmosis"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "RC-.YY.-"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_spares",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "koch_spares",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_spares",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_spares",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_dgt_spares1",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_dgt_spares2",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_dgt_spares3",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_dgt_spares4",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_spares1",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_spares2",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_spares4",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "rro_spares",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "fieldname": "ro_spares3",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "fieldname": "mf",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "mbr",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "biot",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "dgt",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "ro",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "cts",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "sbrs",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "rro",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "column_break_p0l3j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_working_tool",
+   "fieldtype": "Link",
+   "label": "Cost Working Tool",
+   "options": "Cost Working Tool"
+  },
+  {
+   "fieldname": "chemical_cost_t_tab",
+   "fieldtype": "Tab Break",
+   "label": "Chemical Cost"
+  },
+  {
+   "fieldname": "running_chemical",
+   "fieldtype": "Table",
+   "label": "Running Chemical",
+   "options": "Running Chemical"
+  },
+  {
+   "fieldname": "cleaning_chemical",
+   "fieldtype": "Table",
+   "label": "Cleaning Chemical",
+   "options": "Cleaning Chemical"
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Consumables",
+   "options": "Consumables"
+  },
+  {
+   "fieldname": "final_chemical",
+   "fieldtype": "Table",
+   "label": "Final Chemical",
+   "options": "Final Chemical"
+  },
+  {
+   "fieldname": "chemical_consumption_per_day",
+   "fieldtype": "Table",
+   "label": "Chemical Consumption Per day",
+   "options": "Chemical Consumption Per day"
+  },
+  {
+   "fieldname": "get_cleaning",
+   "fieldtype": "Button",
+   "label": "Get Details"
+  },
+  {
+   "fieldname": "mf_cip_tank",
+   "fieldtype": "Float",
+   "label": "MF CIP TANK",
+   "read_only": 1
+  },
+  {
+   "default": "0.4",
+   "fieldname": "ro_1_cip_tank_1",
+   "fieldtype": "Float",
+   "label": "RO - 1 CIP TANK - 1"
+  },
+  {
+   "default": "0.15",
+   "fieldname": "ro_1_cip_tank_2",
+   "fieldtype": "Float",
+   "label": "RO - 1 CIP TANK - 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "ruf_cip_tank",
+   "fieldtype": "Float",
+   "label": "R.UF CIP TANK"
+  },
+  {
+   "default": "0.15",
+   "fieldname": "ro_2_cip_tank_1",
+   "fieldtype": "Float",
+   "label": "RO - 2 CIP TANK - 1"
+  },
+  {
+   "fieldname": "mbr_cip",
+   "fieldtype": "Float",
+   "label": "MBR CIP"
+  },
+  {
+   "fieldname": "column_break_orhq1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cqjsq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_qa5iy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "5",
+   "fieldname": "transport_per",
+   "fieldtype": "Float",
+   "label": "Transport  (%)"
+  },
+  {
+   "default": "TAMILNADU",
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nTAMILNADU\nGUJARAT\nRAJASTHAN"
+  },
+  {
+   "fetch_from": "startup_sheet.flow",
+   "fieldname": "flow",
+   "fieldtype": "Data",
+   "label": "Flow"
+  },
+  {
+   "fieldname": "column_break_wbjja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_m3",
+   "fieldtype": "Float",
+   "label": "Total Cost M3"
+  },
+  {
+   "fieldname": "total_mf",
+   "fieldtype": "Float",
+   "label": "Total MF"
+  },
+  {
+   "fieldname": "total_mbr",
+   "fieldtype": "Float",
+   "label": "Total MBR"
+  },
+  {
+   "fieldname": "total_ro",
+   "fieldtype": "Float",
+   "label": "Total RO"
+  },
+  {
+   "fieldname": "total_ro_wo_dgt",
+   "fieldtype": "Float",
+   "label": "Total RO WO DGT"
+  },
+  {
+   "fieldname": "total_r_mf",
+   "fieldtype": "Float",
+   "label": "Total R. MF"
+  },
+  {
+   "fieldname": "column_break_itmjc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_r_ro",
+   "fieldtype": "Float",
+   "label": "Total R. RO"
+  },
+  {
+   "fieldname": "section_break_wnamw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_nq5vc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_2z6eu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_ro_consumables",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total RO Consumables"
+  },
+  {
+   "fieldname": "total_ro_wo_consumables",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total RO WO Consumables"
+  },
+  {
+   "fieldname": "total_r_ro_consumables",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total R. RO Consumables"
+  },
+  {
+   "fieldname": "section_break_rlh80",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jzgoi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lxgih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "summary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Table",
+   "label": "Total Cost",
+   "options": "Running Cost Summary"
+  },
+  {
+   "default": "8",
+   "fieldname": "electricity_cost_per_unit",
+   "fieldtype": "Float",
+   "label": "Electricity Cost Per Unit"
+  },
+  {
+   "fieldname": "total_cost_for_100_flow",
+   "fieldtype": "Currency",
+   "label": "100% Cost"
+  },
+  {
+   "fieldname": "total_cost_for_90_flow",
+   "fieldtype": "Currency",
+   "label": "90% Cost"
+  },
+  {
+   "fieldname": "total_cost_for_80_flow",
+   "fieldtype": "Currency",
+   "label": "80% Cost"
+  },
+  {
+   "fieldname": "total_cost_for_70_flow",
+   "fieldtype": "Currency",
+   "label": "70% Cost"
+  },
+  {
+   "fieldname": "total_cost_for_60_flow",
+   "fieldtype": "Currency",
+   "label": "60% Cost"
+  },
+  {
+   "fieldname": "total_cost_for_50_flow",
+   "fieldtype": "Currency",
+   "label": "50% Cost"
+  },
+  {
+   "fieldname": "energy_cost_for_100_kw",
+   "fieldtype": "Currency",
+   "label": "Energy Cost for 100% Kw"
+  },
+  {
+   "fieldname": "energy_cost_for_90_kw",
+   "fieldtype": "Currency",
+   "label": "Energy Cost for 90% Kw"
+  },
+  {
+   "fieldname": "energy_cost_for_80_kw",
+   "fieldtype": "Currency",
+   "label": "Energy Cost for 80% Kw"
+  },
+  {
+   "fieldname": "energy_cost_for_70_kw",
+   "fieldtype": "Currency",
+   "label": "Energy Cost for 70% Kw"
+  },
+  {
+   "fieldname": "energy_cost_for_60_kw",
+   "fieldtype": "Currency",
+   "label": "Energy Cost for 60% Kw"
+  },
+  {
+   "fieldname": "energy_cost_for_50_kw",
+   "fieldtype": "Currency",
+   "label": "Energy Cost for 50% Kw"
+  },
+  {
+   "fieldname": "section_break_opn0q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wmfsg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_degt_membrane5",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "ro_dgt_actual_qty5",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_dgt_spares5",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "ro_dgt_life_time5",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_tf0ia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ro_membrane5",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "ro_actual_qty_5",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_spares5",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "ro_life_time5",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_ufk5o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rro_membrane1",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "actual_qty1",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rro_spares1",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "life_time_years1",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "section_break_v9njs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_lrb42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rroactual_qty_2",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rrospares_2",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "rrolife_time2",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "rro_membrane02",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "RO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "reference_replacment_cost",
+   "fieldtype": "Table",
+   "label": "Reference Replacment Cost",
+   "options": "Reference Replacment Cost"
+  },
+  {
+   "fieldname": "column_break_taf1a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pwoi6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_p3nqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hpzg2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mqmns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Final Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_without_dgt",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "RO Without DGT"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_select",
+   "fieldtype": "Check",
+   "label": "MF"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbrk_select",
+   "fieldtype": "Check",
+   "label": "MBR(K)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbro_select",
+   "fieldtype": "Check",
+   "label": "MBR(O)"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_select",
+   "fieldtype": "Check",
+   "label": "BIO"
+  },
+  {
+   "fieldname": "column_break_9kiny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qsjr6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_1vh6s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0nf5a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2t8i6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_select",
+   "fieldtype": "Check",
+   "label": "RO"
+  },
+  {
+   "fieldname": "column_break_bh2ao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rro_select",
+   "fieldtype": "Check",
+   "label": "RRO"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_energy",
+   "fieldtype": "Check",
+   "label": "Edit Energy Cost"
+  },
+  {
+   "fieldname": "mbr_ovivo_system_section",
+   "fieldtype": "Section Break",
+   "label": "MBR Ovivo System"
+  },
+  {
+   "fieldname": "mbr_ovivo",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "total_chemical_100",
+   "fieldtype": "Currency",
+   "label": "Total Chemical (100%)"
+  },
+  {
+   "fieldname": "total_chemical_90",
+   "fieldtype": "Currency",
+   "label": "Total Chemical (90%)"
+  },
+  {
+   "fieldname": "selected_system",
+   "fieldtype": "Table",
+   "label": "Selected System",
+   "options": "Selected Process System"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_ovivo_cip_tank",
+   "fieldtype": "Float",
+   "label": "MBR OVIVO CIP TANK"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_mbr_cip_tank",
+   "fieldtype": "Float",
+   "label": "CTS MBR CIP TANK"
+  },
+  {
+   "fieldname": "total_mbr_ovivo",
+   "fieldtype": "Float",
+   "label": "Total MBR Ovivo"
+  },
+  {
+   "fieldname": "total_cts_mbr",
+   "fieldtype": "Float",
+   "label": "Total CTS MBR"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_no_of_stacks",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Ovivo No of Stacks"
+  },
+  {
+   "fieldname": "mbr_cts_head",
+   "fieldtype": "Heading",
+   "label": "MBR (CTS)"
+  },
+  {
+   "default": "MBR OVIVO",
+   "fieldname": "mbr_cts_membrane",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "MBR OVIVO\nMBR MODULE - S - 36\nMBR MODULE - S - 40\nMBR MODULE - S - 44\nMBR MODULE - S - 16\nMBR MODULE - S - 8\nMBR MODULE - S - 2\nMBR MODULE - H - 50\nMBR MODULE - H - 46\nMBR MODULE -H - 42\nMBR MODULE - H - 38\nNF MEMBRANE -D"
+  },
+  {
+   "fieldname": "mbr_cts_actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "fieldname": "mbr_cts_no_of_stacks",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "MBR CTS No of Stacks"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_spares",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "15",
+   "fieldname": "mbr_cts_life_time",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_sjy9a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vsq3d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_mbr_select",
+   "fieldtype": "Check",
+   "label": "CTS MBR"
+  },
+  {
+   "fieldname": "ro_with_dgt_section",
+   "fieldtype": "Section Break",
+   "label": "RO With DGT"
+  },
+  {
+   "fieldname": "reference_energy_cost",
+   "fieldtype": "Table",
+   "label": "Reference Energy Cost",
+   "options": "Reference Energy Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "enmf",
+   "fieldtype": "Check",
+   "label": "MF"
+  },
+  {
+   "fieldname": "column_break_gd0ut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enmbrk",
+   "fieldtype": "Check",
+   "label": "MBR(K)"
+  },
+  {
+   "fieldname": "column_break_qpcyy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enmbro",
+   "fieldtype": "Check",
+   "label": "MBR(O)"
+  },
+  {
+   "fieldname": "column_break_aihhg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enbio",
+   "fieldtype": "Check",
+   "label": "BIO"
+  },
+  {
+   "fieldname": "column_break_bakzi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "endgt",
+   "fieldtype": "Check",
+   "label": "DGT"
+  },
+  {
+   "fieldname": "column_break_ivxom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enro",
+   "fieldtype": "Check",
+   "label": "RO"
+  },
+  {
+   "fieldname": "column_break_sgabi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "encts",
+   "fieldtype": "Check",
+   "label": "CTS"
+  },
+  {
+   "fieldname": "column_break_bax5d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ensbrs",
+   "fieldtype": "Check",
+   "label": "SBRS"
+  },
+  {
+   "fieldname": "column_break_9hynd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enrro",
+   "fieldtype": "Check",
+   "label": "RRO"
+  },
+  {
+   "fieldname": "section_break_zdkho",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_j1osi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dcuav",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_duv01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ykb92",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_16jt7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ilgka",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "cost_working_tool.choose_ro_template",
+   "fieldname": "ro_standard_items",
+   "fieldtype": "Link",
+   "label": "RO Standard Items",
+   "options": "RO Standard Items"
+  },
+  {
+   "fetch_from": "cost_working_tool.choose_rro_template",
+   "fieldname": "rro_standard_items",
+   "fieldtype": "Link",
+   "label": "RRO Standard Items",
+   "options": "RO Standard Items"
+  },
+  {
+   "fetch_from": "cost_working_tool.rewolutte_ro",
+   "fieldname": "rewolutte",
+   "fieldtype": "Link",
+   "label": "Rewolutte",
+   "options": "RO Standard Items"
+  },
+  {
+   "fieldname": "section_break_9yozz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rewolutte_section",
+   "fieldtype": "Section Break",
+   "label": "Rewolutte "
+  },
+  {
+   "fieldname": "rew_membrane",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_spares",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "2.5",
+   "fieldname": "rew_life_time",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_mojq8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rew_membrane1",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_actual_qty1",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_spares1",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "2.5",
+   "fieldname": "rew_life_time1",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_ar58z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rew_membrane2",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_actual_qty2",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_spares2",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "2.0",
+   "fieldname": "rew_life_time2",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_qcnk7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rew_membrane3",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_actual_qty3",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_spares3",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "rew_life_time3",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_cakbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rew_membrane4",
+   "fieldtype": "Select",
+   "label": "Membrane",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_actual_qty4",
+   "fieldtype": "Float",
+   "label": "Actual Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_spares4",
+   "fieldtype": "Float",
+   "label": "Spares (%)"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "rew_life_time4",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "column_break_3bwny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_select",
+   "fieldtype": "Check",
+   "label": "Rewolutte"
+  },
+  {
+   "fieldname": "rewollute_section",
+   "fieldtype": "Section Break",
+   "label": "Rewolutte"
+  },
+  {
+   "fieldname": "column_break_bpttm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enrewolutte",
+   "fieldtype": "Check",
+   "label": "Rewolutte"
+  },
+  {
+   "fieldname": "ro_template",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ro template"
+  },
+  {
+   "default": "0.4",
+   "fieldname": "rew_ro_cip_tank_1",
+   "fieldtype": "Float",
+   "label": "REW RO CIP TANK - 1"
+  },
+  {
+   "default": "0.15",
+   "fieldname": "rew_ro_cip_tank_2",
+   "fieldtype": "Float",
+   "label": "REW RO CIP TANK - 2"
+  },
+  {
+   "fieldname": "total_rewolutte",
+   "fieldtype": "Float",
+   "label": "Total Rewolutte"
+  },
+  {
+   "fieldname": "total_rewolutte_consumables",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Rewolutte Consumables"
+  },
+  {
+   "fieldname": "column_break_spqyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_che",
+   "fieldtype": "Check",
+   "label": "MF"
+  },
+  {
+   "fieldname": "column_break_cdyg1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbrk_che",
+   "fieldtype": "Check",
+   "label": "MBR(K)"
+  },
+  {
+   "fieldname": "column_break_7npfk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbro_che",
+   "fieldtype": "Check",
+   "label": "MBR(O)"
+  },
+  {
+   "fieldname": "column_break_mdjpx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_che",
+   "fieldtype": "Check",
+   "label": "BIO"
+  },
+  {
+   "fieldname": "column_break_qomxf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_che",
+   "fieldtype": "Check",
+   "label": "DGT"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_che",
+   "fieldtype": "Check",
+   "label": "RO"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_che",
+   "fieldtype": "Check",
+   "label": "CTS"
+  },
+  {
+   "default": "0",
+   "fieldname": "sbrs_che",
+   "fieldtype": "Check",
+   "label": "SBRS"
+  },
+  {
+   "default": "0",
+   "fieldname": "rro_che",
+   "fieldtype": "Check",
+   "label": "RRO"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewolutte_che",
+   "fieldtype": "Check",
+   "label": "Rewolutte"
+  },
+  {
+   "fieldname": "column_break_ldo5e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gvbwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_c1yan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2tklg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mop7o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cufwk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_dozib",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_za4vb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_ro_cartridge_filter",
+   "fieldtype": "Check",
+   "label": "Add RO Cartridge Filter"
+  },
+  {
+   "depends_on": "eval:(doc.add_ro_cartridge_filter == 1)",
+   "fieldname": "cartridge_filter_qty",
+   "fieldtype": "Float",
+   "label": "Cartridge Filter Qty",
+   "mandatory_depends_on": "eval:(doc.add_ro_cartridge_filter == 1)"
+  },
+  {
+   "default": "30",
+   "fieldname": "ro_cat_life_time_days",
+   "fieldtype": "Float",
+   "label": "Life Time (Days)"
+  },
+  {
+   "fieldname": "ro_cat_life_time_years",
+   "fieldtype": "Float",
+   "label": "Life Time (Years)"
+  },
+  {
+   "fieldname": "ro_cip_section",
+   "fieldtype": "Section Break",
+   "label": "RO CIP"
+  },
+  {
+   "fieldname": "eng_ro_cip",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "rro_cip_section",
+   "fieldtype": "Section Break",
+   "label": "RRO CIP"
+  },
+  {
+   "fieldname": "eng_rro_cip",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "rewolutte_cip_section",
+   "fieldtype": "Section Break",
+   "label": "Rewolutte CIP"
+  },
+  {
+   "fieldname": "eng_rew_cip",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  },
+  {
+   "fieldname": "eng_rew",
+   "fieldtype": "Table",
+   "options": "Energy Cost Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-26 16:05:00.011032",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Running Cost",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-23 09:30:41.455145",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ro_template",
+  "price",
+  "ssb_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "ro_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "RO Template",
+   "options": "RO Standard Items"
+  },
+  {
+   "fetch_from": "ro_template.ro_selling_price",
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fetch_from": "ro_template.pump_ssb_cost",
+   "fieldname": "ssb_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pressure Pump Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-23 17:19:44.438646",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "RO Skid Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

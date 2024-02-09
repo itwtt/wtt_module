@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-09-11 17:31:07.839646",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "hr_responsibilities_section",
+  "pf_esi_registration",
+  "hr_policy_explanation",
+  "get_all_the_documents_properly",
+  "naming_series",
+  "performance_section",
+  "total_task",
+  "completed_task",
+  "pending_task",
+  "attendance_section",
+  "total_present",
+  "total_absent",
+  "late_deduction",
+  "leave_count"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "OBV-PER-"
+  },
+  {
+   "fieldname": "hr_responsibilities_section",
+   "fieldtype": "Section Break",
+   "label": "HR Responsibilities"
+  },
+  {
+   "default": "0",
+   "fieldname": "pf_esi_registration",
+   "fieldtype": "Check",
+   "label": "PF, ESI Registration within 10 days"
+  },
+  {
+   "default": "0",
+   "fieldname": "hr_policy_explanation",
+   "fieldtype": "Check",
+   "label": "HR Policy Explanation"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_all_the_documents_properly",
+   "fieldtype": "Check",
+   "label": "Get all the Documents properly"
+  },
+  {
+   "fieldname": "performance_section",
+   "fieldtype": "Section Break",
+   "label": "Performance"
+  },
+  {
+   "fieldname": "total_task",
+   "fieldtype": "Float",
+   "label": "Total Task"
+  },
+  {
+   "fieldname": "completed_task",
+   "fieldtype": "Float",
+   "label": "Completed Task"
+  },
+  {
+   "fieldname": "pending_task",
+   "fieldtype": "Float",
+   "label": "Pending Task"
+  },
+  {
+   "fieldname": "attendance_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "total_present",
+   "fieldtype": "Float",
+   "label": "Total Present"
+  },
+  {
+   "fieldname": "total_absent",
+   "fieldtype": "Float",
+   "label": "Total Absent"
+  },
+  {
+   "fieldname": "late_deduction",
+   "fieldtype": "Float",
+   "label": "Late Deduction"
+  },
+  {
+   "fieldname": "leave_count",
+   "fieldtype": "Float",
+   "label": "Leave Count"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-11 18:11:44.610319",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Observation Period",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

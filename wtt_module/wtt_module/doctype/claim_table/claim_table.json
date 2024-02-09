@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "creation": "2022-01-08 09:53:38.310339",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "expense_date",
+  "expense_type",
+  "km_if_travel",
+  "description",
+  "amount",
+  "status"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "expense_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expense Date",
+   "oldfieldname": "expense_date",
+   "oldfieldtype": "Date",
+   "print_width": "150px",
+   "width": "150px"
+  },
+  {
+   "columns": 2,
+   "fieldname": "expense_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Expense Claim Type",
+   "oldfieldname": "expense_type",
+   "oldfieldtype": "Link",
+   "options": "\nFood\nTravel\nFuel (Bike)\nFuel (Car)\nMedical\nCalls\nOthers",
+   "print_width": "150px",
+   "reqd": 1,
+   "width": "150px"
+  },
+  {
+   "columns": 3,
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "oldfieldname": "description",
+   "oldfieldtype": "Small Text",
+   "print_width": "300px",
+   "width": "300px"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "oldfieldname": "claim_amount",
+   "oldfieldtype": "Currency",
+   "options": "Company:company:default_currency",
+   "print_width": "150px",
+   "reqd": 1,
+   "width": "150px"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:(doc.expense_type==\"Fuel (Car)\" || doc.expense_type==\"Fuel (Bike)\")",
+   "fieldname": "km_if_travel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Km (If Travel)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Approved\nRejected",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-24 16:10:04.826162",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Claim Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

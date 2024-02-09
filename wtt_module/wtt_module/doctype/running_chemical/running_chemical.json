@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-15 11:52:28.253945",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system",
+  "chemical_name",
+  "system_feed",
+  "concentration",
+  "consumption",
+  "unit_cost",
+  "chemical_cost_day",
+  "chemical_cost_m3"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System"
+  },
+  {
+   "columns": 1,
+   "fieldname": "chemical_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chemical name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "system_feed",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "System Feed"
+  },
+  {
+   "columns": 1,
+   "fieldname": "concentration",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Concentration"
+  },
+  {
+   "columns": 1,
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Consumption"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit cost"
+  },
+  {
+   "columns": 1,
+   "fieldname": "chemical_cost_day",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Chemical cost (day)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "chemical_cost_m3",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Chemical cost (m3)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-17 18:05:20.872127",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Running Chemical",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

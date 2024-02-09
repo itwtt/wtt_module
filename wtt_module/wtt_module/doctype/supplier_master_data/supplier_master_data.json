@@ -1,0 +1,425 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-24 12:30:22.477009",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_type",
+  "supplier_name",
+  "customer_name",
+  "territory",
+  "country",
+  "tax_id",
+  "tax_category",
+  "supplier_group",
+  "supplier_type",
+  "gst_category",
+  "column_break_9",
+  "type",
+  "customer_group",
+  "pan",
+  "iban",
+  "bank",
+  "ifsc_code",
+  "branch",
+  "branch_code",
+  "bank_account_no",
+  "section_break_17",
+  "supplier_save",
+  "amended_from",
+  "section_break_19",
+  "address_title",
+  "address_type",
+  "address_line1",
+  "address_line2",
+  "city",
+  "state",
+  "address_country",
+  "pincode",
+  "data_29",
+  "ref",
+  "address_link",
+  "address_save",
+  "section_break_39",
+  "first_name",
+  "middle_name",
+  "last_name",
+  "email_id",
+  "user",
+  "address",
+  "column_break_26",
+  "status",
+  "salutation",
+  "designation",
+  "gender",
+  "phone",
+  "mobile_no",
+  "company_name",
+  "contact_details",
+  "email_ids",
+  "contact_nos",
+  "reference",
+  "links",
+  "is_primary_contact",
+  "contact_save"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:(doc.party_type=='Supplier')",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "mandatory_depends_on": "eval:(doc.party_type=='Supplier')"
+  },
+  {
+   "depends_on": "(doc.party_type=='Supplier')",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID",
+   "mandatory_depends_on": "eval:(doc.gst_category =='Registered Composition' || doc.gst_category=='Registered Regular');"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "label": "Tax Category",
+   "options": "Tax Category"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Supplier Master Data",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "label": "Supplier Group",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "supplier_type",
+   "fieldtype": "Select",
+   "label": "Supplier Type",
+   "options": "Company\nIndividual"
+  },
+  {
+   "fieldname": "gst_category",
+   "fieldtype": "Select",
+   "label": "GST Category",
+   "options": "Registered Regular\nRegistered Composition\nUnregistered\nSEZ\nOverseas\nUIN Holders"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "iban",
+   "fieldtype": "Data",
+   "label": "IBAN"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier_save",
+   "fieldtype": "Button",
+   "label": "Save Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Passive\nOpen\nReplied"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "email_ids",
+   "fieldtype": "Table",
+   "label": "Email IDs",
+   "options": "Contact Email"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "links",
+   "fieldtype": "Table",
+   "label": "Links",
+   "options": "Dynamic Link"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_primary_contact",
+   "fieldtype": "Check",
+   "label": "Is Primary Contact"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User Id",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_save",
+   "fieldtype": "Button",
+   "label": "Save Details"
+  },
+  {
+   "fieldname": "contact_nos",
+   "fieldtype": "Table",
+   "label": "Contact Numbers",
+   "options": "Contact Phone"
+  },
+  {
+   "fieldname": "data_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_title",
+   "fieldtype": "Data",
+   "label": "Address Title"
+  },
+  {
+   "fieldname": "address_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Address Type",
+   "options": "Billing\nShipping\nOffice\nPersonal\nPlant\nPostal\nShop\nSubsidiary\nWarehouse\nCurrent\nPermanent\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address Line 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City/Town"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State/Province"
+  },
+  {
+   "fieldname": "address_country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "address_link",
+   "fieldtype": "Table",
+   "label": "Links",
+   "options": "Dynamic Link"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "address_save",
+   "fieldtype": "Button",
+   "label": "Save Details"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "Party type",
+   "options": "\nSupplier\nCustomer"
+  },
+  {
+   "depends_on": "eval:(doc.party_type=='Customer')",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "mandatory_depends_on": "eval:(doc.party_type=='Customer')"
+  },
+  {
+   "depends_on": "eval:(doc.party_type=='Customer')",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "mandatory_depends_on": "eval:(doc.party_type=='Customer')",
+   "options": "Company\nIndividual"
+  },
+  {
+   "depends_on": "eval:(doc.party_type=='Customer')",
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "mandatory_depends_on": "eval:(doc.party_type=='Customer')",
+   "options": "Territory"
+  },
+  {
+   "depends_on": "eval:(doc.party_type=='Customer')",
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "mandatory_depends_on": "eval:(doc.party_type=='Customer')",
+   "options": "Customer Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-06-01 10:31:55.370432",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Supplier Master Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

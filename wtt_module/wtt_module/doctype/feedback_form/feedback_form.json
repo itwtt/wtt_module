@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-02 09:31:52.203426",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organization",
+  "question1",
+  "question3",
+  "question4",
+  "question5",
+  "select1",
+  "select2",
+  "select5",
+  "select6",
+  "question7",
+  "question9",
+  "question10"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "question1",
+   "fieldtype": "Data",
+   "label": "Does the proposal document provide adequate details for you to understand the project?"
+  },
+  {
+   "fieldname": "question3",
+   "fieldtype": "Data",
+   "label": "Does our proposed solution meets your requirement?"
+  },
+  {
+   "fieldname": "question4",
+   "fieldtype": "Rating",
+   "label": "How would you  rate  the  information provided about  the"
+  },
+  {
+   "fieldname": "question5",
+   "fieldtype": "Heading",
+   "label": "Which are all the features that are most valuable to you?"
+  },
+  {
+   "default": "0",
+   "fieldname": "select1",
+   "fieldtype": "Check",
+   "label": "Technical data "
+  },
+  {
+   "default": "0",
+   "fieldname": "select2",
+   "fieldtype": "Check",
+   "label": "Price breakup"
+  },
+  {
+   "default": "0",
+   "fieldname": "select5",
+   "fieldtype": "Check",
+   "label": "OPEX"
+  },
+  {
+   "default": "0",
+   "fieldname": "select6",
+   "fieldtype": "Check",
+   "label": "CAPEX, etc..."
+  },
+  {
+   "fieldname": "question7",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "How well did we respond to your enquiry?"
+  },
+  {
+   "fieldname": "question9",
+   "fieldtype": "Data",
+   "label": "Our proposal document "
+  },
+  {
+   "fieldname": "question10",
+   "fieldtype": "Text",
+   "label": "Please leave your name, email address/phone number if you would like us to contact you in the future."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-28 15:35:22.281612",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Feedback Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "organization"
+}

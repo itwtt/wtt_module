@@ -1,0 +1,393 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-11-24 16:16:45.460558",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee_id",
+  "employee_name",
+  "department",
+  "designation",
+  "grade",
+  "revised_from",
+  "column_break_5",
+  "qualification",
+  "experience",
+  "years_of_experience",
+  "location",
+  "format",
+  "gross",
+  "esi",
+  "pf",
+  "hra",
+  "calculate",
+  "earnings_section",
+  "earnings",
+  "earnings_total",
+  "take_home",
+  "deductions_section",
+  "deduction",
+  "deductions_total",
+  "section_break_18",
+  "cost_to_company",
+  "bonus_percentage",
+  "bonus",
+  "gratuity_percentage",
+  "gratuity",
+  "eligible_for_shoe_allowance",
+  "column_break_21",
+  "uniform",
+  "shoe_allowance",
+  "insurance",
+  "other_allowance",
+  "esi_employer_contribution",
+  "pf_employer_contribution",
+  "total_b",
+  "section_break_24",
+  "remarks_section",
+  "hr_remarks",
+  "gm_remarks",
+  "md_remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Employee ID"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Select",
+   "label": "Experience",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salary Fitment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "earnings_section",
+   "fieldtype": "Tab Break",
+   "label": "Earnings & Deduction"
+  },
+  {
+   "fieldname": "earnings",
+   "fieldtype": "Table",
+   "label": "Earnings",
+   "options": "Fitment Earnings"
+  },
+  {
+   "fieldname": "deduction",
+   "fieldtype": "Table",
+   "label": "Deduction",
+   "options": "Fitment Deductions"
+  },
+  {
+   "fieldname": "deductions_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pf_employer_contribution",
+   "fieldtype": "Currency",
+   "label": "PF EMPLOYER CONTRIBUTION"
+  },
+  {
+   "default": "0",
+   "fieldname": "esi_employer_contribution",
+   "fieldtype": "Currency",
+   "label": "ESI EMPLOYER CONTRIBUTION"
+  },
+  {
+   "default": "0",
+   "fieldname": "bonus",
+   "fieldtype": "Currency",
+   "label": "Bonus"
+  },
+  {
+   "default": "0",
+   "fieldname": "gratuity",
+   "fieldtype": "Currency",
+   "label": "Gratuity"
+  },
+  {
+   "fieldname": "cost_to_company",
+   "fieldtype": "Currency",
+   "label": "Cost to Company"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Tab Break",
+   "label": "Contribution"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bonus_percentage",
+   "fieldtype": "Data",
+   "label": "Bonus Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gratuity_percentage",
+   "fieldtype": "Data",
+   "label": "Gratuity Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.experience==\"Yes\");",
+   "fieldname": "years_of_experience",
+   "fieldtype": "Data",
+   "label": "Years of Experience"
+  },
+  {
+   "fieldname": "earnings_total",
+   "fieldtype": "Currency",
+   "label": "Earnings Total"
+  },
+  {
+   "fieldname": "deductions_total",
+   "fieldtype": "Currency",
+   "label": "Deductions Total"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SAL-FIT-"
+  },
+  {
+   "fieldname": "gross",
+   "fieldtype": "Currency",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "take_home",
+   "fieldtype": "Currency",
+   "label": "Take Home"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Tab Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "hr_remarks",
+   "fieldtype": "Small Text",
+   "label": "HR remarks"
+  },
+  {
+   "fieldname": "gm_remarks",
+   "fieldtype": "Small Text",
+   "label": "GM remarks"
+  },
+  {
+   "fieldname": "md_remarks",
+   "fieldtype": "Small Text",
+   "label": "MD remarks"
+  },
+  {
+   "fieldname": "revised_from",
+   "fieldtype": "Link",
+   "label": "Revised From",
+   "options": "Salary Fitment"
+  },
+  {
+   "fieldname": "uniform",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Uniform",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shoe_allowance",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Shoe Allowance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "format",
+   "fieldtype": "Select",
+   "label": "Format",
+   "options": "Format 1\nFormat 2"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Insurance",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "esi",
+   "fieldtype": "Check",
+   "label": "ESI"
+  },
+  {
+   "default": "0",
+   "fieldname": "pf",
+   "fieldtype": "Check",
+   "label": "PF"
+  },
+  {
+   "fieldname": "other_allowance",
+   "fieldtype": "Currency",
+   "label": "Other Allowance(Per Annum)"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "default": "1",
+   "fieldname": "hra",
+   "fieldtype": "Check",
+   "label": "HRA"
+  },
+  {
+   "fieldname": "total_b",
+   "fieldtype": "Currency",
+   "label": "Total (B)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "eligible_for_shoe_allowance",
+   "fieldtype": "Check",
+   "label": "Eligible for shoe allowance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-18 15:45:47.055874",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Salary Fitment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GM",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Master Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

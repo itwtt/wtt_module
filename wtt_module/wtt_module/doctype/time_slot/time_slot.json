@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "creation": "2022-02-01 11:03:09.092873",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "time",
+  "day",
+  "mins"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Day",
+   "options": "\nOther day\nSaturday"
+  },
+  {
+   "fieldname": "mins",
+   "fieldtype": "Int",
+   "label": "Mins"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-01 12:02:13.269265",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Time Slot",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

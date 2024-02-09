@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-12 17:32:50.953535",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "no_of_persons",
+  "charges_per_day",
+  "no_of_days",
+  "total_charges_per_day",
+  "tax",
+  "transport",
+  "unit_price",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category"
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_of_persons",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No of Persons"
+  },
+  {
+   "columns": 1,
+   "fieldname": "charges_per_day",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Charges per Day"
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_of_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "No of days"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_charges_per_day",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Charges per Day"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tax",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Tax"
+  },
+  {
+   "columns": 1,
+   "fieldname": "transport",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Transport"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-12 17:33:27.360110",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Erection and Commisioning Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

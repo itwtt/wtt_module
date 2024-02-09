@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "creation": "2022-01-05 11:44:32.379265",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "ot_hrs",
+  "salary_1",
+  "ot_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "ot_hrs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "OT hrs"
+  },
+  {
+   "fieldname": "ot_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "OT Total"
+  },
+  {
+   "fieldname": "salary_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "1 day Salary"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-06 10:10:45.074744",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Perks OT",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

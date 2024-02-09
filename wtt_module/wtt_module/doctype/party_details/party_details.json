@@ -1,0 +1,304 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-08-06 11:47:58.630144",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "party_type",
+  "create",
+  "party_name",
+  "supplier_group",
+  "customer_group",
+  "territory",
+  "gst_category",
+  "column_break_8",
+  "pan",
+  "tax_id",
+  "attach_proof1",
+  "tax_category",
+  "is_transporter",
+  "bank_details_section",
+  "bank",
+  "bank_account_no",
+  "ifsc_code",
+  "column_break_16",
+  "branch",
+  "branch_code",
+  "attach_proof2",
+  "address_and_contact_section",
+  "address_type",
+  "address_line1",
+  "address_line2",
+  "city",
+  "state",
+  "country",
+  "company_profile",
+  "msme",
+  "bronchure",
+  "column_break_26",
+  "first_name",
+  "last_name",
+  "designation",
+  "email_ids",
+  "phone_nos",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:(doc.party_type==\"Supplier\")",
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "label": "Supplier Group",
+   "options": "Supplier Group"
+  },
+  {
+   "depends_on": "eval:(doc.party_type==\"Customer\")",
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "gst_category",
+   "fieldtype": "Select",
+   "label": "GST Category",
+   "options": "Registered Regular\nRegistered Composition\nUnregistered\nSEZ\nOverseas\nUIN Holders"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Select",
+   "label": "Tax Category",
+   "options": "\nIMPORT\nInter State\nIntra State"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.party_type==\"Supplier\")",
+   "fieldname": "is_transporter",
+   "fieldtype": "Check",
+   "label": "Is Transporter"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "address_type",
+   "fieldtype": "Select",
+   "label": "Address Type",
+   "options": "Billing\nShipping\nOffice\nPersonal\nPlant\nPostal\nShop\nSubsidiary\nWarehouse\nCurrent\nPermanent\nOther"
+  },
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City/ Town"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "email_ids",
+   "fieldtype": "Table",
+   "label": "Email",
+   "options": "Contact Email"
+  },
+  {
+   "fieldname": "phone_nos",
+   "fieldtype": "Table",
+   "label": "Phone",
+   "options": "Contact Phone"
+  },
+  {
+   "fieldname": "attach_proof1",
+   "fieldtype": "Attach",
+   "label": "Attach Proof"
+  },
+  {
+   "fieldname": "attach_proof2",
+   "fieldtype": "Attach",
+   "label": "Attach Proof"
+  },
+  {
+   "fieldname": "company_profile",
+   "fieldtype": "Attach",
+   "label": "Company Profile"
+  },
+  {
+   "fieldname": "msme",
+   "fieldtype": "Attach",
+   "label": "MSME"
+  },
+  {
+   "fieldname": "bronchure",
+   "fieldtype": "Attach",
+   "label": "Bronchure"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PARTY-"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "Party Type",
+   "options": "\nSupplier\nCustomer"
+  },
+  {
+   "default": "0",
+   "fieldname": "create",
+   "fieldtype": "Check",
+   "label": "create"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Party Details",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-25 17:21:01.599540",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Party Details",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "party_name"
+}

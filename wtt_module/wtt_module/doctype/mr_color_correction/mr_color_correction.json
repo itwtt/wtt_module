@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-06 15:16:19.710900",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "remarks",
+  "click",
+  "table",
+  "amended_from",
+  "update_completed_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "click",
+   "fieldtype": "Button",
+   "label": "Click"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Qty Checker",
+   "options": "MR Color Correction Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "MR Color Correction",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "update_completed_qty",
+   "fieldtype": "Button",
+   "label": "Update Completed Qty"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-03 12:27:37.477816",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "MR Color Correction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

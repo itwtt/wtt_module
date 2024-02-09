@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-05 14:06:26.936908",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system",
+  "days",
+  "persons",
+  "charges",
+  "qty",
+  "consumables",
+  "total_charges"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Days"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "persons",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Persons"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "charges",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Charges"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "consumables",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Consumables"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "total_charges",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Charges"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-05 14:06:26.936908",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Fabrication Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

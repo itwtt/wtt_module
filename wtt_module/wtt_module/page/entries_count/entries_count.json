@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2021-11-16 11:16:16.992220",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-11-16 11:16:16.992220",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "entries-count",
+ "owner": "Administrator",
+ "page_name": "Entries count",
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Entries page"
+}

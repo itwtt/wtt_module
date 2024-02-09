@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-09-12 12:20:19.501414",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "item_template",
+  "lead_time",
+  "selection",
+  "ordering",
+  "lead_days",
+  "delivery_time",
+  "get_total_days",
+  "total_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_template",
+   "fieldtype": "Link",
+   "label": "Item Template",
+   "options": "Item"
+  },
+  {
+   "fieldname": "lead_time",
+   "fieldtype": "Data",
+   "label": "Lead Time"
+  },
+  {
+   "fieldname": "ordering",
+   "fieldtype": "Data",
+   "label": "Ordering"
+  },
+  {
+   "fieldname": "lead_days",
+   "fieldtype": "Data",
+   "label": "Lead Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_time",
+   "fieldtype": "Data",
+   "label": "Delivery Time"
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Data",
+   "label": "Total Days"
+  },
+  {
+   "fieldname": "selection",
+   "fieldtype": "Select",
+   "label": "Selection",
+   "options": "\nWeek\nMonth\nYear"
+  },
+  {
+   "fieldname": "get_total_days",
+   "fieldtype": "Button",
+   "label": "Get Total Days"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "ITM-LEAD-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-12 13:48:38.434679",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Item Lead Time",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_template"
+}

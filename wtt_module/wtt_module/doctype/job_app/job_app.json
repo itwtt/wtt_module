@@ -1,0 +1,368 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-04-13 12:45:37.125029",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "form_date",
+  "naming_series",
+  "company",
+  "job_status",
+  "remarks",
+  "applicant_photo",
+  "applying_post",
+  "other_post",
+  "applicant_name",
+  "email_id",
+  "fathers_name",
+  "occupation",
+  "date_of_birth",
+  "age",
+  "gender",
+  "blood_group",
+  "religion",
+  "community",
+  "caste",
+  "marital_status",
+  "spouse_name",
+  "place_of_birth",
+  "present_address",
+  "permanent_address",
+  "guardian",
+  "internship_training",
+  "education",
+  "training_project",
+  "language",
+  "experience",
+  "expected_salary",
+  "qus",
+  "salary_slip",
+  "qus1",
+  "qus2",
+  "qus3",
+  "qus4",
+  "qus5",
+  "uan_no",
+  "esi_no",
+  "attachments",
+  "place",
+  "date",
+  "signature",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Job app",
+   "options": "JOB-APP-.YYYY.-"
+  },
+  {
+   "fieldname": "applicant_photo",
+   "fieldtype": "Attach Image",
+   "label": "Applicant photo"
+  },
+  {
+   "fieldname": "applying_post",
+   "fieldtype": "Select",
+   "label": "Applying Post",
+   "options": "-- Select --\nGRADUATE ENGINEER TRAINEE\nLAB CHEMIST\nRO OPERATOR\nSTP OPERATOR\nETP OPERATOR\nMECHANICAL JUNIOR MAINTENANCE\nMECHANICAL SENIOR MAINTENANCE\nELECTRICAL JUNIOR MAINTENANCE\nELECTRICAL SENIOR MAINTENANCE\nFITTER\nWELDER\nSHIFT IN CHARGE\nPROJECT MANAGER\nPROJECT ENGINEER\nMECHANICAL DESIGN ENGINEER\nELECTRICAL DESIGN ENGINEER\nO&M IN CHARGE\nSALES EXECUTIVE\nTELEMARKETING EXECUTIVE\nSOFTWARE DEVELOPER\n-- Select --\nGRADUATE ENGINEER TRAINEE\nLAB CHEMIST\nRO OPERATOR\nSTP OPERATOR\nETP OPERATOR\nMECHANICAL JUNIOR MAINTENANCE\nMECHANICAL SENIOR MAINTENANCE\nELECTRICAL JUNIOR MAINTENANCE\nELECTRICAL SENIOR MAINTENANCE\nFITTER\nWELDER\nSHIFT IN CHARGE\nPROJECT ENGINEER\nPROJECT MANAGER\nMECHANICAL DESIGN ENGINEER\nELECTRICAL DESIGN ENGINEER\nO&M IN CHARGE\nSALES EXECUTIVE\nTELEMARKETING EXECUTIVE\nSOFTWARE DEVELOPER\nACCOUNTANT\nOTHERS"
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "Father's Name"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "-- Select --\nMALE\nFEMALE"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "-- Select --\nA+\nA-\nB+\nB-\nO+\nO-\nAB+\nAB-"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Religion",
+   "options": "-- Select --\nHINDU\nMUSLIM\nCHRISTIAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "community",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Community",
+   "options": "-- Select --\nBC\nMBC\nSC\nST\nBCM\nOTHERS"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "-- Select --\nSINGLE\nMARRIED"
+  },
+  {
+   "fieldname": "spouse_name",
+   "fieldtype": "Data",
+   "label": "Spouse name"
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Data",
+   "label": "Place of Birth"
+  },
+  {
+   "fieldname": "present_address",
+   "fieldtype": "Data",
+   "label": "Present Address"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Data",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "guardian",
+   "fieldtype": "Table",
+   "label": "Family Background",
+   "options": "Parents"
+  },
+  {
+   "fieldname": "internship_training",
+   "fieldtype": "Table",
+   "label": "Internship training",
+   "options": "Internship"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Edu"
+  },
+  {
+   "fieldname": "training_project",
+   "fieldtype": "Table",
+   "label": "Training & Project",
+   "options": "Training and Project"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Table",
+   "label": "Language",
+   "options": "Lan"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Table",
+   "label": "Experience",
+   "options": "Exp"
+  },
+  {
+   "fieldname": "expected_salary",
+   "fieldtype": "Data",
+   "label": "Expected Salary"
+  },
+  {
+   "fieldname": "qus",
+   "fieldtype": "Select",
+   "label": "1. Whether submitted Salary Proofs?",
+   "options": "-- Select --\nYES\nNO"
+  },
+  {
+   "fieldname": "qus1",
+   "fieldtype": "Select",
+   "label": "2. Had any history of serious injury/major surgery/prolonged illness?",
+   "options": "-- Select --\nYES\nNO"
+  },
+  {
+   "fieldname": "qus2",
+   "fieldtype": "Select",
+   "label": "3. Do you own a Two wheeler with a valid driving license?",
+   "options": "-- Select --\nYES\nNO"
+  },
+  {
+   "fieldname": "qus3",
+   "fieldtype": "Select",
+   "label": "4. Do you own a Four wheeler with a valid driving license?",
+   "options": "-- Select --\nYES\nNO"
+  },
+  {
+   "fieldname": "qus4",
+   "fieldtype": "Select",
+   "label": "5. Are you a PF & ESI contriputor in any of your previous employment?",
+   "options": "-- Select --\nYES\nNO"
+  },
+  {
+   "fieldname": "qus5",
+   "fieldtype": "Select",
+   "label": "6. Have working knowledge in computer - MS excel/word/powerpoint?",
+   "options": "-- Select --\nYES\nNO"
+  },
+  {
+   "fieldname": "uan_no",
+   "fieldtype": "Data",
+   "label": "UAN NO"
+  },
+  {
+   "fieldname": "esi_no",
+   "fieldtype": "Data",
+   "label": "ESI NO"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "Attach"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature"
+  },
+  {
+   "depends_on": "eval:(doc.applying_post==\"OTHERS\");",
+   "fieldname": "other_post",
+   "fieldtype": "Data",
+   "label": "Other post",
+   "mandatory_depends_on": "eval:(doc.applying_post==\"OTHERS\");"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job App",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "caste",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Caste"
+  },
+  {
+   "depends_on": "eval:(doc.qus==\"YES\")",
+   "fieldname": "salary_slip",
+   "fieldtype": "Attach",
+   "label": "Salary slip"
+  },
+  {
+   "fieldname": "job_status",
+   "fieldtype": "Select",
+   "label": "Job Status",
+   "options": "\nShortlisted\nHired\nNot Interested\nHold\nRejected"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "Today",
+   "fieldname": "form_date",
+   "fieldtype": "Date",
+   "label": "Form Date"
+  }
+ ],
+ "image_field": "applicant_photo",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-06-24 13:58:45.938927",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Job App",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

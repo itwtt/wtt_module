@@ -1,0 +1,402 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-27 14:58:30.605642",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_startup_sheet",
+  "column_break_n7hfb",
+  "panel",
+  "column_break_lnwqw",
+  "startup_sheet",
+  "section_break_ksimh",
+  "flow",
+  "column_break_jpyjf",
+  "bod",
+  "column_break_coffx",
+  "cod",
+  "column_break_5zwj3",
+  "bio_items",
+  "not_linked_items",
+  "not_linked_table",
+  "bio_electrical_items",
+  "section_break_d56oz",
+  "digital_input",
+  "column_break_ubvh1",
+  "digital_output",
+  "column_break_pwlb5",
+  "analog_input",
+  "column_break_zhlax",
+  "analog_input2",
+  "column_break_hausb",
+  "analog_output",
+  "section_break_lr0jd",
+  "bio_cost",
+  "column_break_fxsqj",
+  "not_linked_cost",
+  "column_break_hpsob",
+  "electrical_cost",
+  "column_break_hzifi",
+  "overall_cost",
+  "section_break_nj7xm",
+  "bio_tax_cost",
+  "bio_transport_cost",
+  "include_tax_cost",
+  "column_break_106yj",
+  "bio_tax",
+  "bio_transport",
+  "additional_cost_section",
+  "margin_for_expense_calculation_cost",
+  "e_c",
+  "bio_overhead_cost",
+  "bio_agent_commission_cost",
+  "bio_guarantee_clause_cost",
+  "column_break_0opi8",
+  "margin_for_expense_calculation",
+  "e_c_",
+  "overhead_percentage",
+  "agent_commission",
+  "guarantee_clause_charge",
+  "section_break_e4a2w",
+  "grand_total",
+  "bio_selling_price",
+  "column_break_vk0md",
+  "margin_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_startup_sheet",
+   "fieldtype": "Link",
+   "label": "Project Startup Sheet",
+   "options": "Startup Sheet"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "bio_items",
+   "fieldtype": "Table",
+   "label": "Bio Items",
+   "options": "Bio Items"
+  },
+  {
+   "fieldname": "not_linked_items",
+   "fieldtype": "Button",
+   "label": "Not Linked Items"
+  },
+  {
+   "fieldname": "not_linked_table",
+   "fieldtype": "Table",
+   "label": "Price Not Linked Table",
+   "options": "Bio Not Linked Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_cost",
+   "fieldtype": "Currency",
+   "label": "Bio Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "not_linked_cost",
+   "fieldtype": "Currency",
+   "label": "Not linked Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_cost",
+   "fieldtype": "Currency",
+   "label": "Overall Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "startup_sheet",
+   "fieldtype": "Button",
+   "label": "Startup Sheet"
+  },
+  {
+   "fieldname": "column_break_n7hfb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lnwqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ksimh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bio_electrical_items",
+   "fieldtype": "Table",
+   "label": "Bio Electrical Items",
+   "options": "Bio Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "panel",
+   "fieldtype": "Float",
+   "label": "Panel"
+  },
+  {
+   "fieldname": "section_break_d56oz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ubvh1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pwlb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zhlax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hausb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lr0jd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fxsqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hpsob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hzifi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Data",
+   "label": "Flow"
+  },
+  {
+   "fieldname": "column_break_jpyjf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bod",
+   "fieldtype": "Data",
+   "label": "BOD"
+  },
+  {
+   "fieldname": "column_break_coffx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cod",
+   "fieldtype": "Data",
+   "label": "COD"
+  },
+  {
+   "fieldname": "column_break_5zwj3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_nj7xm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Total Bio Cost"
+  },
+  {
+   "fieldname": "column_break_106yj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2",
+   "fieldname": "bio_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "3",
+   "fieldname": "bio_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "additional_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_for_expense_calculation_cost",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Bio Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Bio Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Bio Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_0opi8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "e_c_",
+   "fieldtype": "Float",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "overhead_percentage",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_e4a2w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vk0md",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_percentage",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_selling_price",
+   "fieldtype": "Currency",
+   "label": "Bio Selling Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-17 12:43:23.757144",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Bio Tank Calculation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_startup_sheet"
+}

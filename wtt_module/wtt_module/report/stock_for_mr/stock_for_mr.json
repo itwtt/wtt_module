@@ -1,0 +1,65 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-10-21 14:13:09.502040",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-10-21 14:15:45.967066",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Stock for MR",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Material Request",
+ "report_name": "Stock for MR",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "WTT - Buying"
+  },
+  {
+   "role": "HOD"
+  },
+  {
+   "role": "WTT - Projects"
+  },
+  {
+   "role": "WTT Process Manager"
+  },
+  {
+   "role": "WTT Process User"
+  },
+  {
+   "role": "WTT"
+  },
+  {
+   "role": "Projects Manager"
+  },
+  {
+   "role": "MD"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  }
+ ]
+}

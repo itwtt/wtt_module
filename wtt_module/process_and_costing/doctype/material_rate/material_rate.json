@@ -1,0 +1,49 @@
+{
+ "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"c038645b02\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-15 16:50:41.115560",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "moc",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nSHEET\nSHAFT"
+  },
+  {
+   "fieldname": "moc",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "MOC",
+   "options": "SS316"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-15 16:56:57.656368",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Material Rate",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,225 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-05-29 09:27:31.995584",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "startup_sheet",
+  "naming_series",
+  "category",
+  "sludge_pump_calculation_section",
+  "total_reject_flow_rate_m3hr",
+  "hours_of_operation_hours",
+  "total_reject_flow_rate_m3day",
+  "mbr_tank_volume",
+  "no_of_drains_per_day",
+  "no_of_trains",
+  "volume_drained_in_a_day",
+  "suspends_mgl",
+  "suspends_kgday",
+  "sludge_concentration",
+  "column_break_r4unb",
+  "volume_of_sludge_kgday",
+  "volume_of_sludge_m3day",
+  "sludge_pump_operating_hours",
+  "sludge_pump_capacity",
+  "sludge_pump_quantity_working",
+  "sludge_pump_quantity_standby",
+  "column_break_05agh",
+  "lamella_settler",
+  "pac_dosage",
+  "pac_concentration",
+  "dosing_pump",
+  "dosing_pump_quanity_working",
+  "dosing_pump_quanity_standby"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SBR-.YY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "KOCH-MBR\nOVIVO-MBR\nASAHI KASEI-MF"
+  },
+  {
+   "fieldname": "sludge_pump_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Sludge Pump Calculation"
+  },
+  {
+   "depends_on": "eval:(doc.category!='ASAHI KASEI-MF')",
+   "fieldname": "mbr_tank_volume",
+   "fieldtype": "Float",
+   "label": "MBR Tank Volume (m3)"
+  },
+  {
+   "depends_on": "eval:(doc.category!='ASAHI KASEI-MF')",
+   "fieldname": "no_of_drains_per_day",
+   "fieldtype": "Float",
+   "label": "No. of drains per day (Times)"
+  },
+  {
+   "depends_on": "eval:(doc.category!='ASAHI KASEI-MF')",
+   "fieldname": "no_of_trains",
+   "fieldtype": "Float",
+   "label": "No. of Trains (No's)"
+  },
+  {
+   "depends_on": "eval:(doc.category!='ASAHI KASEI-MF')",
+   "fieldname": "volume_drained_in_a_day",
+   "fieldtype": "Float",
+   "label": "Volume drained in a day (m3/day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "suspends_mgl",
+   "fieldtype": "Float",
+   "label": "Suspends (mg/L)"
+  },
+  {
+   "fieldname": "suspends_kgday",
+   "fieldtype": "Float",
+   "label": "Suspends (kg/day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sludge_concentration",
+   "fieldtype": "Percent",
+   "label": "Sludge concentration (%)"
+  },
+  {
+   "fieldname": "volume_of_sludge_kgday",
+   "fieldtype": "Float",
+   "label": "Volume of sludge (kg/day)"
+  },
+  {
+   "fieldname": "volume_of_sludge_m3day",
+   "fieldtype": "Float",
+   "label": "Volume of sludge (m3/day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sludge_pump_operating_hours",
+   "fieldtype": "Float",
+   "label": "Sludge pump operating hours (hrs)"
+  },
+  {
+   "fieldname": "sludge_pump_capacity",
+   "fieldtype": "Float",
+   "label": "Sludge pump capacity (m3/hr)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lamella_settler",
+   "fieldtype": "Float",
+   "label": "Lamella settler (m3/hr)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pac_dosage",
+   "fieldtype": "Float",
+   "label": "PAC Dosage (m3/l)"
+  },
+  {
+   "fieldname": "pac_concentration",
+   "fieldtype": "Percent",
+   "label": "PAC Concentration (%)"
+  },
+  {
+   "fieldname": "dosing_pump",
+   "fieldtype": "Float",
+   "label": "Dosing pump (LPH)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dosing_pump_quanity_working",
+   "fieldtype": "Float",
+   "label": "Dosing pump quanity (working)"
+  },
+  {
+   "fieldname": "dosing_pump_quanity_standby",
+   "fieldtype": "Float",
+   "label": "Dosing pump quanity (standby)"
+  },
+  {
+   "fieldname": "column_break_r4unb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_05agh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sludge_pump_quantity_working",
+   "fieldtype": "Float",
+   "label": "Sludge pump quantity (working)"
+  },
+  {
+   "fieldname": "sludge_pump_quantity_standby",
+   "fieldtype": "Float",
+   "label": "Sludge pump quantity (standby)"
+  },
+  {
+   "depends_on": "eval:(doc.category=='ASAHI KASEI-MF')",
+   "fieldname": "hours_of_operation_hours",
+   "fieldtype": "Float",
+   "label": "Hours of operation (Hours)"
+  },
+  {
+   "depends_on": "eval:(doc.category=='ASAHI KASEI-MF')",
+   "fieldname": "total_reject_flow_rate_m3day",
+   "fieldtype": "Float",
+   "label": "Total Reject Flow rate (m3/day)",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.category=='ASAHI KASEI-MF')",
+   "fieldname": "total_reject_flow_rate_m3hr",
+   "fieldtype": "Float",
+   "label": "Total Reject Flow rate (m3/hr)"
+  },
+  {
+   "fieldname": "startup_sheet",
+   "fieldtype": "Link",
+   "label": "Startup Sheet",
+   "options": "Startup Sheet"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-01 20:51:40.227270",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Sulphur Black Removal",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

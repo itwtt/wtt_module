@@ -1,0 +1,26 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-10-07 11:32:24.688921",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-11-10 11:30:08.870519",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Workshop Report",
+ "owner": "vishnu@wtt.com",
+ "prepared_report": 0,
+ "ref_doctype": "Workshop Activity",
+ "report_name": "Workshop Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

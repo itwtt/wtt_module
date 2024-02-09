@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-06-10 10:41:02.420157",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "appointment_for",
+  "employee",
+  "employee_name",
+  "department",
+  "company",
+  "to_meet",
+  "cleint",
+  "from_company",
+  "meeting_date",
+  "from_time",
+  "to_time",
+  "hours",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "MT-",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.appointment_for=='Internal Meeting')",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "EMPLOYEE CODE",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:(doc.appointment_for=='Internal Meeting')",
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "EMPLOYEE NAME",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.appointment_for=='Internal Meeting')",
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "DEPARTMENT",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.appointment_for=='External Meeting')",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "COMPANY"
+  },
+  {
+   "depends_on": "eval:(doc.appointment_for=='External Meeting')",
+   "fieldname": "to_meet",
+   "fieldtype": "Data",
+   "label": "TO MEET"
+  },
+  {
+   "depends_on": "eval:(doc.appointment_for=='Appointment Creation')",
+   "fieldname": "cleint",
+   "fieldtype": "Data",
+   "label": "CLEINT"
+  },
+  {
+   "depends_on": "eval:(doc.appointment_for=='Appointment Creation')",
+   "fieldname": "from_company",
+   "fieldtype": "Data",
+   "label": "FROM COMPANY"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "FROM TIME"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "TO TIME"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "HOURS"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "REASON",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_for",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "APPOINTMENT FOR",
+   "options": "\nInternal\nExternal\nAppointment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-18 18:04:22.915747",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

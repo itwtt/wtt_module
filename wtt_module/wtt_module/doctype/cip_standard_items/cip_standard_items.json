@@ -1,0 +1,324 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-26 10:46:11.414540",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "flow",
+  "tds",
+  "panel",
+  "column_break_d3emu",
+  "get_data",
+  "section_break_tmvs7",
+  "cip_items",
+  "get_not_linked",
+  "not_linked_items",
+  "section_break_a6828",
+  "fabrication",
+  "erection",
+  "cost",
+  "pipes_fittings_valves",
+  "pipe_cost",
+  "section_break_7k5vh",
+  "qty_update",
+  "cip_electrical_items",
+  "section_break_w3uag",
+  "digital_input",
+  "column_break_dk4um",
+  "digital_output",
+  "column_break_exzqv",
+  "analog_input",
+  "column_break_jm3ol",
+  "analog_input2",
+  "column_break_bic9b",
+  "analog_output",
+  "section_break_rwwqg",
+  "cip_cost",
+  "column_break_nkfse",
+  "cip_not_linked_cost",
+  "column_break_zs9r1",
+  "electrical_cost",
+  "column_break_wvwpi",
+  "pump_ssb_cost",
+  "overall_cost",
+  "section_break_bpugi",
+  "cip_tax_cost",
+  "cip_transport_cost",
+  "include_tax_cost",
+  "column_break_106yj",
+  "cip_tax",
+  "cip_transport"
+ ],
+ "fields": [
+  {
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Flow (m3/day)"
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Float",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "TDS (mg/L)"
+  },
+  {
+   "default": "1",
+   "fieldname": "panel",
+   "fieldtype": "Float",
+   "label": "Panel"
+  },
+  {
+   "fieldname": "column_break_d3emu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "get_data",
+   "fieldtype": "Button",
+   "label": "Get data"
+  },
+  {
+   "fieldname": "section_break_tmvs7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "not_linked_items",
+   "fieldtype": "Table",
+   "label": "Not Linked Items",
+   "options": "RO Not Linked Items"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_a6828",
+   "fieldtype": "Section Break",
+   "label": "Pipes, Fittings & Valves"
+  },
+  {
+   "default": "0",
+   "fieldname": "fabrication",
+   "fieldtype": "Currency",
+   "label": "Fabrication"
+  },
+  {
+   "default": "0",
+   "fieldname": "erection",
+   "fieldtype": "Currency",
+   "label": "Erection"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "10",
+   "fieldname": "pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "Pipes, Fittings & Valves (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_7k5vh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qty_update",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update Electrical Items Qty from Mechanical Items Qty"
+  },
+  {
+   "fieldname": "section_break_w3uag",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_dk4um",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_exzqv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_jm3ol",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_bic9b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "section_break_rwwqg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_nkfse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zs9r1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_cost",
+   "fieldtype": "Currency",
+   "label": "Overall Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wvwpi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pump_ssb_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Pump SSB Cost"
+  },
+  {
+   "fieldname": "section_break_bpugi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Total CIP Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_106yj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "get_not_linked",
+   "fieldtype": "Button",
+   "label": "Get Not Linked"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "cip_items",
+   "fieldtype": "Table",
+   "label": "CIP Items",
+   "options": "RO Items"
+  },
+  {
+   "fieldname": "cip_electrical_items",
+   "fieldtype": "Table",
+   "label": "CIP Electrical Items",
+   "options": "RO Electrical Items"
+  },
+  {
+   "fieldname": "cip_not_linked_cost",
+   "fieldtype": "Currency",
+   "label": "CIP Not Linked Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cip_cost",
+   "fieldtype": "Currency",
+   "label": "CIP cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cip_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cip_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "cip_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "cip_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-30 11:38:06.140451",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "CIP Standard Items",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

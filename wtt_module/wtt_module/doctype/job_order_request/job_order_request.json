@@ -1,0 +1,266 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-01-18 09:30:31.114174",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "job_order_type",
+  "company",
+  "posting_date",
+  "col2",
+  "naming_series",
+  "section_break_25",
+  "project",
+  "to_warehouse",
+  "target_warehouse_address",
+  "target_address_display",
+  "sb0",
+  "items",
+  "preview",
+  "hide_table",
+  "html_field",
+  "more_info",
+  "remarks",
+  "status",
+  "raw_materials",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "oldfieldname": "naming_series",
+   "oldfieldtype": "Select",
+   "options": "MAT-JOD-.YYYY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "default": "Job Order Request",
+   "fieldname": "job_order_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Order Type"
+  },
+  {
+   "fieldname": "col2",
+   "fieldtype": "Column Break",
+   "oldfieldtype": "Column Break",
+   "print_width": "50%",
+   "width": "50%"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "oldfieldname": "company",
+   "oldfieldtype": "Link",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "no_copy": 1,
+   "oldfieldname": "posting_date",
+   "oldfieldtype": "Date",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "company_billing_address.address_line1",
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "oldfieldtype": "Link",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "description": "Sets 'Target Warehouse' in each row of the items table.",
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Default Target Warehouse",
+   "no_copy": 1,
+   "oldfieldname": "to_warehouse",
+   "oldfieldtype": "Link",
+   "options": "Warehouse",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "depends_on": "to_warehouse",
+   "fieldname": "target_warehouse_address",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Target Warehouse Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "target_address_display",
+   "fieldtype": "Small Text",
+   "label": "Target Warehouse Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb0",
+   "fieldtype": "Section Break",
+   "options": "Simple"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "oldfieldname": "mtn_details",
+   "oldfieldtype": "Table",
+   "options": "Job Order Table",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "more_info",
+   "fieldtype": "Section Break",
+   "label": "More Information",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "no_copy": 1,
+   "oldfieldname": "remarks",
+   "oldfieldtype": "Text",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "Button",
+   "label": "Preview"
+  },
+  {
+   "fieldname": "html_field",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "hide_table",
+   "fieldtype": "Button",
+   "label": "Hide"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending\nOrdered\nPartially Ordered\nTransfered\nPartially Transfered\nPartially Completed\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "raw_materials",
+   "fieldtype": "Table",
+   "label": "Raw Materials",
+   "options": "Raw Materials Job Order Request"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Order Request",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-file-text",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-06 19:42:27.451036",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Job Order Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "posting_date, to_warehouse, remarks",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

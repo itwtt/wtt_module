@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-11 09:21:47.821938",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "experiments_details_section",
+  "title_of_the_experiment",
+  "brief_description",
+  "objectives",
+  "column_break_xez8k",
+  "resource_type",
+  "tentative_date",
+  "samples",
+  "references",
+  "naming_series",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Your Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lab Experiments",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "RD-LAB-TEST-"
+  },
+  {
+   "fieldname": "experiments_details_section",
+   "fieldtype": "Section Break",
+   "label": "Experiments Details"
+  },
+  {
+   "fieldname": "title_of_the_experiment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title of the Experiment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brief_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Brief Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "objectives",
+   "fieldtype": "Small Text",
+   "label": "Objectives"
+  },
+  {
+   "fieldname": "column_break_xez8k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "resource_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Resource type",
+   "options": "\nEquipment\nEquipment + Reagents",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tentative_date",
+   "fieldtype": "Data",
+   "label": "Tentative Result Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "samples",
+   "fieldtype": "Select",
+   "label": "Samples",
+   "options": "\nTo be collected by Lab\nWill be provided",
+   "reqd": 1
+  },
+  {
+   "description": "Eg: SpectroPhotometer or Titration for finding hardness.",
+   "fieldname": "references",
+   "fieldtype": "Small Text",
+   "label": "References"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-03 09:21:35.812766",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Lab Experiments",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

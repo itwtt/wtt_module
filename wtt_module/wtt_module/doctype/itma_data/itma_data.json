@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-06-08 11:36:11.022081",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "expo",
+  "client_name",
+  "mail_status",
+  "whatsapp_status",
+  "broucher",
+  "attach",
+  "phone_no",
+  "email",
+  "itma_details",
+  "section_break_4x31d",
+  "send_whatsapp",
+  "column_break_jywxo",
+  "send_mail",
+  "column_break_ysoxo",
+  "send_pic",
+  "column_break_bftbq",
+  "send_bro",
+  "column_break_y3uki",
+  "send_mail_pic",
+  "column_break_nau3e",
+  "broucher_only",
+  "column_break_c7imr",
+  "mail_broucher_content",
+  "section_break_ewxkq",
+  "overall_sent",
+  "overall_mail",
+  "bakrid_wish",
+  "already_sent"
+ ],
+ "fields": [
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "itma_details",
+   "fieldtype": "Table",
+   "label": "ITMA Details",
+   "options": "ITMA Details Table"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "ITMA-DET-"
+  },
+  {
+   "fieldname": "send_whatsapp",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Send Whatsapp"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach Image",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "mail_status",
+   "fieldtype": "Data",
+   "label": "Mail Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "whatsapp_status",
+   "fieldtype": "Data",
+   "label": "Whatsapp Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "send_mail",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Send Mail"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "send_pic",
+   "fieldtype": "Button",
+   "label": "Send Whatsapp Pic"
+  },
+  {
+   "fieldname": "broucher",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Broucher"
+  },
+  {
+   "fieldname": "column_break_jywxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ysoxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "send_bro",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Send Whatsapp Brocher"
+  },
+  {
+   "fieldname": "section_break_4x31d",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_bftbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_y3uki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "send_mail_pic",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Send Mail pic"
+  },
+  {
+   "fieldname": "column_break_nau3e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "broucher_only",
+   "fieldtype": "Button",
+   "label": "Whatsapp Broucher only"
+  },
+  {
+   "fieldname": "column_break_c7imr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mail_broucher_content",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Mail with brochure"
+  },
+  {
+   "fieldname": "section_break_ewxkq",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "overall_sent",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Overall Sent"
+  },
+  {
+   "fieldname": "overall_mail",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "send_all_mail"
+  },
+  {
+   "fieldname": "bakrid_wish",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Bakrid wish"
+  },
+  {
+   "fieldname": "already_sent",
+   "fieldtype": "Data",
+   "label": "Already sent"
+  },
+  {
+   "fieldname": "expo",
+   "fieldtype": "Select",
+   "label": "Expo",
+   "options": "\nITMA\nBangladesh"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-03 17:12:58.105471",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "ITMA Data",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

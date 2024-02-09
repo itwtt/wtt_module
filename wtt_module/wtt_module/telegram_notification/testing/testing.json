@@ -1,0 +1,22 @@
+{
+ "attach_print": 0,
+ "channel": "Telegram",
+ "creation": "2022-02-16 12:09:07.805968",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Telegram Notification",
+ "document_type": "Tel message",
+ "dynamic_recipients": 0,
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Message:\n{{ doc.message }}\n\nAttachment File:\nhttps://erp.wttindia.com/{{ (doc.images).replace(\" \", \"\") }}",
+ "modified": "2022-02-16 12:09:07.805968",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Testing",
+ "owner": "Administrator",
+ "subject": "{{ doc.employee_name }} Send this message",
+ "telegram_user": "erp@wttindia.com-Telegram"
+}

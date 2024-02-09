@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-28 11:32:57.487177",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "lead",
+  "organization",
+  "address",
+  "city",
+  "proposal_no",
+  "revision",
+  "column_break_rhsx3",
+  "project",
+  "client_name",
+  "email",
+  "contact",
+  "capacity",
+  "currency",
+  "attach",
+  "get_proposal",
+  "attach2",
+  "secret_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Link",
+   "label": "Capacity",
+   "options": "Proposal Document"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PRO-.YY.-"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Base Document"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fetch_from": "lead.company_name",
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "get_proposal",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Get Proposal"
+  },
+  {
+   "fieldname": "attach2",
+   "fieldtype": "Attach",
+   "label": "Proposal"
+  },
+  {
+   "fetch_from": "lead.city",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "proposal_no",
+   "fieldtype": "Data",
+   "label": "Proposal No",
+   "read_only": 1
+  },
+  {
+   "default": "00",
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "label": "Revision",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rhsx3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "secret_key",
+   "fieldtype": "Data",
+   "label": "2FA Secret Key"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Aquanzer Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-15 11:16:52.858638",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Proposal",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "organization"
+}

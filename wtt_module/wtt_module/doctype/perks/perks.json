@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-01-04 15:19:21.539181",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "from_date",
+  "to_date",
+  "get_employee",
+  "ot_table",
+  "salary_table",
+  "amended_from",
+  "total_ot_amount",
+  "total_perks_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "get_employee",
+   "fieldtype": "Button",
+   "label": "Get Employee"
+  },
+  {
+   "fieldname": "salary_table",
+   "fieldtype": "Table",
+   "label": "Salary Table",
+   "options": "Salary Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "PERKS-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Perks",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ot_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "OT table",
+   "options": "Perks OT"
+  },
+  {
+   "fieldname": "total_ot_amount",
+   "fieldtype": "Currency",
+   "label": "Total OT amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_perks_amount",
+   "fieldtype": "Currency",
+   "label": "Total Perks amount",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-08 09:24:38.920977",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Perks",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GM",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

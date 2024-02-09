@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series",
+ "creation": "2022-09-01 11:17:36.403447",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "created_by",
+  "column_break_3",
+  "creator_name",
+  "department",
+  "section_break_2",
+  "introduction",
+  "advantage",
+  "challenge",
+  "innovation",
+  "column_break_6",
+  "contribution",
+  "achivement",
+  "expectation",
+  "section_break_13",
+  "will_be_presented_by",
+  "amended_from",
+  "attachments",
+  "ppt"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LRN-SES",
+   "read_only": 1
+  },
+  {
+   "fieldname": "introduction",
+   "fieldtype": "Small Text",
+   "label": "Introduction"
+  },
+  {
+   "fieldname": "advantage",
+   "fieldtype": "Small Text",
+   "label": "Advantage of Department"
+  },
+  {
+   "fieldname": "challenge",
+   "fieldtype": "Small Text",
+   "label": "Challenges of Department"
+  },
+  {
+   "fieldname": "innovation",
+   "fieldtype": "Small Text",
+   "label": "Innovation of Department"
+  },
+  {
+   "fieldname": "contribution",
+   "fieldtype": "Small Text",
+   "label": "Contribution of department"
+  },
+  {
+   "fieldname": "achivement",
+   "fieldtype": "Small Text",
+   "label": "Our Achivement"
+  },
+  {
+   "fieldname": "expectation",
+   "fieldtype": "Small Text",
+   "label": "Expectation from other department"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Learning Session",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Created By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "created_by.employee_name",
+   "fieldname": "creator_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Creator Name"
+  },
+  {
+   "fieldname": "will_be_presented_by",
+   "fieldtype": "Table",
+   "label": "Will be Presented by",
+   "options": "HR Updates Table"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "Attachment"
+  },
+  {
+   "fieldname": "ppt",
+   "fieldtype": "Table",
+   "label": "Attachments (PPT)",
+   "options": "Attachment"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "\nKaizen\nIT\nProcess\nProposal\nCivil Design\nMechanical Design\nElectrical Design\nPurchase\nO & M ,Business Development\nMarketing\nHuman Resources\nAccounts\nAdmin\nStore\nProject"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-10 14:18:05.322611",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Learning Session",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Kaizen Lead",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "creator_name"
+}

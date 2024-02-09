@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-05 18:14:58.085655",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_description",
+  "kw",
+  "type",
+  "vfd_type",
+  "w_qty",
+  "sb_qty",
+  "ssb_qty",
+  "unit_price",
+  "vfd_unit_price",
+  "total_price",
+  "motor_cost",
+  "system"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description"
+  },
+  {
+   "columns": 2,
+   "fieldname": "kw",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "kW"
+  },
+  {
+   "columns": 2,
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nDOL FEEDER\nVFD FEEDER\nS/D FEEDER"
+  },
+  {
+   "columns": 2,
+   "fieldname": "vfd_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "VFD Type",
+   "options": "\nVFD FEEDER"
+  },
+  {
+   "fieldname": "w_qty",
+   "fieldtype": "Float",
+   "label": "W Qty"
+  },
+  {
+   "fieldname": "sb_qty",
+   "fieldtype": "Float",
+   "label": "Sb Qty"
+  },
+  {
+   "fieldname": "ssb_qty",
+   "fieldtype": "Float",
+   "label": "Ssb Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "vfd_unit_price",
+   "fieldtype": "Currency",
+   "label": "VFD Unit Price"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "motor_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Motor Cost"
+  },
+  {
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "label": "System"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-05 18:14:58.085655",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "AN Electrical Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

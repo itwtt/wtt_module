@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "creation": "2021-12-31 12:15:22.541044",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hod",
+  "hod_name",
+  "department",
+  "strength",
+  "weakness",
+  "opportunity",
+  "threat",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SWOT",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Table",
+   "label": "Strength",
+   "options": "Strength"
+  },
+  {
+   "fieldname": "weakness",
+   "fieldtype": "Table",
+   "label": "Weakness",
+   "options": "Weakness"
+  },
+  {
+   "fieldname": "opportunity",
+   "fieldtype": "Table",
+   "label": "Opportunity",
+   "options": "Opportunity Table"
+  },
+  {
+   "fieldname": "threat",
+   "fieldtype": "Table",
+   "label": "Threat",
+   "options": "Threat"
+  },
+  {
+   "fieldname": "hod",
+   "fieldtype": "Link",
+   "label": "HOD",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "hod.employee_name",
+   "fieldname": "hod_name",
+   "fieldtype": "Data",
+   "label": "HOD Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-01-04 10:48:29.829891",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "SWOT",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

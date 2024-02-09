@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "creation": "2022-02-01 17:50:55.675048",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_date",
+  "department",
+  "time",
+  "virtual_table",
+  "remarks",
+  "preview",
+  "hide_table",
+  "item_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "default": "Today",
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "virtual_table",
+   "fieldtype": "Table",
+   "label": "Virtual Table",
+   "options": "Virtual Table"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Overall Remarks"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Select",
+   "label": "Time",
+   "options": "\n12 pm - 12.30 pm\n12.30 pm - 12.45 pm\n12.45 pm - 1.00 pm\n1.30 pm - 2.30 pm\n2.30 pm - 3.00 pm\n2.45 pm - 3.00 pm\n3.00 pm - 3.30 pm\n3.30 pm - 3.45 pm\n3.45 pm - 4.00 pm\n3.30 pm - 4.00 pm\n4.00 pm - 4.15 pm\n4.15 pm - 4.30 pm\n4.00 pm - 4.30 pm\n4.30 pm - 5.00 pm\n5.00 pm - 5.15 pm\n5.15 pm - 5.30 pm\n5.30 pm - 6.00 pm"
+  },
+  {
+   "fieldname": "hide_table",
+   "fieldtype": "Button",
+   "label": "Hide Table"
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "Button",
+   "label": "Preview"
+  },
+  {
+   "fieldname": "item_table",
+   "fieldtype": "HTML",
+   "label": "HTML Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-02 13:50:22.742473",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Work Updates",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

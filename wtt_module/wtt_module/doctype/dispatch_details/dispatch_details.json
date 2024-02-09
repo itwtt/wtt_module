@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-05 12:08:49.300480",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "feedback"
+ ],
+ "fields": [
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Feedback"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-05 12:09:03.781284",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Dispatch Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

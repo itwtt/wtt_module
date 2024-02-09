@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:agent_name",
+ "creation": "2023-01-25 15:19:10.806243",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agent_login",
+  "first_name",
+  "customer_table",
+  "naming_series",
+  "agent_name",
+  "agent_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "agent_login",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Agent Login",
+   "options": "User"
+  },
+  {
+   "fieldname": "customer_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Customer Table",
+   "options": "Agent Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "AGT-.YY.-"
+  },
+  {
+   "fetch_from": "agent_login.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "agent_address",
+   "fieldtype": "Small Text",
+   "label": "Agent Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-03 12:18:21.904374",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Agent Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name"
+}

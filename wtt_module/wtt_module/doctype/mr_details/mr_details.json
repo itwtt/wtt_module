@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-11 09:35:05.385545",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mr",
+  "purpose",
+  "lead_manu"
+ ],
+ "fields": [
+  {
+   "fieldname": "mr",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "MR",
+   "options": "Material Request"
+  },
+  {
+   "fetch_from": "mr.request_purpose",
+   "fieldname": "purpose",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Purpose",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lead_manu",
+   "fieldtype": "Float",
+   "label": "Lead time for manufacturing"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-03 12:40:13.159991",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "MR Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

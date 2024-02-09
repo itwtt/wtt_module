@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "creation": "2023-07-11 12:18:28.942021",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "date",
+  "punch",
+  "from_date",
+  "month",
+  "att_status",
+  "reason_for_mispunch",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "punch",
+   "fieldtype": "Select",
+   "label": "Punch",
+   "options": "\nIN\nOUT\nAFTERNOON IN\nAFTERNOON OUT",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "from_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "From time",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "Month",
+   "read_only": 1
+  },
+  {
+   "default": "Present",
+   "fieldname": "att_status",
+   "fieldtype": "Select",
+   "label": "Attendance Status",
+   "options": "\nPresent"
+  },
+  {
+   "fieldname": "reason_for_mispunch",
+   "fieldtype": "Small Text",
+   "label": "Reason for mispunch"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Checkin Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Checkin Request",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fingerprint",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-11 12:20:02.429716",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Checkin Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name",
+ "track_changes": 1
+}

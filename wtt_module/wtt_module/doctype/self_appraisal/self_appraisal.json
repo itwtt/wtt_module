@@ -1,0 +1,361 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-28 15:39:58.878116",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "htm",
+  "section_break_uofsp",
+  "employee",
+  "employee_name",
+  "column_break_l5bz7",
+  "department",
+  "designation",
+  "branch",
+  "section_break_krecb",
+  "que1",
+  "que2",
+  "que3",
+  "column_break_g6kzf",
+  "que4",
+  "que5",
+  "que6",
+  "next",
+  "section_break_2jqk2",
+  "que7",
+  "que8",
+  "que9",
+  "previous1",
+  "column_break_jzftl",
+  "que10",
+  "que11",
+  "que12",
+  "next1",
+  "section_break_mmyzc",
+  "que13",
+  "que14",
+  "que15",
+  "previous2",
+  "column_break_jnxdt",
+  "que16",
+  "que17",
+  "que18",
+  "next2",
+  "section_break_xgwtx",
+  "que19",
+  "previous3",
+  "column_break_lxxis",
+  "que20",
+  "submit",
+  "ctc",
+  "basic"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "que1",
+   "fieldtype": "Small Text",
+   "label": "Define your most important accomplishments relevant to your position since the previous period in order of significance."
+  },
+  {
+   "fieldname": "que2",
+   "fieldtype": "Small Text",
+   "label": "Define your biggest challenges and how did you solve them during this period."
+  },
+  {
+   "fieldname": "que3",
+   "fieldtype": "Small Text",
+   "label": "Define the areas you consider that you should improve and your improvement plan."
+  },
+  {
+   "fieldname": "que4",
+   "fieldtype": "Small Text",
+   "label": "State that in what aspects you enjoy the most and the least during completing your tasks."
+  },
+  {
+   "fieldname": "que5",
+   "fieldtype": "Small Text",
+   "label": "List out courses / Trainings / Certifications you have completed in the past One year."
+  },
+  {
+   "fieldname": "que6",
+   "fieldtype": "Small Text",
+   "label": "State how your manager/Head can help or support you to increase your satisfaction."
+  },
+  {
+   "fieldname": "column_break_g6kzf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2jqk2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "que7",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I have completed my tasks in the predetermined timeframe. (1 -Low , 5- High)",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que8",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": " I never miss any deadline during the period. ",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que9",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I always communicate with other team members clearly. ",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que10",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I am good at not doing mistakes. Your perfection score for this year please. ",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que11",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I am proactive instead of being reactive during the projects.",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que12",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "My contribution score for the growth of the organization . (State the Idea, Concept you have provided)",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que13",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I have achieved all of my goals that I have committed to the company the past One year",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que14",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I came to office at punctual time and took leaves officially communicated to  the company . My attendance and Punctual Score",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que15",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I never missed / Deiviated HR Policy of the company",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que16",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I can be identifed as a qualified Engineer by my attire / Dressing sense and look. My grooming Score",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que17",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "My communication is very clear and I can communicate to anyone in English by mail or phone. My communication Score ",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que18",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "I am eligible for Full increment based on my Contribution .Rate your Eligibility.",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "que19",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "What percentage increment  you expect from your salary ?"
+  },
+  {
+   "fieldname": "que20",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Can you justify the reason ?"
+  },
+  {
+   "fieldname": "section_break_krecb",
+   "fieldtype": "Section Break",
+   "label": "Questions"
+  },
+  {
+   "fieldname": "column_break_l5bz7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xgwtx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jzftl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "htm",
+   "fieldtype": "HTML",
+   "options": "<link href=\"https://fonts.googleapis.com/css?family=Roboto\" rel=\"stylesheet\">\n<div style=\"background: yellow; width: 485px; border: thick double #32a1ce;\">\n<br>\n<h3 style=\"color: #042a64; font-family: 'Roboto'; margin-left: 10px;\">It will help us to assess.</h3>\n<h3 style=\"color: #042a64; font-family: 'Roboto'; margin-left: 10px;\">Kindly enter your score with atmost honesty</h3>\n<h3 style=\"color: #042a64; font-family: 'Roboto'; margin-left: 10px;\">Select 1 -5 / Incremental of 1 (1 -Low , 5- High)</h3>\n<br>\n</div>\n<br>"
+  },
+  {
+   "fieldname": "section_break_uofsp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SELF-APP-"
+  },
+  {
+   "fieldname": "next1",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Next"
+  },
+  {
+   "fieldname": "section_break_mmyzc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jnxdt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next",
+   "fieldtype": "Button",
+   "label": "Next"
+  },
+  {
+   "fieldname": "previous2",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Previous"
+  },
+  {
+   "fieldname": "next2",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Next"
+  },
+  {
+   "fieldname": "previous3",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Previous"
+  },
+  {
+   "fieldname": "previous1",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Previous"
+  },
+  {
+   "fieldname": "column_break_lxxis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submit",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Submit"
+  },
+  {
+   "fieldname": "ctc",
+   "fieldtype": "Currency",
+   "label": "CTC"
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Currency",
+   "label": "Basic"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-23 14:11:50.129795",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Self Appraisal",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name"
+}

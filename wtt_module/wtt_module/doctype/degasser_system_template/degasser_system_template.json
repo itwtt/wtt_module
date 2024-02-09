@@ -1,0 +1,403 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-19 12:44:12.267918",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_startup_sheet",
+  "flow",
+  "column_break_hlxql",
+  "panel",
+  "column_break_qwibp",
+  "startup_sheet",
+  "section_break_tjnws",
+  "degasser_table",
+  "section_break_gogzk",
+  "d_cost",
+  "pipes_fittings_valves",
+  "pipe_cost",
+  "section_break_lght8",
+  "not_linked_items",
+  "degasser_not_linked_items",
+  "degasser_electrical_items",
+  "section_break_sz8wx",
+  "digital_input",
+  "column_break_1xqsv",
+  "digital_output",
+  "column_break_pzagy",
+  "analog_input2",
+  "column_break_4b4nn",
+  "analog_input",
+  "column_break_kbueq",
+  "analog_output",
+  "section_break_wwpji",
+  "degasser_cost",
+  "column_break_4ncrc",
+  "not_linked_cost",
+  "column_break_gel5y",
+  "electrical_cost",
+  "section_break_lzg4w",
+  "overall_cost",
+  "section_break_pu92r",
+  "degasser_tax_cost",
+  "degasser_transport_cost",
+  "include_tax_cost",
+  "column_break_106yj",
+  "degasser_tax",
+  "degasser_transport",
+  "additional_cost_section",
+  "margin_for_expense_calculation_cost",
+  "e_c",
+  "degasser_overhead_cost",
+  "degasser_agent_commission_cost",
+  "degasser_guarantee_clause_cost",
+  "column_break_0opi8",
+  "margin_for_expense_calculation",
+  "e_c_",
+  "overhead_percentage",
+  "agent_commission",
+  "guarantee_clause_charge",
+  "section_break_e4a2w",
+  "margin_cost_without_margin",
+  "degasser_cost_with_margin",
+  "column_break_sqxbf",
+  "margin_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_startup_sheet",
+   "fieldtype": "Link",
+   "label": "Project Startup Sheet",
+   "options": "Startup Sheet"
+  },
+  {
+   "fetch_from": "project_startup_sheet.flow",
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "label": "Flow"
+  },
+  {
+   "fieldname": "column_break_hlxql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "panel",
+   "fieldtype": "Float",
+   "label": "Panel"
+  },
+  {
+   "fieldname": "column_break_qwibp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "startup_sheet",
+   "fieldtype": "Button",
+   "label": "Startup Sheet"
+  },
+  {
+   "fieldname": "section_break_tjnws",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_gogzk",
+   "fieldtype": "Section Break",
+   "label": "Pipes, Fittings & Valves"
+  },
+  {
+   "default": "0",
+   "fieldname": "pipes_fittings_valves",
+   "fieldtype": "Percent",
+   "label": "Pipes, Fittings & Valves (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_lght8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "not_linked_items",
+   "fieldtype": "Button",
+   "label": "Not linked Items"
+  },
+  {
+   "fieldname": "section_break_sz8wx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_1xqsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_pzagy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_4b4nn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_kbueq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "section_break_wwpji",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4ncrc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "not_linked_cost",
+   "fieldtype": "Currency",
+   "label": "Not linked Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gel5y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_lzg4w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_cost",
+   "fieldtype": "Currency",
+   "label": "Overall Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pu92r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Total MF Cost"
+  },
+  {
+   "fieldname": "column_break_106yj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_for_expense_calculation_cost",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "fieldname": "column_break_0opi8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin For Expense Calculation",
+   "read_only": 1
+  },
+  {
+   "default": "7",
+   "fieldname": "e_c_",
+   "fieldtype": "Percent",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "7",
+   "fieldname": "overhead_percentage",
+   "fieldtype": "Percent",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7",
+   "fieldname": "agent_commission",
+   "fieldtype": "Percent",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "7",
+   "fieldname": "guarantee_clause_charge",
+   "fieldtype": "Percent",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_e4a2w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_cost_without_margin",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "column_break_sqxbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "margin_percentage",
+   "fieldtype": "Percent",
+   "label": "Margin (%)"
+  },
+  {
+   "fieldname": "degasser_table",
+   "fieldtype": "Table",
+   "label": "Degasser System Items",
+   "options": "Degasser System Items"
+  },
+  {
+   "fieldname": "degasser_not_linked_items",
+   "fieldtype": "Table",
+   "label": "Degasser System Not linked items",
+   "options": "Degasser System Not linked items"
+  },
+  {
+   "fieldname": "degasser_electrical_items",
+   "fieldtype": "Table",
+   "label": "Degasser System Electrical Items",
+   "options": "Degasser System Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "degasser_cost_with_margin",
+   "fieldtype": "Currency",
+   "label": "Degasser Selling Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "degasser_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Degasser Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "degasser_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Degasser Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "degasser_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Degasser Guarantee Clause Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "degasser_cost",
+   "fieldtype": "Currency",
+   "label": "Degasser Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "degasser_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "degasser_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "2",
+   "fieldname": "degasser_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "3",
+   "fieldname": "degasser_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "d_cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-20 17:30:07.371443",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Degasser System Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_startup_sheet"
+}

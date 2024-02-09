@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "creation": "2022-02-21 09:50:21.334474",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "description",
+  "technical_description",
+  "qty",
+  "shipment_date",
+  "expected_reached_date"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Code"
+  },
+  {
+   "columns": 1,
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 2,
+   "fieldname": "technical_description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Technical Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "columns": 2,
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Shipment Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "expected_reached_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expected Reached Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-25 17:40:11.298957",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Order Status Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

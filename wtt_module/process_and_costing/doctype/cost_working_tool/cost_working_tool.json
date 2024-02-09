@@ -1,0 +1,5283 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:COSTING-{project}-{#}",
+ "creation": "2022-10-11 10:52:24.990399",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pdf_1",
+  "edit",
+  "pdf2",
+  "project_startup_sheet",
+  "column_break_26ffl",
+  "column_break_ipdvy",
+  "startup_sheet",
+  "duplicate",
+  "section_break_rb5kx",
+  "project",
+  "project_name",
+  "revision",
+  "column_break_3",
+  "employee",
+  "employee_name",
+  "posting_date",
+  "total_panel_count",
+  "column_break_n8oqz",
+  "revision_remarks",
+  "proposal_status",
+  "section_break_6",
+  "status",
+  "flow",
+  "tdsmgl",
+  "tank_height",
+  "column_break_bdgtp",
+  "bod",
+  "cod",
+  "ro_recovery",
+  "is_rewolutte",
+  "is_brinex",
+  "column_break_02elg",
+  "choose_ro_template",
+  "ro_fab_and_erection_cost",
+  "choose_rro_template",
+  "rewolutte_ro",
+  "usd",
+  "eur",
+  "section_break_ww2of",
+  "add_discount",
+  "standard_cost",
+  "section_break_4wyhg",
+  "reference_standard_cost",
+  "section_break_8",
+  "brinex_table",
+  "section_break_btnne",
+  "rewolutte_table",
+  "section_break_llaz7",
+  "parameters",
+  "total_system_cost",
+  "get_bom",
+  "total_cost",
+  "total_standard_cost",
+  "bom_cost",
+  "cost_section",
+  "inr_column",
+  "standard__cost",
+  "brinex_cost",
+  "rewolutte_cost",
+  "overall_cost",
+  "ssb_pressure_pump_cost",
+  "currency1",
+  "eur_column",
+  "standard__cost2",
+  "brinex_cost2",
+  "rewolutte_cost2",
+  "overall_cost2",
+  "ssb_pressure_pump_cost2",
+  "currency2",
+  "usd_column",
+  "standard__cost3",
+  "brinex_cost3",
+  "rewolutte_cost3",
+  "overall_cost3",
+  "ssb_pressure_pump_cost3",
+  "currency3",
+  "section_break_cvuwo",
+  "items",
+  "process_bom",
+  "withcheck",
+  "with_b",
+  "without",
+  "micro_filtration_tab",
+  "mf_reference_section",
+  "mf_table",
+  "mf_not_linked_items",
+  "mf_not_linked_table",
+  "section_break_osq3n",
+  "mf_generate",
+  "mf_full_system",
+  "section_break_for_pipe",
+  "edit_mffe",
+  "mf_line_item_cost",
+  "not_linked_cost",
+  "mf_cost",
+  "mf_pipes_fittings_valves",
+  "mf_pipe_cost",
+  "mf_fabrication_cost",
+  "mf_erection_cost",
+  "section_break_28gtp",
+  "mf_electrical_items",
+  "mf_plc_items",
+  "total_mf_cost",
+  "mf_electrical_cost",
+  "overall_mf_cost",
+  "mf_calculations_for_io_cards_section",
+  "mf_digital_input",
+  "column_break_9oban",
+  "mf_digital_output",
+  "column_break_oslfh",
+  "mf_analog_input",
+  "column_break_2ttjm",
+  "mf_analog_input2",
+  "column_break_wyt8g",
+  "mf_analog_output",
+  "section_break_ae3ln",
+  "mf_tax_cost",
+  "mf_transport_cost",
+  "total_cost_for_mf",
+  "column_break_106yj",
+  "mftax",
+  "mftransport",
+  "mbr_koch_tab",
+  "mbrk_reference_section",
+  "mbr_koch_table",
+  "not_linked_items",
+  "mbr_koch_not_linked",
+  "section_break_cqq3o",
+  "mbr_generate",
+  "mbrk_full_system",
+  "pipe_cost_section",
+  "edit_kochfe",
+  "mbrk_line_items_cost",
+  "cost_for_not_linked_items",
+  "mbr_cost",
+  "mbr_pipes_fittings_valves",
+  "mbr_pipe_cost",
+  "mbrk_erection_cost",
+  "section_break_umcid",
+  "mbr_electrical_items",
+  "mbrk_plc_items",
+  "section_break_bgokr",
+  "mbr_digital_input",
+  "column_break_avajr",
+  "mbr_digital_output",
+  "column_break_akq5j",
+  "mbr_analog_input",
+  "column_break_glemt",
+  "mbr_analog_input2",
+  "column_break_wciru",
+  "mbr_analog_output",
+  "section_break_5sho0",
+  "mbrk_cost",
+  "mbr_electrical_cost",
+  "mbr_overall_cost",
+  "section_break_qa59e",
+  "mbr_tax_cost",
+  "mbr_transport_cost",
+  "total_cost_for_mbrk",
+  "column_break_dmgvh",
+  "mbr_tax",
+  "mbr_transport",
+  "mbr_ovivo_tab",
+  "mbro_reference_section",
+  "mbr_ovivo_table",
+  "mbr_ovivo_not_linked_button",
+  "mbr_ovivo_not_linked_items",
+  "section_break_joe1x",
+  "mbro_generate",
+  "mbro_full_system",
+  "ovivo_pipe_cost_sec",
+  "edit_ovivofe",
+  "ovivo_line_items_cost",
+  "ovivo_not_linked_cost",
+  "ovivo_cost",
+  "ovivo_pipes_fittings_valves",
+  "ovivo_pipe_cost",
+  "mbro_erection_cost",
+  "section_break_ibc2w",
+  "ovivo_electrical_items",
+  "mbro_plc_items",
+  "ovivo_plc_card_calculation_section",
+  "ovivo_digital_input",
+  "column_break_q9skz",
+  "ovivo_digital_output",
+  "column_break_hfj1m",
+  "ovivo_analog_input",
+  "column_break_e4pje",
+  "ovivo_analog_input2",
+  "column_break_zxpu5",
+  "ovivo_analog_output",
+  "section_break_kp6cp",
+  "mbr_ovivo_cost",
+  "ovivo_electrical_cost",
+  "overall_mbr_ovivo_cost",
+  "section_break_x5ao5",
+  "ovivo_tax_cost",
+  "ovivo_transport_cost",
+  "total_cost_for_mbro",
+  "column_break_mzf4o",
+  "ovivo_tax",
+  "ovivo_transport",
+  "pre_treatment_tab",
+  "bio_reference_section",
+  "pre_treatment_table",
+  "bio_not_linked",
+  "item_description",
+  "qty",
+  "bio_not_linked_table",
+  "edit_bio_full_system",
+  "bio_full_system",
+  "view_fab_and_erection_tab",
+  "pipe_escalations_section",
+  "pipe_escalation",
+  "section_break_ikwdx",
+  "add_qty",
+  "bio_generate",
+  "bio_calculate",
+  "bio_all_items",
+  "pre_treatment_full_system",
+  "pre_treatment_special_table",
+  "electrical_details_section",
+  "fittings_table",
+  "fittings_total",
+  "bio_electrical_items",
+  "bio_plc_items",
+  "section_break_vkvyn",
+  "bio_not_linked_cost",
+  "bio_cost",
+  "bio_electrical_cost",
+  "overall_bio_cost",
+  "column_break_sjrsv",
+  "mf_scheme",
+  "koch_scheme",
+  "ovivo_scheme",
+  "section_break_rlwbh",
+  "bio_digital_input",
+  "column_break_31lmb",
+  "bio_digital_output",
+  "column_break_ok7zo",
+  "bio_analog_input",
+  "column_break_niguv",
+  "bio_analog_input2",
+  "column_break_zout8",
+  "bio_analog_output",
+  "section_break_gwm9o",
+  "bio_tax_cost",
+  "bio_transport_cost",
+  "total_cost_for_bio",
+  "column_break_jg4t9",
+  "bio_tax",
+  "bio_transport",
+  "fabrication_cost_tab",
+  "fabrication_table",
+  "edit_qty",
+  "total_fabrication_cost",
+  "erection_and_commision_tab",
+  "edit_qty2",
+  "cost_table",
+  "erection_cost",
+  "cts_tab",
+  "cts_referenece_section",
+  "cts_items",
+  "cts_not_linked",
+  "cts_not_linked_items",
+  "section_break_qvb2e",
+  "cts_generate",
+  "cts_full_system",
+  "pipes_section",
+  "edit_ctsfe",
+  "cts_not_linked_cost",
+  "cts_total",
+  "cts_erection",
+  "cts_pipes_fittings_valves",
+  "cts_pipe_cost",
+  "cts_electrical_items",
+  "cts_plc_items",
+  "section_break_ia3on",
+  "cts_digital_input",
+  "column_break_vlxqh",
+  "cts_digital_output",
+  "column_break_uo1iy",
+  "cts_analog_input2",
+  "column_break_w6xwe",
+  "cts_analog",
+  "column_break_b7gqx",
+  "cts_an_out",
+  "section_break_uf59y",
+  "cts_final_cost",
+  "column_break_j3jua",
+  "cts_electrical_cost",
+  "section_break_cyfle",
+  "cts_overall_cost",
+  "section_break_xtawr",
+  "cts_tax_cost",
+  "cts_transport_cost",
+  "total_cost_for_cts",
+  "column_break_0eysd",
+  "cts_tax",
+  "cts_transport",
+  "mbr_cts_tab",
+  "mbr_cts_reference_section",
+  "mbr_cts_table",
+  "mbr_cts_not_linked_button",
+  "mbr_cts_not_linked_items",
+  "section_break_n9svn",
+  "mbr_cts_generate",
+  "mbr_cts_full_system",
+  "mbr_cts_pipe_cost_sec",
+  "edit_mbr_ctsfe",
+  "mbr_cts_not_linked_cost",
+  "mbr_cts_cost_without_pipes",
+  "mbr_cts_erection",
+  "mbr_cts_pipes_fittings_valves",
+  "mbr_cts_pipe_cost",
+  "section_break_ibc2w_cts",
+  "mbr_cts_electrical_items",
+  "mbr_cts_plc_items",
+  "mbr_cts_plc_card_calculation_section",
+  "mbr_cts_digital_input",
+  "column_break_q9skz_mbr_cts",
+  "mbr_cts_digital_output",
+  "column_break_hfj1m_mbr_cts",
+  "mbr_cts_analog_input",
+  "column_break_e4pje_mbr_cts",
+  "mbr_cts_analog_input2",
+  "column_break_zxpu5_mbr_cts",
+  "mbr_cts_analog_output",
+  "section_break_kp6cp_mbr_cts",
+  "mbr_cts_cost",
+  "mbr_cts_electrical_cost",
+  "overall_mbr_cts_cost",
+  "section_break_x5ao5_mbr_cts",
+  "mbr_cts_tax_cost",
+  "mbr_cts_transport_cost",
+  "total_cost_for_mbr_cts",
+  "column_break_mbr_cts1",
+  "mbr_cts_tax",
+  "mbr_cts_transport",
+  "degasser_tab",
+  "degasser_reference_section",
+  "dgt_items",
+  "dgt_not_linked",
+  "dgt_not_linked_items",
+  "section_break_m1swd",
+  "dgt_generate",
+  "dgt_full_system",
+  "dgt_pipes_fittings_and_valves_section",
+  "edit_dgtfe",
+  "dgt_line_items_cost",
+  "dgt_not_linked_cost",
+  "dgt_cost",
+  "dgt_pipes_fittings_valves",
+  "dgt_pipe_cost",
+  "dgt_erection_price",
+  "section_break_4q4qh",
+  "dgt_electrical_items",
+  "dgt_plc_items",
+  "section_break_gvfkc",
+  "dgt_digital_input",
+  "dgt_digital_output",
+  "column_break_mbbd1",
+  "dgt_analog_input2",
+  "column_break_wwwrk",
+  "dgt_analog_input",
+  "column_break_lbxgy",
+  "dgt_analog_output",
+  "section_break_xpb0w",
+  "dgt_total_cost",
+  "column_break_uwcdn",
+  "dgt_electrical_cost",
+  "column_break_zmyqt",
+  "dgt_overall_cost",
+  "section_break_2ydah",
+  "dgt_tax_cost",
+  "dgt_transport_cost",
+  "total_cost_for_degasser",
+  "column_break_qgbmc",
+  "dgt_tax",
+  "dgt_transport",
+  "plc_items_tab",
+  "plc_table_list",
+  "plc_base_total",
+  "section_break_nuql8",
+  "plc_tax_cost",
+  "plc_transport_cost",
+  "total_cost_for_plc",
+  "column_break_kecgp",
+  "plc_tax",
+  "plc_transport",
+  "chlorination_tab",
+  "chlorination_total",
+  "clt_tax_cost",
+  "clt_transport_cost",
+  "total_cost_for_chlorination",
+  "column_break_tw6n7",
+  "clt_tax",
+  "clt_transport",
+  "cts_cooling_tower_tab",
+  "cts_cooling_tower_cost",
+  "cts_cooling_tower_tax_cost",
+  "cts_cooling_tower_transport_cost",
+  "total_cost_for_cts_cooling_tower",
+  "column_break_ataao",
+  "cts_cooling_tower_tax",
+  "cts_cooling_tower_transport",
+  "invidual_system_cost_tab",
+  "system_list",
+  "get_rate",
+  "bom_item_rate",
+  "remarks",
+  "total_bom_cost",
+  "process_template_tab",
+  "get_proposal",
+  "template",
+  "get_word",
+  "proposal_index",
+  "section_break_isqoe",
+  "district_code",
+  "state_code",
+  "unit_code",
+  "revision_code",
+  "district",
+  "state",
+  "country",
+  "footer_date",
+  "county_code",
+  "column_break_c1kqw",
+  "permeate_water_tds",
+  "treated_water_cod",
+  "treated_water_tss",
+  "company_name",
+  "contact_person",
+  "proposal_for",
+  "abbr",
+  "abbr_inlet",
+  "bod_v",
+  "cod_v",
+  "tds",
+  "tss",
+  "tkn",
+  "pva",
+  "silica",
+  "sulphate",
+  "column_break_hdh7s",
+  "chloride",
+  "hardness",
+  "alkali",
+  "temperature",
+  "oil_grease",
+  "selected_process_system",
+  "section_break_oa5zr",
+  "flowchart",
+  "scope",
+  "rewollutte_comparison_tab",
+  "section_break_05tpr",
+  "rewolutte_comparison_table",
+  "without_rewolutte_price",
+  "with_rewolutte_price",
+  "total_difference",
+  "total_brinex_cost",
+  "rewolutte_reference",
+  "pre_cost_working_reference",
+  "margin_tab",
+  "additional_cost_section",
+  "include_tax_cost",
+  "column_break_2ytgy",
+  "margin_for_expense_calculation_cost",
+  "e_c",
+  "mf_overhead_cost",
+  "mf_agent_commission_cost",
+  "mf_guarantee_clause_cost",
+  "column_break_0opi8",
+  "margin_for_expense_calculation",
+  "e_c_",
+  "overhead_percentage",
+  "agent_commission",
+  "guarantee_clause_charge",
+  "section_break_e4a2w",
+  "margin_cost_without_margin",
+  "mf_cost_with_margin",
+  "column_break_vk0md",
+  "margin_percentage",
+  "mbr_additional_cost",
+  "total_mbr_cost",
+  "column_break_6pywc",
+  "mbr_marginal_cost_for_expense_calculation",
+  "mbr_e_c",
+  "mbr_overhead_cost",
+  "mbr_agent_commission_cost",
+  "mbr_guarantee_clause_cost",
+  "column_break_ecoz7",
+  "mbr_margin_for_expense_calculation",
+  "mbr_e_c_",
+  "mbr_overhead_percentage",
+  "mbr_agent_commission",
+  "mbr_guarantee_clause_charge",
+  "section_break_ze6uy",
+  "mbr_grand_total",
+  "mbr_selling_price",
+  "column_break_dbtut",
+  "mbr_margin_percentage",
+  "ovivo_additional_cost",
+  "total_ovivo_cost",
+  "column_break_jfik2",
+  "ovivo_marginal_cost_for_expense_calculation",
+  "ovivo_e_c",
+  "ovivo_overhead_cost",
+  "ovivo_agent_commission_cost",
+  "ovivo_guarantee_clause_cost",
+  "column_break_qwgr4",
+  "ovivo_margin_for_expense_calculation",
+  "ovivo_e_c_",
+  "ovivo_overhead_percentage",
+  "ovivo_agent_commission",
+  "ovivo_guarantee_clause_charge",
+  "section_break_qqpj9",
+  "ovivo_grand_total",
+  "ovivo_selling_price",
+  "column_break_iv7vq",
+  "ovivo_margin_percentage",
+  "section_break_8extd",
+  "total_bio_cost",
+  "column_break_voe8z",
+  "bio_marginal_cost_for_expense_calculation",
+  "bio_e_c",
+  "bio_overhead_cost",
+  "bio_agent_commission_cost",
+  "bio_guarantee_clause_cost",
+  "column_break_nyc1m",
+  "bio_margin_for_expense_calculation",
+  "bio_e_c_",
+  "bio_overhead_percentage",
+  "bio_agent_commission",
+  "bio_guarantee_clause_charge",
+  "section_break_zouax",
+  "bio_grand_total",
+  "bio_selling_price",
+  "column_break_cumkr",
+  "bio_margin_percentage",
+  "anaerobic_section",
+  "total_an_cost",
+  "column_break_703ba",
+  "an_marginal_cost_for_expense_calculation",
+  "an_e_c",
+  "an_overhead_cost",
+  "an_agent_commission_cost",
+  "an_guarantee_clause_cost",
+  "column_break_ebxzv",
+  "an_margin_for_expense_calculation",
+  "an_e_c_",
+  "an_overhead_percentage",
+  "an_agent_commission",
+  "an_guarantee_clause_charge",
+  "section_break_guwhx",
+  "an_grand_total",
+  "an_selling_price",
+  "column_break_99w7d",
+  "an_margin_percentage",
+  "cts_additional_cost_section",
+  "total_cts_cost",
+  "column_break_yttsv",
+  "cts_marginal_cost_for_expense_calculation",
+  "cts_e_c_cost",
+  "cts_overhead_cost",
+  "cts_agent_commission_cost",
+  "cts_guarantee_clause_cost",
+  "column_break_3qooj",
+  "cts_margin_for_expense_calculation",
+  "cts_e_c",
+  "cts_overhead",
+  "cts_agent_commission",
+  "cts_guarantee_clause_charge",
+  "section_break_uienc",
+  "cts_grand_total",
+  "cts_selling_price",
+  "column_break_fp0mk",
+  "cts_margin",
+  "mbr_cts_additional_cost",
+  "total_mbr_cts_cost",
+  "column_break_5j93j",
+  "mbr_cts_marginal_cost_for_expense_calculation",
+  "mbr_cts_e_c",
+  "mbr_cts_overhead_cost",
+  "mbr_cts_agent_commission_cost",
+  "mbr_cts_guarantee_clause_cost",
+  "column_break_qwgr4_mbr_cts",
+  "mbr_cts_margin_for_expense_calculation",
+  "mbr_cts_e_c_",
+  "mbr_cts_overhead_percentage",
+  "mbr_cts_agent_commission",
+  "mbr_cts_guarantee_clause_charge",
+  "section_break_qqpj9_mbr_cts",
+  "mbr_cts_grand_total",
+  "mbr_cts_selling_price",
+  "column_break_iv7vq_mbr_cts",
+  "mbr_cts_margin_percentage",
+  "chlorination_section",
+  "total_clt_cost",
+  "column_break_v0bd6",
+  "clt_marginal_cost_for_expense_calculation",
+  "clt_e_c_cost",
+  "clt_overhead_cost",
+  "clt_agent_commission_cost",
+  "clt_guarantee_clause_cost",
+  "column_break_jdhpu",
+  "clt_margin_for_expense_calculation",
+  "clt_e_c",
+  "clt_overhead",
+  "clt_agent_commission",
+  "clt_guarantee_clause_charge",
+  "section_break_mbggr",
+  "clt_grand_total",
+  "clt_selling_price",
+  "column_break_m7dbd",
+  "clt_margin",
+  "cts_cooling_tower_section",
+  "total_cts_cooling_tower_cost",
+  "column_break_ls0px",
+  "cts_cooling_tower_marginal_cost_for_expense_calculation",
+  "cts_cooling_tower_e_c_cost",
+  "cts_cooling_tower_overhead_cost",
+  "cts_cooling_tower_agent_commission_cost",
+  "cts_cooling_tower_guarantee_clause_cost",
+  "column_break_cdrao",
+  "cts_cooling_tower_margin_for_expense_calculation",
+  "cts_cooling_tower_e_c",
+  "cts_cooling_tower_overhead",
+  "cts_cooling_tower_agent_commission",
+  "cts_cooling_tower_guarantee_clause_charge",
+  "section_break_5d8ka",
+  "cts_cooling_tower_grand_total",
+  "cts_cooling_tower_selling_price",
+  "column_break_fqnzp",
+  "cts_cooling_tower_margin",
+  "dgt_additional_cost_section",
+  "total_dgt_cost",
+  "column_break_hfrsn",
+  "dgt_marginal_cost_for_expense_calculation",
+  "dgt_e_c_cost",
+  "dgt_overhead_cost",
+  "dgt_agent_commission_cost",
+  "dgt_guarantee_clause_cost",
+  "column_break_iwsbz",
+  "dgt_margin_for_expense_calculation",
+  "dgt_e_c",
+  "dgt_overhead",
+  "dgt_agent_commission",
+  "dgt_guarantee_clause_charge",
+  "section_break_lla3r",
+  "dgt_grand_total",
+  "dgt_selling_price",
+  "column_break_oizqd",
+  "dgt_margin",
+  "section_break_3myun",
+  "plc_cost2",
+  "column_break_chjkx",
+  "plc_margin_cost_for_expense_calculation",
+  "plc_e_c_cost",
+  "plc_overhead_cost",
+  "plc_agent_commission_cost",
+  "plc_guarantee_clause_cost",
+  "column_break_07uav",
+  "plc_margin_for_expense_calculation",
+  "plc_e_c",
+  "plc_overhead",
+  "plc_agent_commission",
+  "plc_guarantee_clause_charge",
+  "section_break_soyzv",
+  "plc_grand_total",
+  "plc_cost",
+  "column_break_mkgx8",
+  "plc_margin",
+  "ro_cip_section",
+  "ro_cost",
+  "choose_cip",
+  "cip_cost",
+  "column_break_yvswz",
+  "rro_cost",
+  "choose_cip2",
+  "cip_cost2",
+  "column_break_rv0xv",
+  "rewro_cost",
+  "choose_cip3",
+  "cip_cost3",
+  "section_break_rocip",
+  "ro_with_cip",
+  "column_break_tn81b",
+  "rocip_margin_cost_for_expense_calculation",
+  "rocip_e_c_cost",
+  "rocip_overhead_cost",
+  "rocip_agent_commission_cost",
+  "rocip_guarantee_clause_cost",
+  "column_break_gkrze",
+  "rocip_margin_for_expense_calculation",
+  "rocip_e_c",
+  "rocip_overhead",
+  "rocip_agent_commission",
+  "rocip_guarantee_clause_charge",
+  "section_break_p09gb",
+  "rocip_grand_total",
+  "rocip_price",
+  "column_break_ciovw",
+  "rocip_margin",
+  "section_break_rrocip",
+  "rro_with_cip",
+  "column_break_itdtb",
+  "rrocip_margin_cost_for_expense_calculation",
+  "rrocip_e_c_cost",
+  "rrocip_overhead_cost",
+  "rrocip_agent_commission_cost",
+  "rrocip_guarantee_clause_cost",
+  "column_break_pykrt",
+  "rrocip_margin_for_expense_calculation",
+  "rrocip_e_c",
+  "rrocip_overhead",
+  "rrocip_agent_commission",
+  "rrocip_guarantee_clause_charge",
+  "section_break_zmjzk",
+  "rrocip_grand_total",
+  "rrocip_price",
+  "column_break_k2tvm",
+  "rrocip_margin",
+  "section_break_rewrocip",
+  "rew_ro_with_cip",
+  "column_break_hoj0t",
+  "rewrocip_margin_cost_for_expense_calculation",
+  "rewrocip_e_c_cost",
+  "rewrocip_overhead_cost",
+  "rewrocip_agent_commission_cost",
+  "rewrocip_guarantee_clause_cost",
+  "column_break_mq9yc",
+  "rewrocip_margin_for_expense_calculation",
+  "rewrocip_e_c",
+  "rewrocip_overhead",
+  "rewrocip_agent_commission",
+  "rewrocip_guarantee_clause_charge",
+  "section_break_wxgfh",
+  "rewrocip_grand_total",
+  "rewrocip_price",
+  "column_break_e5548",
+  "rewrocip_margin",
+  "print_format",
+  "pva_stream_tab",
+  "anaerobic_reference_section",
+  "anaerobic_items",
+  "anaerobic_full_system",
+  "anaerobic_pipe_escalation_section",
+  "an_pipe_escalation",
+  "section_break_wzutb",
+  "generate",
+  "calculate",
+  "an_all_items",
+  "an_full_system",
+  "anaerobic_special_table",
+  "an_electrical_details_section",
+  "an_electrical_items",
+  "an_plc_items",
+  "section_break_u3wqj",
+  "an_not_linked_cost",
+  "an_cost",
+  "an_electrical_cost",
+  "overall_an_cost",
+  "column_break_zhfpt",
+  "mf_scheme2",
+  "koch_scheme2",
+  "ovivo_scheme2",
+  "section_break_gpbsk",
+  "an_digital_input",
+  "column_break_dy9nd",
+  "an_digital_output",
+  "column_break_8bzhz",
+  "an_analog_input",
+  "column_break_dr1md",
+  "an_analog_input2",
+  "column_break_egscp",
+  "an_analog_output",
+  "section_break_cd0o4",
+  "an_tax_cost",
+  "an_transport_cost",
+  "total_cost_for_an",
+  "column_break_hqhap",
+  "an_tax",
+  "an_transport"
+ ],
+ "fields": [
+  {
+   "fetch_from": "project_startup_sheet.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "\nInitiated\nCompleted\nFailed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Parameters",
+   "options": "Cost Working Tool Parameter"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_bom",
+   "fieldtype": "Button",
+   "label": "Get BOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total BOM Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bom_cost",
+   "fieldtype": "Table",
+   "label": "BOM Cost",
+   "options": "Cost Working Tool BOM"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Items",
+   "options": "Cost Working Tool Exploded Item"
+  },
+  {
+   "fieldname": "process_bom",
+   "fieldtype": "Data",
+   "label": "Process BOM",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project_startup_sheet.revision",
+   "fieldname": "revision",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Revision",
+   "options": "Revision"
+  },
+  {
+   "fieldname": "revision_remarks",
+   "fieldtype": "Small Text",
+   "label": "Revision Remarks"
+  },
+  {
+   "fieldname": "project_startup_sheet",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Startup Sheet",
+   "options": "Startup Sheet"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name"
+  },
+  {
+   "fetch_from": "project_startup_sheet.flow",
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "label": "Flow",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project_startup_sheet.bod",
+   "fieldname": "bod",
+   "fieldtype": "Float",
+   "label": "BOD",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project_startup_sheet.cod",
+   "fieldname": "cod",
+   "fieldtype": "Float",
+   "label": "COD",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "project_startup_sheet.is_with_mechanism",
+   "fieldname": "withcheck",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "withcheck",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project_startup_sheet.without_mechanism",
+   "fieldname": "without",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "without",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "choose_ro_template.ro_recovery",
+   "fieldname": "ro_recovery",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "RO Recovery",
+   "read_only": 1
+  },
+  {
+   "fieldname": "standard_cost",
+   "fieldtype": "Table",
+   "label": "Standard Cost",
+   "options": "Standard Cost"
+  },
+  {
+   "fieldname": "cost_section",
+   "fieldtype": "Section Break",
+   "label": "Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_standard_cost",
+   "fieldtype": "Currency",
+   "label": "Total Standard Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_cost",
+   "fieldtype": "Currency",
+   "label": "Overall Price",
+   "options": "currency1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project_startup_sheet.ro_template",
+   "fieldname": "choose_ro_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Choose RO Template",
+   "options": "RO Standard Items",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.view_fab_and_erection_tab==1);",
+   "fieldname": "fabrication_cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Fabrication Cost"
+  },
+  {
+   "fieldname": "fabrication_table",
+   "fieldtype": "Table",
+   "label": "Fabrication Table",
+   "options": "Fabrication Table",
+   "read_only_depends_on": "eval:(doc.edit_qty==0)"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_fabrication_cost",
+   "fieldtype": "Currency",
+   "label": "Total Fabrication Cost"
+  },
+  {
+   "fieldname": "total_system_cost",
+   "fieldtype": "Table",
+   "label": "Total System Cost",
+   "options": "Total System Cost"
+  },
+  {
+   "fieldname": "micro_filtration_tab",
+   "fieldtype": "Tab Break",
+   "label": "MF"
+  },
+  {
+   "fieldname": "mf_table",
+   "fieldtype": "Table",
+   "label": "MF Table",
+   "options": "MF Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_mf_cost",
+   "fieldtype": "Currency",
+   "label": "MF Cost"
+  },
+  {
+   "fieldname": "mbr_koch_tab",
+   "fieldtype": "Tab Break",
+   "label": "MBR(K)"
+  },
+  {
+   "fieldname": "mbr_koch_table",
+   "fieldtype": "Table",
+   "label": "MBR Koch Table",
+   "options": "KOCH Items"
+  },
+  {
+   "fieldname": "mf_not_linked_items",
+   "fieldtype": "Button",
+   "label": "MF not linked Items"
+  },
+  {
+   "fieldname": "mf_not_linked_table",
+   "fieldtype": "Table",
+   "label": "MF Not linked table",
+   "options": "MF Not linked items"
+  },
+  {
+   "default": "0",
+   "fieldname": "not_linked_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Not linked Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_mf_cost",
+   "fieldtype": "Currency",
+   "label": "Overall MF Cost"
+  },
+  {
+   "fieldname": "mbr_ovivo_tab",
+   "fieldtype": "Tab Break",
+   "label": "MBR(O)"
+  },
+  {
+   "fieldname": "mbr_ovivo_table",
+   "fieldtype": "Table",
+   "label": "MBR Ovivo Table",
+   "options": "MBR - OVIVO Items"
+  },
+  {
+   "fieldname": "not_linked_items",
+   "fieldtype": "Button",
+   "label": "Not Linked Items"
+  },
+  {
+   "fieldname": "mbr_koch_not_linked",
+   "fieldtype": "Table",
+   "label": "MBR KOCH Not linked",
+   "options": "MBR KOCH Not linked"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_ovivo_cost",
+   "fieldtype": "Currency",
+   "label": "Ovivo Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost_for_not_linked_items",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Cost for not Linked Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_overall_cost",
+   "fieldtype": "Currency",
+   "label": "MBR Overall Cost"
+  },
+  {
+   "fieldname": "startup_sheet",
+   "fieldtype": "Button",
+   "label": "Startup Sheet"
+  },
+  {
+   "fieldname": "column_break_26ffl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ipdvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rb5kx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.view_fab_and_erection_tab==1);",
+   "fieldname": "erection_and_commision_tab",
+   "fieldtype": "Tab Break",
+   "label": "Erection and Commision"
+  },
+  {
+   "fieldname": "cost_table",
+   "fieldtype": "Table",
+   "label": "Cost Table",
+   "options": "Erection Cost Table",
+   "read_only_depends_on": "eval:(doc.edit_qty2==0)"
+  },
+  {
+   "default": "0",
+   "fieldname": "erection_cost",
+   "fieldtype": "Currency",
+   "label": "Erection Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_qty",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Edit Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_qty2",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Edit Qty"
+  },
+  {
+   "fieldname": "additional_cost_section",
+   "fieldtype": "Section Break",
+   "label": "MF"
+  },
+  {
+   "collapsible": 1,
+   "default": "1",
+   "fieldname": "mftax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "collapsible": 1,
+   "default": "2",
+   "fieldname": "mftransport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "overhead_percentage",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "fieldname": "column_break_0opi8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "MF Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "MF Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "MF Guarantee Clause Cost"
+  },
+  {
+   "default": "125",
+   "fieldname": "margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_for_expense_calculation_cost",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "fieldname": "section_break_e4a2w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_cost_with_margin",
+   "fieldtype": "Currency",
+   "label": "MF Selling Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "include_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Total MF Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_cost_without_margin",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "section_break_ae3ln",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_106yj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "margin_percentage",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbrk_cost",
+   "fieldtype": "Currency",
+   "label": "MBR(K) Cost"
+  },
+  {
+   "fieldname": "column_break_vk0md",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "3",
+   "fieldname": "e_c_",
+   "fieldtype": "Float",
+   "label": "E & C (%)"
+  },
+  {
+   "fieldname": "mbr_ovivo_not_linked_button",
+   "fieldtype": "Button",
+   "label": "Not linked items"
+  },
+  {
+   "fieldname": "mbr_ovivo_not_linked_items",
+   "fieldtype": "Table",
+   "label": "MBR Ovivo Not Linked Items",
+   "options": "MBR Ovivo Not Linked Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_not_linked_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Ovivo Not linked cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_mbr_ovivo_cost",
+   "fieldtype": "Currency",
+   "label": "Overall MBR Ovivo Cost"
+  },
+  {
+   "fieldname": "pre_treatment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Pre Treatment"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "pre_treatment_table",
+   "fieldtype": "Table",
+   "label": "Pre Treatment Table",
+   "options": "Bio Items"
+  },
+  {
+   "fieldname": "bio_not_linked",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Bio Not Linked"
+  },
+  {
+   "fieldname": "bio_not_linked_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Bio Not Linked Table",
+   "options": "Bio Not Linked Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_cost",
+   "fieldtype": "Currency",
+   "label": "Bio Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_not_linked_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Bio not linked cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_bio_cost",
+   "fieldtype": "Currency",
+   "label": "Overall Bio Cost"
+  },
+  {
+   "fieldname": "bio_full_system",
+   "fieldtype": "Table",
+   "label": "Bio Full System",
+   "options": "Bio Full System"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_for_pipe",
+   "fieldtype": "Section Break",
+   "label": "Pipe Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "10",
+   "fieldname": "mf_pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "Pipes, Fittings, Valves (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_28gtp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mf_electrical_items",
+   "fieldtype": "Table",
+   "label": "Electrical Items",
+   "options": "MF Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mf_calculations_for_io_cards_section",
+   "fieldtype": "Section Break",
+   "label": "MF Calculations for IO Cards"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_9oban",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_oslfh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_2ttjm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_wyt8g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "pipe_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Pipe Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "4.5",
+   "fieldname": "mbr_pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "Pipes, Fittings, Valves (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_umcid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mbr_electrical_items",
+   "fieldtype": "Table",
+   "label": "Electrical Items",
+   "options": "MBR Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "MBR Electrical Cost"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_bgokr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_avajr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_akq5j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_glemt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_wciru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "section_break_5sho0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_qa59e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_mbr_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "column_break_dmgvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "mbr_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "mbr_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "mbr_additional_cost",
+   "fieldtype": "Section Break",
+   "label": "MBR (K)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_ecoz7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "mbr_margin_for_expense_calculation",
+   "fieldtype": "Percent",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "mbr_e_c_",
+   "fieldtype": "Percent",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "mbr_overhead_percentage",
+   "fieldtype": "Percent",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "mbr_agent_commission",
+   "fieldtype": "Percent",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "mbr_guarantee_clause_charge",
+   "fieldtype": "Percent",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_ze6uy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "mbr_selling_price",
+   "fieldtype": "Currency",
+   "label": "MBR(K) Selling Price"
+  },
+  {
+   "fieldname": "column_break_dbtut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "mbr_margin_percentage",
+   "fieldtype": "Percent",
+   "label": "Margin (%)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "ovivo_pipe_cost_sec",
+   "fieldtype": "Section Break",
+   "label": "Pipe Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "4.5",
+   "fieldname": "ovivo_pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "Pipes, Fittings, Valves (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_ibc2w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ovivo_electrical_items",
+   "fieldtype": "Table",
+   "label": "Electrical Items",
+   "options": "MBR Ovivo Electrical Items"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "ovivo_plc_card_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Ovivo PLC Card Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_q9skz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_hfj1m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_e4pje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_zxpu5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "section_break_kp6cp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost"
+  },
+  {
+   "fieldname": "section_break_x5ao5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_ovivo_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost (Ovivo)"
+  },
+  {
+   "fieldname": "column_break_mzf4o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "ovivo_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "ovivo_additional_cost",
+   "fieldtype": "Section Break",
+   "label": "MBR (O)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_qwgr4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "ovivo_margin_for_expense_calculation",
+   "fieldtype": "Percent",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "ovivo_e_c_",
+   "fieldtype": "Percent",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "ovivo_overhead_percentage",
+   "fieldtype": "Percent",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "ovivo_agent_commission",
+   "fieldtype": "Percent",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "ovivo_guarantee_clause_charge",
+   "fieldtype": "Percent",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_qqpj9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "ovivo_selling_price",
+   "fieldtype": "Currency",
+   "label": "MBR(O) Selling Price"
+  },
+  {
+   "fieldname": "column_break_iv7vq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "ovivo_margin_percentage",
+   "fieldtype": "Percent",
+   "label": "Margin (%)"
+  },
+  {
+   "fieldname": "section_break_ikwdx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bio_electrical_items",
+   "fieldtype": "Table",
+   "label": "Bio Electrical Items",
+   "options": "Bio Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Bio Electrical Cost"
+  },
+  {
+   "fieldname": "section_break_rlwbh",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_31lmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_ok7zo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_niguv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_zout8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "section_break_gwm9o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_bio_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost (Bio)"
+  },
+  {
+   "fieldname": "column_break_jg4t9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "bio_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "bio_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "section_break_8extd",
+   "fieldtype": "Section Break",
+   "label": "Pre Treatment"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_nyc1m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "bio_margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "bio_e_c_",
+   "fieldtype": "Float",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "bio_overhead_percentage",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "bio_agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "bio_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_zouax",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bio_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "bio_selling_price",
+   "fieldtype": "Currency",
+   "label": "Bio Selling Price"
+  },
+  {
+   "fieldname": "column_break_cumkr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "bio_margin_percentage",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ssb_pressure_pump_cost",
+   "fieldtype": "Currency",
+   "label": "Ssb Pressure Pump Price",
+   "options": "currency1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_tab",
+   "fieldtype": "Tab Break",
+   "label": "CTS"
+  },
+  {
+   "fieldname": "cts_items",
+   "fieldtype": "Table",
+   "label": "CTS Items",
+   "options": "CTS Items"
+  },
+  {
+   "fieldname": "pipes_section",
+   "fieldtype": "Section Break",
+   "label": "Pipes, Fittings & Valves"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_pipe_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Pipe Cost"
+  },
+  {
+   "fieldname": "cts_not_linked",
+   "fieldtype": "Button",
+   "label": "CTS Not linked"
+  },
+  {
+   "fieldname": "cts_not_linked_items",
+   "fieldtype": "Table",
+   "label": "CTS Not linked items",
+   "options": "CTS Not Linked Items"
+  },
+  {
+   "fieldname": "cts_electrical_items",
+   "fieldtype": "Table",
+   "label": "CTS Electrical Items",
+   "options": "CTS Electrical Items"
+  },
+  {
+   "fieldname": "section_break_ia3on",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_digital_input",
+   "fieldtype": "Float",
+   "label": "CTS Digital Input"
+  },
+  {
+   "fieldname": "column_break_vlxqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_digital_output",
+   "fieldtype": "Float",
+   "label": "CTS Digital Output"
+  },
+  {
+   "fieldname": "column_break_uo1iy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_analog_input2",
+   "fieldtype": "Float",
+   "label": "CTS Analog Input2"
+  },
+  {
+   "fieldname": "column_break_w6xwe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_analog",
+   "fieldtype": "Float",
+   "label": "CTS Analog Input"
+  },
+  {
+   "fieldname": "column_break_b7gqx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_an_out",
+   "fieldtype": "Float",
+   "label": "CTS Analog Output"
+  },
+  {
+   "fieldname": "section_break_uf59y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_final_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Final Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_not_linked_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "CTS Not linked Cost"
+  },
+  {
+   "fieldname": "column_break_j3jua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Electrical Cost"
+  },
+  {
+   "fieldname": "section_break_cyfle",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_overall_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Overall Cost"
+  },
+  {
+   "fieldname": "section_break_xtawr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "cts_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cts_cost",
+   "fieldtype": "Currency",
+   "label": "Total CTS Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_additional_cost_section",
+   "fieldtype": "Section Break",
+   "label": "CTS"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "CTS Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_3qooj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "cts_margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "CTS Margin For Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_grand_total",
+   "fieldtype": "Currency",
+   "label": "CTS Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "cts_selling_price",
+   "fieldtype": "Currency",
+   "label": "CTS Selling Price"
+  },
+  {
+   "fieldname": "section_break_uienc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fp0mk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "degasser_tab",
+   "fieldtype": "Tab Break",
+   "label": "Degasser"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "dgt_pipes_fittings_and_valves_section",
+   "fieldtype": "Section Break",
+   "label": "DGT Pipes, Fittings and Valves"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_pipe_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_4q4qh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dgt_not_linked_items",
+   "fieldtype": "Table",
+   "label": "Degasser System Not linked items",
+   "options": "Degasser System Not linked items"
+  },
+  {
+   "fieldname": "section_break_gvfkc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_digital_input",
+   "fieldtype": "Float",
+   "label": "DGT Digital Input"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_digital_output",
+   "fieldtype": "Float",
+   "label": "DGT Digital Output"
+  },
+  {
+   "fieldname": "column_break_mbbd1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_analog_input2",
+   "fieldtype": "Float",
+   "label": "DGT Analog Input2"
+  },
+  {
+   "fieldname": "column_break_wwwrk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_analog_input",
+   "fieldtype": "Float",
+   "label": "DGT Analog Input"
+  },
+  {
+   "fieldname": "column_break_lbxgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_analog_output",
+   "fieldtype": "Float",
+   "label": "DGT Analog Output"
+  },
+  {
+   "fieldname": "section_break_xpb0w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_not_linked_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "DGT Not linked Cost"
+  },
+  {
+   "fieldname": "column_break_uwcdn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Electrical Cost"
+  },
+  {
+   "fieldname": "section_break_2ydah",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_overall_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Overall Cost"
+  },
+  {
+   "default": "1",
+   "fieldname": "dgt_tax",
+   "fieldtype": "Float",
+   "label": "DGT Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "dgt_transport",
+   "fieldtype": "Float",
+   "label": "DGT Transport (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_dgt_cost",
+   "fieldtype": "Currency",
+   "label": "Total DGT Cost"
+  },
+  {
+   "fieldname": "column_break_qgbmc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dgt_additional_cost_section",
+   "fieldtype": "Section Break",
+   "label": "DGT"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "DGT Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Guarantee Clause Cost"
+  },
+  {
+   "default": "125",
+   "fieldname": "dgt_margin_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "DGT Margin For Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_grand_total",
+   "fieldtype": "Currency",
+   "label": "DGT Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "dgt_selling_price",
+   "fieldtype": "Currency",
+   "label": "DGT Selling Price"
+  },
+  {
+   "fieldname": "column_break_iwsbz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_tax_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_transport_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Transport"
+  },
+  {
+   "fieldname": "column_break_0eysd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "CTS E & C Cost"
+  },
+  {
+   "default": "3",
+   "fieldname": "cts_e_c",
+   "fieldtype": "Float",
+   "label": "CTS E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "cts_overhead",
+   "fieldtype": "Float",
+   "label": "CTS Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "cts_agent_commission",
+   "fieldtype": "Float",
+   "label": "CTS Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "cts_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "CTS Guarantee Clause Charge (%)"
+  },
+  {
+   "default": "125",
+   "fieldname": "cts_margin",
+   "fieldtype": "Float",
+   "label": "CTS Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_tax_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_transport_cost",
+   "fieldtype": "Currency",
+   "label": "DGT Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "DGT E and C Cost"
+  },
+  {
+   "default": "3",
+   "fieldname": "dgt_e_c",
+   "fieldtype": "Float",
+   "label": "DGT E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "dgt_overhead",
+   "fieldtype": "Float",
+   "label": "DGT Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "dgt_agent_commission",
+   "fieldtype": "Float",
+   "label": "DGT Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "dgt_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "DGT Guarantee Clause Charge (%)"
+  },
+  {
+   "default": "125",
+   "fieldname": "dgt_margin",
+   "fieldtype": "Float",
+   "label": "DGT Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_total",
+   "fieldtype": "Currency",
+   "label": "CTS Total"
+  },
+  {
+   "default": "7",
+   "fieldname": "cts_pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "Pipes, Fittings & Valves (%)"
+  },
+  {
+   "fieldname": "dgt_items",
+   "fieldtype": "Table",
+   "label": "Degasser System Items",
+   "options": "Degasser System Items"
+  },
+  {
+   "default": "7",
+   "fieldname": "dgt_pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "DGT Pipes, Fittings and Valves (%)"
+  },
+  {
+   "fieldname": "dgt_not_linked",
+   "fieldtype": "Button",
+   "label": "DGT Not linked Items"
+  },
+  {
+   "fieldname": "dgt_electrical_items",
+   "fieldtype": "Table",
+   "label": "Degasser System Electrical Items",
+   "options": "Degasser System Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_total_cost",
+   "fieldtype": "Currency",
+   "label": "Degasser Cost"
+  },
+  {
+   "fieldname": "section_break_lla3r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_oizqd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zmyqt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fittings_total",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Fittings Total"
+  },
+  {
+   "fieldname": "fittings_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Fittings Table",
+   "options": "Fittings Table"
+  },
+  {
+   "fetch_from": "project_startup_sheet.with_mechanism",
+   "fieldname": "with_b",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "with",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plc_items_tab",
+   "fieldtype": "Tab Break",
+   "label": "PLC Items"
+  },
+  {
+   "fieldname": "plc_table_list",
+   "fieldtype": "Table",
+   "label": "PLC Table List",
+   "options": "PLC Table List"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "plc_cost",
+   "fieldtype": "Currency",
+   "label": "PLC Selling Price"
+  },
+  {
+   "fetch_from": "project_startup_sheet.reject_ro",
+   "fieldname": "choose_rro_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Choose RRO Template",
+   "options": "RO Standard Items",
+   "read_only": 1
+  },
+  {
+   "fieldname": "chlorination_tab",
+   "fieldtype": "Tab Break",
+   "label": "Chlorination"
+  },
+  {
+   "default": "1000000",
+   "fieldname": "chlorination_total",
+   "fieldtype": "Currency",
+   "label": "Chlorination Total"
+  },
+  {
+   "fieldname": "total_panel_count",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Panel Count"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Item Description",
+   "options": "LIFTING SUMP PUMP\nLPS LEVEL FLOAT\nLPS LEVEL TRANSMITTER\nLPS PIPES\nLPS FITTINGS\nLPS FITTINGS & VALVES\nDRUM SCREENER\nDAF BUBBLE GENERATION PUMP\nDAF FEED PUMP\nDAF SLUDGE PUMP\nDAF DOSING PUMP-1\nDAF DOSING PUMP-2\nDAF TURBIDITY SENSOR\nDAF EMFM\nDAF LEVEL FLOAT\nDAF PIPES,FITTINGS & VALVES\nEQT DIFFUSER\nEQT BLOWER\nEQT FLOW MAKER\nEQT PIPES\nEQT FITTINGS & VALVES\nNT PUMP\nNT EMFM\nNT DOSING PUMP\nNT PH SENSOR\nNT DIFFUSER\nNT PIPES\nNT DIFFUSER PIPES\nNT LEVEL FLOAT\nNT LEVEL TRANSMITTER\nNT FITTINGS\nNT FITTINGS & VALVES\nDT DIFFUSER\nDT DIFFUSER PIPES\nDT FITTINGS & VALVES\nDNT PUMP\nDNT FLOW MAKER\nDNT EMFM\nDNT PIPES\nDNT FITTINGS\nDNT FITTINGS & VALVES\nBIO DIFFUSER\nBIO BLOWER\nBIO FLOW MAKER\nBIO LATERAL\nBIO HEADER PIPES\nBIO BRANCH PIPES\nDO SENSOR\nDO FITTINGS & VALVES\nCFT DIFFUSER\nCFT DIFFUSER PIPES\nCFT FITTINGS & VALVES\nSRS PUMP\nSRS EMFM\nSRS DIFFUSER\nSRS PIPES\nSRS DIFFUSER PIPES\nSRS LEVEL FLOAT\nSRS FITTINGS\nSRS FITTINGS & VALVES\nDOI DIFFUSER\nDOI BLOWER\nDOI EMFM\nDOI DO SENSOR\nDOI PIPES,FITTINGS & VALVES"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "add_qty",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Add Qty"
+  },
+  {
+   "fetch_from": "project_startup_sheet.tdsmgl",
+   "fieldname": "tdsmgl",
+   "fieldtype": "Float",
+   "label": "TDS(mg/l)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project_startup_sheet.tank_height",
+   "fieldname": "tank_height",
+   "fieldtype": "Float",
+   "label": "Tank Height",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invidual_system_cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Individual System Cost"
+  },
+  {
+   "fieldname": "system_list",
+   "fieldtype": "Link",
+   "label": "System List",
+   "options": "Mapping Systems"
+  },
+  {
+   "fieldname": "get_rate",
+   "fieldtype": "Button",
+   "label": "Get Rate"
+  },
+  {
+   "fieldname": "bom_item_rate",
+   "fieldtype": "Table",
+   "label": "BOM Item rate",
+   "options": "BOM Items rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_bom_cost",
+   "fieldtype": "Currency",
+   "label": "Total BOM Cost"
+  },
+  {
+   "default": "0",
+   "fetch_from": "project_startup_sheet.is_rewolutte",
+   "fieldname": "is_rewolutte",
+   "fieldtype": "Check",
+   "label": "Is Rewolutte",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_bio_full_system",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Edit Bio Full System"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_fab_and_erection_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "RO Fab & Erection Cost"
+  },
+  {
+   "fieldname": "pipe_escalation",
+   "fieldtype": "Table",
+   "options": "Bio Pipe Escalation"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "pipe_escalations_section",
+   "fieldtype": "Section Break",
+   "label": "Pipe Escalations"
+  },
+  {
+   "fetch_from": "project_startup_sheet.rewolutte_ro",
+   "fieldname": "rewolutte_ro",
+   "fieldtype": "Link",
+   "label": "Choose Rewolutte RO",
+   "options": "RO Standard Items",
+   "read_only": 1
+  },
+  {
+   "fieldname": "process_template_tab",
+   "fieldtype": "Tab Break",
+   "label": "Process template"
+  },
+  {
+   "fieldname": "get_proposal",
+   "fieldtype": "Button",
+   "label": "Get proposal"
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "HTML Editor",
+   "label": "Template"
+  },
+  {
+   "fetch_from": "project_startup_sheet.district_code",
+   "fieldname": "district_code",
+   "fieldtype": "Data",
+   "label": "district_code"
+  },
+  {
+   "fetch_from": "project_startup_sheet.state_code",
+   "fieldname": "state_code",
+   "fieldtype": "Data",
+   "label": "state_code"
+  },
+  {
+   "fetch_from": "project_startup_sheet.unit_code",
+   "fieldname": "unit_code",
+   "fieldtype": "Data",
+   "label": "unit_code"
+  },
+  {
+   "fetch_from": "project_startup_sheet.revision_code",
+   "fieldname": "revision_code",
+   "fieldtype": "Data",
+   "label": "revision_code"
+  },
+  {
+   "fetch_from": "project_startup_sheet.permeate_water_tds",
+   "fieldname": "permeate_water_tds",
+   "fieldtype": "Data",
+   "label": "permeate_water_tds"
+  },
+  {
+   "fetch_from": "project_startup_sheet.treated_water_cod",
+   "fieldname": "treated_water_cod",
+   "fieldtype": "Data",
+   "label": "treated_water_cod"
+  },
+  {
+   "fetch_from": "project_startup_sheet.treated_water_tss",
+   "fieldname": "treated_water_tss",
+   "fieldtype": "Data",
+   "label": "treated_water_tss"
+  },
+  {
+   "fetch_from": "project_startup_sheet.industry_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "company name"
+  },
+  {
+   "fetch_from": "project_startup_sheet.contact_person",
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "contact person"
+  },
+  {
+   "fetch_from": "project_startup_sheet.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "state"
+  },
+  {
+   "fetch_from": "project_startup_sheet.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "district"
+  },
+  {
+   "fetch_from": "project_startup_sheet.country",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "country"
+  },
+  {
+   "fetch_from": "project_startup_sheet.purpose_for",
+   "fieldname": "proposal_for",
+   "fieldtype": "Data",
+   "label": "proposal for"
+  },
+  {
+   "fetch_from": "project_startup_sheet.abbr",
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "label": "abbr"
+  },
+  {
+   "fieldname": "selected_process_system",
+   "fieldtype": "Table",
+   "label": "Selected Process System",
+   "options": "Selected Process System"
+  },
+  {
+   "fetch_from": "project_startup_sheet.bod",
+   "fieldname": "bod_v",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "bod_v"
+  },
+  {
+   "fetch_from": "project_startup_sheet.cod",
+   "fieldname": "cod_v",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "cod_v"
+  },
+  {
+   "fetch_from": "project_startup_sheet.tdsmgl",
+   "fieldname": "tds",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "tds"
+  },
+  {
+   "fetch_from": "project_startup_sheet.tss",
+   "fieldname": "tss",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "tss"
+  },
+  {
+   "fetch_from": "project_startup_sheet.tkn",
+   "fieldname": "tkn",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "tkn"
+  },
+  {
+   "fetch_from": "project_startup_sheet.pvamgl",
+   "fieldname": "pva",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "pva"
+  },
+  {
+   "fetch_from": "project_startup_sheet.silicamgl",
+   "fieldname": "silica",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "silica"
+  },
+  {
+   "fetch_from": "project_startup_sheet.sulphatesmgl",
+   "fieldname": "sulphate",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "sulphate"
+  },
+  {
+   "fetch_from": "project_startup_sheet.chloridesmgl",
+   "fieldname": "chloride",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "chloride"
+  },
+  {
+   "fetch_from": "project_startup_sheet.total_hardnessmgl",
+   "fieldname": "hardness",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "hardness"
+  },
+  {
+   "fetch_from": "project_startup_sheet.alk",
+   "fieldname": "alkali",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "alkali"
+  },
+  {
+   "fetch_from": "project_startup_sheet.temperature",
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "temperature"
+  },
+  {
+   "fetch_from": "project_startup_sheet.oil_greasemgl",
+   "fieldname": "oil_grease",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "oil_grease"
+  },
+  {
+   "fetch_from": "project_startup_sheet.html_editor",
+   "fieldname": "flowchart",
+   "fieldtype": "Text Editor",
+   "label": "Flowchart"
+  },
+  {
+   "fieldname": "mbr_cts_tab",
+   "fieldtype": "Tab Break",
+   "label": "CTS MBR"
+  },
+  {
+   "fieldname": "mbr_cts_table",
+   "fieldtype": "Table",
+   "label": "MBR CTS Table",
+   "options": "MBR - CTS Items"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mbr_cts_pipe_cost_sec",
+   "fieldtype": "Section Break",
+   "label": "Pipe Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_cost_without_pipes",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "4.5",
+   "fieldname": "mbr_cts_pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "Pipes, Fittings, Valves (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_ibc2w_cts",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mbr_cts_not_linked_button",
+   "fieldtype": "Button",
+   "label": "Not linked items"
+  },
+  {
+   "fieldname": "mbr_cts_not_linked_items",
+   "fieldtype": "Table",
+   "label": "Not Linked Items",
+   "options": "MBR CTS Not Linked Items"
+  },
+  {
+   "fieldname": "mbr_cts_electrical_items",
+   "fieldtype": "Table",
+   "label": "Electrical Items",
+   "options": "MBR CTS Electrical Items"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mbr_cts_plc_card_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "PLC Card Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_q9skz_mbr_cts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_hfj1m_mbr_cts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_e4pje_mbr_cts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_zxpu5_mbr_cts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "section_break_kp6cp_mbr_cts",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_not_linked_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Not linked cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_mbr_cts_cost",
+   "fieldtype": "Currency",
+   "label": "Overall Cost"
+  },
+  {
+   "fieldname": "section_break_x5ao5_mbr_cts",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_mbr_cts_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "column_break_mbr_cts1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "mbr_cts_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "mbr_cts_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "mbr_cts_additional_cost",
+   "fieldtype": "Section Break",
+   "label": "MBR CTS"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_qwgr4_mbr_cts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "mbr_cts_margin_for_expense_calculation",
+   "fieldtype": "Percent",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "mbr_cts_e_c_",
+   "fieldtype": "Percent",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "mbr_cts_overhead_percentage",
+   "fieldtype": "Percent",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "mbr_cts_agent_commission",
+   "fieldtype": "Percent",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "mbr_cts_guarantee_clause_charge",
+   "fieldtype": "Percent",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_qqpj9_mbr_cts",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "mbr_cts_selling_price",
+   "fieldtype": "Currency",
+   "label": "CTS MBR Selling Price"
+  },
+  {
+   "fieldname": "column_break_iv7vq_mbr_cts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "mbr_cts_margin_percentage",
+   "fieldtype": "Percent",
+   "label": "Margin (%)"
+  },
+  {
+   "fieldname": "rewollutte_comparison_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rewolutte Comparison"
+  },
+  {
+   "fieldname": "rewolutte_comparison_table",
+   "fieldtype": "Table",
+   "label": "Rewolutte Comparison Table",
+   "options": "Rewolutte Comparison Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "without_rewolutte_price",
+   "fieldtype": "Currency",
+   "label": "Without Rewolutte Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "with_rewolutte_price",
+   "fieldtype": "Currency",
+   "label": "With Rewolutte Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_difference",
+   "fieldtype": "Currency",
+   "label": "Total Difference"
+  },
+  {
+   "fieldname": "section_break_05tpr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rewolutte_reference",
+   "fieldtype": "Data",
+   "label": "Rewolutte reference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pre_cost_working_reference",
+   "fieldtype": "Data",
+   "label": "Pre cost working reference",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.is_brinex==1)",
+   "fieldname": "brinex_table",
+   "fieldtype": "Table",
+   "label": "Brinex Table",
+   "options": "Brinex Table"
+  },
+  {
+   "fieldname": "section_break_4wyhg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "brinex_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Brinex Price",
+   "options": "currency1",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "project_startup_sheet.is_brinex",
+   "fieldname": "is_brinex",
+   "fieldtype": "Check",
+   "label": "Is Brinex",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_brinex_cost",
+   "fieldtype": "Currency",
+   "label": "Total Brinex Cost"
+  },
+  {
+   "fieldname": "get_word",
+   "fieldtype": "Button",
+   "label": "Get Index"
+  },
+  {
+   "fetch_from": "project_startup_sheet.scope",
+   "fieldname": "scope",
+   "fieldtype": "Data",
+   "label": "scope"
+  },
+  {
+   "fieldname": "section_break_isqoe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_c1kqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hdh7s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_oa5zr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "project_startup_sheet.abbr_inlet",
+   "fieldname": "abbr_inlet",
+   "fieldtype": "Data",
+   "label": "abbr_inlet"
+  },
+  {
+   "fieldname": "footer_date",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "footer_date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "county_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "county_code",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_fabrication_cost",
+   "fieldtype": "Currency",
+   "label": "MF Fabrication Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_erection_cost",
+   "fieldtype": "Currency",
+   "label": "MF Erection Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbrk_erection_cost",
+   "fieldtype": "Currency",
+   "label": "MBR(K) Erection Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbro_erection_cost",
+   "fieldtype": "Currency",
+   "label": "MBR(O) Erection Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mf_line_item_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "MF line item cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbrk_line_items_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "MBR(K) line items cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_line_items_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Ovivo line items cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "view_fab_and_erection_tab",
+   "fieldtype": "Check",
+   "label": "View Fab and Erection Tab"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_base_total",
+   "fieldtype": "Currency",
+   "label": "Base Total"
+  },
+  {
+   "fieldname": "section_break_nuql8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_cost2",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "fieldname": "column_break_kecgp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "plc_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "plc_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "section_break_3myun",
+   "fieldtype": "Section Break",
+   "label": "PLC"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_margin_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Margin Cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "E&C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "OverHead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_07uav",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "plc_margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin for Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "plc_e_c",
+   "fieldtype": "Float",
+   "label": "E&C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "plc_overhead",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "plc_agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "plc_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge(%)"
+  },
+  {
+   "fieldname": "section_break_soyzv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "plc_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "column_break_mkgx8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "plc_margin",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "depends_on": "eval:(doc.is_rewolutte==1)",
+   "fieldname": "rewolutte_table",
+   "fieldtype": "Table",
+   "label": "Rewolutte Table",
+   "options": "Rewolutte Table"
+  },
+  {
+   "fieldname": "cts_cooling_tower_tab",
+   "fieldtype": "Tab Break",
+   "label": "CTS Cooling Tower"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewolutte_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rewolutte / Add-on price for Rewolutte",
+   "options": "currency1",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "standard__cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Standard Price",
+   "options": "currency1",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_erection_price",
+   "fieldtype": "Currency",
+   "label": "DGT Erection Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "dgt_line_items_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "DGT Line Items cost"
+  },
+  {
+   "fieldname": "mf_full_system",
+   "fieldtype": "Table",
+   "label": "MF Full System",
+   "options": "MF Full System"
+  },
+  {
+   "fieldname": "mf_generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "mbrk_full_system",
+   "fieldtype": "Table",
+   "label": "MBR(K) Full System",
+   "options": "Koch Full System"
+  },
+  {
+   "fieldname": "mbr_generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "mbro_full_system",
+   "fieldtype": "Table",
+   "label": "MBR(O) Full System",
+   "options": "Ovivo Full System"
+  },
+  {
+   "fieldname": "mbro_generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "bio_generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "pre_treatment_full_system",
+   "fieldtype": "Table",
+   "label": "Pre Treatment Full System",
+   "options": "Pre Treatment Full System"
+  },
+  {
+   "fieldname": "cts_full_system",
+   "fieldtype": "Table",
+   "label": "CTS Full System",
+   "options": "CTS Full System"
+  },
+  {
+   "fieldname": "mbr_cts_generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "mbr_cts_full_system",
+   "fieldtype": "Table",
+   "label": "MBR CTS Full System",
+   "options": "CTS MBR Full System"
+  },
+  {
+   "fieldname": "dgt_generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "dgt_full_system",
+   "fieldtype": "Table",
+   "label": "DGT Full System",
+   "options": "Degasser Full System"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mf_reference_section",
+   "fieldtype": "Section Break",
+   "label": "MF Reference"
+  },
+  {
+   "fieldname": "section_break_osq3n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mbrk_reference_section",
+   "fieldtype": "Section Break",
+   "label": "MBR(K) Reference"
+  },
+  {
+   "fieldname": "section_break_cqq3o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mbro_reference_section",
+   "fieldtype": "Section Break",
+   "label": "MBR(O) Reference"
+  },
+  {
+   "fieldname": "section_break_joe1x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "bio_reference_section",
+   "fieldtype": "Section Break",
+   "label": "Bio Reference"
+  },
+  {
+   "fieldname": "section_break_qvb2e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mbr_cts_reference_section",
+   "fieldtype": "Section Break",
+   "label": "MBR CTS Reference"
+  },
+  {
+   "fieldname": "section_break_n9svn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "degasser_reference_section",
+   "fieldtype": "Section Break",
+   "label": "Degasser Reference"
+  },
+  {
+   "fieldname": "section_break_m1swd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "cts_referenece_section",
+   "fieldtype": "Section Break",
+   "label": "CTS Reference"
+  },
+  {
+   "fieldname": "cts_generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "mf_plc_items",
+   "fieldtype": "Table",
+   "label": "MF PLC Items",
+   "options": "MF PLC Items"
+  },
+  {
+   "fieldname": "mbrk_plc_items",
+   "fieldtype": "Table",
+   "label": "MBR(K) PLC Items",
+   "options": "MBR KOCH PLC Items"
+  },
+  {
+   "fieldname": "mbro_plc_items",
+   "fieldtype": "Table",
+   "label": "MBR(O) PLC Items",
+   "options": "MBR OVIVO PLC Items"
+  },
+  {
+   "fieldname": "bio_plc_items",
+   "fieldtype": "Table",
+   "label": "BIO PLC Items",
+   "options": "BIO PLC Items"
+  },
+  {
+   "fieldname": "cts_plc_items",
+   "fieldtype": "Table",
+   "label": "CTS PLC Items",
+   "options": "CTS PLC Items"
+  },
+  {
+   "fieldname": "mbr_cts_plc_items",
+   "fieldtype": "Table",
+   "label": "MBR CTS PLC Items",
+   "options": "MBR CTS PLC Items"
+  },
+  {
+   "fieldname": "dgt_plc_items",
+   "fieldtype": "Table",
+   "label": "DGT PLC Items",
+   "options": "DGT PLC Items"
+  },
+  {
+   "fieldname": "bio_all_items",
+   "fieldtype": "Table",
+   "label": "All Items",
+   "options": "Bio All Items"
+  },
+  {
+   "fieldname": "bio_calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "margin_tab",
+   "fieldtype": "Tab Break",
+   "label": "Margin"
+  },
+  {
+   "fieldname": "section_break_rocip",
+   "fieldtype": "Section Break",
+   "label": "RO"
+  },
+  {
+   "default": "0",
+   "fieldname": "rocip_margin_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Margin Cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "rocip_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "E&C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rocip_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rocip_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "OverHead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rocip_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_gkrze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "rocip_margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin for Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "rocip_e_c",
+   "fieldtype": "Float",
+   "label": "E&C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "rocip_overhead",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "rocip_agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "rocip_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge(%)"
+  },
+  {
+   "fieldname": "section_break_p09gb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rocip_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "rocip_price",
+   "fieldtype": "Currency",
+   "label": "RO Selling Price"
+  },
+  {
+   "fieldname": "column_break_ciovw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "rocip_margin",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_cost",
+   "fieldtype": "Currency",
+   "label": "RO Cost"
+  },
+  {
+   "fetch_from": "project_startup_sheet.choose_cip",
+   "fieldname": "choose_cip",
+   "fieldtype": "Link",
+   "label": "Choose CIP (RO)",
+   "options": "CIP Standard Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "cip_cost",
+   "fieldtype": "Currency",
+   "label": "CIP Cost (RO)"
+  },
+  {
+   "default": "0",
+   "fieldname": "rro_cost",
+   "fieldtype": "Currency",
+   "label": "RRO Cost"
+  },
+  {
+   "fieldname": "section_break_rrocip",
+   "fieldtype": "Section Break",
+   "label": "RRO"
+  },
+  {
+   "default": "0",
+   "fieldname": "rrocip_margin_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Margin Cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "rrocip_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "E&C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rrocip_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rrocip_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "OverHead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rrocip_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_pykrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "rrocip_margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin for Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "rrocip_e_c",
+   "fieldtype": "Float",
+   "label": "E&C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "rrocip_overhead",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "rrocip_agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "rrocip_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge(%)"
+  },
+  {
+   "fieldname": "section_break_zmjzk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rrocip_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "rrocip_price",
+   "fieldtype": "Currency",
+   "label": "RRO Selling Price"
+  },
+  {
+   "fieldname": "column_break_k2tvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "rrocip_margin",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "fieldname": "section_break_rewrocip",
+   "fieldtype": "Section Break",
+   "label": "REW RO "
+  },
+  {
+   "default": "0",
+   "fieldname": "rewrocip_margin_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Margin Cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewrocip_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "E&C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewrocip_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewrocip_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "OverHead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewrocip_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_mq9yc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "rewrocip_margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin for Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "rewrocip_e_c",
+   "fieldtype": "Float",
+   "label": "E&C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "rewrocip_overhead",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "rewrocip_agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "rewrocip_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge(%)"
+  },
+  {
+   "fieldname": "section_break_wxgfh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewrocip_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "rewrocip_price",
+   "fieldtype": "Currency",
+   "label": "REWRO Selling Price"
+  },
+  {
+   "fieldname": "column_break_e5548",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "rewrocip_margin",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "rewro_cost",
+   "fieldtype": "Currency",
+   "label": "REW ROCost"
+  },
+  {
+   "fieldname": "ro_cip_section",
+   "fieldtype": "Section Break",
+   "label": "RO/ CIP"
+  },
+  {
+   "fieldname": "column_break_yvswz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_tax_cost",
+   "fieldtype": "Currency",
+   "label": " Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_transport_cost",
+   "fieldtype": "Currency",
+   "label": " Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_clt_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "column_break_tw6n7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "clt_tax",
+   "fieldtype": "Float",
+   "label": " Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "clt_transport",
+   "fieldtype": "Float",
+   "label": " Transport (%)"
+  },
+  {
+   "fieldname": "chlorination_section",
+   "fieldtype": "Section Break",
+   "label": "Chlorination"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Chlorination Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "Chlorination E and C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Chlorination Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Chlorination Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Chlorination Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_jdhpu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "clt_margin_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Chlorination Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "clt_e_c",
+   "fieldtype": "Float",
+   "label": "Chlorination E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "clt_overhead",
+   "fieldtype": "Float",
+   "label": "Chlorination Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "clt_agent_commission",
+   "fieldtype": "Float",
+   "label": "Chlorination Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "clt_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Chlorination Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_mbggr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "clt_grand_total",
+   "fieldtype": "Currency",
+   "label": "Chlorination Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "clt_selling_price",
+   "fieldtype": "Currency",
+   "label": "Chlorination Selling Price"
+  },
+  {
+   "fieldname": "column_break_m7dbd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "clt_margin",
+   "fieldtype": "Float",
+   "label": "Chlorination Margin (%)"
+  },
+  {
+   "fieldname": "column_break_2ytgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6pywc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jfik2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_voe8z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yttsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5j93j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_v0bd6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hfrsn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_chjkx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_mf",
+   "fieldtype": "Currency",
+   "label": "Total Cost for MF"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_mbrk",
+   "fieldtype": "Currency",
+   "label": "Total Cost for MBR(K)"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_mbro",
+   "fieldtype": "Currency",
+   "label": "Total Cost for MBR(O)"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_bio",
+   "fieldtype": "Currency",
+   "label": "Bio Total Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_cts",
+   "fieldtype": "Currency",
+   "label": "Total Cost for CTS"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_mbr_cts",
+   "fieldtype": "Currency",
+   "label": "Total Cost for MBR CTS"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_degasser",
+   "fieldtype": "Currency",
+   "label": "Total Cost for Degasser"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_plc",
+   "fieldtype": "Currency",
+   "label": "Total Cost for PLC"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_chlorination",
+   "fieldtype": "Currency",
+   "label": "Total Cost for Chlorination"
+  },
+  {
+   "fieldname": "add_discount",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Add Discount",
+   "options": "Cost Working Tool Discount"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_erection",
+   "fieldtype": "Currency",
+   "label": "CTS Erection"
+  },
+  {
+   "default": "0",
+   "fieldname": "mbr_cts_erection",
+   "fieldtype": "Currency",
+   "label": "MBR CTS Erection"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_mffe",
+   "fieldtype": "Check",
+   "label": "e"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_kochfe",
+   "fieldtype": "Check",
+   "label": "e"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_ovivofe",
+   "fieldtype": "Check",
+   "label": "e"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_ctsfe",
+   "fieldtype": "Check",
+   "label": "e"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_mbr_ctsfe",
+   "fieldtype": "Check",
+   "label": "e"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_dgtfe",
+   "fieldtype": "Check",
+   "label": "e"
+  },
+  {
+   "fieldname": "eur_column",
+   "fieldtype": "Column Break",
+   "label": "EUR"
+  },
+  {
+   "default": "0",
+   "fieldname": "standard__cost2",
+   "fieldtype": "Currency",
+   "label": "Standard Price",
+   "options": "currency2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "brinex_cost2",
+   "fieldtype": "Currency",
+   "label": "Brinex Price",
+   "options": "currency2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "rewolutte_cost2",
+   "fieldtype": "Currency",
+   "label": "Rewolutte Price",
+   "options": "currency2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_cost2",
+   "fieldtype": "Currency",
+   "label": "Overall Price",
+   "options": "currency2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ssb_pressure_pump_cost2",
+   "fieldtype": "Currency",
+   "label": "SSB Pressure Pump Price",
+   "options": "currency2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "usd_column",
+   "fieldtype": "Column Break",
+   "label": "USD"
+  },
+  {
+   "fieldname": "standard__cost3",
+   "fieldtype": "Currency",
+   "label": "Standard Price",
+   "options": "currency3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "brinex_cost3",
+   "fieldtype": "Currency",
+   "label": "Brinex Price",
+   "options": "currency3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rewolutte_cost3",
+   "fieldtype": "Currency",
+   "label": "Rewolutter Price",
+   "options": "currency3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overall_cost3",
+   "fieldtype": "Currency",
+   "label": "Overall Price",
+   "options": "currency3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ssb_pressure_pump_cost3",
+   "fieldtype": "Currency",
+   "label": "SSB Pressure Pump Price",
+   "options": "currency3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_cvuwo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inr_column",
+   "fieldtype": "Column Break",
+   "label": "INR",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bdgtp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_02elg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ww2of",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_n8oqz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.project_startup_sheet!=undefined)",
+   "fieldname": "usd",
+   "fieldtype": "Float",
+   "label": "Exchange Rate (USD)",
+   "precision": "9"
+  },
+  {
+   "depends_on": "eval:(doc.project_startup_sheet!=undefined)",
+   "fieldname": "eur",
+   "fieldtype": "Float",
+   "label": "Exchange Rate (EUR)",
+   "precision": "9"
+  },
+  {
+   "fieldname": "column_break_tn81b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rro_with_cip",
+   "fieldtype": "Currency",
+   "label": "RRO with CIP"
+  },
+  {
+   "fieldname": "column_break_itdtb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rew_ro_with_cip",
+   "fieldtype": "Currency",
+   "label": "REW RO with CIP"
+  },
+  {
+   "fieldname": "column_break_hoj0t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_with_cip",
+   "fieldtype": "Currency",
+   "label": "RO with CIP"
+  },
+  {
+   "fetch_from": "project_startup_sheet.choose_cip2",
+   "fieldname": "choose_cip2",
+   "fieldtype": "Link",
+   "label": "Choose CIP (RRO)",
+   "options": "CIP Standard Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "cip_cost2",
+   "fieldtype": "Currency",
+   "label": "CIP Cost (RRO)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "electrical_details_section",
+   "fieldtype": "Section Break",
+   "label": "Electrical Details"
+  },
+  {
+   "fieldname": "section_break_vkvyn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_tax_cost",
+   "fieldtype": "Currency",
+   "label": " Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_transport_cost",
+   "fieldtype": "Currency",
+   "label": " Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_cts_cooling_tower",
+   "fieldtype": "Currency",
+   "label": "Total Cost for CTS Cooling Tower"
+  },
+  {
+   "fieldname": "column_break_ataao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_cooling_tower_tax",
+   "fieldtype": "Float",
+   "label": " Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "cts_cooling_tower_transport",
+   "fieldtype": "Float",
+   "label": " Transport (%)"
+  },
+  {
+   "fieldname": "cts_cooling_tower_section",
+   "fieldtype": "Section Break",
+   "label": "CTS Cooling Tower"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cts_cooling_tower_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "column_break_ls0px",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_e_c_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower E and C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_cdrao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "cts_cooling_tower_margin_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "cts_cooling_tower_e_c",
+   "fieldtype": "Float",
+   "label": "CTS Cooling Tower E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "cts_cooling_tower_overhead",
+   "fieldtype": "Float",
+   "label": "CTS Cooling Tower Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "cts_cooling_tower_agent_commission",
+   "fieldtype": "Float",
+   "label": "CTS Cooling Tower Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "cts_cooling_tower_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "CTS Cooling Tower Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_5d8ka",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_cooling_tower_grand_total",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "cts_cooling_tower_selling_price",
+   "fieldtype": "Currency",
+   "label": "CTS Cooling Tower Selling Price"
+  },
+  {
+   "fieldname": "column_break_fqnzp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "cts_cooling_tower_margin",
+   "fieldtype": "Float",
+   "label": "CTS Cooling Tower Margin (%)"
+  },
+  {
+   "default": "INR",
+   "fieldname": "currency1",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency1",
+   "options": "Currency"
+  },
+  {
+   "default": "EUR",
+   "fieldname": "currency2",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency2",
+   "options": "Currency"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency3",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency3",
+   "options": "Currency"
+  },
+  {
+   "default": "Proposal",
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Print Format",
+   "options": "Print Format"
+  },
+  {
+   "fieldname": "proposal_status",
+   "fieldtype": "Select",
+   "label": "Proposal status",
+   "options": "\nSent\nPending"
+  },
+  {
+   "fieldname": "pre_treatment_special_table",
+   "fieldtype": "Table",
+   "label": "Pre Treatment Special Table",
+   "options": "Pre Treatment Special Table"
+  },
+  {
+   "fieldname": "column_break_sjrsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.mf_scheme>0)",
+   "fieldname": "mf_scheme",
+   "fieldtype": "Currency",
+   "label": "Pre Treatment selling price (MF Scheme)"
+  },
+  {
+   "depends_on": "eval:(doc.koch_scheme>0)",
+   "fieldname": "koch_scheme",
+   "fieldtype": "Currency",
+   "label": "Pre Treatment selling price (KOCH MBR Scheme)"
+  },
+  {
+   "depends_on": "eval:(doc.ovivo_scheme>0)",
+   "fieldname": "ovivo_scheme",
+   "fieldtype": "Currency",
+   "label": "Pre Treatment selling price (Ceramic MBR Scheme)"
+  },
+  {
+   "depends_on": "eval:(frappe.session.user==\"Administrator\")",
+   "fieldname": "pdf_1",
+   "fieldtype": "Attach",
+   "label": "Pdf 1"
+  },
+  {
+   "depends_on": "eval:(frappe.session.user==\"Administrator\")",
+   "fieldname": "edit",
+   "fieldtype": "Button",
+   "label": "edit"
+  },
+  {
+   "depends_on": "eval:(frappe.session.user==\"Administrator\")",
+   "fieldname": "pdf2",
+   "fieldtype": "Attach",
+   "label": "Pdf2"
+  },
+  {
+   "fieldname": "proposal_index",
+   "fieldtype": "Table",
+   "label": "Proposal Index",
+   "options": "Proposal Index"
+  },
+  {
+   "fieldname": "column_break_rv0xv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project_startup_sheet.choose_cip3",
+   "fieldname": "choose_cip3",
+   "fieldtype": "Link",
+   "label": "Choose CIP (Rew RO)",
+   "options": "CIP Standard Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "cip_cost3",
+   "fieldtype": "Float",
+   "label": "CIP Cost (Rew RO)"
+  },
+  {
+   "default": "0",
+   "fieldname": "duplicate",
+   "fieldtype": "Check",
+   "label": "Duplicate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pva_stream_tab",
+   "fieldtype": "Tab Break",
+   "label": "PVA Stream"
+  },
+  {
+   "fieldname": "an_pipe_escalation",
+   "fieldtype": "Table",
+   "label": "AN Pipe Escalation",
+   "options": "Anarobic Pipe Escalation"
+  },
+  {
+   "fieldname": "generate",
+   "fieldtype": "Button",
+   "label": "Generate"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  },
+  {
+   "fieldname": "an_all_items",
+   "fieldtype": "Table",
+   "label": "An All Items",
+   "options": "AN All Items"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "an_electrical_details_section",
+   "fieldtype": "Section Break",
+   "label": "AN Electrical Details"
+  },
+  {
+   "fieldname": "an_electrical_items",
+   "fieldtype": "Table",
+   "label": "AN Electrical Items",
+   "options": "AN Electrical Items"
+  },
+  {
+   "fieldname": "an_plc_items",
+   "fieldtype": "Table",
+   "label": "AN PLC Items",
+   "options": "AN PLC Items"
+  },
+  {
+   "fieldname": "an_full_system",
+   "fieldtype": "Table",
+   "label": "An Full System",
+   "options": "An Full System"
+  },
+  {
+   "fieldname": "anaerobic_special_table",
+   "fieldtype": "Table",
+   "label": "Anaerobic Special Table",
+   "options": "Anaerobic Special Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_not_linked_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "An not linked cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_cost",
+   "fieldtype": "Currency",
+   "label": "An Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_electrical_cost",
+   "fieldtype": "Currency",
+   "label": "An Electrical Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_an_cost",
+   "fieldtype": "Currency",
+   "label": "Overall An Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_for_an",
+   "fieldtype": "Currency",
+   "label": "An Total Cost"
+  },
+  {
+   "default": "1",
+   "fieldname": "an_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "an_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "anaerobic_section",
+   "fieldtype": "Section Break",
+   "label": "Anaerobic"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_an_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost (Anaerobic)"
+  },
+  {
+   "fieldname": "column_break_703ba",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_marginal_cost_for_expense_calculation",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "Overhead Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "Agent Commission Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "Guarantee Clause Cost"
+  },
+  {
+   "fieldname": "column_break_ebxzv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "an_margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "an_e_c_",
+   "fieldtype": "Float",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "12",
+   "fieldname": "an_overhead_percentage",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "an_agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "an_guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_guwhx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "an_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "an_selling_price",
+   "fieldtype": "Currency",
+   "label": "Anaerobic Selling Price"
+  },
+  {
+   "fieldname": "column_break_99w7d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "an_margin_percentage",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "fieldname": "section_break_u3wqj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zhfpt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.mf_scheme>0)",
+   "fieldname": "mf_scheme2",
+   "fieldtype": "Currency",
+   "label": "MF Scheme"
+  },
+  {
+   "depends_on": "eval:(doc.koch_scheme>0)",
+   "fieldname": "koch_scheme2",
+   "fieldtype": "Currency",
+   "label": "Koch Scheme"
+  },
+  {
+   "depends_on": "eval:(doc.ovivo_scheme>0)",
+   "fieldname": "ovivo_scheme2",
+   "fieldtype": "Currency",
+   "label": "Ovivo Scheme"
+  },
+  {
+   "fieldname": "section_break_gpbsk",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_dy9nd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8bzhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dr1md",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_egscp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cd0o4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hqhap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wzutb",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "anaerobic_reference_section",
+   "fieldtype": "Section Break",
+   "label": "Anaerobic Reference"
+  },
+  {
+   "fieldname": "anaerobic_items",
+   "fieldtype": "Table",
+   "label": "Anarobic Items",
+   "options": "Anarobic Items"
+  },
+  {
+   "fieldname": "anaerobic_full_system",
+   "fieldtype": "Table",
+   "label": "Anarobic Full System",
+   "options": "Anarobic Full System"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "anaerobic_pipe_escalation_section",
+   "fieldtype": "Section Break",
+   "label": "Anaerobic Pipe Escalation"
+  },
+  {
+   "fieldname": "reference_standard_cost",
+   "fieldtype": "Table",
+   "label": "Reference Standard Cost",
+   "options": "Reference Standard Cost"
+  },
+  {
+   "fieldname": "section_break_btnne",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_llaz7",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-26 10:16:57.176244",
+ "modified_by": "Administrator",
+ "module": "Process and Costing",
+ "name": "Cost Working Tool",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_startup_sheet"
+}

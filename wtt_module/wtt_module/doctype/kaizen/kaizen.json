@@ -1,0 +1,325 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-05-09 11:26:21.472343",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_13",
+  "status",
+  "points",
+  "waiting_for",
+  "remarks",
+  "section_break_6",
+  "naming_series",
+  "kaizen_inventor_detail_section",
+  "employee",
+  "employee_name",
+  "department",
+  "column_break_2",
+  "attach",
+  "evaluation_process",
+  "reason",
+  "evaluation",
+  "hide",
+  "kaizen_detail_section",
+  "baseline",
+  "existing_method",
+  "change_to_be_made",
+  "applicable_to",
+  "to_dept",
+  "to_dept2",
+  "kaizen_saves",
+  "cost",
+  "approx_inr",
+  "time",
+  "approx_hours_day",
+  "effort",
+  "quality_improvement",
+  "if_other",
+  "uses_of_kaizen",
+  "section_break_11",
+  "ht",
+  "ht2",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "KZN-"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Employee Code",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "kaizen_inventor_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Kaizen Inventor Detail"
+  },
+  {
+   "fieldname": "kaizen_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Kaizen Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Kaizen",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "baseline",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Baseline",
+   "reqd": 1
+  },
+  {
+   "fieldname": "existing_method",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Existing Method",
+   "reqd": 1
+  },
+  {
+   "fieldname": "change_to_be_made",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Change to be Made",
+   "reqd": 1
+  },
+  {
+   "fieldname": "applicable_to",
+   "fieldtype": "Select",
+   "label": "Applicable To",
+   "options": "\nSpecific Department\nWhole Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kaizen_saves",
+   "fieldtype": "Heading",
+   "label": "Kaizen Benefit"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost",
+   "fieldtype": "Check",
+   "label": "Cost Reduction"
+  },
+  {
+   "default": "0",
+   "fieldname": "time",
+   "fieldtype": "Check",
+   "label": "Time Reduction"
+  },
+  {
+   "default": "0",
+   "fieldname": "effort",
+   "fieldtype": "Check",
+   "label": "Effort Reduction"
+  },
+  {
+   "fieldname": "uses_of_kaizen",
+   "fieldtype": "Small Text",
+   "label": "Uses of Kaizen",
+   "reqd": 1
+  },
+  {
+   "fieldname": "if_other",
+   "fieldtype": "Small Text",
+   "label": "if other"
+  },
+  {
+   "depends_on": "eval:(doc.applicable_to==\"Specific Department\");",
+   "fieldname": "to_dept",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Link",
+   "label": "Reason For Hold",
+   "options": "Kaizen Hold Reason",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "quality_improvement",
+   "fieldtype": "Check",
+   "label": "Quality Improvement"
+  },
+  {
+   "depends_on": "eval:(doc.applicable_to==\"Specific Department\");",
+   "fieldname": "to_dept2",
+   "fieldtype": "Table MultiSelect",
+   "label": "Department",
+   "options": "Multi Department"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "evaluation_process",
+   "fieldtype": "Link",
+   "label": "Evaluation Process",
+   "options": "Kaizen Evaluation Sheet"
+  },
+  {
+   "fieldname": "evaluation",
+   "fieldtype": "Button",
+   "label": "Report"
+  },
+  {
+   "fieldname": "ht",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hide",
+   "fieldtype": "Button",
+   "label": "Hide"
+  },
+  {
+   "fieldname": "ht2",
+   "fieldtype": "HTML"
+  },
+  {
+   "depends_on": "eval:(doc.cost==\"1\")",
+   "fieldname": "approx_inr",
+   "fieldtype": "Currency",
+   "label": "Approx (INR)"
+  },
+  {
+   "depends_on": "eval:(doc.time==\"1\")",
+   "fieldname": "approx_hours_day",
+   "fieldtype": "Float",
+   "label": "Approx (hours/ day)"
+  },
+  {
+   "fieldname": "points",
+   "fieldtype": "Data",
+   "label": "Kaizen Points",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "label": "Kaizen Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "waiting_for",
+   "fieldtype": "Select",
+   "label": "Waiting for",
+   "options": "\nExplanation\nModification\nDevelopment\nCost Calculation",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-08 15:29:16.758348",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Kaizen",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Kaizen Lead",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

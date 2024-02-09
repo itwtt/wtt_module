@@ -1,0 +1,33 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "condition": "doc.employee=='WTT1278'",
+ "creation": "2023-01-10 15:32:07.781661",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Salary Slip",
+ "enabled": 0,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear Sir,\n\nSalary Slip has been Approved. \nKindly Check it.\n\nThanks & Regards\nWTT-ERP.",
+ "modified": "2023-09-05 10:19:00.427198",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Salary Approved",
+ "owner": "Administrator",
+ "print_format": "",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "Accounts Notify"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "WTT INTERNATIONAL",
+ "sender_email": "noreply@wttint.com",
+ "slack_webhook_url": "Gokul-test",
+ "subject": "Salary Slips are Approved."
+}

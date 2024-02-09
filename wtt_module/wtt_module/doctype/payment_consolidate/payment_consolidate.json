@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-12-29 15:20:31.041924",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "status",
+  "overdue_table",
+  "final_table",
+  "consolidate_table",
+  "total_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "overdue_table",
+   "fieldtype": "Table",
+   "label": "Overdue Table",
+   "options": "Overdue Table"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Outstanding",
+   "options": "\nGet Outstanding"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "consolidate_table",
+   "fieldtype": "Table",
+   "label": "Consolidate Table",
+   "options": "Consolidate Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PAY-CON-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Payment Consolidate",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "final_table",
+   "fieldtype": "Table",
+   "label": "Final Table",
+   "options": "Final Overdue Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-08 13:58:07.974091",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Payment Consolidate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

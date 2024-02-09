@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-28 17:53:00.480225",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_description",
+  "renamed",
+  "req_flow",
+  "flow",
+  "max_flow",
+  "range",
+  "w_qty",
+  "sb_qty",
+  "ssb_qty",
+  "min_price",
+  "max_price",
+  "motor_cost",
+  "unit_price",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Description"
+  },
+  {
+   "fieldname": "renamed",
+   "fieldtype": "Data",
+   "label": "Renamed"
+  },
+  {
+   "columns": 1,
+   "fieldname": "req_flow",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Req. Flow"
+  },
+  {
+   "default": "0",
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Min Flow"
+  },
+  {
+   "fieldname": "max_flow",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Max Flow"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "range",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Range"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "w_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "W Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "sb_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sb Qty"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "ssb_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ssb Qty"
+  },
+  {
+   "fieldname": "min_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Min Price"
+  },
+  {
+   "fieldname": "max_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Max Price"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  },
+  {
+   "default": "0",
+   "fieldname": "motor_cost",
+   "fieldtype": "Currency",
+   "label": "Motor Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-23 16:39:03.466078",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "MBR CTS Not Linked Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

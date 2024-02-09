@@ -1,0 +1,57 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Sivakumar Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Sivakumar Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Ashok Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Ashok Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Joseph Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Joseph Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Naresh Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Naresh Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Vinith Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Vinith Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 16:20:09.671143",
+ "dashboard_name": "Admin Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:18:08.449756",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "Admin Monitoring Dashboard",
+ "owner": "Administrator"
+}

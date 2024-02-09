@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "color": "Red",
+ "creation": "2023-09-05 09:44:05.178067",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "candidate_photo",
+  "candidate_name",
+  "date_of_birth",
+  "qualification",
+  "column_break_wthp1",
+  "college_details",
+  "year_of_passed_out",
+  "degree__ug__pg",
+  "percentage",
+  "column_break_7yhxo",
+  "applying_for_the_post",
+  "suitable_for_the_post",
+  "job_opening",
+  "location",
+  "contact",
+  "email",
+  "type",
+  "experience",
+  "section_break_e9itj",
+  "remarks",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate_photo",
+   "fieldtype": "Attach Image",
+   "label": "Candidate Photo"
+  },
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "label": "Candidate Name"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Link",
+   "label": "Qualification",
+   "options": "Qualification"
+  },
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening",
+   "permlevel": 1
+  },
+  {
+   "fetch_from": "job_opening.designation",
+   "fieldname": "applying_for_the_post",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Applying for the Post",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Place"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "college_details",
+   "fieldtype": "Link",
+   "label": "College Details",
+   "options": "College Details"
+  },
+  {
+   "fieldname": "column_break_wthp1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nFresher\nExperience"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "REQ-DB-"
+  },
+  {
+   "depends_on": "eval:(doc.type==\"Experience\")",
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience",
+   "mandatory_depends_on": "eval:(doc.type==\"Experience\")"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_e9itj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "year_of_passed_out",
+   "fieldtype": "Data",
+   "label": "Year of passed out"
+  },
+  {
+   "fieldname": "degree__ug__pg",
+   "fieldtype": "Select",
+   "label": "Degree ( UG / PG)",
+   "options": "\nUG\nPG\nDIPLOMA"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "label": "Percentage / CGPA"
+  },
+  {
+   "fieldname": "column_break_7yhxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "suitable_for_the_post",
+   "fieldtype": "Link",
+   "label": "Suitable For the Post",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "image_field": "candidate_photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-11 09:48:47.409170",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Recruitment Database",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "candidate_name"
+}

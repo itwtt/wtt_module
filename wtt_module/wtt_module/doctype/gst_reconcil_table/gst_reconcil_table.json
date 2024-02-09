@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-04 11:09:55.247388",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_no",
+  "supplier_dc",
+  "invoice_date",
+  "supplier",
+  "tax_id",
+  "account_name",
+  "amount_in_erp",
+  "amount",
+  "taxable_value",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No"
+  },
+  {
+   "columns": 2,
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax ID"
+  },
+  {
+   "columns": 2,
+   "fieldname": "account_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount_in_erp",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount in ERP"
+  },
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "supplier_dc",
+   "fieldtype": "Data",
+   "label": "Supplier DC"
+  },
+  {
+   "fieldname": "taxable_value",
+   "fieldtype": "Currency",
+   "label": "Taxable Value"
+  },
+  {
+   "columns": 1,
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Invoice Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-10 10:48:06.242690",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "GST Reconcil Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

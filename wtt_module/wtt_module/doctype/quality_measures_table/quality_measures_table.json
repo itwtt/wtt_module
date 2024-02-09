@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-01 14:33:01.958151",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system_name",
+  "hod_percentage",
+  "project_team",
+  "erection_team"
+ ],
+ "fields": [
+  {
+   "fieldname": "system_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "System Name",
+   "options": "\nRotary Brush Screener\nBar Screener\nDrum Screener\nAnaerobic Screener\nAnaerobic Equalization\nAnaerobic Neutralization\nAnaerobic System\nAmmonia Striper\nLifting sump\nOil & grease trap\nDAF (Dissolved Air Flotation)\nEqualization System\nNeutralization System\nCooling Tower\nDe-Nitrification System\nDistribution system\nBiological Oxidation System\nClarifier Feed Tank\nCircular Clarifier System\nLamella Settler\nDO increase system\nSRS System\nSand Filter\nActivated Carbon Filter\nSelf-Cleaning Filter\nMicro Filtration - ASAHI\nSubmerged MBR system - KOCH\nSubmerged MBR system - OVIVO\nSulphur Black Removal System\nSludge Thickener\nSludge Thickener with mech\nScrew Press\nBelt Press\nDegasser System\nReverse Osmosis\nHardness and Silica Removal System\nChlorination system\nHardness and Color Removal System\nReject Reverse Osmosis\nEvaporator\nAgitated Thin film dryer\nCentrifuge\nCrystallizer\nNano Filtration\nCare system\nCIP system\nPre-Treatment System\nOthers"
+  },
+  {
+   "fieldname": "hod_percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "HOD Percentage"
+  },
+  {
+   "fieldname": "project_team",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Project Team Quality (%)"
+  },
+  {
+   "fieldname": "erection_team",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Erection Team Quality (%)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-01 16:08:09.204234",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Quality Measures Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

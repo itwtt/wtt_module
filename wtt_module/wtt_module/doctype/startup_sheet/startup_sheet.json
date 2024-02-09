@@ -1,0 +1,4998 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-05-26 16:44:54.793390",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "process_enquiry_tab",
+  "is_rewolutte",
+  "is_brinex",
+  "startup_sheet",
+  "project",
+  "industry_name",
+  "contact_person",
+  "sector__industry",
+  "mobile_no",
+  "email",
+  "column_break_ouwxk",
+  "address",
+  "state",
+  "country",
+  "district",
+  "pincode",
+  "revision",
+  "section_break_tt43r",
+  "enquiry_attachment",
+  "existing_plant_details_section",
+  "existing_plant_layout",
+  "existing_plant_tank_capacities",
+  "column_break_llowz",
+  "plant_capacity_m3day",
+  "current_flow_stream",
+  "current_plant_is",
+  "section_break_byjpm",
+  "flow",
+  "cod",
+  "bod",
+  "tdsmgl",
+  "pvamgl",
+  "column_break_7huro",
+  "tss",
+  "ironmgl",
+  "silicamgl",
+  "colourhazen",
+  "sodiummgl",
+  "column_break_bk8rt",
+  "calciummgl",
+  "sulphatesmgl",
+  "chloridesmgl",
+  "magnesiummgl",
+  "alk",
+  "column_break_2flam",
+  "temperature",
+  "oil_greasemgl",
+  "total_hardnessmgl",
+  "tkn",
+  "section_break_a9rnb",
+  "treatment_required",
+  "column_break_dm5g9",
+  "area_availability_for_plant",
+  "current_industrial_process_details_section",
+  "work_process",
+  "column_break_z5xdh",
+  "processed_fibers",
+  "column_break_u2e5n",
+  "do_you_do_printing",
+  "column_break_yyh8g",
+  "is_urea_used",
+  "column_break_izzcu",
+  "printing_effluent_flow",
+  "column_break_iidsk",
+  "desizing_effluent_flow",
+  "section_break_imlu1",
+  "additional_requirements",
+  "system_d",
+  "system_details",
+  "section_break_9hg7q",
+  "column_break_vrh3q",
+  "pretreatment_clarifier",
+  "pretreatment_lamella",
+  "do_increase",
+  "daf",
+  "anaerobic_system",
+  "dnt",
+  "column_break_qk0me",
+  "filtration_mf",
+  "filtration_koch",
+  "filtration_ovivo",
+  "sulphur_black",
+  "dgt",
+  "ro",
+  "column_break_6u7yz",
+  "rewolutte",
+  "brinex",
+  "evaporator",
+  "atfd",
+  "crystallizer",
+  "care",
+  "column_break_aqijt",
+  "ammonia_stream_b",
+  "anaerobic_cts_b",
+  "anaerobic_settler_b",
+  "daf_with_dosing",
+  "main_stream",
+  "mf",
+  "mbr_k",
+  "mbr_o",
+  "clear",
+  "selected_process_system_section",
+  "selected_system",
+  "get_flowchart",
+  "html_editor",
+  "blower_section",
+  "tank_height",
+  "no_of_bio_tanks",
+  "tank_dimension",
+  "cod_reduction_for_og",
+  "seperate_blower_for_equalization_tank",
+  "total_blower",
+  "blower_cpa",
+  "each_blower",
+  "ott_laterals",
+  "diffuser_spacing",
+  "currency_value",
+  "currency_conversion_45",
+  "type_of_blower",
+  "ott_lateral_size",
+  "eqt_diffuser_pipe_line_size",
+  "eqt_diffuser_pipe_line_length",
+  "fouling_diffuser",
+  "flow_rate_diffuser",
+  "soft_factor",
+  "bod_value",
+  "soft_per",
+  "soft",
+  "column_break_uc5dc",
+  "bio_tank_type",
+  "eqt_tank_type",
+  "at_o2",
+  "real_o2",
+  "real_o2_day",
+  "real_o2_hr",
+  "des_per",
+  "designing",
+  "no_of_diff",
+  "bio_blower_power",
+  "eqt_blower_power",
+  "current_design_section",
+  "eqtk",
+  "only_air",
+  "do_in",
+  "bio_tank",
+  "column_break_rh3as",
+  "total_diffusers",
+  "bio_blower",
+  "eq_blower",
+  "eqt_blower",
+  "formula_tab_section",
+  "ret_in_hr1",
+  "column_break_0ekeq",
+  "volume",
+  "column_break_xzrog",
+  "area1",
+  "column_break_ckypo",
+  "diffue",
+  "column_break_mw1k3",
+  "aree",
+  "diffuser_calculation_section",
+  "div_point_diffuser",
+  "section_break_gl5wv",
+  "ret_in_hr_dt",
+  "column_break_6xlpf",
+  "ret_in_day_dt",
+  "column_break_j0t27",
+  "area_dt",
+  "column_break_g1osl",
+  "diffuser_dt",
+  "section_break_i7w16",
+  "ret_in_hr_srs",
+  "column_break_j5mvj",
+  "ret_in_day_srs",
+  "column_break_qakwi",
+  "area_srs",
+  "column_break_kdtjv",
+  "diffuser_srs",
+  "section_break_lowmy",
+  "ret_in_hr_cft",
+  "column_break_aeu3q",
+  "ret_in_day_cft",
+  "column_break_nmh7t",
+  "area_cft",
+  "column_break_lv3yk",
+  "diffuser_cft",
+  "section_break_rekbc",
+  "ret_in_hr_nt",
+  "column_break_0ipkz",
+  "ret_in_day_nt",
+  "column_break_cqvgu",
+  "area_nt",
+  "column_break_xwco2",
+  "diffuser_nt",
+  "section_break_pvthn",
+  "ret_in_hr_eqt",
+  "column_break_x11ni",
+  "ret_in_day_eqt",
+  "column_break_cboff",
+  "area_eqt",
+  "column_break_u1qng",
+  "diffuser_eqt",
+  "section_break_nh5ya",
+  "ret_in_hr_rewolutte",
+  "column_break_xwryg",
+  "ret_in_day_rewolutte",
+  "column_break_umc1y",
+  "area_rewolutte",
+  "column_break_dgm9a",
+  "diffuser_rewolutte",
+  "secondary_clarifier_section",
+  "required_retention_time_hours",
+  "design_clarifier",
+  "enter_side_water_depth",
+  "enter_number_of_clarifiers_in_service",
+  "current_retention_time_hours",
+  "column_break_dff3t",
+  "clarifier_diameter",
+  "required_clarifier_diameter",
+  "influent_flow_rate_to_be_treated",
+  "influent_flow_rate_to_be_treated_m3hr",
+  "enter_mlss_concentration",
+  "ras_flow_rate_percentage",
+  "enter_ras_flow_rate",
+  "enter_tank_diameter",
+  "ras_flow_rate_per_clarifier",
+  "calculate_surface_area",
+  "calculate_clarifier_volume",
+  "column_break_vbir7",
+  "weir_diameter",
+  "weir_length",
+  "total_secondary_clarifier_surface_area",
+  "total_secondary_clarifier_volume",
+  "total_weir_length",
+  "calculated_surface_overflow_rate",
+  "calculated_weir_overflow_rate",
+  "calculated_detention_time",
+  "total_overflow_rate",
+  "micro_filter_section",
+  "loop_operation",
+  "operating_hours",
+  "permeate_flux",
+  "actual_flux",
+  "no_of_loops",
+  "total_modules",
+  "modules_per_loop",
+  "modules_calculation_column",
+  "mf_for_feed_flow",
+  "reject_flow_ref",
+  "excess_percentage",
+  "area",
+  "permeate_flow",
+  "recovery",
+  "feed_pump",
+  "total_area",
+  "section_break_nj1ex",
+  "bw_pump",
+  "cip_pump",
+  "column_break_r2pf6",
+  "air_flow",
+  "actual_area",
+  "mf_formula_tab_section",
+  "feed_qty",
+  "column_break_0gzdh",
+  "mf_for_bw_flow",
+  "bw_qty",
+  "column_break_pcyua",
+  "mf_for_air_flow",
+  "air_qty",
+  "column_break_a9981",
+  "mf_for_cip_flow",
+  "cip_qty",
+  "mf_default_values_section",
+  "f_pump_for",
+  "f_filtration_for",
+  "f_total_cycle_for",
+  "f_filtration_day_for",
+  "f_total_flow_for",
+  "column_break_5v3jt",
+  "r_pump_for",
+  "r_filtration_for",
+  "r_total_cycle_for",
+  "r_filtration_day_for",
+  "r_total_flow_for",
+  "column_break_gfue8",
+  "p_pump_for",
+  "p_filtration_for",
+  "p_total_cycle_for",
+  "p_filtration_day_for",
+  "p_total_flow_for",
+  "column_break_crisu",
+  "b_pump_for",
+  "b_bw_for",
+  "b_total_cycle_for",
+  "b_bw_day_for",
+  "b_total_flow_for",
+  "mf_overall_per_cal",
+  "mbr_section",
+  "column_break_d2fjl",
+  "is_mbr_feed_pump_required",
+  "is_feed_pump_is_required",
+  "mbr_type",
+  "permeate_capacity",
+  "mbr_operating_hours",
+  "mbr_model",
+  "mbr_permeate_flux",
+  "required_flux",
+  "design_no_module_required",
+  "design_no_of_trains",
+  "section_break_1ii3y",
+  "total_filtration_area",
+  "mbr_backwash_flux",
+  "mbr_permeate_flow",
+  "mbr_cip_flux",
+  "mbr_air_req_membrane_row",
+  "section_break_mrxom",
+  "mbr_membrane_modules",
+  "mbr_total_area",
+  "mbr_area_req_for_filtration",
+  "sludge_pit",
+  "column_break_yvksf",
+  "design_total_no_of_modules",
+  "design_modules_train",
+  "design_total_area",
+  "section_break_nefdp",
+  "mbr_permeate_pump",
+  "mbr_backwash_pump",
+  "mbr_sludge_pump",
+  "mbr_circulation_pump",
+  "mbr_feed_pump",
+  "mbr_cip_pump__train",
+  "mbr_blower__train",
+  "mbr_blower__train1",
+  "column_break_qtqse",
+  "cip_tank",
+  "dosing_pump_mc",
+  "dosing_pump_rc",
+  "dosing_tank",
+  "citric_dosing_pump_mc_and_rc",
+  "citric_dosing_tank",
+  "mbr_pump_qty_section",
+  "pump_qty",
+  "circulation_pump_qty",
+  "mbr_circ_sb_qty",
+  "mbr_sludge_pump_qty",
+  "sludge_pump_sb_qty",
+  "feed_pump_qty",
+  "blower_pump_qty",
+  "permeate_backwash_store_standby_qty",
+  "circulation_pump_store_standby_qty",
+  "actual_flow_calculation_section",
+  "normal_flow",
+  "column_break_ttqdt",
+  "ambient_pressure",
+  "column_break_xwz83",
+  "measured_pressure",
+  "column_break_jamzq",
+  "p_actual",
+  "column_break_ju5xr",
+  "normal_temp",
+  "column_break_d8gpf",
+  "room_temp",
+  "column_break_wwvem",
+  "actual_flow",
+  "mbr_formula_section",
+  "psh44",
+  "psh40",
+  "psh36",
+  "psh16",
+  "psh8",
+  "psh50",
+  "column_break_umbms",
+  "psh46",
+  "psh42",
+  "psh38",
+  "psh18",
+  "psh9",
+  "belt_press_section",
+  "sludge_production_section",
+  "is_with_mechanism",
+  "without_mechanism",
+  "with_mechanism",
+  "column_break_gcpzt",
+  "fd",
+  "bcod",
+  "y",
+  "kd",
+  "sludge_pro",
+  "mlss",
+  "tss_cf_eff",
+  "tss_cf_waste",
+  "ras",
+  "was",
+  "mbr_ovivo_section",
+  "feed_pump_required_for_ovivo",
+  "ovivo_type",
+  "ovivo_operating_hours",
+  "ovivo_permeate_flux_lmh",
+  "ovivo_required_flux",
+  "ovivo_no_module_required",
+  "ovivo_no_of_module_per_stack",
+  "ovivo_no_of_stacks_required",
+  "ovivo_no_of_trains",
+  "ovivo_no_of_module_per_train",
+  "ovivo_modules_train",
+  "column_break_2shox",
+  "ovivo_area_per_module",
+  "ovivo_area_required_for_filtration",
+  "ovivo_permeate_flux_lmd",
+  "ovivo_permeate_flow_rate",
+  "ovivo_backwash_flux",
+  "ovivo_cip_flux",
+  "ovivo_air_flow_rate_per_stack",
+  "ovivo_permeate_capacity",
+  "ovivo_pumps_section",
+  "ovivo_permeate_pump",
+  "ovivo_bc",
+  "ovivo_circulation_pump",
+  "ovivo_cip",
+  "ovivo_feed_pump",
+  "ovivo_blower",
+  "ovivo_sludge_pump",
+  "ovivo_sludge_pump_hours_of_operation",
+  "ovivo_sprinkler_pump",
+  "column_break_u0dzj",
+  "ovivo_total_area",
+  "ovivo_chlorine_dosing_for_each_stack",
+  "hypo_cleaning_concentration",
+  "ovivo_citric_dosing_for_each_stack",
+  "ovivo_hcl_cleaning_cencentration",
+  "ovivo_hcl_dosing_for_each_stack",
+  "ovivo_alum_dosing_for_each_stack",
+  "feed_flow_conversion",
+  "cip_flow_conversion",
+  "ovivo_cip_section",
+  "cip_tank_per_train",
+  "naocl_dosing_pump_rc",
+  "citric_dosing_pump_mc_rc",
+  "hcl_dosing_pump_mc_rc",
+  "alum_dosing_pump_mc_rc",
+  "pump_qty_section",
+  "ovivo_permeate_qty",
+  "ovivo_cip_qty",
+  "ovivo_backwash_qty",
+  "ovivo_circulation_qty",
+  "ovivo_blower_qty",
+  "ovivo_sprinkler_qty",
+  "ovivo_sludge_qty",
+  "ovivo_feed_qty",
+  "column_break_qw6lw",
+  "ovivo_permeate_sqty",
+  "ovivo_backwash_sqty",
+  "ovivo_circulation_sqty",
+  "ovivo_cip_sqty",
+  "ovivo_blower_sqty",
+  "ovivo_sprinkler_sqty",
+  "ovivo_sludge_sqty",
+  "ovivo_feed_sqty",
+  "ovivo_tank_volume",
+  "operation_cycle_section",
+  "ovivo_filtration_min",
+  "ovivo_backwash_min",
+  "ovivo_total_cycle",
+  "ovivo_hours_of_operation",
+  "column_break_ghz4l",
+  "ovivo_filtration_hr",
+  "ovivo_backwash_hr",
+  "ovivo_permeate_m3",
+  "ovivo_backwash_m3",
+  "ovivo_total_permeate",
+  "bio_pipes_tab",
+  "tank_length",
+  "no_separate_blower_for_equalization_section",
+  "n_s_blower_size",
+  "ns_blower_length",
+  "separate_blower_for_equalization_section",
+  "s_blower_size",
+  "s_blower_length",
+  "diffuser_size_for_blower_section",
+  "d_blower_size",
+  "d_blower_length",
+  "d_model",
+  "eqt_blower_model",
+  "branch_pipe_of_biological_tank_section",
+  "b_bio_size",
+  "b_bio_length",
+  "branch_pipe_of_eqt_tank_section",
+  "e_bio_size",
+  "e_bio_float",
+  "branch_pipe_of_ntsrscft_tank_section",
+  "nsc_blower_line_size",
+  "nsc_blower_line_length",
+  "nt_tank_section",
+  "nt_pipe_size",
+  "nt_pipe_length",
+  "dt_tank_section",
+  "dt_pipe_size",
+  "dt_pipe_length",
+  "cft_tank_section",
+  "cft_pipe_size",
+  "cft_pipe_length",
+  "srs_tank_section",
+  "srs_pipe_size",
+  "srs_pipe_length",
+  "dnt_tank_section",
+  "dnt_pipe_size",
+  "dnt_pipe_length",
+  "rewolutte_section",
+  "header_pipe_column",
+  "rewolutte_header_pipe_size",
+  "rewolutte_header_pipe_length",
+  "rewolutte_grid_pipe_size",
+  "rewolutte_diffuser_grid",
+  "branch_pipe_column",
+  "rewolutte_branch_pipe_size",
+  "rewolutte_branch_pipe_length",
+  "amended_from",
+  "system_links_tab",
+  "pre_treatment_template",
+  "column_break_usf3d",
+  "mf_template",
+  "column_break_zezxw",
+  "mbr_koch_template",
+  "column_break_l7th0",
+  "mbr_ovivo_template",
+  "column_break_eh5st",
+  "cost_working_tool",
+  "bio_link",
+  "mf_link",
+  "mbr_koch",
+  "mbr_ovivo",
+  "cost_working",
+  "section_break_efiyi",
+  "ro_template",
+  "ro_recovery",
+  "ro_operating_hours",
+  "column_break_wffbf",
+  "rewolutte_ro",
+  "rewolutte_ro_recovery",
+  "rew_operating_hours",
+  "column_break_xqy6z",
+  "reject_ro",
+  "reject_ro_recovery",
+  "rro_operating_hours",
+  "section_break_l42ft",
+  "choose_cip",
+  "cip_quantity",
+  "generate_cost_working",
+  "column_break_xak87",
+  "choose_cip3",
+  "cip_quantity3",
+  "cost_working_link",
+  "column_break_1lqr8",
+  "choose_cip2",
+  "cip_quantity2",
+  "cost_working_data",
+  "cts_tab",
+  "reject_flow",
+  "chemical_volume",
+  "cts_capacity",
+  "recirculation",
+  "hours_of_operations",
+  "reject_ro_flow_rate",
+  "do_increase_tab",
+  "is_do_increase",
+  "cod_dec",
+  "do_increase_tank_height",
+  "do_increase_cod",
+  "do_increase_bod",
+  "fouling_factor",
+  "sote_factor",
+  "column_break_ujvgk",
+  "sote",
+  "specific_gravity_day",
+  "specific_gravity_hr",
+  "do_increase_blower_capacity",
+  "do_increase_no_of_diffuser",
+  "total_do_blower_capacity",
+  "do_increase_blower_size",
+  "do_increase_blower_model",
+  "do_increase_blower_pipe_length",
+  "do_increase_diffuser_pipe_size",
+  "do_increase_diffuser_pipe_length",
+  "process_template_tab",
+  "purpose_for",
+  "abbr",
+  "abbr_inlet",
+  "district_code",
+  "state_code",
+  "unit_code",
+  "column_break_lpdjk",
+  "scope",
+  "proposed_recovery",
+  "revision_code",
+  "permeate_water_tds",
+  "treated_water_cod",
+  "treated_water_tss",
+  "mbr_cts_tab",
+  "mbr_cts_flow",
+  "cts_is_feed_pump_required",
+  "cts_ovivo_type",
+  "cts_ovivo_operating_hours",
+  "cts_ovivo_permeate_flux_lmh",
+  "cts_ovivo_required_flux",
+  "cts_ovivo_no_module_required",
+  "cts_ovivo_no_of_module_per_stack",
+  "column_break_3bcok",
+  "cts_ovivo_no_of_stacks_required",
+  "cts_ovivo_no_of_trains",
+  "cts_ovivo_no_of_module_per_train",
+  "cts_ovivo_modules_train",
+  "section_break_jsrlx",
+  "cts_ovivo_area_per_module",
+  "cts_ovivo_area_required_for_filtration",
+  "cts_ovivo_permeate_flux_lmd",
+  "cts_ovivo_permeate_flow_rate",
+  "cts_ovivo_backwash_flux",
+  "cts_ovivo_cip_flux",
+  "column_break_opsyp",
+  "cts_ovivo_air_flow_rate_per_stack",
+  "cts_ovivo_permeate_capacity",
+  "cts_ovivo_pumps",
+  "cts_ovivo_permeate_pump",
+  "cts_ovivo_bc",
+  "cts_ovivo_circulation_pump",
+  "cts_ovivo_cip",
+  "cts_ovivo_blower",
+  "cts_ovivo_sludge_pump_2",
+  "cts_ovivo_sludge_pump_hours_of_operation_2",
+  "cts_ovivo_sprinkler_pump_2",
+  "column_break_h41gv",
+  "cts_ovivo_total_area",
+  "cts_ovivo_chlorine_dosing_for_each_stack",
+  "cts_ovivo_hypo_cleaning_concentration",
+  "cts_ovivo_citric_dosing_for_each_stack",
+  "cts_ovivo_hcl_cleaning_concentration",
+  "cts_ovivo_hcl_dosing_for_each_stack",
+  "cts_ovivo_alum_dosing_for_each_stack",
+  "cts_mbr_cip_section",
+  "cts_cip_tank_per_train",
+  "cts_naocl_dosing_pump_rc",
+  "cts_citric_dosing_pump_mc_rc",
+  "cts_hcl_dosing_pump_mc_rc",
+  "cts_alum_dosing_pump_mc_rc",
+  "cts_ovivo_cip_qty",
+  "cts_ovivo_permeate_qty",
+  "cts_ovivo_backwash_qty",
+  "cts_ovivo_circulation_qty",
+  "cts_ovivo_blower_qty",
+  "cts_ovivo_sprinkler_qty",
+  "cts_ovivo_sludge_qty",
+  "cts_ovivo_permeate_sqty",
+  "cts_ovivo_backwash_sqty",
+  "cts_ovivo_circulation_sqty",
+  "column_break_whl9m",
+  "cts_ovivo_cip_sqty",
+  "cts_ovivo_blower_sqty",
+  "cts_ovivo_sprinkler_sqty",
+  "cts_ovivo_sludge_sqty",
+  "cts_ovivo_tank_volume",
+  "cts_operation_cycle_section",
+  "cts_ovivo_filtration_min",
+  "cts_ovivo_backwash_min",
+  "cts_ovivo_total_cycle",
+  "cts_ovivo_hours_of_operation",
+  "cts_ovivo_filtration_hr",
+  "column_break_wiwre",
+  "cts_ovivo_backwash_hr",
+  "cts_ovivo_permeate_m3",
+  "cts_ovivo_backwash_m3",
+  "cts_ovivo_total_permeate",
+  "sulphur_black_removal_tab",
+  "mf_calculation_section",
+  "total_reject_flow_rate_m3hr",
+  "total_reject_flow_rate_m3day",
+  "mf_suspends_mgl",
+  "mf_suspends_kgday",
+  "mf_sludge_pump_capacity",
+  "column_break_0193j",
+  "mf_sludge_pump_quanity_working",
+  "mf_sludge_pump_quanity_standby",
+  "mf_lamella_settler",
+  "mf_pac_dosage",
+  "column_break_senqf",
+  "mf_pac_concentration",
+  "mf_dosing_pump",
+  "mf_dosing_pump_quanity_working",
+  "mf_dosing_pump_quanity_standby",
+  "mbr_koch_calculation_section",
+  "mbr_tank_volume",
+  "mbr_no_of_drains_per_day",
+  "mbr_volume_drained_in_a_day_m3day",
+  "mbr_volume_drained_in_a_day_m3hr",
+  "mbr_suspends_mgl",
+  "mbr_suspends_kgday",
+  "column_break_upvhz",
+  "mbr_sludge_pump_operating_hours",
+  "mbr_sludge_pump_capacity",
+  "mbr_sludge_pump_quanity_working",
+  "mbr_sludge_pump_quanity_standby",
+  "mbr_lamella_operating_hours",
+  "mbr_lamella_settler",
+  "column_break_sc8ia",
+  "mbr_pac_dosage",
+  "mbr_pac_concentration",
+  "mbr_dosing_pump",
+  "mbr_dosing_pump_quanity_working",
+  "mbr_dosing_pump_quanity_standby",
+  "mbr_ovivo_calculation_section",
+  "mbro_tank_volume",
+  "mbro_no_of_drains_per_day",
+  "mbro_volume_drained_in_a_day",
+  "mbro_suspends_mgl",
+  "mbro_suspends_kgday",
+  "column_break_mkje5",
+  "mbro_sludge_pump_operating_hours",
+  "mbro_sludge_pump_capacity",
+  "mbro_sludge_pump_quanity_working",
+  "mbro_sludge_pump_quanity_standby",
+  "mbro_lamella_operating_hours",
+  "column_break_omqbm",
+  "mbro_lamella_settler",
+  "mbro_pac_dosage",
+  "mbro_pac_concentration",
+  "mbro_dosing_pump",
+  "mbro_dosing_pump_quanity_working",
+  "mbro_dosing_pump_quanity_standby",
+  "pva_stream_tab",
+  "pva_anaerobic_feed_tank_height",
+  "pva_lamella_tank_height",
+  "parameter_details_section",
+  "pva_stream_flow",
+  "pva_cod_mgl",
+  "pva_bod_mgl",
+  "pva_tds_mgl",
+  "pva_stream_pva_mgl",
+  "column_break_icrkw",
+  "pva_tss_mgl",
+  "pva_iron_mgl",
+  "pva_silica_mgl",
+  "pva_colour_hazen",
+  "pva_sodium_mgl",
+  "column_break_siraq",
+  "pva_calcium_mgl",
+  "pva_magnesium_mgl",
+  "pva_alkalinity_mgl_as_caco3",
+  "column_break_o17id",
+  "pva_temperature",
+  "pva_oil_grease",
+  "pva_total_hardness_mgl_as_caco3",
+  "pva_tkn_mgl"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "STR-SHT"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "blower_section",
+   "fieldtype": "Tab Break",
+   "label": "Blower"
+  },
+  {
+   "default": "6",
+   "fieldname": "tank_height",
+   "fieldtype": "Float",
+   "label": "Tank Height"
+  },
+  {
+   "fieldname": "cod",
+   "fieldtype": "Float",
+   "label": "COD(mg/l)"
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "label": "FLOW"
+  },
+  {
+   "default": "0.8",
+   "fieldname": "fouling_diffuser",
+   "fieldtype": "Float",
+   "label": " Fouling factor of diffuser"
+  },
+  {
+   "default": "3",
+   "fieldname": "flow_rate_diffuser",
+   "fieldtype": "Float",
+   "label": "Flow rate of air in diffuser"
+  },
+  {
+   "default": "0.8",
+   "fieldname": "soft_factor",
+   "fieldtype": "Float",
+   "label": " SOTE factor "
+  },
+  {
+   "fieldname": "bod",
+   "fieldtype": "Float",
+   "label": "BOD(mg/l)"
+  },
+  {
+   "fieldname": "tss",
+   "fieldtype": "Float",
+   "label": "TSS(mg/l)"
+  },
+  {
+   "fieldname": "tkn",
+   "fieldtype": "Float",
+   "label": "TKN(mg/l)"
+  },
+  {
+   "fieldname": "bod_value",
+   "fieldtype": "Float",
+   "label": "BOD VALUE IN KG",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "soft_per",
+   "fieldtype": "Float",
+   "label": "SOTE (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "soft",
+   "fieldtype": "Float",
+   "label": "SOTE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uc5dc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "at_o2",
+   "fieldtype": "Float",
+   "label": "Atmospheric O2 Requirement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "real_o2",
+   "fieldtype": "Float",
+   "label": "Real O2 Requirement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "real_o2_day",
+   "fieldtype": "Float",
+   "label": "Real O2 Requirement with specific gravity (Day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "real_o2_hr",
+   "fieldtype": "Float",
+   "label": "Real O2 Requirement with specific gravity (Hr)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "des_per",
+   "fieldtype": "Float",
+   "label": "Designing (%)"
+  },
+  {
+   "fieldname": "designing",
+   "fieldtype": "Float",
+   "label": "Designing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "no_of_diff",
+   "fieldtype": "Float",
+   "label": "Total no of diffusers required ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_design_section",
+   "fieldtype": "Section Break",
+   "label": "Current Design"
+  },
+  {
+   "fieldname": "eqtk",
+   "fieldtype": "Float",
+   "label": "Equalization Tank - Diffusers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "only_air",
+   "fieldtype": "Data",
+   "label": "Only Air Line For Nt,cft & Srs - No Diffusers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_in",
+   "fieldtype": "Float",
+   "label": "Do Increase System Tank - Diffusers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bio_tank",
+   "fieldtype": "Float",
+   "label": "Biological Tank - Diffusers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rh3as",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_diffusers",
+   "fieldtype": "Float",
+   "label": "Total Diffusers",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "total_blower",
+   "fieldtype": "Float",
+   "label": "Total Blower Quantity Requirement Without Standby"
+  },
+  {
+   "fieldname": "each_blower",
+   "fieldtype": "Float",
+   "label": "Each Blower Capacity Considered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "blower_cpa",
+   "fieldtype": "Float",
+   "label": "Blower Capacity Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "formula_tab_section",
+   "fieldtype": "Section Break",
+   "label": "Formula Tab"
+  },
+  {
+   "default": "48",
+   "fieldname": "ret_in_hr1",
+   "fieldtype": "Float",
+   "label": "RE.T (IN HR)"
+  },
+  {
+   "fieldname": "column_break_0ekeq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "label": "Volume",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xzrog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area1",
+   "fieldtype": "Float",
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ckypo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diffue",
+   "fieldtype": "Float",
+   "label": "Diffuser Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mw1k3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aree",
+   "fieldtype": "Float",
+   "label": "Area Diffuser",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diffuser_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Diffuser Calculation"
+  },
+  {
+   "default": "2.5",
+   "fieldname": "div_point_diffuser",
+   "fieldtype": "Float",
+   "label": "Div points (Diffuser)"
+  },
+  {
+   "fieldname": "section_break_gl5wv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "4",
+   "fieldname": "ret_in_hr_dt",
+   "fieldtype": "Float",
+   "label": "RE.T (IN HR) - DT"
+  },
+  {
+   "fieldname": "column_break_6xlpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_in_day_dt",
+   "fieldtype": "Float",
+   "label": "RE.T (IN DAY) - DT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_j0t27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_dt",
+   "fieldtype": "Float",
+   "label": "Area - DT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_g1osl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diffuser_dt",
+   "fieldtype": "Float",
+   "label": "DIFFUSER - DT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_i7w16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "ret_in_hr_srs",
+   "fieldtype": "Float",
+   "label": "RE.T (IN HR) - SRS"
+  },
+  {
+   "fieldname": "column_break_j5mvj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_in_day_srs",
+   "fieldtype": "Float",
+   "label": "RE.T (IN DAY) - SRS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qakwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_srs",
+   "fieldtype": "Float",
+   "label": "Area - SRS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kdtjv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diffuser_srs",
+   "fieldtype": "Float",
+   "label": "DIFFUSER - SRS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_lowmy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "ret_in_hr_cft",
+   "fieldtype": "Float",
+   "label": "RE.T (IN HR) - CFT"
+  },
+  {
+   "fieldname": "column_break_aeu3q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_in_day_cft",
+   "fieldtype": "Float",
+   "label": "RE.T (IN DAY) - CFT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nmh7t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_cft",
+   "fieldtype": "Float",
+   "label": "Area - CFT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lv3yk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diffuser_cft",
+   "fieldtype": "Float",
+   "label": "DIFFUSER - CFT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rekbc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "ret_in_hr_nt",
+   "fieldtype": "Float",
+   "label": "RE.T (IN HR) - NT"
+  },
+  {
+   "fieldname": "column_break_0ipkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_in_day_nt",
+   "fieldtype": "Float",
+   "label": "RE.T (IN DAY) - NT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cqvgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_nt",
+   "fieldtype": "Float",
+   "label": "Area - NT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xwco2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diffuser_nt",
+   "fieldtype": "Float",
+   "label": "DIFFUSER - NT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pvthn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "23",
+   "fieldname": "ret_in_hr_eqt",
+   "fieldtype": "Float",
+   "label": "RE.T (IN HR) - EQT"
+  },
+  {
+   "fieldname": "column_break_x11ni",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_in_day_eqt",
+   "fieldtype": "Float",
+   "label": "RE.T (IN DAY) - EQT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cboff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_eqt",
+   "fieldtype": "Float",
+   "label": "Area - EQT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_u1qng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diffuser_eqt",
+   "fieldtype": "Float",
+   "label": "DIFFUSER - EQT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "secondary_clarifier_section",
+   "fieldtype": "Tab Break",
+   "label": "Secondary Clarifier"
+  },
+  {
+   "default": "15",
+   "fieldname": "design_clarifier",
+   "fieldtype": "Float",
+   "label": "Design Clarifier (Excess %)"
+  },
+  {
+   "fieldname": "influent_flow_rate_to_be_treated",
+   "fieldtype": "Float",
+   "label": "Influent flow rate to be treated (M3/Day)",
+   "read_only": 1
+  },
+  {
+   "default": "4500",
+   "fieldname": "enter_mlss_concentration",
+   "fieldtype": "Float",
+   "label": "Enter MLSS concentration"
+  },
+  {
+   "fieldname": "enter_ras_flow_rate",
+   "fieldtype": "Float",
+   "label": "Enter RAS flow rate"
+  },
+  {
+   "fieldname": "enter_tank_diameter",
+   "fieldtype": "Float",
+   "label": "Enter tank diameter"
+  },
+  {
+   "default": "3.5",
+   "fieldname": "enter_side_water_depth",
+   "fieldtype": "Float",
+   "label": "Enter side water depth (metre)"
+  },
+  {
+   "default": "1",
+   "fieldname": "enter_number_of_clarifiers_in_service",
+   "fieldtype": "Float",
+   "label": "Enter number of clarifiers (Nos)"
+  },
+  {
+   "fieldname": "weir_diameter",
+   "fieldtype": "Float",
+   "label": "Weir Diameter "
+  },
+  {
+   "fieldname": "ras_flow_rate_per_clarifier",
+   "fieldtype": "Float",
+   "label": "RAS flow rate per clarifier",
+   "read_only": 1
+  },
+  {
+   "default": "100",
+   "fieldname": "ras_flow_rate_percentage",
+   "fieldtype": "Float",
+   "label": "RAS flow rate percentage ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculate_surface_area",
+   "fieldtype": "Float",
+   "label": "Calculate surface area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculate_clarifier_volume",
+   "fieldtype": "Float",
+   "label": "Calculate clarifier volume",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weir_length",
+   "fieldtype": "Float",
+   "label": "Weir length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_secondary_clarifier_surface_area",
+   "fieldtype": "Float",
+   "label": "Total secondary clarifier surface area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_secondary_clarifier_volume",
+   "fieldtype": "Float",
+   "label": "Total secondary clarifier volume",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_weir_length",
+   "fieldtype": "Float",
+   "label": "Total weir length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculated_surface_overflow_rate",
+   "fieldtype": "Float",
+   "label": "Calculated surface overflow rate (m3/(m2.day)) - (16-29) / (30-49)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculated_weir_overflow_rate",
+   "fieldtype": "Float",
+   "label": "Calculated weir overflow rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_overflow_rate",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total overflow rate ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "micro_filter_section",
+   "fieldtype": "Tab Break",
+   "label": "Micro Filter"
+  },
+  {
+   "fieldname": "loop_operation",
+   "fieldtype": "Select",
+   "label": "Loop operation",
+   "options": "Single\nDouble"
+  },
+  {
+   "default": "0",
+   "fieldname": "recovery",
+   "fieldtype": "Float",
+   "label": "Recovery",
+   "read_only": 1
+  },
+  {
+   "default": "21",
+   "fieldname": "operating_hours",
+   "fieldtype": "Float",
+   "label": "Operating Hours"
+  },
+  {
+   "default": "33.8",
+   "fieldname": "permeate_flux",
+   "fieldtype": "Float",
+   "label": "Permeate Flux"
+  },
+  {
+   "default": "50",
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "modules_calculation_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "permeate_flow",
+   "fieldtype": "Float",
+   "label": "Permeate Flow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Float",
+   "label": "Total Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_modules",
+   "fieldtype": "Float",
+   "label": "Total Modules ",
+   "read_only": 1
+  },
+  {
+   "default": "2",
+   "fieldname": "no_of_loops",
+   "fieldtype": "Float",
+   "label": "No Of Loops"
+  },
+  {
+   "fieldname": "modules_per_loop",
+   "fieldtype": "Float",
+   "label": "Modules Per Loop",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nj1ex",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "feed_pump",
+   "fieldtype": "Float",
+   "label": "Feed Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bw_pump",
+   "fieldtype": "Float",
+   "label": "B/w Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cip_pump",
+   "fieldtype": "Float",
+   "label": "Cip Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_r2pf6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "air_flow",
+   "fieldtype": "Float",
+   "label": "Air Flow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_area",
+   "fieldtype": "Float",
+   "label": "Actual Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_flux",
+   "fieldtype": "Float",
+   "label": "Actual Flux",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mf_formula_tab_section",
+   "fieldtype": "Section Break",
+   "label": "MF Formula Tab"
+  },
+  {
+   "default": "2.2",
+   "fieldname": "mf_for_feed_flow",
+   "fieldtype": "Float",
+   "label": "Feed Flow"
+  },
+  {
+   "default": "2",
+   "fieldname": "feed_qty",
+   "fieldtype": "Float",
+   "label": "Feed Qty"
+  },
+  {
+   "fieldname": "column_break_0gzdh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2.35",
+   "fieldname": "mf_for_bw_flow",
+   "fieldtype": "Float",
+   "label": "B/w Flow"
+  },
+  {
+   "default": "1",
+   "fieldname": "bw_qty",
+   "fieldtype": "Float",
+   "label": "B/w Qty"
+  },
+  {
+   "fieldname": "column_break_pcyua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "5",
+   "fieldname": "mf_for_air_flow",
+   "fieldtype": "Float",
+   "label": "Air Flow (Nm3/Hr)"
+  },
+  {
+   "default": "1",
+   "fieldname": "air_qty",
+   "fieldtype": "Float",
+   "label": "Air Qty"
+  },
+  {
+   "fieldname": "column_break_a9981",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2",
+   "fieldname": "mf_for_cip_flow",
+   "fieldtype": "Float",
+   "label": "Cip Flow"
+  },
+  {
+   "default": "1",
+   "fieldname": "cip_qty",
+   "fieldtype": "Float",
+   "label": "Cip Qty"
+  },
+  {
+   "fieldname": "mbr_section",
+   "fieldtype": "Tab Break",
+   "label": "MBR"
+  },
+  {
+   "fieldname": "mbr_type",
+   "fieldtype": "Select",
+   "label": "MBR type",
+   "options": "\nSUB-UF\nSUB-MBR"
+  },
+  {
+   "fieldname": "permeate_capacity",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Feed Permeate Capacity"
+  },
+  {
+   "default": "22",
+   "fieldname": "mbr_operating_hours",
+   "fieldtype": "Float",
+   "label": "Feed Operating Hours"
+  },
+  {
+   "fieldname": "mbr_permeate_flow",
+   "fieldtype": "Float",
+   "label": "Feed Permeate Flow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_1ii3y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "16.7",
+   "fieldname": "mbr_permeate_flux",
+   "fieldtype": "Float",
+   "label": "Data Permeate Flux"
+  },
+  {
+   "default": "30",
+   "fieldname": "mbr_backwash_flux",
+   "fieldtype": "Float",
+   "label": "Data Backwash Flux",
+   "read_only": 1
+  },
+  {
+   "default": "6",
+   "fieldname": "mbr_cip_flux",
+   "fieldtype": "Float",
+   "label": "Data Cip Flux"
+  },
+  {
+   "fieldname": "mbr_air_req_membrane_row",
+   "fieldtype": "Float",
+   "label": "Data Air Req Membrane Row",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_mrxom",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mbr_model",
+   "fieldtype": "Select",
+   "label": "MBR Model",
+   "options": "\nPSH 1800-44\nPSH 1800-40\nPSH 1800-36\nPSH 660-16\nPSH 330-8\nPHF 2650-50\nPHF 2650-46\nPHF 2650-42\nPHF 2650-38\nPHF 960-18\nPHF 480-9"
+  },
+  {
+   "fieldname": "mbr_membrane_modules",
+   "fieldtype": "Float",
+   "label": "Module Membrane Modules",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_total_area",
+   "fieldtype": "Float",
+   "label": "Module Total Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_area_req_for_filtration",
+   "fieldtype": "Float",
+   "label": "Module Area Req For Filtration",
+   "read_only": 1
+  },
+  {
+   "default": "Not Required",
+   "fieldname": "sludge_pit",
+   "fieldtype": "Select",
+   "label": "Sludge Pit",
+   "options": "\nRequired\nNot Required"
+  },
+  {
+   "fieldname": "column_break_yvksf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_no_module_required",
+   "fieldtype": "Float",
+   "label": "Design No Module Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_total_no_of_modules",
+   "fieldtype": "Float",
+   "label": "Design Total No Of Modules",
+   "read_only": 1
+  },
+  {
+   "default": "2",
+   "fieldname": "design_no_of_trains",
+   "fieldtype": "Float",
+   "label": "Design No Of Trains"
+  },
+  {
+   "fieldname": "design_modules_train",
+   "fieldtype": "Float",
+   "label": "Design Modules Per Train",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_total_area",
+   "fieldtype": "Float",
+   "label": "Design Total Area ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nefdp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mbr_permeate_pump",
+   "fieldtype": "Float",
+   "label": "MBR Permeate Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_backwash_pump",
+   "fieldtype": "Float",
+   "label": "MBR Backwash Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_sludge_pump",
+   "fieldtype": "Float",
+   "label": "MBR Sludge Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_circulation_pump",
+   "fieldtype": "Float",
+   "label": "MBR Circulation Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_feed_pump",
+   "fieldtype": "Float",
+   "label": "MBR Feed Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_cip_pump__train",
+   "fieldtype": "Float",
+   "label": "MBR Cip Pump / Train",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_blower__train",
+   "fieldtype": "Float",
+   "label": "MBR Blower / Train (Nm3/Hr)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_blower__train1",
+   "fieldtype": "Float",
+   "label": "MBR Blower / Train (m3/Hr)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qtqse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cip_tank",
+   "fieldtype": "Float",
+   "label": "CIP TANK",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dosing_pump_mc",
+   "fieldtype": "Float",
+   "label": "NaOCI Dosing Pump Mc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dosing_pump_rc",
+   "fieldtype": "Float",
+   "label": "NaOCI Dosing Pump Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dosing_tank",
+   "fieldtype": "Float",
+   "label": "NaOCI Dosing Tank",
+   "read_only": 1
+  },
+  {
+   "fieldname": "citric_dosing_pump_mc_and_rc",
+   "fieldtype": "Float",
+   "label": "Citric Dosing Pump Mc and Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "citric_dosing_tank",
+   "fieldtype": "Float",
+   "label": "Citric Dosing Tank",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_flow_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Actual Flow Calculation"
+  },
+  {
+   "fieldname": "normal_flow",
+   "fieldtype": "Float",
+   "label": "Normal Flow"
+  },
+  {
+   "fieldname": "column_break_ttqdt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1012",
+   "fieldname": "ambient_pressure",
+   "fieldtype": "Float",
+   "label": "Ambient Pressure"
+  },
+  {
+   "fieldname": "column_break_xwz83",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "450",
+   "fieldname": "measured_pressure",
+   "fieldtype": "Float",
+   "label": "Measured Pressure"
+  },
+  {
+   "fieldname": "column_break_jamzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p_actual",
+   "fieldtype": "Float",
+   "label": "P Actual"
+  },
+  {
+   "fieldname": "column_break_ju5xr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "273",
+   "fieldname": "normal_temp",
+   "fieldtype": "Float",
+   "label": "Normal Temp"
+  },
+  {
+   "fieldname": "column_break_d8gpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "40",
+   "fieldname": "room_temp",
+   "fieldtype": "Float",
+   "label": "Room Temp"
+  },
+  {
+   "fieldname": "column_break_wwvem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_flow",
+   "fieldtype": "Float",
+   "label": "Actual Flow"
+  },
+  {
+   "fieldname": "mbr_formula_section",
+   "fieldtype": "Section Break",
+   "label": "MBR Formula"
+  },
+  {
+   "default": "44",
+   "fieldname": "psh44",
+   "fieldtype": "Float",
+   "label": "PSH 1800-44"
+  },
+  {
+   "default": "40",
+   "fieldname": "psh40",
+   "fieldtype": "Float",
+   "label": "PSH 1800-40"
+  },
+  {
+   "default": "36",
+   "fieldname": "psh36",
+   "fieldtype": "Float",
+   "label": "PSH 1800-36"
+  },
+  {
+   "default": "16",
+   "fieldname": "psh16",
+   "fieldtype": "Float",
+   "label": "PSH 660-16"
+  },
+  {
+   "default": "8",
+   "fieldname": "psh8",
+   "fieldtype": "Float",
+   "label": "PSH 330-8"
+  },
+  {
+   "default": "50",
+   "fieldname": "psh50",
+   "fieldtype": "Float",
+   "label": "PHF 2650-50"
+  },
+  {
+   "default": "46",
+   "fieldname": "psh46",
+   "fieldtype": "Float",
+   "label": "PHF 2650-46"
+  },
+  {
+   "default": "42",
+   "fieldname": "psh42",
+   "fieldtype": "Float",
+   "label": "PHF 2650-42"
+  },
+  {
+   "default": "38",
+   "fieldname": "psh38",
+   "fieldtype": "Float",
+   "label": "PHF 2650-38"
+  },
+  {
+   "default": "18",
+   "fieldname": "psh18",
+   "fieldtype": "Float",
+   "label": "PHF 960-18"
+  },
+  {
+   "default": "9",
+   "fieldname": "psh9",
+   "fieldtype": "Float",
+   "label": "PHF 480-9"
+  },
+  {
+   "fieldname": "belt_press_section",
+   "fieldtype": "Tab Break",
+   "label": "Belt Press"
+  },
+  {
+   "fieldname": "sludge_production_section",
+   "fieldtype": "Section Break",
+   "label": "Sludge Production"
+  },
+  {
+   "default": "0.1",
+   "fieldname": "fd",
+   "fieldtype": "Float",
+   "label": "FD"
+  },
+  {
+   "fieldname": "bcod",
+   "fieldtype": "Float",
+   "label": "BCOD"
+  },
+  {
+   "default": "0.54",
+   "fieldname": "y",
+   "fieldtype": "Float",
+   "label": "Y"
+  },
+  {
+   "default": "0.12",
+   "fieldname": "kd",
+   "fieldtype": "Float",
+   "label": "Kd"
+  },
+  {
+   "fieldname": "sludge_pro",
+   "fieldtype": "Float",
+   "label": "Sludge Production"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Startup Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Startup Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_umbms",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "4500",
+   "fieldname": "mlss",
+   "fieldtype": "Float",
+   "label": "MLSS"
+  },
+  {
+   "default": "30",
+   "fieldname": "tss_cf_eff",
+   "fieldtype": "Float",
+   "label": "TSS CF EFF"
+  },
+  {
+   "default": "8000",
+   "fieldname": "tss_cf_waste",
+   "fieldtype": "Float",
+   "label": "TSS CF WASTE"
+  },
+  {
+   "fieldname": "ras",
+   "fieldtype": "Float",
+   "label": "RAS"
+  },
+  {
+   "fieldname": "was",
+   "fieldtype": "Float",
+   "label": "WAS"
+  },
+  {
+   "fieldname": "without_mechanism",
+   "fieldtype": "Float",
+   "label": "Without Mechanism"
+  },
+  {
+   "fieldname": "with_mechanism",
+   "fieldtype": "Float",
+   "label": "With Mechanism"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_with_mechanism",
+   "fieldtype": "Check",
+   "label": "Is with mechanism",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gcpzt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mbr_ovivo_section",
+   "fieldtype": "Tab Break",
+   "label": "MBR OVIVO"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_feed_pump_is_required",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is feed pump is required"
+  },
+  {
+   "default": "20.5",
+   "fieldname": "ovivo_operating_hours",
+   "fieldtype": "Float",
+   "label": "Ovivo Operating Hours"
+  },
+  {
+   "fieldname": "ovivo_permeate_flow_rate",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate Flow Rate",
+   "read_only": 1
+  },
+  {
+   "default": "6.86",
+   "fieldname": "ovivo_area_per_module",
+   "fieldtype": "Float",
+   "label": "Ovivo Area Per Module"
+  },
+  {
+   "fieldname": "ovivo_area_required_for_filtration",
+   "fieldtype": "Float",
+   "label": "Ovivo Area Required For Filtration",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2shox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ovivo_permeate_flux_lmd",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate Flux LMD",
+   "read_only": 1
+  },
+  {
+   "default": "142",
+   "fieldname": "ovivo_permeate_flux_lmh",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate Flux LMH"
+  },
+  {
+   "fieldname": "ovivo_backwash_flux",
+   "fieldtype": "Float",
+   "label": "Ovivo Backwash Flux",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_cip_flux",
+   "fieldtype": "Float",
+   "label": "Ovivo Cip Flux",
+   "read_only": 1
+  },
+  {
+   "default": "51",
+   "fieldname": "ovivo_air_flow_rate_per_stack",
+   "fieldtype": "Float",
+   "label": "Ovivo Air Flow Rate Per Stack"
+  },
+  {
+   "fieldname": "ovivo_permeate_capacity",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate Capacity",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "ovivo_pumps_section",
+   "fieldtype": "Section Break",
+   "label": "Ovivo Pumps"
+  },
+  {
+   "fieldname": "ovivo_permeate_pump",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_circulation_pump",
+   "fieldtype": "Float",
+   "label": "Ovivo Circulation Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_blower",
+   "fieldtype": "Float",
+   "label": "Ovivo Blower",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_sprinkler_pump",
+   "fieldtype": "Float",
+   "label": "Ovivo Sprinkler Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_sludge_pump",
+   "fieldtype": "Float",
+   "label": "Ovivo Sludge Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_u0dzj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ovivo_no_module_required",
+   "fieldtype": "Float",
+   "label": "Ovivo No Module Required",
+   "read_only": 1
+  },
+  {
+   "default": "12",
+   "fieldname": "ovivo_no_of_module_per_stack",
+   "fieldtype": "Float",
+   "label": "Ovivo No. Of Module Per Stack"
+  },
+  {
+   "fieldname": "ovivo_no_of_stacks_required",
+   "fieldtype": "Float",
+   "label": "Ovivo No. Of Stacks Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_modules_train",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Ovivo Modules Per Train",
+   "read_only": 1
+  },
+  {
+   "default": "2",
+   "fieldname": "ovivo_no_of_trains",
+   "fieldtype": "Float",
+   "label": "Ovivo No. Of Trains"
+  },
+  {
+   "fieldname": "ovivo_no_of_module_per_train",
+   "fieldtype": "Float",
+   "label": "Ovivo No. Of Stacks Per Train",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_total_area",
+   "fieldtype": "Float",
+   "label": "Ovivo Total Area ",
+   "read_only": 1
+  },
+  {
+   "default": "40",
+   "fieldname": "ovivo_chlorine_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "HYPO Dosing Flux"
+  },
+  {
+   "default": "15",
+   "fieldname": "ovivo_citric_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "Hcl Dosing Flux"
+  },
+  {
+   "default": "40",
+   "fieldname": "ovivo_hcl_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "PAC Dosage (PPM)"
+  },
+  {
+   "default": "10",
+   "fieldname": "ovivo_alum_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "Alum Dosage (PPM)"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "ovivo_cip_section",
+   "fieldtype": "Section Break",
+   "label": "Ovivo CIP"
+  },
+  {
+   "fieldname": "cip_tank_per_train",
+   "fieldtype": "Float",
+   "label": "Cip Tank Per Train",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naocl_dosing_pump_rc",
+   "fieldtype": "Float",
+   "label": "HYPO Dosing Pump Mc Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "citric_dosing_pump_mc_rc",
+   "fieldtype": "Float",
+   "label": "Hcl Dosing Pump Mc Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hcl_dosing_pump_mc_rc",
+   "fieldtype": "Float",
+   "label": "PAC Dosing Pump Mc Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alum_dosing_pump_mc_rc",
+   "fieldtype": "Float",
+   "label": "Alum Dosing Pump Mc Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_pump_qty_section",
+   "fieldtype": "Section Break",
+   "label": "MBR Pump Qty"
+  },
+  {
+   "fieldname": "pump_qty",
+   "fieldtype": "Float",
+   "label": "Permeate, Backwash, Cip Pumps Qty"
+  },
+  {
+   "fieldname": "circulation_pump_qty",
+   "fieldtype": "Float",
+   "label": "Circulation Pump qty"
+  },
+  {
+   "fieldname": "feed_pump_qty",
+   "fieldtype": "Float",
+   "label": "Feed Pump Qty"
+  },
+  {
+   "fieldname": "blower_pump_qty",
+   "fieldtype": "Float",
+   "label": "Blower Pump Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "permeate_backwash_store_standby_qty",
+   "fieldtype": "Float",
+   "label": "Permeate Backwash Store standby Qty"
+  },
+  {
+   "fieldname": "circulation_pump_store_standby_qty",
+   "fieldtype": "Float",
+   "label": "Circulation Pump Store standby Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_mbr_feed_pump_required",
+   "fieldtype": "Check",
+   "label": "Is MBR feed pump required"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "pump_qty_section",
+   "fieldtype": "Section Break",
+   "label": "Ovivo Pump Qty"
+  },
+  {
+   "fieldname": "ovivo_permeate_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate Qty"
+  },
+  {
+   "fieldname": "ovivo_backwash_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo Backwash Qty"
+  },
+  {
+   "fieldname": "ovivo_circulation_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo Circulation Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_cip_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo CIP Qty"
+  },
+  {
+   "fieldname": "ovivo_blower_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo Blower Qty"
+  },
+  {
+   "fieldname": "ovivo_sprinkler_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo Sprinkler Qty"
+  },
+  {
+   "fieldname": "ovivo_sludge_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo Sludge Qty"
+  },
+  {
+   "fieldname": "column_break_qw6lw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_permeate_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_backwash_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo Backwash S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_circulation_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo Circulation S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_cip_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo CIP S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_blower_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo Blower S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_sprinkler_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo Sprinkler S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_sludge_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo Sludge S.Qty"
+  },
+  {
+   "default": "S-UF",
+   "fieldname": "ovivo_type",
+   "fieldtype": "Select",
+   "label": "Ovivo type",
+   "options": "\nS-UF\nS-MBR"
+  },
+  {
+   "fieldname": "ovivo_bc",
+   "fieldtype": "Float",
+   "label": "Ovivo Backwash Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_cip",
+   "fieldtype": "Float",
+   "label": "Ovivo CIP Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_tank_volume",
+   "fieldtype": "Float",
+   "label": "Ovivo Tank Volume"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "operation_cycle_section",
+   "fieldtype": "Section Break",
+   "label": "Operation Cycle"
+  },
+  {
+   "default": "10",
+   "fieldname": "ovivo_filtration_min",
+   "fieldtype": "Float",
+   "label": "Ovivo Filtration min"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "ovivo_backwash_min",
+   "fieldtype": "Float",
+   "label": "Ovivo Backwash min"
+  },
+  {
+   "fieldname": "ovivo_total_cycle",
+   "fieldtype": "Float",
+   "label": "Ovivo total cycle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_hours_of_operation",
+   "fieldtype": "Float",
+   "label": "Ovivo hours of operation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_filtration_hr",
+   "fieldtype": "Float",
+   "label": "Ovivo Filtration hr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_backwash_hr",
+   "fieldtype": "Float",
+   "label": "Ovivo Backwash hr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_permeate_m3",
+   "fieldtype": "Float",
+   "label": "Ovivo Permeate m3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_backwash_m3",
+   "fieldtype": "Float",
+   "label": "Ovivo Backwash m3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ovivo_total_permeate",
+   "fieldtype": "Float",
+   "label": "Ovivo Total Permeate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ghz4l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2",
+   "fieldname": "no_of_bio_tanks",
+   "fieldtype": "Float",
+   "label": "No of Bio Tanks"
+  },
+  {
+   "default": "0",
+   "fieldname": "seperate_blower_for_equalization_tank",
+   "fieldtype": "Check",
+   "label": "Seperate Blower for Equalization Tank"
+  },
+  {
+   "fieldname": "bio_blower",
+   "fieldtype": "Float",
+   "label": "Bio Blower",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eqt_blower",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Eqt Blower",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ott_laterals",
+   "fieldtype": "Float",
+   "label": "OTT Laterals",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bio_pipes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bio Pipes"
+  },
+  {
+   "fieldname": "no_separate_blower_for_equalization_section",
+   "fieldtype": "Section Break",
+   "label": "No separate blower for Equalization"
+  },
+  {
+   "fieldname": "s_blower_size",
+   "fieldtype": "Data",
+   "label": "S. Blower Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "n_s_blower_size",
+   "fieldtype": "Data",
+   "label": "N.S. Blower Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "separate_blower_for_equalization_section",
+   "fieldtype": "Section Break",
+   "label": "Separate blower for Equalization"
+  },
+  {
+   "fieldname": "diffuser_size_for_blower_section",
+   "fieldtype": "Section Break",
+   "label": "Pipe size for blower"
+  },
+  {
+   "fieldname": "d_blower_size",
+   "fieldtype": "Data",
+   "label": "Bio Blower Line Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch_pipe_of_biological_tank_section",
+   "fieldtype": "Section Break",
+   "label": "Branch pipe of Biological Tank"
+  },
+  {
+   "fieldname": "b_bio_size",
+   "fieldtype": "Data",
+   "label": "B. Bio Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ns_blower_length",
+   "fieldtype": "Float",
+   "label": "N.S. Blower Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "s_blower_length",
+   "fieldtype": "Float",
+   "label": "S. Blower Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "d_blower_length",
+   "fieldtype": "Float",
+   "label": "Bio Blower Line Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "b_bio_length",
+   "fieldtype": "Float",
+   "label": "B. Bio Length",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "feed_pump_required_for_ovivo",
+   "fieldtype": "Check",
+   "label": "Is Feed Pump Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "cod_reduction_for_og",
+   "fieldtype": "Float",
+   "label": "COD Reduction for O&G"
+  },
+  {
+   "fieldname": "tank_dimension",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Tank Dimension",
+   "options": "\nRectangular\nCarousel"
+  },
+  {
+   "fieldname": "ott_lateral_size",
+   "fieldtype": "Data",
+   "label": "OTT Lateral Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "d_model",
+   "fieldtype": "Data",
+   "label": "Bio Blower Line Model",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch_pipe_of_eqt_tank_section",
+   "fieldtype": "Section Break",
+   "label": "Branch pipe of Eqt Tank"
+  },
+  {
+   "fieldname": "e_bio_size",
+   "fieldtype": "Data",
+   "label": "Eqt Blower Line Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "e_bio_float",
+   "fieldtype": "Float",
+   "label": "Eqt Blower Line Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch_pipe_of_ntsrscft_tank_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Branch pipe of NT,DT,SRS,CFT Tank"
+  },
+  {
+   "fieldname": "nsc_blower_line_size",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "NT, DT, SRS, CFT Blower Line Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nsc_blower_line_length",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "NT, DT, SRS, CFT Blower Line Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eqt_blower_model",
+   "fieldtype": "Data",
+   "label": "Eqt Blower Model",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pre_treatment_template",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Pre Treatment Template"
+  },
+  {
+   "fieldname": "column_break_usf3d",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "mf_template",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "MF Template"
+  },
+  {
+   "fieldname": "column_break_zezxw",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "mbr_koch_template",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "MBR KOCH Template"
+  },
+  {
+   "fieldname": "column_break_l7th0",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "mbr_ovivo_template",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "MBR OVIVO Template"
+  },
+  {
+   "fieldname": "system_links_tab",
+   "fieldtype": "Tab Break",
+   "label": "Generate Cost working"
+  },
+  {
+   "fieldname": "bio_link",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bio Link"
+  },
+  {
+   "fieldname": "mbr_koch",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MBR Koch"
+  },
+  {
+   "fieldname": "mbr_ovivo",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MBR Ovivo"
+  },
+  {
+   "fieldname": "mf_link",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MF Link"
+  },
+  {
+   "fieldname": "cost_working",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Cost working"
+  },
+  {
+   "fieldname": "column_break_eh5st",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "cost_working_tool",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Cost working Tool"
+  },
+  {
+   "fieldname": "process_enquiry_tab",
+   "fieldtype": "Tab Break",
+   "label": "Process Enquiry"
+  },
+  {
+   "fetch_from": "project.indus",
+   "fieldname": "industry_name",
+   "fieldtype": "Data",
+   "label": "Industry Name"
+  },
+  {
+   "fetch_from": "project.contact_person",
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "sector__industry",
+   "fieldtype": "Data",
+   "label": "Sector / Industry"
+  },
+  {
+   "fetch_from": "project.mobile_no",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fetch_from": "project.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_ouwxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "project.district",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "Process District"
+  },
+  {
+   "fetch_from": "project.country",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fetch_from": "project.pincode",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "enquiry_attachment",
+   "fieldtype": "Table",
+   "label": "Enquiry Attachment",
+   "options": "Enquiry Attachment"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "existing_plant_details_section",
+   "fieldtype": "Section Break",
+   "label": "Existing Plant Details"
+  },
+  {
+   "fieldname": "existing_plant_layout",
+   "fieldtype": "Attach",
+   "label": "Existing Plant Layout"
+  },
+  {
+   "fieldname": "existing_plant_tank_capacities",
+   "fieldtype": "Attach",
+   "label": "Existing Plant Tank Capacities"
+  },
+  {
+   "fieldname": "column_break_llowz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plant_capacity_m3day",
+   "fieldtype": "Data",
+   "label": "Plant Capacity (m3/day)"
+  },
+  {
+   "fieldname": "current_flow_stream",
+   "fieldtype": "Data",
+   "label": "Current Flow Stream"
+  },
+  {
+   "fieldname": "current_plant_is",
+   "fieldtype": "Select",
+   "label": "Current Plant Is",
+   "options": "\nDischarge\nReuse - MF\nFiltration system (upto 90% Recovery)\nPartial recovery (upto 95% Recovery)\nZLD"
+  },
+  {
+   "fieldname": "section_break_byjpm",
+   "fieldtype": "Section Break",
+   "label": "Parameter Details"
+  },
+  {
+   "fieldname": "treatment_required",
+   "fieldtype": "Data",
+   "label": "Treatment Required"
+  },
+  {
+   "fieldname": "column_break_dm5g9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_availability_for_plant",
+   "fieldtype": "Data",
+   "label": "Area availability for plant"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "current_industrial_process_details_section",
+   "fieldtype": "Section Break",
+   "label": "Current Industrial process details"
+  },
+  {
+   "fieldname": "work_process",
+   "fieldtype": "Select",
+   "label": "Work Process",
+   "options": "\nKnitting\nWeaving\nOthers"
+  },
+  {
+   "fieldname": "column_break_z5xdh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "processed_fibers",
+   "fieldtype": "Select",
+   "label": "Processed fibers",
+   "options": "\nCotton\nPolyester\nTerry Towel\nWooven\nYarn\nOthers"
+  },
+  {
+   "fieldname": "column_break_u2e5n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "do_you_do_printing",
+   "fieldtype": "Select",
+   "label": "Do you do printing",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_yyh8g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "is_urea_used",
+   "fieldtype": "Select",
+   "label": "Is urea used?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_izzcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "printing_effluent_flow",
+   "fieldtype": "Data",
+   "label": "Printing effluent flow"
+  },
+  {
+   "fieldname": "column_break_iidsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "desizing_effluent_flow",
+   "fieldtype": "Data",
+   "label": "Desizing effluent flow"
+  },
+  {
+   "fieldname": "section_break_imlu1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_requirements",
+   "fieldtype": "Small Text",
+   "label": "Additional Requirements"
+  },
+  {
+   "fieldname": "section_break_tt43r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tdsmgl",
+   "fieldtype": "Float",
+   "label": "TDS(mg/l)"
+  },
+  {
+   "fieldname": "pvamgl",
+   "fieldtype": "Float",
+   "label": "PVA(mg/l)"
+  },
+  {
+   "fieldname": "ironmgl",
+   "fieldtype": "Float",
+   "label": "IRON(mg/l)"
+  },
+  {
+   "fieldname": "silicamgl",
+   "fieldtype": "Float",
+   "label": "SILICA(mg/l)"
+  },
+  {
+   "fieldname": "colourhazen",
+   "fieldtype": "Float",
+   "label": "COLOUR(hazen)"
+  },
+  {
+   "fieldname": "sodiummgl",
+   "fieldtype": "Float",
+   "label": "SODIUM(mg/l)"
+  },
+  {
+   "fieldname": "calciummgl",
+   "fieldtype": "Float",
+   "label": "CALCIUM(mg/l)"
+  },
+  {
+   "fieldname": "sulphatesmgl",
+   "fieldtype": "Data",
+   "label": "SULPHATES(mg/l)"
+  },
+  {
+   "fieldname": "chloridesmgl",
+   "fieldtype": "Float",
+   "label": "CHLORIDES(mg/l)"
+  },
+  {
+   "fieldname": "magnesiummgl",
+   "fieldtype": "Float",
+   "label": "MAGNESIUM(mg/l)"
+  },
+  {
+   "fieldname": "alk",
+   "fieldtype": "Float",
+   "label": "ALKALINITY(mg/l)"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "TEMPERATURE(\u00b0C)"
+  },
+  {
+   "fieldname": "oil_greasemgl",
+   "fieldtype": "Float",
+   "label": "OIL GREASE(mg/l)"
+  },
+  {
+   "fieldname": "total_hardnessmgl",
+   "fieldtype": "Float",
+   "label": "TOTAL HARDNESS(mg/l)"
+  },
+  {
+   "fieldname": "column_break_7huro",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bk8rt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2flam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_a9rnb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "selected_process_system_section",
+   "fieldtype": "Section Break",
+   "label": "Selected Process System"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "selected_system",
+   "fieldtype": "Table",
+   "options": "Selected Process System"
+  },
+  {
+   "fieldname": "get_flowchart",
+   "fieldtype": "Button",
+   "label": "Get Flowchart"
+  },
+  {
+   "fieldname": "html_editor",
+   "fieldtype": "HTML Editor",
+   "label": "HTML Editor"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "system_details",
+   "fieldtype": "Table",
+   "options": "Process Sysem Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "system_d",
+   "fieldtype": "Section Break",
+   "label": "System Details"
+  },
+  {
+   "fieldname": "column_break_dff3t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vbir7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "generate_cost_working",
+   "fieldtype": "Button",
+   "label": "Generate Cost working"
+  },
+  {
+   "fieldname": "cost_working_link",
+   "fieldtype": "Button",
+   "label": "Go To Cost working"
+  },
+  {
+   "fieldname": "cost_working_data",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Cost working data"
+  },
+  {
+   "fieldname": "section_break_efiyi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ro_template",
+   "fieldtype": "Link",
+   "label": "RO Template",
+   "options": "RO Standard Items"
+  },
+  {
+   "fieldname": "cts_tab",
+   "fieldtype": "Tab Break",
+   "label": "CTS"
+  },
+  {
+   "fieldname": "cts_capacity",
+   "fieldtype": "Float",
+   "label": "CTS Capacity"
+  },
+  {
+   "fetch_from": "ro_template.theoretical_ro_recovery1",
+   "fieldname": "ro_recovery",
+   "fieldtype": "Data",
+   "label": "RO Recovery",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_tab",
+   "fieldtype": "Tab Break",
+   "label": "DO Increase"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_do_increase",
+   "fieldtype": "Check",
+   "label": "Is DO Increase"
+  },
+  {
+   "fieldname": "do_increase_tank_height",
+   "fieldtype": "Float",
+   "label": "DO Increase Tank Height"
+  },
+  {
+   "fieldname": "do_increase_cod",
+   "fieldtype": "Float",
+   "label": "DO Increase COD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_bod",
+   "fieldtype": "Float",
+   "label": "DO Increase BOD",
+   "read_only": 1
+  },
+  {
+   "default": "0.95",
+   "fieldname": "fouling_factor",
+   "fieldtype": "Float",
+   "label": "Fouling Factor"
+  },
+  {
+   "fieldname": "sote",
+   "fieldtype": "Float",
+   "label": "SOTE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_blower_capacity",
+   "fieldtype": "Float",
+   "label": "DO Increase Blower Capacity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_no_of_diffuser",
+   "fieldtype": "Float",
+   "label": "DO Increase No of diffuser"
+  },
+  {
+   "fieldname": "column_break_ujvgk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "90",
+   "fieldname": "cod_dec",
+   "fieldtype": "Float",
+   "label": "COD Deduction"
+  },
+  {
+   "fieldname": "specific_gravity_day",
+   "fieldtype": "Float",
+   "label": "Specific Gravity (Day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "specific_gravity_hr",
+   "fieldtype": "Float",
+   "label": "Specific Gravity (Hr)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_do_blower_capacity",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total DO Blower Capacity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eq_blower",
+   "fieldtype": "Float",
+   "label": "Eqt Blower",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_filtration_area",
+   "fieldtype": "Float",
+   "label": "Total Filtration area"
+  },
+  {
+   "default": "0.95",
+   "fieldname": "sote_factor",
+   "fieldtype": "Float",
+   "label": "SOTE Factor"
+  },
+  {
+   "default": "6",
+   "fieldname": "required_retention_time_hours",
+   "fieldtype": "Float",
+   "label": "Required Retention time (Hours)"
+  },
+  {
+   "fieldname": "clarifier_diameter",
+   "fieldtype": "Float",
+   "label": "Clarifier Diameter (metre)"
+  },
+  {
+   "fieldname": "current_retention_time_hours",
+   "fieldtype": "Float",
+   "label": "Current Retention Time (Hours)"
+  },
+  {
+   "fieldname": "influent_flow_rate_to_be_treated_m3hr",
+   "fieldtype": "Float",
+   "label": "Influent flow rate to be treated (M3/Hr)",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "required_clarifier_diameter",
+   "fieldtype": "Float",
+   "label": "Required Clarifier Diameter (metre)"
+  },
+  {
+   "fieldname": "calculated_detention_time",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Calculated detention time"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.is_brinex==0)",
+   "fieldname": "is_rewolutte",
+   "fieldtype": "Check",
+   "label": "Is Rewolutte"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "mf_default_values_section",
+   "fieldtype": "Section Break",
+   "label": "MF Default values"
+  },
+  {
+   "fieldname": "f_pump_for",
+   "fieldtype": "Float",
+   "label": "F Pump for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "f_filtration_for",
+   "fieldtype": "Float",
+   "label": "F Filtration for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "f_total_cycle_for",
+   "fieldtype": "Float",
+   "label": "F Total cycle for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "f_filtration_day_for",
+   "fieldtype": "Float",
+   "label": "F Filtration day for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "f_total_flow_for",
+   "fieldtype": "Float",
+   "label": "F Total Flow for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5v3jt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "r_pump_for",
+   "fieldtype": "Float",
+   "label": "R Pump for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "r_filtration_for",
+   "fieldtype": "Float",
+   "label": "R Filtration for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "r_total_cycle_for",
+   "fieldtype": "Float",
+   "label": "R Total cycle for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "r_filtration_day_for",
+   "fieldtype": "Float",
+   "label": "R Filtration day for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "r_total_flow_for",
+   "fieldtype": "Float",
+   "label": "R Total Flow for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_pump_for",
+   "fieldtype": "Float",
+   "label": "P Pump for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_d2fjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "p_filtration_for",
+   "fieldtype": "Float",
+   "label": "P Filtration for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_total_cycle_for",
+   "fieldtype": "Float",
+   "label": "P Total cycle for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_filtration_day_for",
+   "fieldtype": "Float",
+   "label": "P Filtration day for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_total_flow_for",
+   "fieldtype": "Float",
+   "label": "P Total Flow for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_crisu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "b_pump_for",
+   "fieldtype": "Float",
+   "label": "B Pump for",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "b_bw_for",
+   "fieldtype": "Float",
+   "label": "B BW for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "b_total_cycle_for",
+   "fieldtype": "Float",
+   "label": "B Total cycle for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "b_bw_day_for",
+   "fieldtype": "Float",
+   "label": "B BW day for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "b_total_flow_for",
+   "fieldtype": "Float",
+   "label": "B Total Flow for",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mf_overall_per_cal",
+   "fieldtype": "Float",
+   "label": "MF Overall Per cal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "excess_percentage",
+   "fieldtype": "Float",
+   "label": "Excess percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gfue8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tank_length",
+   "fieldtype": "Float",
+   "label": "TANK LENGTH"
+  },
+  {
+   "default": "DN20",
+   "fieldname": "nt_pipe_size",
+   "fieldtype": "Data",
+   "label": "NT Diffuser Pipe Size"
+  },
+  {
+   "fieldname": "nt_pipe_length",
+   "fieldtype": "Float",
+   "label": "NT Diffuser Pipe Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dt_pipe_size",
+   "fieldtype": "Data",
+   "label": "DT Diffuser Pipe Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dt_pipe_length",
+   "fieldtype": "Float",
+   "label": "DT Diffuser Pipe Length",
+   "read_only": 1
+  },
+  {
+   "default": "DN20",
+   "fieldname": "cft_pipe_size",
+   "fieldtype": "Data",
+   "label": "CFT Diffuser Pipe Size"
+  },
+  {
+   "fieldname": "cft_pipe_length",
+   "fieldtype": "Float",
+   "label": "CFT Diffuser Pipe Length",
+   "read_only": 1
+  },
+  {
+   "default": "DN20",
+   "fieldname": "srs_pipe_size",
+   "fieldtype": "Data",
+   "label": "SRS Diffuser Pipe Size"
+  },
+  {
+   "fieldname": "srs_pipe_length",
+   "fieldtype": "Float",
+   "label": "SRS Diffuser Pipe Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dnt_pipe_size",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "DNT Pipe Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dnt_pipe_length",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "DNT Pipe Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nt_tank_section",
+   "fieldtype": "Section Break",
+   "label": "NT Tank"
+  },
+  {
+   "fieldname": "dt_tank_section",
+   "fieldtype": "Section Break",
+   "label": "DT Tank"
+  },
+  {
+   "fieldname": "cft_tank_section",
+   "fieldtype": "Section Break",
+   "label": "CFT Tank"
+  },
+  {
+   "fieldname": "srs_tank_section",
+   "fieldtype": "Section Break",
+   "label": "SRS Tank"
+  },
+  {
+   "fieldname": "dnt_tank_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "DNT Tank"
+  },
+  {
+   "fieldname": "eqt_diffuser_pipe_line_length",
+   "fieldtype": "Float",
+   "label": "Eqt Diffuser Pipe Line Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eqt_diffuser_pipe_line_size",
+   "fieldtype": "Data",
+   "label": "Eqt Diffuser Pipe Line Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "startup_sheet",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Startup Sheet",
+   "options": "Startup Sheet"
+  },
+  {
+   "fieldname": "do_increase_blower_size",
+   "fieldtype": "Data",
+   "label": "DO Increase blower size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_blower_pipe_length",
+   "fieldtype": "Float",
+   "label": "Do Increase blower pipe length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_diffuser_pipe_size",
+   "fieldtype": "Data",
+   "label": "Do Increase diffuser pipe size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_diffuser_pipe_length",
+   "fieldtype": "Float",
+   "label": "Do Increase diffuser pipe length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_increase_blower_model",
+   "fieldtype": "Data",
+   "label": "DO Increase blower model",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bio_blower_power",
+   "fieldtype": "Float",
+   "label": "Bio Blower Power (kw)"
+  },
+  {
+   "fieldname": "eqt_blower_power",
+   "fieldtype": "Float",
+   "label": "EQT Blower Power (kw)"
+  },
+  {
+   "default": "0",
+   "fieldname": "daf_with_dosing",
+   "fieldtype": "Check",
+   "label": "Daf with Dosing"
+  },
+  {
+   "fieldname": "process_template_tab",
+   "fieldtype": "Tab Break",
+   "label": "Process template"
+  },
+  {
+   "fieldname": "purpose_for",
+   "fieldtype": "Link",
+   "label": "Purpose for",
+   "options": "Process Purpose"
+  },
+  {
+   "fetch_from": "purpose_for.purpose_abbr",
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "label": "Abbr",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "Process State"
+  },
+  {
+   "fetch_from": "district.district_code",
+   "fieldname": "district_code",
+   "fieldtype": "Data",
+   "label": "District Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "state.state_code",
+   "fieldname": "state_code",
+   "fieldtype": "Data",
+   "label": "State Code",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "unit_code",
+   "fieldtype": "Select",
+   "label": "Unit Code",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "default": "0",
+   "fieldname": "revision_code",
+   "fieldtype": "Select",
+   "label": "Revision Code",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "permeate_water_tds",
+   "fieldtype": "Data",
+   "label": "Permeate water tds"
+  },
+  {
+   "fieldname": "treated_water_cod",
+   "fieldtype": "Data",
+   "label": "Treated water cod"
+  },
+  {
+   "fieldname": "treated_water_tss",
+   "fieldtype": "Data",
+   "label": "Treated water tss"
+  },
+  {
+   "fieldname": "rewolutte_ro",
+   "fieldtype": "Link",
+   "label": "Rewolutte RO",
+   "options": "RO Standard Items"
+  },
+  {
+   "default": "18",
+   "fieldname": "ovivo_sludge_pump_hours_of_operation",
+   "fieldtype": "Float",
+   "label": "Ovivo sludge pump hours of operation"
+  },
+  {
+   "fieldname": "mbr_cts_tab",
+   "fieldtype": "Tab Break",
+   "label": "MBR (CTS)"
+  },
+  {
+   "default": "20.5",
+   "fieldname": "cts_ovivo_operating_hours",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Operating Hours"
+  },
+  {
+   "default": "150",
+   "fieldname": "cts_ovivo_permeate_flux_lmh",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate Flux LMH"
+  },
+  {
+   "fieldname": "cts_ovivo_no_module_required",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo No Module Required",
+   "read_only": 1
+  },
+  {
+   "default": "12",
+   "fieldname": "cts_ovivo_no_of_module_per_stack",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo No. Of Module Per Stack"
+  },
+  {
+   "fieldname": "cts_ovivo_no_of_stacks_required",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo No. Of Stacks Required",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_no_of_trains",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo No. Of Trains"
+  },
+  {
+   "fieldname": "column_break_3bcok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_is_feed_pump_required",
+   "fieldtype": "Check",
+   "label": "CTS Is Feed Pump Required"
+  },
+  {
+   "fieldname": "section_break_jsrlx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "6.86",
+   "fieldname": "cts_ovivo_area_per_module",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Area Per Module"
+  },
+  {
+   "fieldname": "cts_ovivo_area_required_for_filtration",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Area Required For Filtration",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_permeate_flux_lmd",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate Flux LMD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_permeate_flow_rate",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate Flow Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_backwash_flux",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Backwash Flux",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_cip_flux",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Cip Flux",
+   "read_only": 1
+  },
+  {
+   "default": "51",
+   "fieldname": "cts_ovivo_air_flow_rate_per_stack",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Air Flow Rate Per Stack"
+  },
+  {
+   "fieldname": "cts_ovivo_permeate_capacity",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate Capacity",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "cts_ovivo_pumps",
+   "fieldtype": "Section Break",
+   "label": "CTS Ovivo Pumps"
+  },
+  {
+   "fieldname": "cts_ovivo_permeate_pump",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_circulation_pump",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Circulation Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_opsyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cts_ovivo_blower",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Blower",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_sludge_pump_2",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Sludge Pump",
+   "read_only": 1
+  },
+  {
+   "default": "18",
+   "fieldname": "cts_ovivo_sludge_pump_hours_of_operation_2",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo sludge pump hours of operation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_sprinkler_pump_2",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Sprinkler Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_total_area",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Total Area ",
+   "read_only": 1
+  },
+  {
+   "default": "142",
+   "fieldname": "cts_ovivo_chlorine_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "HYPO Dosing Flux"
+  },
+  {
+   "default": "74.4",
+   "fieldname": "cts_ovivo_citric_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "HCL Dosing Flux"
+  },
+  {
+   "default": "39.3",
+   "fieldname": "cts_ovivo_hcl_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "PAC Dosage (PPM)"
+  },
+  {
+   "default": "1.8",
+   "fieldname": "cts_ovivo_alum_dosing_for_each_stack",
+   "fieldtype": "Float",
+   "label": "Alum Dosage (PPM)"
+  },
+  {
+   "fieldname": "cts_cip_tank_per_train",
+   "fieldtype": "Float",
+   "label": "CTS Cip Tank Per Train",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_naocl_dosing_pump_rc",
+   "fieldtype": "Float",
+   "label": "CTS Naocl Dosing Pump Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_citric_dosing_pump_mc_rc",
+   "fieldtype": "Float",
+   "label": "CTS Citric Dosing Pump Mc Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_hcl_dosing_pump_mc_rc",
+   "fieldtype": "Float",
+   "label": "CTS Hcl Dosing Pump Mc Rc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_alum_dosing_pump_mc_rc",
+   "fieldtype": "Float",
+   "label": "CTS Alum Dosing Pump Mc Rc",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_permeate_qty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate Qty"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "cts_ovivo_cip_qty",
+   "fieldtype": "Section Break",
+   "label": "CTS Ovivo CIP Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_backwash_qty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Backwash Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_circulation_qty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Circulation Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_blower_qty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Blower Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_sprinkler_qty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Sprinkler Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_sludge_qty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Sludge Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_permeate_sqty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_backwash_sqty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Backwash S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_circulation_sqty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Circulation S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_cip_sqty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo CIP S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_blower_sqty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Blower S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_sprinkler_sqty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Sprinkler S.Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "cts_ovivo_sludge_sqty",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Sludge S.Qty"
+  },
+  {
+   "fieldname": "cts_ovivo_tank_volume",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Tank Volume"
+  },
+  {
+   "default": "10",
+   "fieldname": "cts_ovivo_filtration_min",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Filtration min"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "cts_ovivo_backwash_min",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Backwash min"
+  },
+  {
+   "fieldname": "cts_ovivo_total_cycle",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo total cycle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_hours_of_operation",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo hours of operation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_filtration_hr",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Filtration hr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_backwash_hr",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Backwash hr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_permeate_m3",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Permeate m3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_backwash_m3",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Backwash m3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_total_permeate",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Total Permeate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_h41gv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "cts_operation_cycle_section",
+   "fieldtype": "Section Break",
+   "label": "CTS Operation Cycle"
+  },
+  {
+   "fieldname": "column_break_wiwre",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_whl9m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "S-UF",
+   "fieldname": "cts_ovivo_type",
+   "fieldtype": "Select",
+   "label": "CTS Ovivo type",
+   "options": "\nS-UF\nS-MBR"
+  },
+  {
+   "fieldname": "mbr_cts_flow",
+   "fieldtype": "Float",
+   "label": "MBR CTS Flow"
+  },
+  {
+   "fieldname": "cts_ovivo_modules_train",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Modules Per Train",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_no_of_module_per_train",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo No. Of Stacks Per Train",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_bc",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo Backwash Pump",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cts_ovivo_cip",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo CIP Pump",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.is_rewolutte==1)",
+   "fieldname": "recirculation",
+   "fieldtype": "Float",
+   "label": "Recirculation (%) - Rewolutte"
+  },
+  {
+   "fieldname": "chemical_volume",
+   "fieldtype": "Float",
+   "label": "Chemical Volume (%)"
+  },
+  {
+   "fieldname": "reject_flow",
+   "fieldtype": "Float",
+   "label": "Reject Flow (%)"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.is_rewolutte==0)",
+   "fieldname": "is_brinex",
+   "fieldtype": "Check",
+   "label": "Is Brinex"
+  },
+  {
+   "fieldname": "reject_ro",
+   "fieldtype": "Link",
+   "label": "Reject Ro",
+   "options": "RO Standard Items"
+  },
+  {
+   "default": "16",
+   "fieldname": "hours_of_operations",
+   "fieldtype": "Float",
+   "label": "Hours of operations"
+  },
+  {
+   "default": "91",
+   "fieldname": "currency_conversion_45",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Currency Conversion (45)"
+  },
+  {
+   "default": "0.8",
+   "fieldname": "diffuser_spacing",
+   "fieldtype": "Float",
+   "label": "Diffuser Spacing"
+  },
+  {
+   "fieldname": "bio_tank_type",
+   "fieldtype": "Select",
+   "label": "Bio Tank Type",
+   "options": "Rectangular\nCarousel"
+  },
+  {
+   "fieldname": "eqt_tank_type",
+   "fieldtype": "Select",
+   "label": "Eqt Tank Type",
+   "options": "Rectangular\nCarousel"
+  },
+  {
+   "default": "45",
+   "fieldname": "currency_value",
+   "fieldtype": "Float",
+   "label": "Airex Lateral Price"
+  },
+  {
+   "fieldname": "type_of_blower",
+   "fieldtype": "Select",
+   "label": "Type of Blower",
+   "options": "\nScrew\nLOBE"
+  },
+  {
+   "fieldname": "section_break_9hg7q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pretreatment_clarifier",
+   "fieldtype": "Button",
+   "label": "Pretreatment (Clarifier)"
+  },
+  {
+   "fieldname": "pretreatment_lamella",
+   "fieldtype": "Button",
+   "label": "Pretreatment (Lamella)"
+  },
+  {
+   "fieldname": "daf",
+   "fieldtype": "Button",
+   "label": "DAF"
+  },
+  {
+   "fieldname": "anaerobic_system",
+   "fieldtype": "Button",
+   "label": "Anaerobic System"
+  },
+  {
+   "fieldname": "filtration_mf",
+   "fieldtype": "Button",
+   "label": "Filtration (MF)"
+  },
+  {
+   "fieldname": "filtration_koch",
+   "fieldtype": "Button",
+   "label": "Filtration (KOCH)"
+  },
+  {
+   "fieldname": "filtration_ovivo",
+   "fieldtype": "Button",
+   "label": "Filtration (OVIVO)"
+  },
+  {
+   "fieldname": "sulphur_black",
+   "fieldtype": "Button",
+   "label": "Sulphur Black"
+  },
+  {
+   "fieldname": "rewolutte",
+   "fieldtype": "Button",
+   "label": "Rewolutte"
+  },
+  {
+   "fieldname": "brinex",
+   "fieldtype": "Button",
+   "label": "Brinex"
+  },
+  {
+   "fieldname": "ro",
+   "fieldtype": "Button",
+   "label": "RO"
+  },
+  {
+   "fieldname": "do_increase",
+   "fieldtype": "Button",
+   "label": "DO increase"
+  },
+  {
+   "fieldname": "dnt",
+   "fieldtype": "Button",
+   "label": "DNT"
+  },
+  {
+   "fieldname": "dgt",
+   "fieldtype": "Button",
+   "label": "DGT"
+  },
+  {
+   "fieldname": "clear",
+   "fieldtype": "Button",
+   "label": "Clear all Selected Systems"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_qk0me",
+   "fieldtype": "Column Break",
+   "is_virtual": 1,
+   "label": "Filtration"
+  },
+  {
+   "fieldname": "column_break_6u7yz",
+   "fieldtype": "Column Break",
+   "label": "Reject Management"
+  },
+  {
+   "fieldname": "column_break_vrh3q",
+   "fieldtype": "Column Break",
+   "label": "Pretreatment"
+  },
+  {
+   "fieldname": "evaporator",
+   "fieldtype": "Button",
+   "label": "Evaporator"
+  },
+  {
+   "fieldname": "atfd",
+   "fieldtype": "Button",
+   "label": "ATFD"
+  },
+  {
+   "fieldname": "crystallizer",
+   "fieldtype": "Button",
+   "label": "Crystallizer"
+  },
+  {
+   "fieldname": "care",
+   "fieldtype": "Button",
+   "label": "CaRe"
+  },
+  {
+   "fieldname": "column_break_aqijt",
+   "fieldtype": "Column Break",
+   "label": "Anaerobic System"
+  },
+  {
+   "fieldname": "required_flux",
+   "fieldtype": "Float",
+   "label": "Required Flux",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_required_flux",
+   "fieldtype": "Float",
+   "label": "Ovivo Required Flux",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reject_ro_flow_rate",
+   "fieldtype": "Float",
+   "label": "Reject RO Flow Rate (m3/hr)"
+  },
+  {
+   "fieldname": "section_break_nh5ya",
+   "fieldtype": "Section Break",
+   "label": "Rewolutte"
+  },
+  {
+   "default": "6",
+   "fieldname": "ret_in_hr_rewolutte",
+   "fieldtype": "Float",
+   "label": "RE.T (IN HR) - Rewolutte"
+  },
+  {
+   "fieldname": "column_break_xwryg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ret_in_day_rewolutte",
+   "fieldtype": "Float",
+   "label": "RE.T (IN DAY) - Rewolutte",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_umc1y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_rewolutte",
+   "fieldtype": "Float",
+   "label": "Area - Rewolutte",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dgm9a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diffuser_rewolutte",
+   "fieldtype": "Float",
+   "label": "Diffuser - Rewolutte",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "rewolutte_ro.theoretical_ro_recovery1",
+   "fieldname": "rewolutte_ro_recovery",
+   "fieldtype": "Data",
+   "label": "Rewolutte RO Recovery",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reject_ro.theoretical_ro_recovery1",
+   "fieldname": "reject_ro_recovery",
+   "fieldtype": "Data",
+   "label": "Reject Ro Recovery",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rewolutte_section",
+   "fieldtype": "Section Break",
+   "label": "Rewolutte"
+  },
+  {
+   "fieldname": "header_pipe_column",
+   "fieldtype": "Column Break",
+   "label": "Header Pipe"
+  },
+  {
+   "fieldname": "rewolutte_header_pipe_size",
+   "fieldtype": "Data",
+   "label": "Rewolutte Header Pipe Size"
+  },
+  {
+   "fieldname": "rewolutte_header_pipe_length",
+   "fieldtype": "Float",
+   "label": "Rewolutte Header Pipe Length"
+  },
+  {
+   "fieldname": "branch_pipe_column",
+   "fieldtype": "Column Break",
+   "label": "Branch Pipe"
+  },
+  {
+   "fieldname": "rewolutte_branch_pipe_size",
+   "fieldtype": "Data",
+   "label": "Rewolutte Branch Pipe Size"
+  },
+  {
+   "fieldname": "rewolutte_branch_pipe_length",
+   "fieldtype": "Float",
+   "label": "Rewolutte Branch Pipe Length"
+  },
+  {
+   "fieldname": "column_break_wffbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xqy6z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_l42ft",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rewolutte_diffuser_grid",
+   "fieldtype": "Float",
+   "label": "Rewolutte Diffuser Grid length"
+  },
+  {
+   "fieldname": "rewolutte_grid_pipe_size",
+   "fieldtype": "Data",
+   "label": "Rewolutte Grid Pipe Size"
+  },
+  {
+   "fieldname": "column_break_lpdjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Link",
+   "label": "Scope",
+   "options": "Startup Sheet Scope"
+  },
+  {
+   "fetch_from": "purpose_for.inlet_abbreviation",
+   "fieldname": "abbr_inlet",
+   "fieldtype": "Data",
+   "label": "Abbr Inlet"
+  },
+  {
+   "default": "0.2",
+   "fieldname": "reject_flow_ref",
+   "fieldtype": "Float",
+   "label": "Reject Flow"
+  },
+  {
+   "fieldname": "sulphur_black_removal_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sulphur Black Removal"
+  },
+  {
+   "fieldname": "mf_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "MF Calculation"
+  },
+  {
+   "fieldname": "total_reject_flow_rate_m3day",
+   "fieldtype": "Float",
+   "label": "Total Reject Flow Rate (m3/day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mf_suspends_mgl",
+   "fieldtype": "Float",
+   "label": "MF Suspends (mg/L)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mf_suspends_kgday",
+   "fieldtype": "Float",
+   "label": "MF Suspends (kg/day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mf_sludge_pump_capacity",
+   "fieldtype": "Float",
+   "label": "MF Sludge pump capacity",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "mf_sludge_pump_quanity_working",
+   "fieldtype": "Float",
+   "label": "MF Sludge pump quanity (working)"
+  },
+  {
+   "default": "1",
+   "fieldname": "mf_sludge_pump_quanity_standby",
+   "fieldtype": "Float",
+   "label": "MF Sludge pump quanity (standby)"
+  },
+  {
+   "fieldname": "mf_lamella_settler",
+   "fieldtype": "Float",
+   "label": "MF Lamella settler",
+   "read_only": 1
+  },
+  {
+   "default": "100",
+   "fieldname": "mf_pac_dosage",
+   "fieldtype": "Float",
+   "label": "MF PAC Dosage (mg/lit)"
+  },
+  {
+   "default": "5",
+   "fieldname": "mf_pac_concentration",
+   "fieldtype": "Float",
+   "label": "MF PAC Concentration (%)"
+  },
+  {
+   "fieldname": "mf_dosing_pump",
+   "fieldtype": "Float",
+   "label": "MF Dosing pump (lph)",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "mf_dosing_pump_quanity_working",
+   "fieldtype": "Float",
+   "label": "MF Dosing pump quanity (working)"
+  },
+  {
+   "default": "1",
+   "fieldname": "mf_dosing_pump_quanity_standby",
+   "fieldtype": "Float",
+   "label": "MF Dosing pump quanity (standby)"
+  },
+  {
+   "fieldname": "column_break_0193j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_senqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_reject_flow_rate_m3hr",
+   "fieldtype": "Float",
+   "label": "Total Reject Flow Rate (m3/hr)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_koch_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "MBR KOCH Calculation"
+  },
+  {
+   "fieldname": "mbr_tank_volume",
+   "fieldtype": "Float",
+   "label": "MBR Tank Volume",
+   "read_only": 1
+  },
+  {
+   "default": "3",
+   "fieldname": "mbr_no_of_drains_per_day",
+   "fieldtype": "Float",
+   "label": "MBR No. of drains per day"
+  },
+  {
+   "fieldname": "mbr_volume_drained_in_a_day_m3day",
+   "fieldtype": "Float",
+   "label": "MBR Volume drained in a day (m3/day)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_volume_drained_in_a_day_m3hr",
+   "fieldtype": "Float",
+   "label": "MBR Volume drained in a day (m3/hr)",
+   "read_only": 1
+  },
+  {
+   "default": "1000",
+   "fieldname": "mbr_suspends_mgl",
+   "fieldtype": "Float",
+   "label": "MBR Suspends (mg/L)"
+  },
+  {
+   "fieldname": "mbr_suspends_kgday",
+   "fieldtype": "Float",
+   "label": "MBR Suspends (kg/day)",
+   "read_only": 1
+  },
+  {
+   "default": "16",
+   "fieldname": "mbr_sludge_pump_operating_hours",
+   "fieldtype": "Float",
+   "label": "MBR Sludge pump operating hours"
+  },
+  {
+   "fieldname": "mbr_sludge_pump_capacity",
+   "fieldtype": "Float",
+   "label": "MBR Sludge pump capacity",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "mbr_sludge_pump_quanity_working",
+   "fieldtype": "Float",
+   "label": "MBR Sludge pump quanity (working)"
+  },
+  {
+   "default": "1",
+   "fieldname": "mbr_sludge_pump_quanity_standby",
+   "fieldtype": "Float",
+   "label": "MBR Sludge pump quanity (standby)"
+  },
+  {
+   "default": "16",
+   "fieldname": "mbr_lamella_operating_hours",
+   "fieldtype": "Float",
+   "label": "MBR Lamella operating hours"
+  },
+  {
+   "fieldname": "mbr_lamella_settler",
+   "fieldtype": "Float",
+   "label": "MBR Lamella settler",
+   "read_only": 1
+  },
+  {
+   "default": "100",
+   "fieldname": "mbr_pac_dosage",
+   "fieldtype": "Float",
+   "label": "MBR PAC Dosage"
+  },
+  {
+   "default": "5",
+   "fieldname": "mbr_pac_concentration",
+   "fieldtype": "Float",
+   "label": "MBR PAC Concentration"
+  },
+  {
+   "fieldname": "mbr_dosing_pump",
+   "fieldtype": "Float",
+   "label": "MBR Dosing pump",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "mbr_dosing_pump_quanity_working",
+   "fieldtype": "Float",
+   "label": "MBR Dosing pump quanity (working)"
+  },
+  {
+   "default": "1",
+   "fieldname": "mbr_dosing_pump_quanity_standby",
+   "fieldtype": "Float",
+   "label": "MBR Dosing pump quanity (standby)"
+  },
+  {
+   "fieldname": "column_break_upvhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sc8ia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mbr_ovivo_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "MBR Ovivo Calculation"
+  },
+  {
+   "fieldname": "mbro_tank_volume",
+   "fieldtype": "Float",
+   "label": "MBR(O) Tank Volume",
+   "read_only": 1
+  },
+  {
+   "default": "8",
+   "fieldname": "mbro_no_of_drains_per_day",
+   "fieldtype": "Float",
+   "label": "MBR(O) No. of drains per day"
+  },
+  {
+   "fieldname": "mbro_volume_drained_in_a_day",
+   "fieldtype": "Float",
+   "label": "MBR(O) Volume drained in a day",
+   "read_only": 1
+  },
+  {
+   "default": "1000",
+   "fieldname": "mbro_suspends_mgl",
+   "fieldtype": "Float",
+   "label": "MBR(O) Suspends (mg/L)"
+  },
+  {
+   "fieldname": "mbro_suspends_kgday",
+   "fieldtype": "Float",
+   "label": "MBR(O) Suspends (kg/day)",
+   "read_only": 1
+  },
+  {
+   "default": "20",
+   "fieldname": "mbro_sludge_pump_operating_hours",
+   "fieldtype": "Float",
+   "label": "MBR(O) Sludge pump operating hours"
+  },
+  {
+   "fieldname": "mbro_sludge_pump_capacity",
+   "fieldtype": "Float",
+   "label": "MBR(O) Sludge pump capacity",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "mbro_sludge_pump_quanity_working",
+   "fieldtype": "Float",
+   "label": "MBR(O) Sludge pump quanity (working)"
+  },
+  {
+   "default": "1",
+   "fieldname": "mbro_sludge_pump_quanity_standby",
+   "fieldtype": "Float",
+   "label": "MBR(O) Sludge pump quanity (standby)"
+  },
+  {
+   "default": "16",
+   "fieldname": "mbro_lamella_operating_hours",
+   "fieldtype": "Float",
+   "label": "MBR(O) Lamella operating hours"
+  },
+  {
+   "fieldname": "mbro_lamella_settler",
+   "fieldtype": "Float",
+   "label": "MBR(O) Lamella settler",
+   "read_only": 1
+  },
+  {
+   "default": "100",
+   "fieldname": "mbro_pac_dosage",
+   "fieldtype": "Float",
+   "label": "MBR(O) PAC Dosage"
+  },
+  {
+   "default": "5",
+   "fieldname": "mbro_pac_concentration",
+   "fieldtype": "Float",
+   "label": "MBR(O) PAC Concentration"
+  },
+  {
+   "fieldname": "mbro_dosing_pump",
+   "fieldtype": "Float",
+   "label": "MBR(O) Dosing pump",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "mbro_dosing_pump_quanity_working",
+   "fieldtype": "Float",
+   "label": "MBR(O) Dosing pump quanity (working)"
+  },
+  {
+   "default": "1",
+   "fieldname": "mbro_dosing_pump_quanity_standby",
+   "fieldtype": "Float",
+   "label": "MBR(O) Dosing pump quanity (standby)"
+  },
+  {
+   "fieldname": "column_break_mkje5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_omqbm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "96",
+   "fieldname": "proposed_recovery",
+   "fieldtype": "Percent",
+   "label": "Proposed Recovery (%)"
+  },
+  {
+   "default": "20",
+   "fieldname": "ro_operating_hours",
+   "fieldtype": "Float",
+   "label": "RO Operating hours"
+  },
+  {
+   "default": "16",
+   "fieldname": "rro_operating_hours",
+   "fieldtype": "Float",
+   "label": "RRO Operating hours"
+  },
+  {
+   "default": "20",
+   "fieldname": "rew_operating_hours",
+   "fieldtype": "Float",
+   "label": "Rewolutte Operating hours"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Revision",
+   "options": "Revision"
+  },
+  {
+   "fieldname": "choose_cip",
+   "fieldtype": "Link",
+   "label": "Choose CIP (RO)",
+   "options": "CIP Standard Items"
+  },
+  {
+   "default": "1",
+   "fieldname": "cip_quantity",
+   "fieldtype": "Float",
+   "label": "CIP Quantity"
+  },
+  {
+   "fieldname": "choose_cip2",
+   "fieldtype": "Link",
+   "label": "Choose CIP (RRO)",
+   "options": "CIP Standard Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "cip_quantity2",
+   "fieldtype": "Float",
+   "label": "CIP Quantity"
+  },
+  {
+   "fieldname": "column_break_1lqr8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.25",
+   "fieldname": "hypo_cleaning_concentration",
+   "fieldtype": "Float",
+   "label": "Hypo Cleaning concentration"
+  },
+  {
+   "default": "0.5",
+   "fieldname": "ovivo_hcl_cleaning_cencentration",
+   "fieldtype": "Float",
+   "label": "Hcl Cleaning Concentration"
+  },
+  {
+   "fieldname": "cts_mbr_cip_section",
+   "fieldtype": "Section Break",
+   "label": "CTS MBR CIP"
+  },
+  {
+   "default": "0.25",
+   "fieldname": "cts_ovivo_hypo_cleaning_concentration",
+   "fieldtype": "Float",
+   "label": "Hypo Cleaning concentration"
+  },
+  {
+   "default": "0.5",
+   "fieldname": "cts_ovivo_hcl_cleaning_concentration",
+   "fieldtype": "Float",
+   "label": "Hcl Cleaning concentration"
+  },
+  {
+   "default": "0",
+   "fieldname": "cts_ovivo_required_flux",
+   "fieldtype": "Float",
+   "label": "CTS Ovivo required flux",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mbr_sludge_pump_qty",
+   "fieldtype": "Float",
+   "label": "Sludge Pump Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "mbr_circ_sb_qty",
+   "fieldtype": "Float",
+   "label": "Circulation pump Sb qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "sludge_pump_sb_qty",
+   "fieldtype": "Float",
+   "label": "Sludge pump standby quantity"
+  },
+  {
+   "fieldname": "main_stream",
+   "fieldtype": "Heading",
+   "label": "Main Stream"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.mbr_k!=1 && doc.mbr_o!=1)",
+   "fieldname": "mf",
+   "fieldtype": "Check",
+   "label": "MF"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.mf!=1 && doc.mbr_o!=1)",
+   "fieldname": "mbr_k",
+   "fieldtype": "Check",
+   "label": "MBR (K)"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.mbr_k!=1 && doc.mf!=1)",
+   "fieldname": "mbr_o",
+   "fieldtype": "Check",
+   "label": "MBR (O)"
+  },
+  {
+   "fieldname": "column_break_xak87",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "choose_cip3",
+   "fieldtype": "Link",
+   "label": "Choose CIP (REW RO)",
+   "options": "CIP Standard Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "cip_quantity3",
+   "fieldtype": "Float",
+   "label": "CIP Quantity"
+  },
+  {
+   "fieldname": "ovivo_feed_qty",
+   "fieldtype": "Float",
+   "label": "Ovivo Feed Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "ovivo_feed_sqty",
+   "fieldtype": "Float",
+   "label": "Ovivo Feed S.Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "ovivo_feed_pump",
+   "fieldtype": "Float",
+   "label": "Ovivo Feed Pump",
+   "read_only": 1
+  },
+  {
+   "default": "1.5",
+   "fieldname": "feed_flow_conversion",
+   "fieldtype": "Float",
+   "label": "Feed Flow Conversion"
+  },
+  {
+   "default": "0.5",
+   "fieldname": "cip_flow_conversion",
+   "fieldtype": "Float",
+   "label": "CIP Flow Conversion"
+  },
+  {
+   "fieldname": "pva_stream_tab",
+   "fieldtype": "Tab Break",
+   "label": "PVA Stream"
+  },
+  {
+   "fieldname": "pva_stream_flow",
+   "fieldtype": "Float",
+   "label": "PVA Stream Flow (m3/day))"
+  },
+  {
+   "fieldname": "pva_anaerobic_feed_tank_height",
+   "fieldtype": "Float",
+   "label": "PVA Anaerobic Feed Tank Height"
+  },
+  {
+   "fieldname": "pva_lamella_tank_height",
+   "fieldtype": "Float",
+   "label": "PVA Lamella Tank Height"
+  },
+  {
+   "fieldname": "ammonia_stream_b",
+   "fieldtype": "Button",
+   "label": "Ammonia Stream"
+  },
+  {
+   "fieldname": "anaerobic_cts_b",
+   "fieldtype": "Button",
+   "label": "Anaerobic CTS"
+  },
+  {
+   "fieldname": "anaerobic_settler_b",
+   "fieldtype": "Button",
+   "label": "Anaerobic Settler"
+  },
+  {
+   "fieldname": "parameter_details_section",
+   "fieldtype": "Section Break",
+   "label": "Parameter Details"
+  },
+  {
+   "fieldname": "pva_cod_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_COD (mg/L)"
+  },
+  {
+   "fieldname": "pva_bod_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_BOD (mg/L)"
+  },
+  {
+   "fieldname": "pva_tds_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_TDS (mg/L)"
+  },
+  {
+   "fieldname": "pva_stream_pva_mgl",
+   "fieldtype": "Float",
+   "label": "PVA stream_PVA (mg/L)"
+  },
+  {
+   "fieldname": "column_break_icrkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pva_tss_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_TSS (mg/L)"
+  },
+  {
+   "fieldname": "pva_iron_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_Iron (mg/L)"
+  },
+  {
+   "fieldname": "pva_silica_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_Silica (mg/L)"
+  },
+  {
+   "fieldname": "pva_colour_hazen",
+   "fieldtype": "Float",
+   "label": "PVA_Colour (Hazen)"
+  },
+  {
+   "fieldname": "pva_sodium_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_Sodium (mg/L)"
+  },
+  {
+   "fieldname": "column_break_siraq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pva_calcium_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_Calcium (mg/L)"
+  },
+  {
+   "fieldname": "pva_magnesium_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_Magnesium (mg/L)"
+  },
+  {
+   "fieldname": "pva_alkalinity_mgl_as_caco3",
+   "fieldtype": "Float",
+   "label": "PVA_Alkalinity (mg/L as CaCO3)"
+  },
+  {
+   "fieldname": "column_break_o17id",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pva_temperature",
+   "fieldtype": "Float",
+   "label": "PVA_Temperature (\u00c2\u00b0C)"
+  },
+  {
+   "fieldname": "pva_oil_grease",
+   "fieldtype": "Float",
+   "label": "PVA_Oil & Grease (mg/L)"
+  },
+  {
+   "fieldname": "pva_total_hardness_mgl_as_caco3",
+   "fieldtype": "Float",
+   "label": "PVA_Total Hardness (mg/L as CaCO3)"
+  },
+  {
+   "fieldname": "pva_tkn_mgl",
+   "fieldtype": "Float",
+   "label": "PVA_TKN (mg/L)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-26 10:01:17.234557",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Startup Sheet",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project"
+}

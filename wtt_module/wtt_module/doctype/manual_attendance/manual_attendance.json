@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-11 12:26:10.651734",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "from_time",
+  "to_time",
+  "allow_bulk_attendance",
+  "reason",
+  "get_active_employees",
+  "manual_attendance_table",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "manual_attendance_table",
+   "fieldtype": "Table",
+   "label": "Manual Attendance Table",
+   "options": "Manual Attendance Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Manual Attendance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "get_active_employees",
+   "fieldtype": "Button",
+   "label": "Get Active Employees"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_bulk_attendance",
+   "fieldtype": "Check",
+   "label": "Allow Bulk Attendance"
+  },
+  {
+   "depends_on": "eval:(doc.allow_bulk_attendance == 1)",
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "BULK-ATT-"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Datetime",
+   "label": "From Time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Datetime",
+   "label": "To Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-11 12:55:37.356631",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Manual Attendance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

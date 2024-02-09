@@ -1,0 +1,341 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "color": "Red",
+ "creation": "2023-01-05 09:49:08.963403",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "candidate_photo",
+  "candidate_resume",
+  "candidate_name",
+  "qualification",
+  "job_opening",
+  "applying_for_the_post",
+  "location",
+  "contact",
+  "email",
+  "experience",
+  "existing_salary_per_month",
+  "remarks",
+  "column_break_11",
+  "schedule_date",
+  "time",
+  "interview_type",
+  "hr_interviewer",
+  "hr_interviewer_name",
+  "technical_interviewer",
+  "technical_interviewer_name",
+  "final_interviewer",
+  "final_interviewer_name",
+  "status",
+  "joining_date",
+  "mail_template",
+  "email_template",
+  "section_break_19",
+  "template",
+  "subject",
+  "message",
+  "amended_from",
+  "personal_details_section",
+  "religion",
+  "caste",
+  "community",
+  "designation",
+  "experience_status",
+  "create_job_applicant",
+  "job_applicant",
+  "naming_series",
+  "recruitment_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "label": "Candidate Name"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Link",
+   "label": "Qualification",
+   "options": "Qualification"
+  },
+  {
+   "fetch_from": "job_opening.designation",
+   "fieldname": "applying_for_the_post",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Applying for the Post",
+   "read_only": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Place"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "schedule_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Schedule Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "technical_interviewer",
+   "fieldtype": "Link",
+   "label": "Technical Interviewer",
+   "options": "Employee",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Processing\nShortlisted\nHired\nRejected\nHold\nNot Interested",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "eval:(doc.status==\"Shortlisted\" ||doc.status==\"Hired\")",
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "template.terms",
+   "fieldname": "message",
+   "fieldtype": "Text Editor",
+   "label": "Message",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "mail_template",
+   "fieldtype": "Select",
+   "label": "Mail Template",
+   "options": "\nInvitation\nRemainder\nResult",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "email_template",
+   "fieldtype": "Link",
+   "label": "Email Template",
+   "options": "Email Template",
+   "permlevel": 1
+  },
+  {
+   "fetch_from": "email_template.subject",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "interview_type",
+   "fieldtype": "Link",
+   "label": "Interview Type",
+   "options": "Interview Type"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Recruitment Tracker",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "candidate_photo",
+   "fieldtype": "Attach Image",
+   "label": "Candidate Photo"
+  },
+  {
+   "fieldname": "existing_salary_per_month",
+   "fieldtype": "Currency",
+   "label": "Existing Salary (Per Month)"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion"
+  },
+  {
+   "fieldname": "caste",
+   "fieldtype": "Data",
+   "label": "Caste"
+  },
+  {
+   "fieldname": "community",
+   "fieldtype": "Data",
+   "label": "Community"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "experience_status",
+   "fieldtype": "Select",
+   "label": "Experience status",
+   "options": "\nFresher\n1-3\n3-5\n5-7\n7-9\n10-above"
+  },
+  {
+   "depends_on": "eval:!(doc.job_applicant)",
+   "fieldname": "create_job_applicant",
+   "fieldtype": "Button",
+   "label": "Create Job Applicant"
+  },
+  {
+   "fieldname": "hr_interviewer",
+   "fieldtype": "Link",
+   "label": "HR Interviewer",
+   "options": "Employee",
+   "permlevel": 1
+  },
+  {
+   "fetch_from": "hr_interviewer.employee_name",
+   "fieldname": "hr_interviewer_name",
+   "fieldtype": "Data",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "technical_interviewer.employee_name",
+   "fieldname": "technical_interviewer_name",
+   "fieldtype": "Data",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "candidate_resume",
+   "fieldtype": "Attach",
+   "label": "Candidate Resume"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "REC-TRA-"
+  },
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "final_interviewer",
+   "fieldtype": "Link",
+   "label": "Final Interviewer",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "final_interviewer.employee_name",
+   "fieldname": "final_interviewer_name",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "recruitment_reference",
+   "fieldtype": "Link",
+   "label": "Recruitment Reference",
+   "options": "Recruitment Database"
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Link",
+   "label": "Template",
+   "options": "Terms and Conditions"
+  }
+ ],
+ "image_field": "candidate_photo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-24 09:47:48.130521",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Recruitment Tracker",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "candidate_name"
+}

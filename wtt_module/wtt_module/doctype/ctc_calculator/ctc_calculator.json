@@ -1,0 +1,275 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee",
+ "creation": "2022-05-11 14:03:31.478713",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "effect_from",
+  "employee",
+  "employee_name",
+  "department",
+  "date_of_joining",
+  "actual_designation",
+  "designation",
+  "column_break_19",
+  "old_gross",
+  "old_ctc",
+  "old_ctc_as_per_annum",
+  "section_break_13",
+  "ctcperannum",
+  "tshirt",
+  "shoe",
+  "insurance",
+  "ctc",
+  "gross_salary",
+  "basic_salary",
+  "hra",
+  "others",
+  "c_brek",
+  "esi",
+  "pf",
+  "bonus",
+  "gra",
+  "total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "effect_from",
+   "fieldtype": "Date",
+   "label": "Effect From"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee",
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "actual_designation",
+   "fieldtype": "Link",
+   "label": "Actual Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.gross_amount",
+   "fieldname": "old_gross",
+   "fieldtype": "Data",
+   "label": "Old Gross",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.total_salary",
+   "fieldname": "old_ctc",
+   "fieldtype": "Data",
+   "label": "Old CTC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "old_ctc_as_per_annum",
+   "fieldtype": "Data",
+   "label": "Old CTC (As per Annum)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ctcperannum",
+   "fieldtype": "Currency",
+   "label": "CTC (As per Annum)"
+  },
+  {
+   "fieldname": "ctc",
+   "fieldtype": "Currency",
+   "label": "CTC",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gross_salary",
+   "fieldtype": "Currency",
+   "label": "Gross Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Currency",
+   "label": "Basic Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Currency",
+   "label": "HRA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Currency",
+   "label": "Other Allowance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "c_brek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "esi",
+   "fieldtype": "Currency",
+   "label": "ESI",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pf",
+   "fieldtype": "Currency",
+   "label": "PF",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bonus",
+   "fieldtype": "Currency",
+   "label": "Bonus",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gra",
+   "fieldtype": "Currency",
+   "label": "Gratuity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CTC Calculator",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CTC Calculator",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "tshirt",
+   "fieldtype": "Currency",
+   "label": "Tshirt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shoe",
+   "fieldtype": "Currency",
+   "label": "Shoe",
+   "read_only": 1
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Currency",
+   "label": "Insurance",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-05-11 17:11:14.821208",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "CTC Calculator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name"
+}

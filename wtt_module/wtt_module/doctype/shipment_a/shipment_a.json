@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-19 14:59:46.803723",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shipment",
+  "item_template",
+  "description",
+  "technical_description",
+  "days",
+  "supplier",
+  "weeks",
+  "amount",
+  "shipment_end_date",
+  "order_date",
+  "material_request",
+  "material_request_item",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Template",
+   "options": "Item"
+  },
+  {
+   "fieldname": "shipment",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shipment",
+   "options": "\nShipment 1\nShipment 2\nShipment 3\nShipment 4\nShipment 5\nShipment 6"
+  },
+  {
+   "fieldname": "weeks",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Weeks"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fetch_from": "item_template.description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Days"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "shipment_end_date",
+   "fieldtype": "Date",
+   "label": "Shipment End Date"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "material_request",
+   "fieldtype": "Data",
+   "label": "Material Request"
+  },
+  {
+   "fieldname": "material_request_item",
+   "fieldtype": "Data",
+   "label": "Material Request Item"
+  },
+  {
+   "fetch_from": "item_template.technical_description",
+   "fieldname": "technical_description",
+   "fieldtype": "Text Editor",
+   "label": "Technical Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-04 17:13:46.681230",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Shipment A",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-09 09:03:10.222246",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "system_name",
+  "column_break_rhbir",
+  "project",
+  "project_name",
+  "section_break_hym5c",
+  "attachment",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DRAW-.YY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "system_name",
+   "fieldtype": "Select",
+   "label": "System Name",
+   "options": "\nRotary Brush Screener\nBar Screener\nDrum Screener\nAnaerobic Screener\nAnaerobic Equalization\nAnaerobic Neutralization\nAnaerobic System\nAmmonia Striper\nLifting sump\nOil & grease trap\nDAF (Dissolved Air Flotation)\nEqualization System\nNeutralization System\nCooling Tower\nDe-Nitrification System\nDistribution system\nBiological Oxidation System\nClarifier Feed Tank\nCircular Clarifier System\nLamella Settler\nDO increase system\nSRS System\nSand Filter\nActivated Carbon Filter\nSelf-Cleaning Filter\nMicro Filtration - ASAHI\nSubmerged MBR system - KOCH\nSubmerged MBR system - OVIVO\nSulphur Black Removal System\nSludge Thickener\nSludge Thickener with mech\nScrew Press\nBelt Press\nDegasser System\nReverse Osmosis\nHardness and Silica Removal System\nChlorination system\nHardness and Color Removal System\nReject Reverse Osmosis\nEvaporator\nAgitated Thin film dryer\nCentrifuge\nCrystallizer\nNano Filtration\nCare system\nCIP system\nPre-Treatment System\nOthers"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Table",
+   "label": "Attachment",
+   "options": "Reference Attachment"
+  },
+  {
+   "fieldname": "column_break_rhbir",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hym5c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Items Drawing",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-09 10:09:10.591424",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Items Drawing",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

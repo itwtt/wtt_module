@@ -1,0 +1,35 @@
+{
+ "based_on": "",
+ "chart_name": "Test chart",
+ "chart_type": "Report",
+ "creation": "2021-11-20 09:28:13.524388",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"from_date\":\"2021-10-31T18:30:00.000Z\",\"to_date\":\"2021-11-29T18:30:00.000Z\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2021-11-20 09:29:01.070081",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Test chart",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Leave approval",
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "x_field": "employee_name",
+ "y_axis": [
+  {
+   "color": "#761ACB",
+   "y_field": "no_day"
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "creation": "2021-09-20 17:59:55.221502",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system",
+  "attach",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "system",
+   "fieldtype": "Link",
+   "label": "System",
+   "options": "System Module"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-20 17:59:55.221502",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Project Drawing",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

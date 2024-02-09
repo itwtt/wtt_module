@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-26 11:26:14.282689",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "employee",
+  "employee_name",
+  "department",
+  "type",
+  "section_break_8bpga",
+  "personal_say_it_do_it",
+  "personal_status",
+  "column_break_gsemk",
+  "say_it_do_it",
+  "completion_time",
+  "pro_status",
+  "naming_series",
+  "update_status",
+  "professional_say_it_do_it",
+  "professional_completion_time",
+  "professional_status",
+  "actual_completion_time",
+  "hod_remarks_section",
+  "valid__not_valid_state",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "say_it_do_it",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Professional Say It Do It"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SAY-DO-"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Type",
+   "options": "\nPersonal\nProfessional"
+  },
+  {
+   "fieldname": "update_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "update status"
+  },
+  {
+   "fieldname": "completion_time",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Professional Completion time"
+  },
+  {
+   "fieldname": "personal_say_it_do_it",
+   "fieldtype": "Small Text",
+   "label": "Personal Say It Do It"
+  },
+  {
+   "fieldname": "personal_status",
+   "fieldtype": "Select",
+   "label": "Personal Status",
+   "options": "\nCompleted\nFollowing\nPending"
+  },
+  {
+   "fieldname": "column_break_gsemk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8bpga",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "professional_say_it_do_it",
+   "fieldtype": "Small Text",
+   "label": "Professional Say It Do It",
+   "reqd": 1
+  },
+  {
+   "fieldname": "professional_completion_time",
+   "fieldtype": "Datetime",
+   "label": "Professional Completion time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_completion_time",
+   "fieldtype": "Datetime",
+   "label": "Actual Completion Time",
+   "read_only": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "pro_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Professional Status",
+   "options": "\nCompleted\nPending"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "professional_status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Professional Status",
+   "options": "\nCompleted\nPending",
+   "reqd": 1
+  },
+  {
+   "description": "HOD will validate the Say It Do It for your subordinates",
+   "fieldname": "hod_remarks_section",
+   "fieldtype": "Section Break",
+   "label": "HOD Remarks",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "valid__not_valid_state",
+   "fieldtype": "Select",
+   "label": "Valid / Not Valid State",
+   "options": "\nValid\nNot Valid",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "permlevel": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-30 09:18:46.660692",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Say It Do It",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name"
+}

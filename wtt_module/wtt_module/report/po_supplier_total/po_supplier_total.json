@@ -1,0 +1,48 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2022-03-17 13:39:40.728515",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "group",
+   "fieldtype": "Select",
+   "label": "GROUP BY",
+   "mandatory": 1,
+   "options": "Purchase Order\nSupplier",
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-12-07 15:00:54.529720",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "PO Supplier Total",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \npo.name as \"PURCHASE ORDER:Link/Purchase Order:200\",\npo.approved_date as \"APPROVED DATE:Data:50\",\npo.supplier as \"SUPPLIER:Data:200\",\npo.project as \"PROJECT:Data:200\",\npo.base_rounded_total as \"TOTAL:Currency:200\",\npo.total_advance as \"ADVANCE:Currency:100\",\n(po.base_rounded_total-po.total_advance)as \"OUTSTATNDING:Currency:100\"\nFROM `tabPurchase Order` as po \nWHERE po.docstatus=1 and po.naming_series NOT IN ('JOB-.YY.-','SER-.YY.-') and %(group)s='Purchase Order'\n\nUNION\n\nSELECT \nGROUP_CONCAT(po.name) as \"PURCHASE ORDER:Link/Purchase Order:100\",\n\"\" as \"APPROVED DATE:Data:10\",\npo.supplier as \"SUPPLIER:Data:150\",\nGROUP_CONCAT(distinct(po.project)) as \"PROJECT:Data:200\",\nsum(po.base_rounded_total) as \"TOTAL:Currency:150\",\nsum(po.total_advance) as \"ADVANCE:Currency:100\",\n(sum(po.base_rounded_total)-sum(po.total_advance))as \"OUTSTATNDING:Currency:100\"\nFROM `tabPurchase Order` as po \nWHERE po.docstatus=1 and po.naming_series NOT IN ('JOB-.YY.-','SER-.YY.-') and %(group)s='Supplier' GROUP BY po.supplier\n\n",
+ "ref_doctype": "Purchase Order",
+ "report_name": "PO Supplier Total",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "WTT - Buying"
+  },
+  {
+   "role": "HOD"
+  }
+ ]
+}

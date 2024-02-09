@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-22 13:51:00.803385",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hobbies",
+  "tell_us"
+ ],
+ "fields": [
+  {
+   "fieldname": "hobbies",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hobbies",
+   "options": "Hobbies List"
+  },
+  {
+   "fieldname": "tell_us",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Tell Us More about Your Hobbies"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-22 13:51:00.803385",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Hobbies Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

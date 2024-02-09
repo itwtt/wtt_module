@@ -1,0 +1,206 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-07 10:12:28.885617",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "job_1_tittle",
+  "email_1",
+  "phone_1",
+  "full_address",
+  "job1_company",
+  "phone_2",
+  "website_1",
+  "notes",
+  "middle_name",
+  "email_2",
+  "job_2_title",
+  "full_address_2",
+  "scan_id",
+  "email_3",
+  "phone_1_type",
+  "phone_2_type",
+  "phone_3_type",
+  "website_2",
+  "website_3",
+  "job_2_company",
+  "phone_4",
+  "phone_5",
+  "phone_4_type",
+  "phone_5_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "job_1_tittle",
+   "fieldtype": "Data",
+   "label": "Job 1 Tittle"
+  },
+  {
+   "fieldname": "email_1",
+   "fieldtype": "Data",
+   "label": "Email 1"
+  },
+  {
+   "fieldname": "phone_1",
+   "fieldtype": "Data",
+   "label": "Phone 1"
+  },
+  {
+   "fieldname": "full_address",
+   "fieldtype": "Data",
+   "label": "Full Address"
+  },
+  {
+   "fieldname": "job1_company",
+   "fieldtype": "Data",
+   "label": "Job1 Company"
+  },
+  {
+   "fieldname": "phone_2",
+   "fieldtype": "Data",
+   "label": "Phone 2"
+  },
+  {
+   "fieldname": "website_1",
+   "fieldtype": "Data",
+   "label": "Website 1"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "email_2",
+   "fieldtype": "Data",
+   "label": "Email 2"
+  },
+  {
+   "fieldname": "job_2_title",
+   "fieldtype": "Data",
+   "label": "Job 2 Title"
+  },
+  {
+   "fieldname": "full_address_2",
+   "fieldtype": "Data",
+   "label": "Full Address 2"
+  },
+  {
+   "fieldname": "scan_id",
+   "fieldtype": "Data",
+   "label": "Scan Id"
+  },
+  {
+   "fieldname": "email_3",
+   "fieldtype": "Data",
+   "label": "Email 3"
+  },
+  {
+   "fieldname": "phone_1_type",
+   "fieldtype": "Data",
+   "label": "Phone 1 Type"
+  },
+  {
+   "fieldname": "phone_2_type",
+   "fieldtype": "Data",
+   "label": "Phone 2 Type"
+  },
+  {
+   "fieldname": "phone_3_type",
+   "fieldtype": "Data",
+   "label": "Phone 3 Type"
+  },
+  {
+   "fieldname": "website_2",
+   "fieldtype": "Data",
+   "label": "Website 2"
+  },
+  {
+   "fieldname": "website_3",
+   "fieldtype": "Data",
+   "label": "Website 3"
+  },
+  {
+   "fieldname": "job_2_company",
+   "fieldtype": "Data",
+   "label": "Job 2 Company"
+  },
+  {
+   "fieldname": "phone_4",
+   "fieldtype": "Data",
+   "label": "Phone 4"
+  },
+  {
+   "fieldname": "phone_5",
+   "fieldtype": "Data",
+   "label": "Phone 5"
+  },
+  {
+   "fieldname": "phone_4_type",
+   "fieldtype": "Data",
+   "label": "Phone 4 Type"
+  },
+  {
+   "fieldname": "phone_5_type",
+   "fieldtype": "Data",
+   "label": "Phone 5 Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-07 10:12:53.092565",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Card Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name"
+}

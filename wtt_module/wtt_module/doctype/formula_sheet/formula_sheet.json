@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-06 14:13:44.913251",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "formula_sheet_list",
+  "bod_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "formula_sheet_list",
+   "fieldtype": "Table",
+   "label": "Formula sheet list",
+   "options": "Formula sheet table"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "bod_value",
+   "fieldtype": "Data",
+   "label": "bod_value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-08 11:15:04.813595",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Formula sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

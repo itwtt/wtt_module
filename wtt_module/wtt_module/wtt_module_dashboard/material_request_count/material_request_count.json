@@ -1,0 +1,40 @@
+{
+ "cards": [
+  {
+   "card": "NAVEENKUMAR MR COUNT"
+  },
+  {
+   "card": "VAITHEESHWARAN MR COUNT"
+  },
+  {
+   "card": "NAVEENRAJ MR COUNT"
+  },
+  {
+   "card": "THARANIRAJ MR COUNT"
+  },
+  {
+   "card": "MANOJ MR COUNT"
+  },
+  {
+   "card": "PUNNIYAMOORTHY MR COUNT"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Top Suppliers",
+   "width": "Full"
+  }
+ ],
+ "creation": "2021-09-29 11:20:54.436368",
+ "dashboard_name": "Material request count",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2021-09-29 11:26:24.127451",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Material request count",
+ "owner": "Administrator"
+}

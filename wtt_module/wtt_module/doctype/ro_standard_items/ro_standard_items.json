@@ -1,0 +1,572 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-25 17:43:25.823455",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "flow",
+  "ro_type",
+  "tds",
+  "theoretical_ro_recovery1",
+  "ro_recovery",
+  "panel",
+  "column_break_d3emu",
+  "ro_membrane_1",
+  "ro_membrane_2",
+  "ro_membrane_3",
+  "ro_membrane_4",
+  "ro_membrane_5",
+  "rro_membrane_1",
+  "rro_membrane_2",
+  "rro_membrane_3",
+  "get_data",
+  "section_break_tmvs7",
+  "ro_items",
+  "not_linked_items",
+  "not_linked_table",
+  "section_break_a6828",
+  "edit_rofe",
+  "fabrication",
+  "erection",
+  "not_linked_cost",
+  "cost",
+  "pipes_fittings_valves",
+  "pipe_cost",
+  "section_break_7k5vh",
+  "qty_update",
+  "ro_electrical_items",
+  "section_break_w3uag",
+  "digital_input",
+  "column_break_dk4um",
+  "digital_output",
+  "column_break_exzqv",
+  "analog_input",
+  "column_break_jm3ol",
+  "analog_input2",
+  "column_break_bic9b",
+  "analog_output",
+  "section_break_rwwqg",
+  "ro_cost",
+  "column_break_nkfse",
+  "electrical_cost",
+  "column_break_zs9r1",
+  "overall_cost",
+  "column_break_wvwpi",
+  "pump_ssb_cost",
+  "section_break_bpugi",
+  "ro_tax_cost",
+  "ro_transport_cost",
+  "include_tax_cost",
+  "column_break_106yj",
+  "ro_tax",
+  "ro_transport",
+  "additional_cost_section",
+  "margin_for_expense_calculation_cost",
+  "e_c",
+  "ro_overhead_cost",
+  "ro_agent_commission_cost",
+  "ro_guarantee_clause_cost",
+  "column_break_0opi8",
+  "margin_for_expense_calculation",
+  "e_c_",
+  "overhead_percentage",
+  "agent_commission",
+  "guarantee_clause_charge",
+  "section_break_e4a2w",
+  "grand_total",
+  "ro_selling_price",
+  "column_break_vk0md",
+  "margin_percentage",
+  "skid_tab",
+  "ro_skid_type",
+  "ro_skid_table",
+  "ro_skid_price",
+  "ssb_pump_cost",
+  "ro_cost_with_skid"
+ ],
+ "fields": [
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "ro_items",
+   "fieldtype": "Table",
+   "label": "RO Items",
+   "options": "RO Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_cost",
+   "fieldtype": "Currency",
+   "label": "RO cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "in_standard_filter": 1,
+   "label": "Flow (m3/day)"
+  },
+  {
+   "fieldname": "tds",
+   "fieldtype": "Float",
+   "label": "TDS (mg/L)"
+  },
+  {
+   "fieldname": "not_linked_items",
+   "fieldtype": "Button",
+   "label": "Not Linked items"
+  },
+  {
+   "fieldname": "not_linked_table",
+   "fieldtype": "Table",
+   "label": "Not Linked Table",
+   "options": "RO Not Linked Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "not_linked_cost",
+   "fieldtype": "Currency",
+   "label": "Not Linked Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "overall_cost",
+   "fieldtype": "Currency",
+   "label": "Overall Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ro_electrical_items",
+   "fieldtype": "Table",
+   "label": "RO Electrical Items",
+   "options": "RO Electrical Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_cost",
+   "fieldtype": "Currency",
+   "label": "Electrical Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "panel",
+   "fieldtype": "Float",
+   "label": "Panel"
+  },
+  {
+   "fieldname": "qty_update",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update Electrical Items Qty from Mechanical Items Qty"
+  },
+  {
+   "fieldname": "section_break_w3uag",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_input",
+   "fieldtype": "Float",
+   "label": "Digital Input"
+  },
+  {
+   "fieldname": "column_break_dk4um",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "digital_output",
+   "fieldtype": "Float",
+   "label": "Digital Output"
+  },
+  {
+   "fieldname": "column_break_exzqv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input",
+   "fieldtype": "Float",
+   "label": "Analog Input"
+  },
+  {
+   "fieldname": "column_break_jm3ol",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_input2",
+   "fieldtype": "Float",
+   "label": "Analog Input2"
+  },
+  {
+   "fieldname": "column_break_bic9b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "analog_output",
+   "fieldtype": "Float",
+   "label": "Analog Output"
+  },
+  {
+   "fieldname": "section_break_rwwqg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_nkfse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zs9r1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wvwpi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pump_ssb_cost",
+   "fieldtype": "Currency",
+   "label": "Pump SSB Cost"
+  },
+  {
+   "fieldname": "section_break_bpugi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ro_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Tax",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ro_transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "include_tax_cost",
+   "fieldtype": "Currency",
+   "label": "Total RO Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_106yj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "ro_tax",
+   "fieldtype": "Float",
+   "label": "Tax (%)"
+  },
+  {
+   "default": "2",
+   "fieldname": "ro_transport",
+   "fieldtype": "Float",
+   "label": "Transport (%)"
+  },
+  {
+   "fieldname": "additional_cost_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Additional Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "margin_for_expense_calculation_cost",
+   "fieldtype": "Currency",
+   "label": "Marginal cost for Expense Calculation",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "e_c",
+   "fieldtype": "Currency",
+   "label": "E & C Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_overhead_cost",
+   "fieldtype": "Currency",
+   "label": "RO Overhead Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_agent_commission_cost",
+   "fieldtype": "Currency",
+   "label": "RO Agent Commission Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_guarantee_clause_cost",
+   "fieldtype": "Currency",
+   "label": "RO Guarantee Clause Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_0opi8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "margin_for_expense_calculation",
+   "fieldtype": "Float",
+   "label": "Margin For Expense Calculation"
+  },
+  {
+   "default": "3",
+   "fieldname": "e_c_",
+   "fieldtype": "Float",
+   "label": "E & C (%)"
+  },
+  {
+   "default": "17",
+   "fieldname": "overhead_percentage",
+   "fieldtype": "Float",
+   "label": "Overhead (%)"
+  },
+  {
+   "default": "7.5",
+   "fieldname": "agent_commission",
+   "fieldtype": "Float",
+   "label": "Agent Commission (%)"
+  },
+  {
+   "default": "10",
+   "fieldname": "guarantee_clause_charge",
+   "fieldtype": "Float",
+   "label": "Guarantee Clause Charge (%)"
+  },
+  {
+   "fieldname": "section_break_e4a2w",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_vk0md",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "125",
+   "fieldname": "margin_percentage",
+   "fieldtype": "Float",
+   "label": "Margin (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "default": "10",
+   "fieldname": "pipes_fittings_valves",
+   "fieldtype": "Float",
+   "label": "Pipes, Fittings & Valves (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ro_selling_price",
+   "fieldtype": "Currency",
+   "label": "RO Selling Price",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_a6828",
+   "fieldtype": "Section Break",
+   "label": "Pipes, Fittings & Valves"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "pipe_cost",
+   "fieldtype": "Currency",
+   "label": "Pipe Cost"
+  },
+  {
+   "fieldname": "section_break_7k5vh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ro_recovery",
+   "fieldtype": "Float",
+   "label": "Proposed RO Recovery"
+  },
+  {
+   "fieldname": "theoretical_ro_recovery1",
+   "fieldtype": "Float",
+   "label": "Theoretical RO Recovery"
+  },
+  {
+   "fieldname": "ro_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "RO Type",
+   "options": "\nRO\nRRO\nREWOLUTTE"
+  },
+  {
+   "fieldname": "column_break_d3emu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RO' || doc.ro_type == 'REWOLUTTE')\n",
+   "fieldname": "ro_membrane_1",
+   "fieldtype": "Select",
+   "label": "RO Membrane 1",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RO' || doc.ro_type == 'REWOLUTTE')\n",
+   "fieldname": "ro_membrane_2",
+   "fieldtype": "Select",
+   "label": "RO Membrane 2",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RO' || doc.ro_type == 'REWOLUTTE')\n",
+   "fieldname": "ro_membrane_3",
+   "fieldtype": "Select",
+   "label": "RO Membrane 3",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RO' || doc.ro_type == 'REWOLUTTE')\n",
+   "fieldname": "ro_membrane_4",
+   "fieldtype": "Select",
+   "label": "RO Membrane 4",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RO' || doc.ro_type == 'REWOLUTTE')\n",
+   "fieldname": "ro_membrane_5",
+   "fieldtype": "Select",
+   "label": "RO Membrane 5",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "fieldname": "section_break_tmvs7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RRO')",
+   "fieldname": "rro_membrane_1",
+   "fieldtype": "Select",
+   "label": "RRO Membrane 1",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RRO')",
+   "fieldname": "rro_membrane_2",
+   "fieldtype": "Select",
+   "label": "RRO Membrane 2",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "depends_on": "eval:(doc.ro_type == 'RRO')",
+   "fieldname": "rro_membrane_3",
+   "fieldtype": "Select",
+   "label": "RRO Membrane 3",
+   "options": "\nRO BW MEMBRANE -B\nRO BW MEMBRANE -BX\nRO BW MEMBRANE -4\nRO HP MEMBRANE\nRO HP MEMBRANE - 4\nRO BW MEMBRANE - F\nRO SW MEMBRANE - F7\nRO SW MEMBRANE - F8\nRO SW MEMBRANE - S\nRO SW MEMBRANE - 400\nRO SW MEMBRANE - 4\nRO BW MEMBRANE -EP2\nRO BW MEMBRANE - CP40\nRO BW MEMBRANE - CP80\nRO BW MEMBRANE - HL\nRO SW MEMBRANE - SW40\nRO SW MEMBRANE - SW80\nRO SW MEMBRANE - PL1\nRO SW MEMBRANE - XP1\nRO BW MEMBRANE -L4\nRO SW MEMBRANE - XR1"
+  },
+  {
+   "default": "0",
+   "fieldname": "fabrication",
+   "fieldtype": "Currency",
+   "label": "Fabrication"
+  },
+  {
+   "default": "0",
+   "fieldname": "erection",
+   "fieldtype": "Currency",
+   "label": "Erection"
+  },
+  {
+   "fieldname": "get_data",
+   "fieldtype": "Button",
+   "label": "Get data"
+  },
+  {
+   "fieldname": "ro_cost_with_skid",
+   "fieldtype": "Currency",
+   "label": "RO Total Cost"
+  },
+  {
+   "fieldname": "ro_skid_table",
+   "fieldtype": "Table",
+   "label": "RO Skid Table",
+   "options": "RO Skid Table"
+  },
+  {
+   "fieldname": "skid_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Skid"
+  },
+  {
+   "fieldname": "ro_skid_price",
+   "fieldtype": "Currency",
+   "label": "RO Skid Price"
+  },
+  {
+   "fieldname": "ro_skid_type",
+   "fieldtype": "Select",
+   "label": "RO Skid Type",
+   "options": "\nParent\nChild"
+  },
+  {
+   "fieldname": "ssb_pump_cost",
+   "fieldtype": "Currency",
+   "label": "SSB Pump Total Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_rofe",
+   "fieldtype": "Check",
+   "label": "e"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-26 14:26:07.341035",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "RO Standard Items",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{month}-{YYYY}",
+ "creation": "2023-02-06 10:22:09.551246",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "head_office",
+  "project",
+  "epf",
+  "esi",
+  "labour_welfare_fund",
+  "column_break_8",
+  "posting_date",
+  "house_keeping",
+  "security_service",
+  "last_month_arrear",
+  "site_worker_salary",
+  "total_salary",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "read_only": 1
+  },
+  {
+   "fieldname": "head_office",
+   "fieldtype": "Currency",
+   "label": "Head Office",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Currency",
+   "label": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "house_keeping",
+   "fieldtype": "Currency",
+   "label": "House Keeping",
+   "read_only": 1
+  },
+  {
+   "fieldname": "security_service",
+   "fieldtype": "Currency",
+   "label": "Security Service",
+   "read_only": 1
+  },
+  {
+   "fieldname": "epf",
+   "fieldtype": "Currency",
+   "label": "EPF",
+   "read_only": 1
+  },
+  {
+   "fieldname": "esi",
+   "fieldtype": "Currency",
+   "label": "ESI",
+   "read_only": 1
+  },
+  {
+   "fieldname": "labour_welfare_fund",
+   "fieldtype": "Currency",
+   "label": "Labour Welfare Fund",
+   "read_only": 1
+  },
+  {
+   "fieldname": "site_worker_salary",
+   "fieldtype": "Currency",
+   "label": "Site Worker Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_salary",
+   "fieldtype": "Currency",
+   "label": "Total Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salary Summation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_month_arrear",
+   "fieldtype": "Currency",
+   "label": "Last Month Arrear",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-08 15:10:54.264934",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Salary Summation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,298 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-10-29 15:12:20.133834",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "overall_chart",
+  "section_break_2",
+  "naming_series",
+  "candidate_name",
+  "position",
+  "other_post",
+  "date",
+  "column_break_5",
+  "job_id",
+  "hr_interview_id",
+  "technical_interview_id",
+  "hr_interviewer",
+  "technical_interviewer",
+  "technical_interviewer_name",
+  "section_break_11",
+  "educational_background",
+  "comments_about_educational_background",
+  "prior_work_experience",
+  "comments_about_prior_work_experience",
+  "technical_qualification",
+  "comments_about_technical_qualification",
+  "verbal_communication",
+  "comments_about_verbal_communication",
+  "candidate_interest_5_out_of",
+  "comments_about_candidate_interest",
+  "knowledge_of_organization",
+  "comments_about_knowledge_of_organization",
+  "teambuilding_interpersonal_skills",
+  "comments_about_teambuildinginterpersonal_skills",
+  "initiative",
+  "comments_about_intiative",
+  "section_break_29",
+  "hr_overall_impression_and_recommendation",
+  "hr_comments_about_overall_impression_and_recommendation",
+  "hr_result",
+  "column_break_32",
+  "tech_overall_impression_and_recommendation",
+  "tech_comments_about_overall_impression_and_recommendation",
+  "tech_result"
+ ],
+ "fields": [
+  {
+   "fieldname": "hr_interviewer",
+   "fieldtype": "Select",
+   "label": "HR interviewer",
+   "options": "\nPRAVEEN\nSARAVANAKUMAR"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "technical_interviewer",
+   "fieldtype": "Link",
+   "label": "Technical Interviewer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Select",
+   "label": "Position",
+   "options": "-- Select --\nGRADUATE ENGINEER TRAINEE\nLAB CHEMIST\nRO OPERATOR\nSTP OPERATOR\nETP OPERATOR\nMECHANICAL JUNIOR MAINTENANCE\nMECHANICAL SENIOR MAINTENANCE\nELECTRICAL JUNIOR MAINTENANCE\nELECTRICAL SENIOR MAINTENANCE\nFITTER\nWELDER\nSHIFT IN CHARGE\nPROJECT ENGINEER\nMECHANICAL DESIGN ENGINEER\nELECTRICAL DESIGN ENGINEER\nO&M IN CHARGE\nSALES EXECUTIVE\nTELEMARKETING EXECUTIVE\nSOFTWARE DEVELOPER\n-- Select --\nGRADUATE ENGINEER TRAINEE\nLAB CHEMIST\nRO OPERATOR\nSTP OPERATOR\nETP OPERATOR\nMECHANICAL JUNIOR MAINTENANCE\nMECHANICAL SENIOR MAINTENANCE\nELECTRICAL JUNIOR MAINTENANCE\nELECTRICAL SENIOR MAINTENANCE\nFITTER\nWELDER\nSHIFT IN CHARGE\nPROJECT ENGINEER\nMECHANICAL DESIGN ENGINEER\nELECTRICAL DESIGN ENGINEER\nO&M IN CHARGE\nSALES EXECUTIVE\nTELEMARKETING EXECUTIVE\nSOFTWARE DEVELOPER\nACCOUNTANT\nOTHERS"
+  },
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "label": "Candidate Name"
+  },
+  {
+   "fieldname": "educational_background",
+   "fieldtype": "Select",
+   "label": "Educational Background",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_educational_background",
+   "fieldtype": "Small Text",
+   "label": "Comments about Educational Background"
+  },
+  {
+   "fieldname": "prior_work_experience",
+   "fieldtype": "Select",
+   "label": "Prior Work Experience",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_prior_work_experience",
+   "fieldtype": "Small Text",
+   "label": "Comments about Prior Work Experience"
+  },
+  {
+   "fieldname": "technical_qualification",
+   "fieldtype": "Select",
+   "label": "Technical Qualification",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_technical_qualification",
+   "fieldtype": "Small Text",
+   "label": "Comments about technical qualification"
+  },
+  {
+   "fieldname": "verbal_communication",
+   "fieldtype": "Select",
+   "label": "Verbal Communication",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_verbal_communication",
+   "fieldtype": "Small Text",
+   "label": "Comments about Verbal Communication"
+  },
+  {
+   "fieldname": "candidate_interest_5_out_of",
+   "fieldtype": "Select",
+   "label": "Candidate Interest (5 out of)",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_candidate_interest",
+   "fieldtype": "Small Text",
+   "label": "Comments About Candidate Interest"
+  },
+  {
+   "fieldname": "knowledge_of_organization",
+   "fieldtype": "Select",
+   "label": "Knowledge of Organization",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_knowledge_of_organization",
+   "fieldtype": "Small Text",
+   "label": "Comments About Knowledge of Organization"
+  },
+  {
+   "fieldname": "teambuilding_interpersonal_skills",
+   "fieldtype": "Select",
+   "label": "Teambuilding/ Interpersonal Skills",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_teambuildinginterpersonal_skills",
+   "fieldtype": "Small Text",
+   "label": "Comments About Teambuilding/Interpersonal Skills"
+  },
+  {
+   "fieldname": "initiative",
+   "fieldtype": "Select",
+   "label": "Initiative",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "comments_about_intiative",
+   "fieldtype": "Small Text",
+   "label": "Comments About Intiative"
+  },
+  {
+   "fieldname": "job_id",
+   "fieldtype": "Link",
+   "label": "Job ID",
+   "options": "Job App"
+  },
+  {
+   "fieldname": "hr_interview_id",
+   "fieldtype": "Link",
+   "label": "HR Interview ID",
+   "options": "HR interview"
+  },
+  {
+   "fieldname": "technical_interview_id",
+   "fieldtype": "Link",
+   "label": "Technical Interview ID",
+   "options": "Technical Interview"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "INT-PRO-"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.position==\"OTHERS\");",
+   "fieldname": "other_post",
+   "fieldtype": "Data",
+   "label": "Other post"
+  },
+  {
+   "fieldname": "hr_overall_impression_and_recommendation",
+   "fieldtype": "Select",
+   "label": "HR Overall Impression and Recommendation",
+   "options": "\nAdvance\nAdvance with reservations\nDo not advance"
+  },
+  {
+   "fieldname": "hr_comments_about_overall_impression_and_recommendation",
+   "fieldtype": "Small Text",
+   "label": "HR Comments About Overall Impression and Recommendation"
+  },
+  {
+   "fieldname": "hr_result",
+   "fieldtype": "Select",
+   "label": "HR Result",
+   "options": "\nSELECTED\nNOT SELECTED\nHOLD"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tech_overall_impression_and_recommendation",
+   "fieldtype": "Select",
+   "label": "Technical Overall Impression and Recommendation",
+   "options": "\nAdvance\nAdvance with reservations\nDo not advance"
+  },
+  {
+   "fieldname": "tech_comments_about_overall_impression_and_recommendation",
+   "fieldtype": "Small Text",
+   "label": "Technical Comments About Overall Impression and Recommendation"
+  },
+  {
+   "fieldname": "tech_result",
+   "fieldtype": "Select",
+   "label": "Technical Result",
+   "options": "\nSELECTED\nNOT SELECTED\nHOLD"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "overall_chart",
+   "fieldtype": "HTML",
+   "label": "Overall Chart"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "technical_interviewer.employee_name",
+   "fieldname": "technical_interviewer_name",
+   "fieldtype": "Data",
+   "label": "Technical Interviewer Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-22 11:31:47.032556",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Interview process",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

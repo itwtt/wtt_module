@@ -1,0 +1,349 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-01-08 09:10:06.969730",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "html_1",
+  "html_4",
+  "company",
+  "bank_name",
+  "branch",
+  "account_no",
+  "column_break_9",
+  "cheque",
+  "ib_cheque",
+  "paid_from",
+  "section_break_11",
+  "approved_payment",
+  "approved_payment_ib",
+  "amount_table",
+  "section_break_8",
+  "total_charges",
+  "net_total",
+  "column_break_10",
+  "grand_total",
+  "net_total2",
+  "section_break_19",
+  "ib_amount_table",
+  "section_break_21",
+  "ib_total_charges",
+  "ib_net_total",
+  "column_break_24",
+  "ib_grand_total",
+  "ib_net_total2",
+  "amended_from",
+  "section_break_28",
+  "statement_advance_table",
+  "statement_freight_table",
+  "statement_overdue_table",
+  "statement_lcv",
+  "cheque_book_section",
+  "party_name",
+  "column_break_36",
+  "ib_party_name",
+  "check_date_format"
+ ],
+ "fields": [
+  {
+   "fieldname": "html_1",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<div style=\"font-size: 15px;\">\nFrom,<br>\nWTT Technology Services India Private Limited,<br>\n3, College Cross Road,<br>\nAvarankadu,<br>\nTirupur - 641602<br><br>\nTo,<br>\nThe Manager,<br>\n</div>"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank Name",
+   "options": "Bank Account"
+  },
+  {
+   "fetch_from": "bank_name.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "html_4",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<div style=\"font-size: 15px;\">\nDear Sir,<br>Kindly make the transfer 6475173650 to the below mentioned account numbers.</div>"
+  },
+  {
+   "fetch_from": "bank_name.bank_account_no",
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "amount_table",
+   "fieldtype": "Table",
+   "label": "Amount Table",
+   "options": "Bank Statement Table"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "total_charges",
+   "fieldtype": "Currency",
+   "label": "Total Charges"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "Net Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "net_total2",
+   "fieldtype": "Data",
+   "label": "Net Total(in words)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "BANK-STA-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cheque",
+   "fieldtype": "Data",
+   "label": "Other Bank Cheque"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "ib_amount_table",
+   "fieldtype": "Table",
+   "label": "Amount Table for IB",
+   "options": "Bank Statement Table IB"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ib_total_charges",
+   "fieldtype": "Data",
+   "label": "Total Charges"
+  },
+  {
+   "fieldname": "ib_net_total",
+   "fieldtype": "Data",
+   "label": "Net Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ib_grand_total",
+   "fieldtype": "Data",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ib_net_total2",
+   "fieldtype": "Data",
+   "label": "Net Total(in words)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Final bank statement",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "statement_advance_table",
+   "fieldtype": "Table",
+   "label": "Statement Advance Table",
+   "options": "Statement Advance Table"
+  },
+  {
+   "fieldname": "statement_freight_table",
+   "fieldtype": "Table",
+   "label": "Statement Freight Table",
+   "options": "Statement Freight Table"
+  },
+  {
+   "fieldname": "statement_overdue_table",
+   "fieldtype": "Table",
+   "label": "Statement Overdue Table",
+   "options": "Statement Overdue Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "ib_cheque",
+   "fieldtype": "Data",
+   "label": "Indian Bank Cheque"
+  },
+  {
+   "fieldname": "statement_lcv",
+   "fieldtype": "Table",
+   "label": "Statement LCV",
+   "options": "Statement LCV"
+  },
+  {
+   "fieldname": "cheque_book_section",
+   "fieldtype": "Section Break",
+   "label": "Cheque Book "
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "label": "Party Name",
+   "options": "Cheque Party"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "ib_party_name",
+   "fieldtype": "Link",
+   "label": "IB Party Name",
+   "options": "Cheque Party"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "paid_from",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Paid From",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:frappe.session.user==\"Administrator\"",
+   "fieldname": "approved_payment",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Approved Payment",
+   "options": "FBS Table",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:frappe.session.user==\"Administrator\"",
+   "fieldname": "approved_payment_ib",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Approved Payment IB",
+   "options": "FBS Table IB",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_date_format",
+   "fieldtype": "Small Text",
+   "label": "Check Date format",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-14 14:20:57.762107",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Final bank statement",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

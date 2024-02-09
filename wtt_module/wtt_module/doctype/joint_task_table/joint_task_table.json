@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "creation": "2022-05-12 15:25:02.714848",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_work",
+  "description",
+  "assigned_date",
+  "from_time",
+  "to_time",
+  "hours",
+  "r_date1",
+  "r_date2",
+  "r_date3",
+  "total_points",
+  "gained_points",
+  "status",
+  "employee_completed_date",
+  "actual_hours",
+  "completed_hours",
+  "actual_time",
+  "get_points",
+  "c_hrs"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "type_of_work",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Task Description"
+  },
+  {
+   "default": "Today",
+   "fieldname": "assigned_date",
+   "fieldtype": "Date",
+   "label": "Assigned Date",
+   "read_only": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "from_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Assigned Time"
+  },
+  {
+   "columns": 2,
+   "fieldname": "to_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Expected Time"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "r_date1",
+   "fieldtype": "Date",
+   "label": "Reporting Date"
+  },
+  {
+   "depends_on": "eval:(doc.r_date1)",
+   "fieldname": "r_date2",
+   "fieldtype": "Date",
+   "label": "Reporting Date"
+  },
+  {
+   "depends_on": "eval:doc.r_date2",
+   "fieldname": "r_date3",
+   "fieldtype": "Date",
+   "label": "Reporting Date"
+  },
+  {
+   "columns": 1,
+   "default": "100",
+   "fieldname": "total_points",
+   "fieldtype": "Float",
+   "label": "Total Points",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "gained_points",
+   "fieldtype": "Float",
+   "label": "Gained Points",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPending\nPartially pending\nCompleted"
+  },
+  {
+   "fieldname": "employee_completed_date",
+   "fieldtype": "Data",
+   "label": "Employee Completed Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_hours",
+   "fieldtype": "Float",
+   "label": "Actual Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "completed_hours",
+   "fieldtype": "Float",
+   "label": "Completed Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_time",
+   "fieldtype": "Datetime",
+   "label": "Actual Time"
+  },
+  {
+   "fieldname": "get_points",
+   "fieldtype": "Button",
+   "label": "Get Points"
+  },
+  {
+   "fieldname": "c_hrs",
+   "fieldtype": "Float",
+   "label": "Actually Completed Hours",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-12 15:25:02.714848",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Joint Task Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

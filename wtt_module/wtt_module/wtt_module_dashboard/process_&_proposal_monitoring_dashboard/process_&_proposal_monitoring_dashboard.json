@@ -1,0 +1,65 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Raja Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Raja Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Harish Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Harish Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Aathish Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Aathish Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Keerthana Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Keerthana Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Narayanan Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Narayanan Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Sanjay Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Sanjay Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 16:26:17.076385",
+ "dashboard_name": "Process & Proposal Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:21:57.149899",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "Process & Proposal Monitoring Dashboard",
+ "owner": "Administrator"
+}

@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-01-19 09:47:02.727539",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "applicant_photo",
+  "applying_for_the_post",
+  "years_of_experience",
+  "name1",
+  "fathers_name",
+  "religion",
+  "community",
+  "caste",
+  "qualification",
+  "email",
+  "mobile_no_1",
+  "mobile_no_2",
+  "present_address",
+  "permanent_address",
+  "resume",
+  "job_status",
+  "interview_date",
+  "time",
+  "venue",
+  "location",
+  "send_mail",
+  "template"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "JOB-REG-.YYYY.-"
+  },
+  {
+   "fieldname": "applying_for_the_post",
+   "fieldtype": "Select",
+   "label": "Applying for the post",
+   "options": "\nMarketing Executive\nDesign Engineer - Mechanical\nPURCHASE EXECUTIVE\nR & D - B.Tech Chemical\nData Analytics\nProject Management Engineer / Manager\nR & D - B.E Mechanial\nQAD Incharge\nCUSTOMER CARE\nPersonal secretary\nHR Manager\nHR Executive\nWELDER\nFITTER TRAINEE\nManagement - Trainee\nR &  D - Drafts Man\nHead - Project Distributors' Head\nEngineer - Project Audit\nOffice Attendant / House keeping\nCFO - Finance\nSite Incharge\nShift Incharge\nETP Operator\nRO Operator\nMaintenance Incharge\nMaintenance Engineer\nLab Chemist\nLab Assitant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Applicant Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "fathers_name",
+   "fieldtype": "Data",
+   "label": "Father's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_no_1",
+   "fieldtype": "Data",
+   "label": "Mobile No 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_no_2",
+   "fieldtype": "Data",
+   "label": "Mobile No 2"
+  },
+  {
+   "fieldname": "years_of_experience",
+   "fieldtype": "Select",
+   "label": "Years of Experience",
+   "options": "0\n1\n2\n3\n4\n5\n5 and above",
+   "reqd": 1
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "label": "Resume",
+   "reqd": 1
+  },
+  {
+   "fieldname": "applicant_photo",
+   "fieldtype": "Attach Image",
+   "label": "Applicant Photo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Select",
+   "label": "Religion",
+   "options": "-- Select --\nHINDU\nMUSLIM\nCHRISTIAN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "community",
+   "fieldtype": "Select",
+   "label": "Community",
+   "options": "-- Select --\nBC\nMBC\nSC\nST\nBCM\nOTHERS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job_status",
+   "fieldtype": "Select",
+   "label": "Job Status",
+   "options": "\nShortlisted\nContacted\nDo Not pick up\nHold"
+  },
+  {
+   "depends_on": "eval:(doc.job_status=='Shortlisted' || doc.job_status=='Contacted')",
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Interview Date"
+  },
+  {
+   "depends_on": "eval:(doc.job_status=='Shortlisted' || doc.job_status=='Contacted')",
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
+  },
+  {
+   "depends_on": "eval:(doc.job_status=='Shortlisted')",
+   "fieldname": "venue",
+   "fieldtype": "Link",
+   "label": "Venue",
+   "options": "Company"
+  },
+  {
+   "depends_on": "eval:(doc.job_status=='Shortlisted')",
+   "fieldname": "location",
+   "fieldtype": "Small Text",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.job_status)",
+   "fieldname": "send_mail",
+   "fieldtype": "Check",
+   "label": "Send Mail"
+  },
+  {
+   "depends_on": "eval:(doc.send_mail==1)",
+   "fieldname": "template",
+   "fieldtype": "Text Editor",
+   "label": "Template"
+  },
+  {
+   "fieldname": "caste",
+   "fieldtype": "Data",
+   "label": "Caste",
+   "reqd": 1
+  },
+  {
+   "fieldname": "present_address",
+   "fieldtype": "Small Text",
+   "label": "Present Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 12:21:03.013850",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Registration Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

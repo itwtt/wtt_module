@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-15 11:57:05.890522",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system",
+  "chemical_name",
+  "concentration",
+  "consumption",
+  "unit_cost",
+  "total_cost",
+  "cleaning_frequencyday",
+  "cost_day",
+  "consumption_day",
+  "cost_m3"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System"
+  },
+  {
+   "columns": 2,
+   "fieldname": "chemical_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Chemical name",
+   "options": "\nHCl - 33%\nH\u2082SO\u2084 - 98%\nH\u2082SO\u2084 - 33%\nCaustic flakes - 40%\nCaustic lye 48%\nHypochlorite\nCitric acid - FG\nCitric acid - CG\nNitric Acid\nLIME\nSODA ASH\nKMnO\u2084\nFeSO\u2084\nH\u2082O\u2082\nEDTA\nPAC\nSMBS\nWTTCHEM - 4111\nOSMOCHEM - 7525\nOSMOCHEM - 9126\nWTTCHEM - 1217\nCHLORINE GAS\nPOLYMER - C\nPOLYMER - A"
+  },
+  {
+   "columns": 1,
+   "fieldname": "concentration",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Concentration"
+  },
+  {
+   "columns": 1,
+   "fieldname": "consumption",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Consumption"
+  },
+  {
+   "columns": 1,
+   "fieldname": "unit_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit cost"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "cleaning_frequencyday",
+   "fieldtype": "Float",
+   "label": "Cleaning frequency(day)"
+  },
+  {
+   "fieldname": "cost_day",
+   "fieldtype": "Float",
+   "label": "Cost (day)"
+  },
+  {
+   "fieldname": "consumption_day",
+   "fieldtype": "Float",
+   "label": "Consumption (day)"
+  },
+  {
+   "fieldname": "cost_m3",
+   "fieldtype": "Currency",
+   "label": "Cost (m3)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-17 15:24:53.215514",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Cleaning Chemical",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

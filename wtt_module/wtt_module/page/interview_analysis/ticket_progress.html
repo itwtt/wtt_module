@@ -1,0 +1,42 @@
+<div class="ticket-details">
+<div>
+{% if ticket_go %}
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	theme: "light1", // "light2", "dark1", "dark2"
+	animationEnabled: false, // change to true		
+	title:{
+		text: "Basic Column Chart"
+	},
+	data: [
+	{
+		// Change type to "bar", "area", "spline", "pie",etc.
+		type: "column",
+		dataPoints: [
+			{ label: "apple",  y: 5  },
+			{ label: "orange", y: 4  },
+			{ label: "banana", y: 1  },
+			{ label: "mango",  y: 5  },
+			{ label: "grape",  y: 2  }
+		]
+	}
+	]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+</body>
+</html>
+{% endif %}
+</div>
+</div>

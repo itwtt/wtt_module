@@ -1,0 +1,38 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-10-28 11:42:49.566357",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2021-10-28 11:42:49.566357",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Approval leave",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Leave Request",
+ "report_name": "Approval leave",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Employee"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Purchase User"
+  }
+ ]
+}

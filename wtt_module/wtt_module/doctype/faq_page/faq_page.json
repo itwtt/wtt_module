@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-19 10:36:09.749787",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "questions",
+  "reference_name",
+  "data_9",
+  "answer",
+  "your_answer",
+  "column_break_6",
+  "comment",
+  "your_comment",
+  "section_break_4"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "questions",
+   "fieldtype": "Select",
+   "label": "Questions"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Text Editor",
+   "label": "Answer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "your_answer",
+   "fieldtype": "Button",
+   "label": "Your Answer"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "your_comment",
+   "fieldtype": "Button",
+   "label": "Your Comment"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Reference Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Text Editor",
+   "label": "Comments",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-07-20 12:29:10.657598",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "FAQ Page",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

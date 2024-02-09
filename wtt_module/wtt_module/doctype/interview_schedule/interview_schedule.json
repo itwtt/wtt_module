@@ -1,0 +1,357 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-09-04 16:15:59.816480",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "hr_interview_date",
+  "candidate_name",
+  "qualification",
+  "job_opening",
+  "column_break_6",
+  "applying_for_the_post",
+  "hr_interviewer",
+  "hr_interviewer_name",
+  "technical_interviewer",
+  "technical_interviewer_name",
+  "section_break_10",
+  "educational_background",
+  "comments_about_educational_background",
+  "verbal_communication",
+  "comments_about_verbal_communication",
+  "candidate_interest_5_out_of",
+  "comments_about_candidate_interest",
+  "column_break_dsauk",
+  "knowledge_of_organization",
+  "comments_about_knowledge_of_organization",
+  "teambuilding_interpersonal_skills",
+  "comments_about_teambuildinginterpersonal_skills",
+  "initiative",
+  "comments_about_intiative",
+  "section_break_scqjn",
+  "overall_impression_and_recommendation",
+  "comments_about_overall_impression_and_recommendation",
+  "hr_result",
+  "technical_interview_section",
+  "prior_work_experience",
+  "comments_about_prior_work_experience",
+  "column_break_wxz2s",
+  "technical_qualification",
+  "comments_about_technical_qualification",
+  "section_break_jex4b",
+  "overall_impression_and_recommendation_tech",
+  "comments_about_overall_impression_and_recommendation_tech",
+  "technical_result",
+  "selection_process_section",
+  "job_applicant",
+  "recruitment_tracker",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SCH-INT-"
+  },
+  {
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hr_interviewer",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "HR interviewer",
+   "options": "Employee"
+  },
+  {
+   "default": "Today",
+   "fieldname": "hr_interview_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "technical_interviewer",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Technical Interviewer",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "technical_interviewer.employee_name",
+   "fieldname": "technical_interviewer_name",
+   "fieldtype": "Data",
+   "label": "Technical Interviewer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "HR Interview"
+  },
+  {
+   "fieldname": "educational_background",
+   "fieldtype": "Select",
+   "label": "Educational Background - Does the candidate have the appropriate educational qualifications or training for this position?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_educational_background",
+   "fieldtype": "Small Text",
+   "label": "Comments about Educational Background"
+  },
+  {
+   "fieldname": "verbal_communication",
+   "fieldtype": "Select",
+   "label": "Verbal Communication - How were the candidate\u2019s communication skills during the interview?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_verbal_communication",
+   "fieldtype": "Small Text",
+   "label": "Comments about Verbal Communication"
+  },
+  {
+   "fieldname": "candidate_interest_5_out_of",
+   "fieldtype": "Select",
+   "label": "Candidate Interest - How much interest did the candidate show in the position and the organization?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_candidate_interest",
+   "fieldtype": "Small Text",
+   "label": "Comments About Candidate Interest"
+  },
+  {
+   "fieldname": "knowledge_of_organization",
+   "fieldtype": "Select",
+   "label": "Knowledge of Organization - Did the candidate research the organization prior to the interview?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_knowledge_of_organization",
+   "fieldtype": "Small Text",
+   "label": "Comments About Knowledge of Organization"
+  },
+  {
+   "fieldname": "teambuilding_interpersonal_skills",
+   "fieldtype": "Select",
+   "label": "Teambuilding/ Interpersonal Skills - Did the candidate demonstrate, through their answers, good teambuilding/interpersonal skills?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_teambuildinginterpersonal_skills",
+   "fieldtype": "Small Text",
+   "label": "Comments About Teambuilding/Interpersonal Skills"
+  },
+  {
+   "fieldname": "initiative",
+   "fieldtype": "Select",
+   "label": "Initiative - Did the candidate demonstrate, through their answers, a high degree of initiative?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_intiative",
+   "fieldtype": "Small Text",
+   "label": "Comments About Intiative"
+  },
+  {
+   "fieldname": "overall_impression_and_recommendation",
+   "fieldtype": "Select",
+   "label": "HR Overall Impression and Recommendation - Summary of your perceptions of the candidate\u2019s strengths/weaknesses. Final comments and recommend",
+   "options": "\nAdvance\nAdvance with reservations\nDo not advance"
+  },
+  {
+   "fieldname": "comments_about_overall_impression_and_recommendation",
+   "fieldtype": "Small Text",
+   "label": "HR Comments About Overall Impression and Recommendation"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "hr_result",
+   "fieldtype": "Select",
+   "label": "HR Result",
+   "options": "\nSELECTED\nNOT SELECTED\nHOLD"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Interview Schedule",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "technical_result",
+   "fieldtype": "Select",
+   "label": "Technical Result",
+   "options": "\nSELECTED\nNOT SELECTED\nHOLD"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Link",
+   "label": "Job Opening",
+   "options": "Job Opening"
+  },
+  {
+   "fieldname": "applying_for_the_post",
+   "fieldtype": "Data",
+   "label": "Applying for the post"
+  },
+  {
+   "fieldname": "column_break_dsauk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "hr_interviewer.employee_name",
+   "fieldname": "hr_interviewer_name",
+   "fieldtype": "Data",
+   "label": "HR Interviewer name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "technical_interview_section",
+   "fieldtype": "Section Break",
+   "label": "Technical Interview"
+  },
+  {
+   "fieldname": "prior_work_experience",
+   "fieldtype": "Select",
+   "label": "Prior Work Experience - Has the candidate acquired similar skills or qualifications through past work experiences?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_prior_work_experience",
+   "fieldtype": "Small Text",
+   "label": "Comments about Prior Work Experience"
+  },
+  {
+   "fieldname": "technical_qualification",
+   "fieldtype": "Select",
+   "label": "Technical Qualification - Does the candidate have the technical skills necessary for this position?",
+   "options": "\n5\n4\n3\n2\n1\n0"
+  },
+  {
+   "fieldname": "comments_about_technical_qualification",
+   "fieldtype": "Small Text",
+   "label": "Comments about technical qualification"
+  },
+  {
+   "fieldname": "overall_impression_and_recommendation_tech",
+   "fieldtype": "Select",
+   "label": "Technical Overall Impression and Recommendation - Summary of your perceptions of the candidate\u2019s strengths/weaknesses. Final comments",
+   "options": "\nAdvance\nAdvance with reservations\nDo not advance"
+  },
+  {
+   "fieldname": "comments_about_overall_impression_and_recommendation_tech",
+   "fieldtype": "Small Text",
+   "label": "Technical Comments About Overall Impression and Recommendation"
+  },
+  {
+   "fieldname": "column_break_wxz2s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jex4b",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_scqjn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "selection_process_section",
+   "fieldtype": "Section Break",
+   "label": "Selection Process"
+  },
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "label": "Job Applicant",
+   "options": "Job Applicant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "recruitment_tracker",
+   "fieldtype": "Link",
+   "label": "Recruitment Tracker",
+   "options": "Recruitment Tracker",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-30 12:41:35.122083",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Interview Schedule",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

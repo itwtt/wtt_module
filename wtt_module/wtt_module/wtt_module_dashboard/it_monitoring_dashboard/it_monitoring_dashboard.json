@@ -1,0 +1,65 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Sathishkumar Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Sathishkumar Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Gokul Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Gokul Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Gopika Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Gopika Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Hariharan Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Hariharan Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Parthiban Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Parthiban Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Roshan Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Roshan Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 16:25:52.756131",
+ "dashboard_name": "IT Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:21:16.414709",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "IT Monitoring Dashboard",
+ "owner": "Administrator"
+}

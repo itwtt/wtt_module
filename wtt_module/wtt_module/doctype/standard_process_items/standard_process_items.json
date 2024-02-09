@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-05-23 11:02:22.703401",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_startup_sheet",
+  "enquiry_sheet",
+  "project",
+  "project_name",
+  "mf_items",
+  "mf_cost",
+  "mbr_koch_items",
+  "mbr_koch_cost",
+  "mbr_ovivo_items",
+  "mbr_ovivo_cost",
+  "ro_items",
+  "ro_cost",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_startup_sheet",
+   "fieldtype": "Link",
+   "label": "Project Startup Sheet",
+   "options": "Project Startup Sheet"
+  },
+  {
+   "fetch_from": "project_startup_sheet.enquiry_no",
+   "fieldname": "enquiry_sheet",
+   "fieldtype": "Link",
+   "label": "Enquiry Sheet",
+   "options": "Process Enquiry Sheet",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project_startup_sheet.project",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mf_items",
+   "fieldtype": "Table",
+   "label": "MF Items",
+   "options": "MF Items"
+  },
+  {
+   "fieldname": "mbr_koch_items",
+   "fieldtype": "Table",
+   "label": "MBR KOCH Items",
+   "options": "MBR - KOCH Items"
+  },
+  {
+   "fieldname": "mbr_ovivo_items",
+   "fieldtype": "Table",
+   "label": "MBR OVIVO Items",
+   "options": "MBR - OVIVO Items"
+  },
+  {
+   "fieldname": "mf_cost",
+   "fieldtype": "Currency",
+   "label": "MF Cost"
+  },
+  {
+   "fieldname": "mbr_koch_cost",
+   "fieldtype": "Currency",
+   "label": "MBR KOCH Cost"
+  },
+  {
+   "fieldname": "mbr_ovivo_cost",
+   "fieldtype": "Currency",
+   "label": "MBR OVIVO Cost"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "STD-ITESMS-"
+  },
+  {
+   "fieldname": "ro_items",
+   "fieldtype": "Table",
+   "label": "RO Items",
+   "options": "RO Items"
+  },
+  {
+   "fieldname": "ro_cost",
+   "fieldtype": "Currency",
+   "label": "RO cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-23 16:41:18.724900",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Standard Process Items",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project"
+}

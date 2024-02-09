@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-01-18 12:46:11.954720",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "order_no",
+  "get_po",
+  "freight_table",
+  "consolidate_table",
+  "total_amount",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "FRE-PAY-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "consolidate_table",
+   "fieldtype": "Table",
+   "label": "Consolidate Table",
+   "options": "Freight Consolidate Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Freight Advance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "freight_table",
+   "fieldtype": "Table",
+   "label": "Freight Table",
+   "options": "Freight Table"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Link",
+   "label": "Order No",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "get_po",
+   "fieldtype": "Button",
+   "label": "Get PO"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-15 15:15:16.035885",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Freight Advance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

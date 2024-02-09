@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-12-02 09:42:49.717468",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "project",
+  "project_name",
+  "column_break",
+  "organization_name",
+  "status",
+  "crm",
+  "section_break",
+  "history_table",
+  "activity_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "crm",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "CRM",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Proposal History Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "crm.company_name",
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PRO-HIS-"
+  },
+  {
+   "fieldname": "history_table",
+   "fieldtype": "Table",
+   "label": "History Table",
+   "options": "History Table"
+  },
+  {
+   "fieldname": "activity_table",
+   "fieldtype": "Table",
+   "label": "Activity Table",
+   "options": "History Activity Table"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nOn going\nCompleted\nCancelled\nClosed\nOn Hold"
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-02 12:47:41.581506",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Proposal History Sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

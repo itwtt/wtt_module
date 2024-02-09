@@ -1,0 +1,252 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-01-08 09:41:45.512571",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "employee",
+  "employee_name",
+  "column_break_i0r5c",
+  "department",
+  "expense_approver",
+  "is_paid",
+  "verified_by",
+  "expense_details",
+  "reject_claim",
+  "expenses",
+  "od_ref",
+  "od",
+  "sb1",
+  "grand_total",
+  "remark",
+  "title",
+  "amended_from",
+  "reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "HR-CLM-.YYYY.-",
+   "print_hide": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "oldfieldname": "employee",
+   "oldfieldtype": "Link",
+   "options": "Employee",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Employee Name",
+   "oldfieldname": "employee_name",
+   "oldfieldtype": "Data",
+   "read_only": 1,
+   "width": "150px"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expense_details",
+   "fieldtype": "Section Break",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "expenses",
+   "fieldtype": "Table",
+   "label": "Expenses",
+   "oldfieldname": "expense_voucher_details",
+   "oldfieldtype": "Table",
+   "options": "Claim Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb1",
+   "fieldtype": "Section Break",
+   "options": "Simple"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Posting Date",
+   "oldfieldname": "posting_date",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark",
+   "no_copy": 1,
+   "oldfieldname": "remark",
+   "oldfieldtype": "Small Text"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "{employee_name}",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Claim Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.expense_approver",
+   "fieldname": "expense_approver",
+   "fieldtype": "Data",
+   "label": "Expense Approver",
+   "read_only": 1
+  },
+  {
+   "fieldname": "od_ref",
+   "fieldtype": "Button",
+   "label": "OD Request"
+  },
+  {
+   "fieldname": "od",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "reject_claim",
+   "fieldtype": "Button",
+   "label": "Reject Claim"
+  },
+  {
+   "fieldname": "column_break_i0r5c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "is_paid",
+   "fieldtype": "Check",
+   "label": "Is Paid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Data",
+   "label": "Verified By",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-money",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-29 10:22:24.475145",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Claim Request",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Expense Approver",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "employee,employee_name",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "timeline_field": "employee",
+ "title_field": "title",
+ "track_changes": 1
+}

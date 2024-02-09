@@ -1,0 +1,33 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-04-27 22:20:57.422494",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends": "",
+ "extends_another_page": 0,
+ "for_user": "gokul@wtt.com",
+ "hide_custom": 1,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Gokul",
+ "links": [],
+ "modified": "2022-04-27 22:20:57.422494",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Gokul",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Software requirement",
+   "link_to": "Software requirement",
+   "type": "DocType"
+  }
+ ]
+}

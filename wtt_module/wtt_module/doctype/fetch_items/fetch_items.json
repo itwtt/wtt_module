@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-05-30 11:04:04.277318",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "type",
+  "template_name",
+  "flow",
+  "range",
+  "item_code",
+  "fetch_items_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Select",
+   "label": "Template Name",
+   "options": "\nPRE-FILTER\nMF MODULES\nFEED\nBACKWASH\nFEED/BACKWASH\nCIP\nSULPHUR BLACK SLUDGE\nCIP\nCIP\nCIP\nSULPHUR BLACK\nSULPHUR BLACK LAMELLA SETTLER\nLEVEL TRANSMITTER\nLEVEL FLOAT\nELECTROMAGNETIC FLOWMETER\nPRESSURE TRANSMITTER\nPRESSURE GAUGE\nPH SENSOR\nCIP PRE-FILTER\nCIP\nCIP DOSING TANK-1\nCIP DOSING TANK-2\nCIP DOSING TANK-3\nMF SKID FRAME\nCIP SKID FRAME\nCIP DOSING SKID FRAME\nPIPES & FITTINGS\nFAB. & ERECTION",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item code",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "FET_ITEMS",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "System",
+   "options": "\nMF\nBIO\nRO"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "fetch_items_table",
+   "fieldtype": "Table",
+   "label": "Fetch Items table",
+   "options": "Child Fetch Items"
+  },
+  {
+   "fieldname": "flow",
+   "fieldtype": "Float",
+   "label": "Flow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "range",
+   "fieldtype": "Float",
+   "label": "Range",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-30 19:31:22.596211",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Fetch Items",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

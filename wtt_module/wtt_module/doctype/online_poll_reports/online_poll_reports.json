@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "creation": "2022-01-21 15:05:22.154687",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "get_data",
+  "column_break_2",
+  "to_allow",
+  "column_break_4",
+  "to_restrict",
+  "column_break_6",
+  "total",
+  "section_break_6",
+  "html_2",
+  "section_break_3",
+  "html_3"
+ ],
+ "fields": [
+  {
+   "fieldname": "get_data",
+   "fieldtype": "Button",
+   "label": "Get Data"
+  },
+  {
+   "fieldname": "html_2",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "html_3",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_allow",
+   "fieldtype": "Int",
+   "label": "To Allow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_restrict",
+   "fieldtype": "Int",
+   "label": "To Restrict",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "38",
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-21 18:39:09.994090",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Online Poll Reports",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

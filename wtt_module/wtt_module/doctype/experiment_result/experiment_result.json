@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-11 09:55:03.342439",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lab_experiments",
+  "employee",
+  "employee_name",
+  "department",
+  "date",
+  "done_by",
+  "done_by_name",
+  "experiments_details_section",
+  "title_of_the_experiment",
+  "brief_description",
+  "objectives",
+  "column_break_xez8k",
+  "resource_type",
+  "tentative_date",
+  "naming_series",
+  "amended_from",
+  "lab_result_section",
+  "aim",
+  "sample_count",
+  "chemicals_consumed",
+  "material_used",
+  "column_break_9rbkl",
+  "procedure_followed",
+  "tabulation",
+  "observation",
+  "additional_attachments",
+  "section_break_fs9ke",
+  "results"
+ ],
+ "fields": [
+  {
+   "fetch_from": "lab_experiments.employee",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "EXP-RES-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "experiments_details_section",
+   "fieldtype": "Section Break",
+   "label": "Experiments Details"
+  },
+  {
+   "fetch_from": "lab_experiments.title_of_the_experiment",
+   "fieldname": "title_of_the_experiment",
+   "fieldtype": "Data",
+   "label": "Title of the Experiment",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lab_experiments.brief_description",
+   "fieldname": "brief_description",
+   "fieldtype": "Small Text",
+   "label": "Brief Description",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lab_experiments.objectives",
+   "fieldname": "objectives",
+   "fieldtype": "Small Text",
+   "label": "Objectives",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xez8k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "lab_experiments.resource_type",
+   "fieldname": "resource_type",
+   "fieldtype": "Select",
+   "label": "Resource type",
+   "options": "\nEquipment\nEquipment + Reagents",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lab_experiments.tentative_date",
+   "fieldname": "tentative_date",
+   "fieldtype": "Data",
+   "label": "Tentative Result Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Experiment Result",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "lab_experiments",
+   "fieldtype": "Link",
+   "label": "Lab Experiments",
+   "options": "Lab Experiments"
+  },
+  {
+   "fieldname": "lab_result_section",
+   "fieldtype": "Section Break",
+   "label": "Lab Result"
+  },
+  {
+   "fieldname": "aim",
+   "fieldtype": "Data",
+   "label": "Aim"
+  },
+  {
+   "fieldname": "material_used",
+   "fieldtype": "Text Editor",
+   "label": "Material Used"
+  },
+  {
+   "fieldname": "procedure_followed",
+   "fieldtype": "Text Editor",
+   "label": "Procedure Followed"
+  },
+  {
+   "fieldname": "sample_count",
+   "fieldtype": "Float",
+   "label": "Sample Count"
+  },
+  {
+   "fieldname": "column_break_9rbkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chemicals_consumed",
+   "fieldtype": "Text Editor",
+   "label": "Chemicals Consumed"
+  },
+  {
+   "fieldname": "tabulation",
+   "fieldtype": "Text Editor",
+   "label": "Tabulation"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Text Editor",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "additional_attachments",
+   "fieldtype": "Text Editor",
+   "label": "Additional Attachments"
+  },
+  {
+   "fieldname": "section_break_fs9ke",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "results",
+   "fieldtype": "Text Editor",
+   "label": "Results"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "done_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Done By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "done_by.employee_name",
+   "fieldname": "done_by_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-30 14:55:43.979040",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Experiment Result",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

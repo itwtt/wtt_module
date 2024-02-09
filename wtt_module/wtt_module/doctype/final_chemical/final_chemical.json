@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-15 12:02:11.808712",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "system",
+  "running",
+  "cleaning",
+  "consumables",
+  "per100",
+  "per90",
+  "per80",
+  "per70",
+  "per60"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System"
+  },
+  {
+   "columns": 1,
+   "fieldname": "consumables",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Consumables"
+  },
+  {
+   "columns": 1,
+   "fieldname": "per100",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "100 per"
+  },
+  {
+   "columns": 1,
+   "fieldname": "per90",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "90 per"
+  },
+  {
+   "columns": 1,
+   "fieldname": "per80",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "80 per"
+  },
+  {
+   "columns": 1,
+   "fieldname": "per70",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "70 per"
+  },
+  {
+   "columns": 1,
+   "fieldname": "per60",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "60 per"
+  },
+  {
+   "columns": 1,
+   "fieldname": "running",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Running"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cleaning",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cleaning"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-26 14:53:33.569931",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Final Chemical",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

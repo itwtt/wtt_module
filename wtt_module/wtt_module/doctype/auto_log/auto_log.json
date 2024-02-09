@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-26 17:10:38.622869",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "purpose",
+  "person_name",
+  "department",
+  "start_time",
+  "km1",
+  "end_time",
+  "km2",
+  "column_break_7krvq",
+  "material_movement",
+  "materials",
+  "issue",
+  "operation",
+  "cost",
+  "liters",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "AL-.YY.-"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "Material Movement\nFuel\nMaintenance"
+  },
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Person Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "km1",
+   "fieldtype": "Data",
+   "label": "Km-Start"
+  },
+  {
+   "fieldname": "km2",
+   "fieldtype": "Data",
+   "label": "Km-Closing"
+  },
+  {
+   "fieldname": "column_break_7krvq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Auto Log",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Auto Log",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.purpose=='Fuel')",
+   "fieldname": "liters",
+   "fieldtype": "Float",
+   "label": "Liters"
+  },
+  {
+   "depends_on": "eval:(doc.purpose=='Material Movement')",
+   "fieldname": "material_movement",
+   "fieldtype": "Select",
+   "label": "Material Movement",
+   "options": "Inward\nOutward"
+  },
+  {
+   "depends_on": "eval:(doc.purpose=='Material Movement')",
+   "fieldname": "materials",
+   "fieldtype": "Small Text",
+   "label": "Materials"
+  },
+  {
+   "depends_on": "eval:(doc.purpose=='Maintenance')",
+   "fieldname": "issue",
+   "fieldtype": "Data",
+   "label": "Issue"
+  },
+  {
+   "depends_on": "eval:(doc.purpose=='Maintenance')",
+   "fieldname": "operation",
+   "fieldtype": "Small Text",
+   "label": "Operation"
+  },
+  {
+   "depends_on": "eval:(doc.purpose!='Material Movement')",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "label": "Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-26 17:25:33.173938",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Auto Log",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "person_name"
+}

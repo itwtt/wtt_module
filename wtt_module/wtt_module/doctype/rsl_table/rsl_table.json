@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-30 14:33:52.383927",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "col0",
+  "col1",
+  "col2",
+  "col3",
+  "col4",
+  "col5",
+  "col6",
+  "col7",
+  "col8",
+  "col9",
+  "col10",
+  "col11",
+  "col12",
+  "col13",
+  "col14",
+  "col15",
+  "col16",
+  "col17",
+  "col18",
+  "col19",
+  "col20",
+  "col21"
+ ],
+ "fields": [
+  {
+   "fieldname": "col0",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DateTime"
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Main Ro Feed"
+  },
+  {
+   "fieldname": "col2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 1st Stage Permeate"
+  },
+  {
+   "fieldname": "col3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 2nd Stage Permeate"
+  },
+  {
+   "fieldname": "col4",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 3rd Stage Permeate"
+  },
+  {
+   "fieldname": "col5",
+   "fieldtype": "Data",
+   "label": "RO Recirculation"
+  },
+  {
+   "fieldname": "col6",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO Feed PH"
+  },
+  {
+   "fieldname": "col7",
+   "fieldtype": "Data",
+   "label": "RO Feed Tank Level (m)"
+  },
+  {
+   "fieldname": "col8",
+   "fieldtype": "Data",
+   "label": "CF Inlet Pressure (bar)"
+  },
+  {
+   "fieldname": "col9",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CF Outlet Pressure(bar)"
+  },
+  {
+   "fieldname": "col10",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 1st Stage Inlet Pressure(bar)"
+  },
+  {
+   "fieldname": "col11",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 1st Stage Outlet Pressure(bar)"
+  },
+  {
+   "fieldname": "col12",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 2nd Stage Inlet Pressure(bar)"
+  },
+  {
+   "fieldname": "col13",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 2nd Stage Outlet Pressure(bar)"
+  },
+  {
+   "fieldname": "col14",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 3rd Stage Inlet Pressure(bar)"
+  },
+  {
+   "fieldname": "col15",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RO 3rd Stage Outlet Pressure(bar)"
+  },
+  {
+   "fieldname": "col16",
+   "fieldtype": "Data",
+   "label": "NT Feed (m3/hr)"
+  },
+  {
+   "fieldname": "col17",
+   "fieldtype": "Data",
+   "label": "NT pH"
+  },
+  {
+   "fieldname": "col18",
+   "fieldtype": "Data",
+   "label": "Degasser pH"
+  },
+  {
+   "fieldname": "col19",
+   "fieldtype": "Data",
+   "label": "MBR tank Level (m)"
+  },
+  {
+   "fieldname": "col20",
+   "fieldtype": "Data",
+   "label": "MBR Feed Flow (m3/hr)"
+  },
+  {
+   "fieldname": "col21",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-30 15:39:40.438285",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "RSL Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

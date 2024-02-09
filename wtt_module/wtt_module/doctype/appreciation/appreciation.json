@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-03-05 15:45:35.519635",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "html_11",
+  "section_break_2",
+  "naming_series",
+  "employee",
+  "employee_name",
+  "appreciates",
+  "appreciates_name",
+  "column_break_8",
+  "rating",
+  "emoji",
+  "html_emoji",
+  "reason",
+  "section_break_12",
+  "issue_card",
+  "html_15"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "APRC-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Your ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appreciates",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Who wants to be appreciate?",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "appreciates.employee_name",
+   "fieldname": "appreciates_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:(doc.rating)",
+   "fieldname": "emoji",
+   "fieldtype": "Select",
+   "label": "Emoji",
+   "options": "\nSmiley\nClaps\nThumbs Up"
+  },
+  {
+   "fieldname": "html_emoji",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Reason",
+   "reqd": 1
+  },
+  {
+   "fieldname": "html_11",
+   "fieldtype": "HTML",
+   "options": "<div style=\"background: turquoise; width: 100%; border: thick double #32a1ce;\">\n<h3 style=\"font-family: Times; margin-top: 10px; margin-left: 10px;\"><u>APPRECIATION</u></h3>\n<h4 style=\"font-family: Apple Chancery; margin-top: 10px; margin-left: 10px;\">Appreciation can make a day, even change a life.</h4>\n</div>"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "issue_card",
+   "fieldtype": "Check",
+   "label": "Issue Card"
+  },
+  {
+   "depends_on": "eval:doc.issue_card==1",
+   "fieldname": "html_15",
+   "fieldtype": "HTML",
+   "options": "<meta name=\"viewport\">\n<style>\n* {\n  box-sizing: border-box;\n}\nbody {\n  \n}\n/* Float four columns side by side */\n.column {\n  float: left;\n  width: 25%;\n  padding: 0 10px;\n}\n/* Remove extra left and right margins, due to padding */\n.row {margin: 0 -5px;}\n/* Clear floats after the columns */\n.row:after {\n  content: \"\";\n  display: table;\n  clear: both;\n\n}\n.p{\n\tcolor:white\n}\n/* Style the counter cards */\n.card {\n    height:120%;\n    width: 150%;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  padding: 16px;\n  text-align: center;\n  color:white;\n  background-color: Green;\n}\n</style>\n\n<div class=\"row\">\n  <div class=\"column\">\n    <div class=\"card\">\n    <p>Good Job</p>\n<p>You are Awesome!</p>\n\n      <p></p>\n    </div>\n  </div>\n  \n</div>"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-17 11:17:29.997609",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Appreciation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name"
+}

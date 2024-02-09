@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-02-24 09:39:33.914771",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "company",
+  "project",
+  "project_name",
+  "start_date",
+  "end_date",
+  "column_break_paj2f",
+  "shipment_type",
+  "shipment_date",
+  "section_break_e2om5",
+  "all_shipment",
+  "mr_details",
+  "shipment",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.expected_start_date",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start On",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "project.expected_end_date",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "all_shipment",
+   "fieldtype": "Table",
+   "label": "All Shipment",
+   "options": "All Shipment"
+  },
+  {
+   "fieldname": "mr_details",
+   "fieldtype": "Table",
+   "label": "MR Details",
+   "options": "MR Details"
+  },
+  {
+   "fieldname": "shipment",
+   "fieldtype": "Table",
+   "label": "Shipment",
+   "options": "Shipment A"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "PUR-PLAN-"
+  },
+  {
+   "fieldname": "shipment_type",
+   "fieldtype": "Select",
+   "label": "Shipment Type",
+   "options": "\nShipment 1\nShipment 2\nShipment 3\nShipment 4\nShipment 5\nShipment 6"
+  },
+  {
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "label": "Shipment Date"
+  },
+  {
+   "fieldname": "column_break_paj2f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_e2om5",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-04 16:46:07.559802",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Purchase Planning",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project_name"
+}

@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-12-31 14:34:31.466409",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "reply_to",
+  "reply_name",
+  "query_against",
+  "query_against_name",
+  "date",
+  "project",
+  "system_1",
+  "system_2",
+  "queries",
+  "employee",
+  "employee_name",
+  "department",
+  "replay",
+  "replay_button",
+  "html",
+  "reply_table",
+  "query"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Replied By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "query.employee",
+   "fieldname": "reply_to",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Reply To",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "query.quries",
+   "fieldname": "queries",
+   "fieldtype": "Small Text",
+   "label": "Queries"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "system_1",
+   "fieldtype": "Link",
+   "label": "System 1",
+   "options": "System Module"
+  },
+  {
+   "fieldname": "system_2",
+   "fieldtype": "Link",
+   "label": "System 2",
+   "options": "System3"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "query_against",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Query Against",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "replay_button",
+   "fieldtype": "Button",
+   "label": "Reply"
+  },
+  {
+   "fieldname": "replay",
+   "fieldtype": "Text Editor",
+   "label": "Reply"
+  },
+  {
+   "fieldname": "reply_table",
+   "fieldtype": "Table",
+   "label": "Replies",
+   "options": "Query Reply Table"
+  },
+  {
+   "fetch_from": "reply_to.employee_name",
+   "fieldname": "reply_name",
+   "fieldtype": "Data",
+   "label": "Query From"
+  },
+  {
+   "fetch_from": "query_against.employee_name",
+   "fieldname": "query_against_name",
+   "fieldtype": "Data",
+   "label": "Query Against"
+  },
+  {
+   "fieldname": "query",
+   "fieldtype": "Data",
+   "label": "Query No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "QUR-REP-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-19 09:58:09.883058",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Query Reply",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "reply_name",
+ "track_changes": 1
+}

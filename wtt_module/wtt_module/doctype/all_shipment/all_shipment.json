@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-18 15:30:03.000065",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shipment",
+  "system_name",
+  "workshop_days",
+  "shipment_end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipment",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shipment",
+   "options": "\nShipment 1\nShipment 2\nShipment 3\nShipment 4\nShipment 5\nShipment 6"
+  },
+  {
+   "fieldname": "shipment_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Shipment End Date"
+  },
+  {
+   "fieldname": "workshop_days",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lead time for manufacturing"
+  },
+  {
+   "fieldname": "system_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "System Name",
+   "options": "\nRotary Brush Screener\nBar Screener\nDrum Screener\nAnaerobic Screener\nAnaerobic Equalization\nAnaerobic Neutralization\nAnaerobic System\nAmmonia Striper\nLifting sump\nOil & grease trap\nDAF (Dissolved Air Flotation)\nEqualization System\nNeutralization System\nCooling Tower\nDe-Nitrification System\nDistribution system\nBiological Oxidation System\nClarifier Feed Tank\nCircular Clarifier System\nLamella Settler\nDO increase system\nSRS System\nSand Filter\nActivated Carbon Filter\nSelf-Cleaning Filter\nMicro Filtration - ASAHI\nSubmerged MBR system - KOCH\nSubmerged MBR system - OVIVO\nSulphur Black Removal System\nSludge Thickener\nSludge Thickener with mech\nScrew Press\nBelt Press\nDegasser System\nReverse Osmosis\nHardness and Silica Removal System\nChlorination system\nHardness and Color Removal System\nReject Reverse Osmosis\nEvaporator\nAgitated Thin film dryer\nPre-Treatment System\nCentrifuge\nCrystallizer\nNano Filtration\nCare system\nCIP system\nOthers"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-25 16:28:46.196744",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "All Shipment",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

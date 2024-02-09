@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-18 18:20:53.447604",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pump",
+  "flow",
+  "pressure",
+  "quantity",
+  "type",
+  "system",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "pump",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pump"
+  },
+  {
+   "columns": 2,
+   "fieldname": "pressure",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pressure (Bar)"
+  },
+  {
+   "columns": 2,
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity (No)"
+  },
+  {
+   "columns": 2,
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "columns": 2,
+   "fieldname": "flow",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Flow (m3/ hr)"
+  },
+  {
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "label": "System",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-27 12:42:57.384232",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Datasheet Pump Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

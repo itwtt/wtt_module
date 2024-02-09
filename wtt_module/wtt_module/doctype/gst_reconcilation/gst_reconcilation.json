@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-01 09:04:03.889864",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fr_date",
+  "get_data",
+  "column_break_alicq",
+  "to_date",
+  "section_break_vlafk",
+  "gst_table",
+  "journal_table",
+  "file_section",
+  "excel_attach",
+  "get_value",
+  "upload",
+  "section_break_xqj5y",
+  "reconcile",
+  "to_reconcil"
+ ],
+ "fields": [
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "gst_table",
+   "fieldtype": "Table",
+   "label": "GST Table",
+   "options": "GST Table"
+  },
+  {
+   "fieldname": "get_data",
+   "fieldtype": "Button",
+   "label": "Get Data"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To date"
+  },
+  {
+   "fieldname": "fr_date",
+   "fieldtype": "Date",
+   "label": "From date"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "upload",
+   "fieldtype": "Table",
+   "label": "Upload ",
+   "options": "GST Upload Table"
+  },
+  {
+   "fieldname": "column_break_alicq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vlafk",
+   "fieldtype": "Section Break",
+   "label": "ERP"
+  },
+  {
+   "fieldname": "to_reconcil",
+   "fieldtype": "Table",
+   "label": "To Reconcil",
+   "options": "GST Reconcil Table"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "GST-RCL-.YY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "file_section",
+   "fieldtype": "Section Break",
+   "label": "FILE"
+  },
+  {
+   "fieldname": "section_break_xqj5y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "excel_attach",
+   "fieldtype": "Attach",
+   "label": "Excel Attach"
+  },
+  {
+   "fieldname": "get_value",
+   "fieldtype": "Button",
+   "label": "Get Value"
+  },
+  {
+   "fieldname": "reconcile",
+   "fieldtype": "Button",
+   "label": "Reconcile"
+  },
+  {
+   "fieldname": "journal_table",
+   "fieldtype": "Table",
+   "label": "Journal Table",
+   "options": "GST Table for Journal Entry"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-21 11:06:38.792152",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "GST reconcilation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

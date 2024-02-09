@@ -1,0 +1,38 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-11-20 14:08:21.428245",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-05-31 14:24:18.746828",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Test Comparison",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Supplier Quotation",
+ "report_name": "Test Comparison",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "WTT - Buying"
+  }
+ ]
+}

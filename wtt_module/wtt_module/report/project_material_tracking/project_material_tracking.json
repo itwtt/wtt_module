@@ -1,0 +1,41 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-10-31 12:45:52.114465",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-10-31 12:45:52.114465",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Project Material Tracking",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Purchase Order",
+ "report_name": "Project Material Tracking",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "PO Amend"
+  },
+  {
+   "role": "Security"
+  },
+  {
+   "role": "Create MR"
+  }
+ ]
+}

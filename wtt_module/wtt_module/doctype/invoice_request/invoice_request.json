@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-03 12:18:49.558978",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction_date",
+  "company",
+  "agent_name",
+  "agent_address",
+  "column_break_2ktvf",
+  "wtt_coordinator",
+  "employee_name",
+  "department",
+  "section_break_vh2jq",
+  "project",
+  "project_name",
+  "invoice_no",
+  "invoice_date",
+  "section_break_9evpt",
+  "invoice_request_table",
+  "total_amount",
+  "total_tax_amount",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Link",
+   "label": "Agent Name",
+   "options": "Agent Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Invoice Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "agent_name.agent_address",
+   "fieldname": "agent_address",
+   "fieldtype": "Small Text",
+   "label": "Agent Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wtt_coordinator",
+   "fieldtype": "Link",
+   "label": "WTT Co-ordinator",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "wtt_coordinator.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "wtt_coordinator.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "column_break_2ktvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vh2jq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_9evpt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "invoice_request_table",
+   "fieldtype": "Table",
+   "label": "Invoice Request Table",
+   "options": "Invoice Request Table"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "total_tax_amount",
+   "fieldtype": "Currency",
+   "label": "Total Tax Amount"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "INV-REQ-.YY."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-03 13:56:59.791054",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Invoice Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "agent_name"
+}

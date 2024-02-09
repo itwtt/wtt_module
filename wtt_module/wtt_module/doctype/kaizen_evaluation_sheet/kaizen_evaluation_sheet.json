@@ -1,0 +1,494 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-06-03 14:25:53.248896",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "kaizen_id",
+  "baseline",
+  "employee",
+  "inventor_name",
+  "department",
+  "column_break_7",
+  "date",
+  "evaluation_by",
+  "evaluator_name",
+  "evaluator_department",
+  "section_break_9",
+  "waiting_for",
+  "remarks",
+  "section_break_21",
+  "practically_possible",
+  "yes",
+  "no",
+  "reason1",
+  "reduction_of_cost",
+  "yes1",
+  "no1",
+  "reason2",
+  "reduction_of_time",
+  "yes2",
+  "no2",
+  "reason3",
+  "safety",
+  "yes7",
+  "no7",
+  "reason12",
+  "column_break_18",
+  "reduction_of_effort",
+  "yes3",
+  "no3",
+  "reason4",
+  "improves_quality",
+  "yes4",
+  "no4",
+  "reason5",
+  "customer_satisfication",
+  "yes5",
+  "no5",
+  "reason10",
+  "value_proportion",
+  "yes6",
+  "no6",
+  "reason11",
+  "section_break_23",
+  "can_be_approved",
+  "reason6",
+  "modification_needed",
+  "reason7",
+  "column_break_28",
+  "explanation",
+  "reason8",
+  "cant_be_approved",
+  "reason9",
+  "section_break_44",
+  "hod_remarks",
+  "kaizen_lead_remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "KZN-EVL-"
+  },
+  {
+   "fieldname": "kaizen_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kaizen ID",
+   "options": "Kaizen"
+  },
+  {
+   "fetch_from": "kaizen_id.baseline",
+   "fieldname": "baseline",
+   "fieldtype": "Data",
+   "label": "Baseline"
+  },
+  {
+   "fetch_from": "kaizen_id.employee",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Inventor ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "inventor_name",
+   "fieldtype": "Data",
+   "label": "Inventor Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "evaluation_by",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Evaluation By",
+   "mandatory_depends_on": "eval:(doc.yes==1 || doc.no==1 || doc.can_be_approved==1 || doc.cant_be_approved==1)",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "evaluation_by.employee_name",
+   "fieldname": "evaluator_name",
+   "fieldtype": "Data",
+   "label": "Evaluator Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "evaluation_by.department",
+   "fieldname": "evaluator_department",
+   "fieldtype": "Data",
+   "label": "Evaluator Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "practically_possible",
+   "fieldtype": "Heading",
+   "label": "Practically Possible"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:(doc.yes==\"1\" || doc.no==\"1\");",
+   "fieldname": "reason1",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "default": "0",
+   "fieldname": "reduction_of_cost",
+   "fieldtype": "Heading",
+   "label": "Reduction of Cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes1",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no1",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:(doc.yes1==\"1\" || doc.no1==\"1\");",
+   "fieldname": "reason2",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "default": "0",
+   "fieldname": "reduction_of_time",
+   "fieldtype": "Heading",
+   "label": "Reduction of Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes2",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no2",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:(doc.yes2==\"1\" || doc.no2==\"1\");",
+   "fieldname": "reason3",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "reduction_of_effort",
+   "fieldtype": "Heading",
+   "label": "Reduction of Effort"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes3",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no3",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:(doc.yes3==\"1\" || doc.no3==\"1\");",
+   "fieldname": "reason4",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "default": "0",
+   "fieldname": "improves_quality",
+   "fieldtype": "Heading",
+   "label": "Improves Quality"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes4",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no4",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:(doc.yes4==\"1\" || doc.no4==\"1\");",
+   "fieldname": "reason5",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "can_be_approved",
+   "fieldtype": "Check",
+   "label": "Can be Approved"
+  },
+  {
+   "fieldname": "reason6",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "0",
+   "fieldname": "modification_needed",
+   "fieldtype": "Check",
+   "label": "Modification Needed"
+  },
+  {
+   "fieldname": "reason7",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "explanation",
+   "fieldtype": "Check",
+   "label": "Explanation needed (Either Study/ Calculation/ Pricing)"
+  },
+  {
+   "fieldname": "reason8",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "0",
+   "fieldname": "cant_be_approved",
+   "fieldtype": "Check",
+   "label": "Can't be Approved"
+  },
+  {
+   "fieldname": "reason9",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "section_break_44",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hod_remarks",
+   "fieldtype": "Table",
+   "label": "Evaluation Team Remarks",
+   "options": "Kaizen Evaluation Table"
+  },
+  {
+   "fieldname": "kaizen_lead_remarks",
+   "fieldtype": "Table",
+   "label": "Kaizen Team Remarks",
+   "options": "Kaizen Evaluation Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Kaizen Evaluation Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Kaizen Evaluation Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "waiting_for",
+   "fieldtype": "Select",
+   "label": "Waiting for",
+   "options": "\nExplanation\nModification\nDevelopment\nCost Calculation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_satisfication",
+   "fieldtype": "Heading",
+   "label": "Customer Satisfication"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes5",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no6",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:(doc.yes5==\"1\" || doc.no5==\"1\");",
+   "fieldname": "reason10",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "default": "0",
+   "fieldname": "no5",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "value_proportion",
+   "fieldtype": "Heading",
+   "label": "Value Proportion"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes6",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "depends_on": "eval:(doc.yes6==\"1\" || doc.no6==\"1\");",
+   "fieldname": "reason11",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  },
+  {
+   "fieldname": "safety",
+   "fieldtype": "Heading",
+   "label": "Safety"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes7",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no7",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "depends_on": "eval:(doc.yes7==\"1\" || doc.no7==\"1\");",
+   "fieldname": "reason12",
+   "fieldtype": "Small Text",
+   "label": "Explanation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-08 15:48:10.874571",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Kaizen Evaluation Sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Kaizen Lead",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HOD",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "kaizen_id",
+ "track_changes": 1
+}

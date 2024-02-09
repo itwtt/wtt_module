@@ -1,0 +1,1117 @@
+{
+ "actions": [],
+ "creation": "2022-02-07 11:16:15.404290",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "industry_name",
+  "reference",
+  "sector_industry",
+  "telephone",
+  "email",
+  "present_requirement",
+  "col_break",
+  "address",
+  "district",
+  "state",
+  "country",
+  "pincode",
+  "existing_plant_details_section",
+  "yes_or_no",
+  "yes_or_no2",
+  "yes",
+  "no",
+  "plant_cap",
+  "cur_flow",
+  "cur_plant",
+  "layout",
+  "tank_layout",
+  "plant_requirement_details_section",
+  "html_9",
+  "capacity_to_be_treated_avg",
+  "capacity_to_be_treated_peak",
+  "effluent_capacity",
+  "peak_duration",
+  "treatment_required",
+  "system_name",
+  "treatment_required_old",
+  "recovery_of_salt",
+  "area_availability_for_plant",
+  "column_break_m7fej",
+  "html_16",
+  "number_of_phases",
+  "flow_for_phase_1",
+  "flow_for_phase_2",
+  "flow_for_phase_3",
+  "flow_for_phase_4",
+  "section_break_23",
+  "html_19",
+  "raw_water",
+  "capacity_to_be_treated",
+  "water_source",
+  "tds_of_raw_water",
+  "hardness_of_raw_water",
+  "iron_content_in_raw_water",
+  "treatment_for_raw_water",
+  "work_process",
+  "processed_fibers",
+  "is_bleaching_done",
+  "do_you_do_printing",
+  "printing_with",
+  "column_break_36",
+  "is_urea_used",
+  "amount_used",
+  "printing_effluent_flow",
+  "is_desizing_done",
+  "desizing_effluent_flow",
+  "additional_requirements",
+  "section_break_43",
+  "html_40",
+  "ph_minimum",
+  "ph_average",
+  "ph_maximum",
+  "html_44",
+  "codmgl_min",
+  "codmgl_avg",
+  "codmgl_max",
+  "html_49",
+  "bodmgl_min",
+  "bodmgl_avg",
+  "bodmgl_max",
+  "html_50",
+  "tdsmgl_min",
+  "tdsmgl_avg",
+  "tdsmgl_max",
+  "html_51",
+  "pvamgl_min",
+  "pvamgl_avg",
+  "pvamgl_max",
+  "col_br1",
+  "html_52",
+  "tssmgl_min",
+  "tssmgl_avg",
+  "tssmgl_max",
+  "html_53",
+  "ironmgl_min",
+  "ironmgl_avg",
+  "ironmgl_max",
+  "html_54",
+  "silicamgl_min",
+  "silicamgl_avg",
+  "silicamgl_max",
+  "html_55",
+  "colourhazen_min",
+  "colourhazen_avg",
+  "colourhazen_max",
+  "html_56",
+  "sodiummgl_min",
+  "sodiummgl_avg",
+  "sodiummgl_max",
+  "column_break_84",
+  "html_57",
+  "calciummgl_min",
+  "calciummgl_avg",
+  "calciummgl_max",
+  "html_58",
+  "sulfatesmgl_min",
+  "sulfatesmgl_avg",
+  "sulfatesmgl_max",
+  "html_59",
+  "chloridesmgl_min",
+  "chloridesmgl_avg",
+  "chloridesmgl_max",
+  "html_60",
+  "magnesiummgl_min",
+  "magnesiummgl_avg",
+  "magnesiummgl_max",
+  "html_61",
+  "alkalinity_min",
+  "alkalinitymgl_caco_avg",
+  "alkalinitymgl_caco_max",
+  "col_br2",
+  "html_62",
+  "temperaturec_min",
+  "temperaturec_avg",
+  "temperaturec_max",
+  "html_63",
+  "oil_greasemgl_min",
+  "oil_greasemgl_avg",
+  "oil_greasemgl_max",
+  "html_64",
+  "total_nitrogen_tkn_mgl_min",
+  "total_nitrogen_tkn_mgl_avg",
+  "total_nitrogen_tkn_mgl_max",
+  "html_65",
+  "total_hardnessmgl_caco_min",
+  "total_hardnessmgl_caco_avg",
+  "total_hardnessmgl_caco_max",
+  "section_break_kl3md",
+  "heavy_metals_if_any",
+  "sec_brea",
+  "ph",
+  "tds_mgl",
+  "tss_mgl",
+  "cod_mgl",
+  "hardness"
+ ],
+ "fields": [
+  {
+   "fieldname": "industry_name",
+   "fieldtype": "Data",
+   "label": "Industry Name"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "sector_industry",
+   "fieldtype": "Select",
+   "label": "Sector / Industry",
+   "options": "\nTextile\nTannery\nAutomobile\nDiary\nPaper\nPharma\nRecycle\nFood\nRefinery"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "col_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "existing_plant_details_section",
+   "fieldtype": "Section Break",
+   "label": "Existing Plant Details"
+  },
+  {
+   "fieldname": "yes_or_no",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Is there an existing plant?",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes' || doc.yes==1)",
+   "fieldname": "plant_cap",
+   "fieldtype": "Data",
+   "label": "Plant Capacity (m3/day)"
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes' || doc.yes==1)",
+   "fieldname": "cur_flow",
+   "fieldtype": "Small Text",
+   "label": "Current Flow Stream"
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes')",
+   "fieldname": "cur_plant",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Current Plant Is",
+   "options": "\nDischarge\nReuse - MF\nFiltration system (upto 90% Recovery)\nPartial recovery (upto 95% Recovery)\nZLD",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plant_requirement_details_section",
+   "fieldtype": "Section Break",
+   "label": "PLANT REQUIREMENT DETAILS"
+  },
+  {
+   "fieldname": "html_9",
+   "fieldtype": "HTML",
+   "options": "<h5><b>Waste water Treatment Plant</b></h5><br>"
+  },
+  {
+   "fieldname": "capacity_to_be_treated_avg",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Avg Capacity to be treated (m3/day)"
+  },
+  {
+   "fieldname": "capacity_to_be_treated_peak",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Peak Capacity to be treated (m3/day)"
+  },
+  {
+   "fieldname": "peak_duration",
+   "fieldtype": "Data",
+   "label": "Peak Duration (Hours)"
+  },
+  {
+   "fieldname": "treatment_required",
+   "fieldtype": "Select",
+   "label": "Treatment Required",
+   "options": "\nReuse-MF\nUpto Reverse Osmosis (92% Recovery)\nUpto Reverse Osmosis (97% Recovery)\nZero Liquid Discharge (Upto Evoporator)\nDischarge Plant\nOthers"
+  },
+  {
+   "fieldname": "recovery_of_salt",
+   "fieldtype": "Select",
+   "label": "Recovery of Salt",
+   "options": "\nSodium chloride\nSopdium sulphate\nNot Required"
+  },
+  {
+   "fieldname": "area_availability_for_plant",
+   "fieldtype": "Data",
+   "label": "Area availability for plant"
+  },
+  {
+   "fieldname": "html_16",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<h5><b>Project Execution</b></h5><br>"
+  },
+  {
+   "fieldname": "number_of_phases",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Number of phases",
+   "options": "\n1\n2\n3\n4"
+  },
+  {
+   "depends_on": "eval:(doc.number_of_phases==\"1\" || doc.number_of_phases==\"2\" || doc.number_of_phases==\"3\" || doc.number_of_phases==\"4\");",
+   "fieldname": "flow_for_phase_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Flow for Phase - 1"
+  },
+  {
+   "depends_on": "eval:(doc.number_of_phases==\"2\" || doc.number_of_phases==\"3\" || doc.number_of_phases==\"4\");",
+   "fieldname": "flow_for_phase_2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Flow for Phase - 2"
+  },
+  {
+   "depends_on": "eval:(doc.number_of_phases==\"3\" || doc.number_of_phases==\"4\");",
+   "fieldname": "flow_for_phase_3",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Flow for Phase - 3"
+  },
+  {
+   "depends_on": "eval:(doc.number_of_phases==\"4\");",
+   "fieldname": "flow_for_phase_4",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Flow for Phase - 4"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_19",
+   "fieldtype": "HTML",
+   "options": "<h5><b>Raw water Treatment details</b></h5><br>"
+  },
+  {
+   "fieldname": "raw_water",
+   "fieldtype": "Select",
+   "label": "Is Raw Water Treatment Required?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "capacity_to_be_treated",
+   "fieldtype": "Data",
+   "label": "Capacity to be treated (m3/day)"
+  },
+  {
+   "fieldname": "water_source",
+   "fieldtype": "Select",
+   "label": "Water Source                                               ",
+   "options": "\nBore Water\nRiver Water\nOthers"
+  },
+  {
+   "fieldname": "tds_of_raw_water",
+   "fieldtype": "Data",
+   "label": "TDS of Raw Water (mg/l)           "
+  },
+  {
+   "fieldname": "hardness_of_raw_water",
+   "fieldtype": "Data",
+   "label": "Hardness of Raw Water (mg/l) of CaCO3"
+  },
+  {
+   "fieldname": "iron_content_in_raw_water",
+   "fieldtype": "Data",
+   "label": "Iron Content in Raw Water (mg/l)"
+  },
+  {
+   "fieldname": "treatment_for_raw_water",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Treatment for Raw Water"
+  },
+  {
+   "fieldname": "work_process",
+   "fieldtype": "Select",
+   "label": "Work Process",
+   "options": "\nKnitting\nWeaving\nOthers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "processed_fibers",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Processed fibers",
+   "options": "\nCotton\nPolyester\nTerry Towel\nWooven\nYarn\nOthers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_bleaching_done",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Is bleaching done?       ",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "do_you_do_printing",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Do you do printing             ",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "printing_with",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Printing with",
+   "options": "\nReactive dyes\nPigments\nBoth\nNA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "is_urea_used",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Is urea used?                      ",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.is_urea_used==\"Yes\");",
+   "fieldname": "amount_used",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Amount used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "printing_effluent_flow",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Printing effluent flow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_desizing_done",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Is desizing done?          ",
+   "options": "\nYes\nNo",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.is_desizing_done==\"Yes\");",
+   "fieldname": "desizing_effluent_flow",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Desizing effluent flow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_requirements",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Additional Requirements",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_43",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_40",
+   "fieldtype": "HTML",
+   "options": "<h5><b>pH :</b></h5>"
+  },
+  {
+   "fieldname": "ph_minimum",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PH Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ph_average",
+   "fieldtype": "Data",
+   "label": "PH Avg"
+  },
+  {
+   "fieldname": "ph_maximum",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PH Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_44",
+   "fieldtype": "HTML",
+   "options": "<h5><b>COD :\n</b></h5>"
+  },
+  {
+   "fieldname": "codmgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "COD(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "codmgl_avg",
+   "fieldtype": "Data",
+   "label": "COD(mg/l) Avg"
+  },
+  {
+   "fieldname": "codmgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "COD(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_49",
+   "fieldtype": "HTML",
+   "options": "<h5><b>BOD :</b></h5>"
+  },
+  {
+   "fieldname": "bodmgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "BOD(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bodmgl_avg",
+   "fieldtype": "Data",
+   "label": "BOD(mg/l) Avg"
+  },
+  {
+   "fieldname": "bodmgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "BOD(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_50",
+   "fieldtype": "HTML",
+   "options": "<h5><b>TDS :</b></h5>"
+  },
+  {
+   "fieldname": "tdsmgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TDS(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tdsmgl_avg",
+   "fieldtype": "Data",
+   "label": "TDS(mg/l) Avg"
+  },
+  {
+   "fieldname": "tdsmgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TDS(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_51",
+   "fieldtype": "HTML",
+   "options": "<h5><b>PVA :</b></h5>"
+  },
+  {
+   "fieldname": "pvamgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PVA(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pvamgl_avg",
+   "fieldtype": "Data",
+   "label": "PVA(mg/l) Avg"
+  },
+  {
+   "fieldname": "pvamgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PVA(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_br1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_52",
+   "fieldtype": "HTML",
+   "options": "<h5><b>TSS :</b></h5>"
+  },
+  {
+   "fieldname": "tssmgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TSS(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tssmgl_avg",
+   "fieldtype": "Data",
+   "label": "TSS(mg/l) Avg"
+  },
+  {
+   "fieldname": "tssmgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TSS(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_53",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<h5><b>IRON :</b></h5>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ironmgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "IRON(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ironmgl_avg",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "IRON(mg/l) Avg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ironmgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "IRON(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_54",
+   "fieldtype": "HTML",
+   "options": "<h5><b>SILICA :</b></h5>"
+  },
+  {
+   "fieldname": "silicamgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SILICA(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "silicamgl_avg",
+   "fieldtype": "Data",
+   "label": "SILICA(mg/l) Avg"
+  },
+  {
+   "fieldname": "silicamgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SILICA(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_55",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<h5><b>COLOUR :</b></h5>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "colourhazen_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "COLOUR(hazen) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "colourhazen_avg",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "COLOUR(hazen) Avg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "colourhazen_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "COLOUR(hazen) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_56",
+   "fieldtype": "HTML",
+   "options": "<h5><b>SODIUM :</b></h5>"
+  },
+  {
+   "fieldname": "sodiummgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SODIUM(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sodiummgl_avg",
+   "fieldtype": "Data",
+   "label": "SODIUM(mg/l) Avg"
+  },
+  {
+   "fieldname": "sodiummgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SODIUM(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_84",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_57",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<h5><b>CALCIUM :</b></h5>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calciummgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "CALCIUM(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calciummgl_avg",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "CALCIUM(mg/l) Avg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calciummgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "CALCIUM(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_58",
+   "fieldtype": "HTML",
+   "options": "<h5><b>SULPHATES :</b></h5>"
+  },
+  {
+   "fieldname": "sulfatesmgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SULPHATES(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sulfatesmgl_avg",
+   "fieldtype": "Data",
+   "label": "SULPHATES(mg/l) Avg"
+  },
+  {
+   "fieldname": "sulfatesmgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "SULPHATES(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_59",
+   "fieldtype": "HTML",
+   "options": "<h5><b>CHLORIDES :</b></h5>"
+  },
+  {
+   "fieldname": "chloridesmgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "CHLORIDES(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "chloridesmgl_avg",
+   "fieldtype": "Data",
+   "label": "CHLORIDES(mg/l) Avg"
+  },
+  {
+   "fieldname": "chloridesmgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "CHLORIDES(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_60",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<h5><b>MAGNESIUM :</b></h5>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "magnesiummgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MAGNESIUM(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "magnesiummgl_avg",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MAGNESIUM(mg/l) Avg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "magnesiummgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MAGNESIUM(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_61",
+   "fieldtype": "HTML",
+   "options": "<h5><b>ALKALINITY :</b></h5>"
+  },
+  {
+   "fieldname": "alkalinity_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ALKALINITY(mg/l) (CaCO\u2083) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alkalinitymgl_caco_avg",
+   "fieldtype": "Data",
+   "label": "ALKALINITY(mg/l) (CaCO\u2083) Avg"
+  },
+  {
+   "fieldname": "alkalinitymgl_caco_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ALKALINITY(mg/l) (CaCO\u2083) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_br2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_62",
+   "fieldtype": "HTML",
+   "options": "<h5><b>TEMPERATURE :</b></h5>"
+  },
+  {
+   "fieldname": "temperaturec_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TEMPERATURE(\u00b0C) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "temperaturec_avg",
+   "fieldtype": "Data",
+   "label": "TEMPERATURE(\u00b0C) Avg"
+  },
+  {
+   "fieldname": "temperaturec_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TEMPERATURE(\u00b0C) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_63",
+   "fieldtype": "HTML",
+   "options": "<h5><b>OIL &amp; GREASE :</b></h5>"
+  },
+  {
+   "fieldname": "oil_greasemgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "OIL GREASE(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "oil_greasemgl_avg",
+   "fieldtype": "Data",
+   "label": "OIL GREASE(mg/l) Avg"
+  },
+  {
+   "fieldname": "oil_greasemgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "OIL GREASE(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_64",
+   "fieldtype": "HTML",
+   "options": "<h5><b>TOTAL NITROGEN TKN NO\u2083-N NH\u2083-N :</b></h5>"
+  },
+  {
+   "fieldname": "total_nitrogen_tkn_mgl_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TOTAL NITROGEN TKN NO\u2083-N NH\u2083-N(mg/l) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_nitrogen_tkn_mgl_avg",
+   "fieldtype": "Data",
+   "label": "TOTAL NITROGEN TKN NO\u2083-N NH\u2083-N(mg/l) Avg"
+  },
+  {
+   "fieldname": "total_nitrogen_tkn_mgl_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TOTAL NITROGEN TKN NO\u2083-N NH\u2083-N(mg/l) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_65",
+   "fieldtype": "HTML",
+   "options": "<h5><b>TOTAL HARDNESS :</b></h5>"
+  },
+  {
+   "fieldname": "total_hardnessmgl_caco_min",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TOTAL HARDNESS(mg/l) (CaCO\u2083) Min",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hardnessmgl_caco_avg",
+   "fieldtype": "Data",
+   "label": "TOTAL HARDNESS(mg/l) (CaCO\u2083) Avg"
+  },
+  {
+   "fieldname": "total_hardnessmgl_caco_max",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TOTAL HARDNESS(mg/l) (CaCO\u2083) Max",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_brea",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "REQUIRED TREATED WATER PARAMETERS",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.yes_or_no=='Yes')",
+   "fieldname": "layout",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Existing Plant Layout",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tank_layout",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Existing Plant Tank Capacities",
+   "read_only": 1
+  },
+  {
+   "fieldname": "present_requirement",
+   "fieldtype": "Data",
+   "label": "Present Requirement"
+  },
+  {
+   "fieldname": "ph",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PH ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tds_mgl",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TDS (mg/l)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tss_mgl",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "TSS (mg/l)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cod_mgl",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "COD (mg/l)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hardness",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HARDNESS (mg/l) (CaCO3)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "yes_or_no2",
+   "fieldtype": "Heading",
+   "label": "Is there an existing plant?"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "effluent_capacity",
+   "fieldtype": "Data",
+   "label": "Effluent Capacity to be treated"
+  },
+  {
+   "fieldname": "column_break_m7fej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kl3md",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heavy_metals_if_any",
+   "fieldtype": "Data",
+   "label": "Heavy Metals If Any"
+  },
+  {
+   "fieldname": "treatment_required_old",
+   "fieldtype": "Small Text",
+   "label": "Treatment Required Old",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.treatment_required==\"Others\")",
+   "fieldname": "system_name",
+   "fieldtype": "Data",
+   "label": "System Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-18 10:24:33.442375",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "New Plant Enquiry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "WTT Process Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "WTT Process User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "industry_name",
+ "track_changes": 1
+}

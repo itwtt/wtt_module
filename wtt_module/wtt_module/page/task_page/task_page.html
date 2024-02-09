@@ -1,0 +1,22 @@
+<style>
+.ticket-details
+{
+  position: absolute;
+  left: -1px;
+  top: 60px;
+  background-color: lightgrey;
+  width: 200px;
+  border: 15px solid cornflowerblue;
+}
+.ticket_go
+{
+	font-weight: bold;
+	font-size:18px;
+}
+</style>
+{% if ticket_go %}
+<div class="ticket-details">
+<center><p><b>Pending task count</b></p>
+<p class="ticket_go">{{ticket_go}}</p></center>
+</div>
+{% endif %}

@@ -1,0 +1,25 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Raghul Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Raghul Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 16:26:43.009087",
+ "dashboard_name": "Marketing Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:21:28.716124",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "Marketing Monitoring Dashboard",
+ "owner": "Administrator"
+}

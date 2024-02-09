@@ -1,0 +1,254 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-01-08 10:31:45.190656",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "html_1",
+  "bank_name",
+  "account_no",
+  "branch",
+  "column_break_4",
+  "cheque",
+  "indian_bank_cheque",
+  "from_date",
+  "to_date",
+  "company",
+  "get_employee",
+  "get_arrear",
+  "section_break_8",
+  "html",
+  "salary",
+  "section_break_12",
+  "charge1",
+  "total3",
+  "column_break_13",
+  "total1",
+  "in_words1",
+  "section_break_16",
+  "salary2",
+  "section_break_19",
+  "charge2",
+  "total4",
+  "party_name",
+  "column_break_18",
+  "total2",
+  "in_words2",
+  "amended_from",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "html_1",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<div style=\"font-size: 15px;\">\nFrom,<br>\nWTT Technology Services India Private Limited,<br>\n3, College Cross Road,<br>\nAvarankadu,<br>\nTirupur - 641602<br><br>\nTo,<br>\nThe Manager,<br>\n</div>"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Link",
+   "label": "Bank",
+   "options": "Bank Account"
+  },
+  {
+   "fetch_from": "bank_name.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "options": "<div style=\"font-size: 15px;\">\nDear Sir,<br>Kindly make the transfer 6475173650 to the below mentioned account numbers.</div>"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "salary",
+   "fieldtype": "Table",
+   "options": "Final Salary Statement Table"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_employee",
+   "fieldtype": "Button",
+   "label": "Get Employee"
+  },
+  {
+   "fetch_from": "bank_name.bank_account_no",
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Data"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "salary2",
+   "fieldtype": "Table",
+   "options": "Final Salary Statement Table"
+  },
+  {
+   "fieldname": "total1",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total2",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "in_words1",
+   "fieldtype": "Data",
+   "label": "In words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "in_words2",
+   "fieldtype": "Data",
+   "label": "In words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "charge1",
+   "fieldtype": "Currency",
+   "label": "Charges",
+   "read_only": 1
+  },
+  {
+   "fieldname": "charge2",
+   "fieldtype": "Currency",
+   "label": "Charges",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total3",
+   "fieldtype": "Currency",
+   "label": "Net Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total4",
+   "fieldtype": "Currency",
+   "label": "Net Total",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "cheque",
+   "fieldtype": "Data",
+   "label": "Other bank Cheque"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Final Salary Statement",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "indian_bank_cheque",
+   "fieldtype": "Data",
+   "label": "Indian Bank Cheque"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SAL-STA-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "label": "Party Name",
+   "options": "Cheque Party"
+  },
+  {
+   "fieldname": "get_arrear",
+   "fieldtype": "Button",
+   "label": "Get Arrear"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-07-11 17:07:15.324006",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Final Salary Statement",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

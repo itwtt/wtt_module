@@ -1,0 +1,380 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:project",
+ "creation": "2022-09-07 10:51:38.683372",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "project_name",
+  "column_break_3",
+  "start_date",
+  "end_date",
+  "section_break_6",
+  "coordinator",
+  "column_break_11",
+  "coordinator_name",
+  "section_break_21",
+  "mr_approval_date",
+  "mr_count",
+  "column_break_24",
+  "po_approval_date",
+  "po_count",
+  "section_break_27",
+  "equipments",
+  "column_break_29",
+  "attachment",
+  "sec_break",
+  "shipment",
+  "shipment_details",
+  "tracking_details_section",
+  "tracking_table",
+  "section_break_26",
+  "pr_draft",
+  "pr_to_bill",
+  "pr_completed",
+  "pr_total",
+  "column_break_30",
+  "inv_draft",
+  "inv_overdue",
+  "inv_paid",
+  "inv_total",
+  "site_details_section",
+  "site_manager",
+  "emp_name",
+  "shipment_received",
+  "project_site_location_section",
+  "my_location",
+  "city",
+  "state",
+  "area",
+  "location_link",
+  "latitude",
+  "longitude",
+  "get_link",
+  "map",
+  "design_team_section",
+  "days_taken_to_completed",
+  "completion_status",
+  "production_team_section",
+  "days_taken_to_completed_production",
+  "completion_status_production"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "unique": 1
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mr_approval_date",
+   "fieldtype": "Date",
+   "label": "Tentative MR Completion"
+  },
+  {
+   "fieldname": "mr_count",
+   "fieldtype": "Float",
+   "label": "Tentative MR Count"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_approval_date",
+   "fieldtype": "Date",
+   "label": "Tentative PO Completion"
+  },
+  {
+   "fieldname": "po_count",
+   "fieldtype": "Float",
+   "label": "Tentative PO Count"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "equipments",
+   "fieldtype": "Table",
+   "label": "Equipments",
+   "options": "Project Info Table"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipment",
+   "fieldtype": "Select",
+   "label": "No. of Shipment",
+   "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "shipment_details",
+   "fieldtype": "Table",
+   "label": "Shipment Details",
+   "options": "Shipment Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_break",
+   "fieldtype": "Section Break",
+   "label": "Shipment Details"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Table",
+   "label": "Attachment",
+   "options": "Project Info Document"
+  },
+  {
+   "fieldname": "tracking_table",
+   "fieldtype": "Table",
+   "label": "Tracking Table",
+   "options": "Tracking Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "tracking_details_section",
+   "fieldtype": "Section Break",
+   "label": "Tracking Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break",
+   "label": "Bill Details"
+  },
+  {
+   "fieldname": "pr_draft",
+   "fieldtype": "Data",
+   "label": "PR Draft"
+  },
+  {
+   "fieldname": "pr_to_bill",
+   "fieldtype": "Data",
+   "label": "PR To Bill"
+  },
+  {
+   "fieldname": "pr_completed",
+   "fieldtype": "Data",
+   "label": "PR Completed"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "inv_draft",
+   "fieldtype": "Data",
+   "label": "INV Draft"
+  },
+  {
+   "fieldname": "inv_overdue",
+   "fieldtype": "Data",
+   "label": "INV Overdue"
+  },
+  {
+   "fieldname": "inv_paid",
+   "fieldtype": "Data",
+   "label": "INV Paid"
+  },
+  {
+   "fieldname": "pr_total",
+   "fieldtype": "Data",
+   "label": "PR Total"
+  },
+  {
+   "fieldname": "inv_total",
+   "fieldtype": "Data",
+   "label": "INV Total"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "site_details_section",
+   "fieldtype": "Section Break",
+   "label": "Site Details"
+  },
+  {
+   "fieldname": "site_manager",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Site Manager",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "site_manager.employee_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "shipment_received",
+   "fieldtype": "Table",
+   "label": "Shipment Received",
+   "options": "Shipment Received"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "project_site_location_section",
+   "fieldtype": "Section Break",
+   "label": "Project Site Location"
+  },
+  {
+   "fieldname": "my_location",
+   "fieldtype": "HTML",
+   "label": "My Location"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "HTML",
+   "label": "Map"
+  },
+  {
+   "fieldname": "location_link",
+   "fieldtype": "Small Text",
+   "label": "Location Link"
+  },
+  {
+   "fieldname": "get_link",
+   "fieldtype": "Button",
+   "label": "Get Link"
+  },
+  {
+   "fieldname": "coordinator",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Project Co-ordinator",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "coordinator.employee_name",
+   "fieldname": "coordinator_name",
+   "fieldtype": "Data",
+   "label": "Co-ordinator",
+   "read_only": 1
+  },
+  {
+   "fieldname": "days_taken_to_completed",
+   "fieldtype": "Float",
+   "label": "Days taken to completed"
+  },
+  {
+   "fieldname": "completion_status",
+   "fieldtype": "Float",
+   "label": "Completion status"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "design_team_section",
+   "fieldtype": "Section Break",
+   "label": "Design Team"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "production_team_section",
+   "fieldtype": "Section Break",
+   "label": "Production Team"
+  },
+  {
+   "fieldname": "days_taken_to_completed_production",
+   "fieldtype": "Float",
+   "label": "Days taken to completed"
+  },
+  {
+   "fieldname": "completion_status_production",
+   "fieldtype": "Data",
+   "label": "Completion status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-27 10:31:25.347983",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Project Info",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "project",
+ "track_changes": 1
+}

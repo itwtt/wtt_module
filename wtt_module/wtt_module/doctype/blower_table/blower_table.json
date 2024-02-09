@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-02 09:45:18.679473",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "blower_flow",
+  "blower_pressure",
+  "model",
+  "kw",
+  "port_size"
+ ],
+ "fields": [
+  {
+   "fieldname": "blower_flow",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Blower Flow"
+  },
+  {
+   "fieldname": "blower_pressure",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Blower Pressure"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model"
+  },
+  {
+   "fieldname": "kw",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KW"
+  },
+  {
+   "fieldname": "port_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Port Size"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-02 10:17:34.620857",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Blower Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

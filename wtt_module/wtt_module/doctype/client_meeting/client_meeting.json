@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-05-02 13:36:16.378415",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "existing_client",
+  "project",
+  "project_name",
+  "new_project_name",
+  "meeting_with",
+  "new_client_name",
+  "client_company_name",
+  "meeting_date",
+  "column_break_4",
+  "venue",
+  "discussion_about",
+  "participants",
+  "section_break_15",
+  "points_discussed",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CLI-MEET-"
+  },
+  {
+   "default": "Today",
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Small Text",
+   "label": "Participants"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.existing_client == 1);",
+   "fieldname": "meeting_with",
+   "fieldtype": "Link",
+   "label": "Client Name",
+   "options": "Lead"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "discussion_about",
+   "fieldtype": "Data",
+   "label": "Discussion About"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "points_discussed",
+   "fieldtype": "Table",
+   "label": "Points Discussed",
+   "options": "Client points discussed"
+  },
+  {
+   "depends_on": "eval:(doc.existing_client == 1);",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Client Meeting",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.existing_client == 1);",
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.existing_client == 0);",
+   "fieldname": "client_company_name",
+   "fieldtype": "Data",
+   "label": "New Client Company name"
+  },
+  {
+   "depends_on": "eval:(doc.existing_client == 0);",
+   "fieldname": "new_project_name",
+   "fieldtype": "Data",
+   "label": "New project name"
+  },
+  {
+   "depends_on": "eval:(doc.existing_client == 0);",
+   "fieldname": "new_client_name",
+   "fieldtype": "Data",
+   "label": "New Client Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "existing_client",
+   "fieldtype": "Check",
+   "label": "Existing Client"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-11 09:48:56.355192",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Client Meeting",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

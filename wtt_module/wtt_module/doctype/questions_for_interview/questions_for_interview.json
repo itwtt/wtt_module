@@ -1,0 +1,623 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-07 17:20:48.966392",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "html_1",
+  "list",
+  "date",
+  "applicant_name",
+  "job_id",
+  "position",
+  "other_post",
+  "get_questions",
+  "section_break_38",
+  "html_39",
+  "question_1",
+  "quepnt1",
+  "question_2",
+  "quepnt2",
+  "section_break_11",
+  "html_15",
+  "question_3",
+  "quepnt3",
+  "question_4",
+  "quepnt4",
+  "section_break_17",
+  "html_21",
+  "question_5",
+  "quepnt5",
+  "question_6",
+  "quepnt6",
+  "section_break_23",
+  "html_27",
+  "question_7",
+  "quepnt7",
+  "question_8",
+  "quepnt8",
+  "section_break_29",
+  "html_33",
+  "question_9",
+  "quepnt9",
+  "section_break_32",
+  "html_37",
+  "question_10",
+  "quepnt10",
+  "section_break_41",
+  "html_42",
+  "questionmg_1",
+  "qntmgpnt1",
+  "questionmg_2",
+  "qntmgpnt2",
+  "section_break_45",
+  "html_48",
+  "questionmg_3",
+  "qntmgpnt3",
+  "questionmg_4",
+  "qntmgpnt4",
+  "section_break_49",
+  "html_54",
+  "questionmg_5",
+  "qntmgpnt5",
+  "questionmg_6",
+  "qntmgpnt6",
+  "section_break_59",
+  "html_60",
+  "questionmg_7",
+  "qntmgpnt7",
+  "section_break_63",
+  "html_62",
+  "questionmg_8",
+  "qntmgpnt8",
+  "section_break_65",
+  "html_68",
+  "questionmg_9",
+  "qntmgpnt9",
+  "section_break_71",
+  "html_70",
+  "questionmg_10",
+  "qntmgpnt10",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "job_id",
+   "fieldtype": "Data",
+   "label": "Job ID"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Questions for Interview",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "get_questions",
+   "fieldtype": "Button",
+   "label": "Get Questions"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_1",
+   "fieldtype": "Data",
+   "label": "Question 1",
+   "read_only": 1,
+   "width": "100px"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_2",
+   "fieldtype": "Data",
+   "label": "Question 2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_3",
+   "fieldtype": "Data",
+   "label": "Question 3",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_4",
+   "fieldtype": "Data",
+   "label": "Question 4",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_5",
+   "fieldtype": "Data",
+   "label": "Question 5",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_6",
+   "fieldtype": "Data",
+   "label": "Question 6",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_7",
+   "fieldtype": "Data",
+   "label": "Question 7",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_8",
+   "fieldtype": "Data",
+   "label": "Question 8",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_9",
+   "fieldtype": "Data",
+   "label": "Question 9",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "question_10",
+   "fieldtype": "Data",
+   "label": "Question 10",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt1",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt2",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt3",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt4",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt5",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt6",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt7",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt8",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt9",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "quepnt10",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible_depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_1",
+   "fieldtype": "HTML",
+   "options": "<div style=\"background: #64E986; width: 100%; border: thick double #32a1ce;\">\n<h3 style=\"margin-top: 10px; margin-left: 10px;\"><u>INTERVIEW QUESTIONS</u></h3>\n<h4 style=\"margin-left: 10px; font-weight: bold;\">Kindly enter the score based on candidates performance</h4>\n<h4 style=\"margin-left: 10px; font-weight: bold;\">Select 1 -5 / Incremental of 1</h4>\n</div><br>"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "other_post",
+   "fieldtype": "Data",
+   "label": "Other post"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "html_39",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Behavioral Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "html_15",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Communication Skills Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "html_21",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Emotional Intelligence Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "html_27",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Leadership Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "html_33",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Situational Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Others');",
+   "fieldname": "html_37",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Stress Questions:</u></h3>"
+  },
+  {
+   "default": "Others",
+   "fieldname": "list",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nManagers\nOthers"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "html_42",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Manager Level Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_1",
+   "fieldtype": "Data",
+   "label": "Question 1",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_2",
+   "fieldtype": "Data",
+   "label": "Question 2",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_3",
+   "fieldtype": "Data",
+   "label": "Question 3",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_4",
+   "fieldtype": "Data",
+   "label": "Question 4",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_5",
+   "fieldtype": "Data",
+   "label": "Question 5",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_6",
+   "fieldtype": "Data",
+   "label": "Question 6",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_7",
+   "fieldtype": "Data",
+   "label": "Question 7",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_8",
+   "fieldtype": "Data",
+   "label": "Question 8",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_9",
+   "fieldtype": "Data",
+   "label": "Question 9",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "questionmg_10",
+   "fieldtype": "Data",
+   "label": "Question 10",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt1",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt2",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "section_break_49",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "html_48",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Behavioral Questions:</u></h3>"
+  },
+  {
+   "fieldname": "qntmgpnt3",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt4",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "html_54",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Communication Skills Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt5",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt6",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "section_break_59",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "html_60",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Emotional Intelligence Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "html_62",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Leadership Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "section_break_63",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "section_break_65",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt7",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt8",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "html_68",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Situational Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "html_70",
+   "fieldtype": "HTML",
+   "options": "<br><h3 style=\"color: #008080;\"><u>Stress Questions:</u></h3>"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt9",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "qntmgpnt10",
+   "fieldtype": "Select",
+   "label": "Points",
+   "options": "\n0\n1\n2\n3\n4\n5"
+  },
+  {
+   "depends_on": "eval:(doc.list=='Managers');",
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_71",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-11 12:31:01.597338",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Questions for Interview",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GM",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

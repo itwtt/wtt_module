@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-11 19:11:39.070434",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "work",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Work"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPending\nCompleted\nPartially Completed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-12 11:19:23.391984",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Work Measure Table1",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

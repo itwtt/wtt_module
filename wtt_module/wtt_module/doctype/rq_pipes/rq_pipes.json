@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-30 18:04:34.114116",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pipe_size",
+  "pipe_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "pipe_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pipe Size"
+  },
+  {
+   "fieldname": "pipe_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pipe ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-30 18:05:46.973166",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "RQ pipes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

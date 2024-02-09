@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-13 09:59:24.396651",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "erection_template",
+  "system",
+  "qty",
+  "unit_price",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "erection_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Erection Template",
+   "options": "Erection and Commisioning"
+  },
+  {
+   "columns": 2,
+   "fieldname": "system",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "System"
+  },
+  {
+   "columns": 2,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "erection_template.total_cost",
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-13 11:26:08.192407",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Erection Cost Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

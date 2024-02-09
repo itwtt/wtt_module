@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "creation": "2022-11-16 14:01:23.625403",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_type",
+  "benificiary_name",
+  "account_no",
+  "ifsc_code",
+  "bank_name",
+  "branch",
+  "charges",
+  "amount",
+  "module_name",
+  "request_no",
+  "line"
+ ],
+ "fields": [
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Data",
+   "label": "Party Type"
+  },
+  {
+   "fieldname": "benificiary_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Benificiary Name"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account No"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "columns": 1,
+   "fieldname": "charges",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Charges"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "module_name",
+   "fieldtype": "Data",
+   "label": "Module Name"
+  },
+  {
+   "fieldname": "request_no",
+   "fieldtype": "Data",
+   "label": "Request No"
+  },
+  {
+   "fieldname": "line",
+   "fieldtype": "Data",
+   "label": "Line"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-16 14:04:45.434405",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "FBS Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

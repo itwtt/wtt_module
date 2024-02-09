@@ -1,0 +1,105 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Vaitheesh Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Vaitheesh Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Dhilip Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Dhilip Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Gopi Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Gopi Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Premkumar Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Premkumar Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Arunprasath Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Arun Prasath Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Prasath Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Prasath Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Ragaventhiran Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Ragaventhiran Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Sivanatham Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Sivanatham Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Dinesh Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Dinesh Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Arun Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Arun Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Devaganesh Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Devaganesh Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 16:26:05.795165",
+ "dashboard_name": "Design Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:19:08.376842",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "Design Monitoring Dashboard",
+ "owner": "Administrator"
+}

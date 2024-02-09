@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-12 11:44:28.049007",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "department",
+  "say_it_do_it",
+  "completion_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department"
+  },
+  {
+   "fieldname": "say_it_do_it",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Say it Do it"
+  },
+  {
+   "fieldname": "completion_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Completion Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-02 10:39:27.115815",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Entries Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

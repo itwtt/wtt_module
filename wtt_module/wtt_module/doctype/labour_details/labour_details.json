@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee_name",
+ "creation": "2023-07-24 17:47:14.272427",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "employee_name",
+  "aadhar_number",
+  "pan_number",
+  "current_address",
+  "permanent_address",
+  "column_break_1dmgx",
+  "phone_number",
+  "emergency_contact_person_name",
+  "contact_person_relationship",
+  "contact_person_address",
+  "contact_person_phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Contract Labour\nHouse Keeping\nSecurity"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "aadhar_number",
+   "fieldtype": "Data",
+   "label": "Aadhar Number"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "Pan Number"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Data",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Data",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "column_break_1dmgx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "emergency_contact_person_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Person Name"
+  },
+  {
+   "fieldname": "contact_person_relationship",
+   "fieldtype": "Data",
+   "label": "Contact Person Relationship"
+  },
+  {
+   "fieldname": "contact_person_address",
+   "fieldtype": "Data",
+   "label": "Contact Person Address"
+  },
+  {
+   "fieldname": "contact_person_phone_number",
+   "fieldtype": "Data",
+   "label": "Contact Person Phone Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-24 17:47:14.272427",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Labour Details",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

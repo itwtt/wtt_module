@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-12 09:26:35.442786",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cost_working_tool",
+  "project_name",
+  "revision",
+  "overall_cost",
+  "revision_remarks",
+  "cost_link"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "cost_working_tool",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cost Working Tool",
+   "options": "Cost Working Tool"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "cost_working_tool.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "cost_working_tool.overall_cost",
+   "fieldname": "overall_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Overall Cost"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cost_link",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Cost Link"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "cost_working_tool.revision",
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Revision"
+  },
+  {
+   "columns": 2,
+   "fieldname": "revision_remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Revision Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-12 11:44:45.340797",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Proposal Cost Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

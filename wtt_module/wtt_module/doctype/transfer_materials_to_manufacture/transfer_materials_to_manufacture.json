@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-14 10:42:46.427815",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bom",
+  "item",
+  "description",
+  "technical_description",
+  "get_bom",
+  "assembly_items",
+  "purchase_receipt",
+  "get_pr",
+  "raw_materials",
+  "scrap_materials",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "description": "Item to be Manufactured",
+   "fetch_from": "bom.item",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.description",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.technical_description",
+   "fieldname": "technical_description",
+   "fieldtype": "Small Text",
+   "label": "Technical Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Transfer Materials to Manufacture",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "bom.items",
+   "fieldname": "assembly_items",
+   "fieldtype": "Table",
+   "label": "Assembly Items",
+   "options": "Assembled Items"
+  },
+  {
+   "fieldname": "purchase_receipt",
+   "fieldtype": "Link",
+   "label": "Purchase Receipt",
+   "options": "Purchase Receipt"
+  },
+  {
+   "fieldname": "raw_materials",
+   "fieldtype": "Table",
+   "label": "Raw Materials",
+   "options": "Raw Materials"
+  },
+  {
+   "fieldname": "scrap_materials",
+   "fieldtype": "Table",
+   "label": "Scrap Materials",
+   "options": "Scrap Materials"
+  },
+  {
+   "fieldname": "get_bom",
+   "fieldtype": "Button",
+   "label": "Get Items"
+  },
+  {
+   "fieldname": "get_pr",
+   "fieldtype": "Button",
+   "label": "Get Items"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-14 11:14:24.504436",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Transfer Materials to Manufacture",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

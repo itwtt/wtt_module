@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "creation": "2021-11-24 16:19:05.588394",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "salary_component",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "salary_component",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Component",
+   "options": "Salary Component",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.amount_based_on_formula!==1 || doc.parenttype==='Salary Slip'",
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "currency"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-24 16:19:05.588394",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Fitment Deductions",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

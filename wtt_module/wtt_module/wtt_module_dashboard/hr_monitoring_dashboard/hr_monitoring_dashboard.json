@@ -1,0 +1,33 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Praveen Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Praveen Idle Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Srivatsan Productive Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Srivatsan Idle Hours",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-02-02 16:25:45.214618",
+ "dashboard_name": "HR Monitoring Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-02-02 17:19:38.957883",
+ "modified_by": "gopikap@wtt.com",
+ "module": "wtt_module",
+ "name": "HR Monitoring Dashboard",
+ "owner": "Administrator"
+}

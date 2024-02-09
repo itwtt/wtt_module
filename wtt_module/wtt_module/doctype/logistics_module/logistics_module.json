@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-26 18:35:56.435943",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "company",
+  "project",
+  "project_name",
+  "column_break_zd10c",
+  "type",
+  "supplier",
+  "from_warehouse",
+  "to_warehouse",
+  "section_break_bbdar",
+  "reference_doctype",
+  "reference_name",
+  "terms",
+  "rounded_total",
+  "naming_series",
+  "amended_from",
+  "section_break_ebiw7",
+  "bank_account",
+  "bank",
+  "bank_account_no",
+  "account",
+  "column_break_cpe8u",
+  "branch",
+  "iban",
+  "branch_code",
+  "ifsc_code"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zd10c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "\nSend\nReceive"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "label": "From Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "label": "To Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_bbdar",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "Reference Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference Name",
+   "options": "reference_doctype"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Text Editor",
+   "label": "Terms and conditions"
+  },
+  {
+   "fieldname": "rounded_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rounded Total"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "LM-.YY.-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Logistics Module",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Logistics Module",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "bank_account.bank",
+   "fieldname": "bank",
+   "fieldtype": "Read Only",
+   "label": "Bank"
+  },
+  {
+   "fetch_from": "bank_account.bank_account_no",
+   "fieldname": "bank_account_no",
+   "fieldtype": "Read Only",
+   "label": "Bank Account No",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "bank_account.account_name",
+   "fieldname": "account",
+   "fieldtype": "Read Only",
+   "label": "Account"
+  },
+  {
+   "fetch_from": "bank_account.branch",
+   "fieldname": "branch",
+   "fieldtype": "Read Only",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "column_break_cpe8u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "bank_account.iban",
+   "fieldname": "iban",
+   "fieldtype": "Read Only",
+   "label": "IBAN"
+  },
+  {
+   "fetch_from": "bank_account.branch_code",
+   "fieldname": "branch_code",
+   "fieldtype": "Read Only",
+   "label": "Branch Code"
+  },
+  {
+   "fetch_from": "bank_account.ifsc_code",
+   "fieldname": "ifsc_code",
+   "fieldtype": "Read Only",
+   "label": "IFSC Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ebiw7",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-27 16:42:59.431210",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Logistics Module",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

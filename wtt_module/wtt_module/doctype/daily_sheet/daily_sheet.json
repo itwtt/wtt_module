@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "creation": "2021-10-04 16:04:38.057339",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_designer",
+  "employee_name",
+  "date",
+  "project",
+  "system",
+  "column_break_7",
+  "task_name",
+  "from_time",
+  "to_time",
+  "hours",
+  "section_break_12",
+  "work_status",
+  "pending_reason",
+  "completed_reason",
+  "incomplete_reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_designer",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Name of Designer",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name_of_designer.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "system",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "System",
+   "options": "System Module"
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "label": "Task name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Datetime",
+   "label": "From time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Datetime",
+   "label": "To time"
+  },
+  {
+   "fieldname": "pending_reason",
+   "fieldtype": "Small Text",
+   "label": "Pending reason"
+  },
+  {
+   "fieldname": "completed_reason",
+   "fieldtype": "Small Text",
+   "label": "Completed reason"
+  },
+  {
+   "fieldname": "incomplete_reason",
+   "fieldtype": "Small Text",
+   "label": "Incomplete reason"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours"
+  },
+  {
+   "fieldname": "work_status",
+   "fieldtype": "Select",
+   "label": "Work status",
+   "options": "\nPending\nCompleted\nIncompleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-10-06 11:06:32.501545",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Daily sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

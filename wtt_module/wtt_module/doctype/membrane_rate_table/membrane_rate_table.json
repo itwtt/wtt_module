@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-26 11:59:50.674910",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "membrane_name",
+  "usd_conversion_rate",
+  "usd_cost",
+  "euro_converstion_rate",
+  "euro_cost",
+  "gst_percentage",
+  "gst_cost",
+  "inr_cost"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "usd_conversion_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "USD Conversion Rate"
+  },
+  {
+   "columns": 1,
+   "fieldname": "usd_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "USD Cost"
+  },
+  {
+   "columns": 1,
+   "fieldname": "euro_converstion_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "EURO Converstion Rate"
+  },
+  {
+   "columns": 1,
+   "fieldname": "euro_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "EURO Cost"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gst_percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "GST Percentage"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gst_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "GST Cost"
+  },
+  {
+   "columns": 2,
+   "fieldname": "inr_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "INR Cost"
+  },
+  {
+   "columns": 2,
+   "fieldname": "membrane_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Membrane Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-26 12:02:32.704535",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Membrane Rate Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

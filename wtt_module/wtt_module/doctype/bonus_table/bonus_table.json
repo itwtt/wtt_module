@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-25 14:07:55.311397",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "branch",
+  "total_days",
+  "total_amount",
+  "percentage",
+  "bonus"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Branch"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Paid Days"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Earned Basic Amount"
+  },
+  {
+   "columns": 2,
+   "fieldname": "bonus",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Bonus"
+  },
+  {
+   "columns": 1,
+   "fieldname": "percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-25 15:14:10.125274",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Bonus Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

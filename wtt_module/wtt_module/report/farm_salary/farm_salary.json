@@ -1,0 +1,113 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "label": "EMPLOYEE",
+   "width": 180
+  },
+  {
+   "fieldname": "doj",
+   "fieldtype": "Data",
+   "label": "DATE OF JOINING",
+   "width": 100
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Data",
+   "label": "MONTH",
+   "width": 80
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Data",
+   "label": "WORKING DAYS",
+   "width": 80
+  },
+  {
+   "fieldname": "payment_days",
+   "fieldtype": "Data",
+   "label": "PAYMENT DAYS",
+   "width": 80
+  },
+  {
+   "fieldname": "lop",
+   "fieldtype": "Data",
+   "label": "LOP",
+   "width": 80
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "TOTAL",
+   "width": 100
+  },
+  {
+   "fieldname": "advance",
+   "fieldtype": "Currency",
+   "label": "ADVANCE",
+   "width": 100
+  },
+  {
+   "fieldname": "additional",
+   "fieldtype": "Currency",
+   "label": "ADDITIONAL",
+   "width": 0
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "NET TOTAL",
+   "width": 100
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "REMARKS",
+   "width": 100
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Link",
+   "label": "REF",
+   "options": "Farm Salary Slip",
+   "width": 2
+  }
+ ],
+ "creation": "2023-01-04 10:47:37.260152",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "posting",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-10-31 17:32:49.636689",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Farm Salary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \nemployee_name as \"EMPLOYEE:Data:200\",\n(SELECT date_of_joining FROM `tabFarm Employee` WHERE employee_name = `tabFarm Salary Slip`.`employee_name`)as \"doj\",\nMONTHNAME(posting_date) as \"posting_date\",\nworking_days as \"WORKING DAYS:Data:100\",\npayment_days as \"PAYMENT DAYS:Data:100\",\n(working_days-payment_days) as \"lop\",\ntotal as \"TOTAL:Currency:150\",\nadvance as \"ADVANCE:Currency:150\",\nadditional as \"additional\",\nnet_total as \"NET TOTAL:Currency:150\",\nremarks as \"remarks\",\nname as \"REF:Data:2\"\nFROM `tabFarm Salary Slip`\nWHERE docstatus=0 and posting_date=%(posting)s ORDER BY company DESC,doj ASC;",
+ "ref_doctype": "Farm Salary Slip",
+ "report_name": "Farm Salary",
+ "report_script": "",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Agriculture Manager"
+  }
+ ]
+}

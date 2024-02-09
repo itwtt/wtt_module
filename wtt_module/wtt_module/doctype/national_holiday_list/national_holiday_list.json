@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:holiday_list_name",
+ "creation": "2022-02-14 10:16:15.263630",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "holiday_list_name",
+  "from_date",
+  "to_date",
+  "column_break_4",
+  "holidays_section",
+  "holidays",
+  "total_holidays",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "holiday_list_name",
+   "fieldtype": "Data",
+   "label": "Holiday List Name",
+   "oldfieldname": "holiday_list_name",
+   "oldfieldtype": "Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "holidays_section",
+   "fieldtype": "Section Break",
+   "label": "Holidays"
+  },
+  {
+   "fieldname": "holidays",
+   "fieldtype": "Table",
+   "label": "Holidays",
+   "oldfieldname": "holiday_list_details",
+   "oldfieldtype": "Table",
+   "options": "Holiday Table"
+  },
+  {
+   "fieldname": "total_holidays",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Holidays",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "National Holiday List",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-calendar",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-02-14 10:17:05.377286",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "National Holiday List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,268 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-07 17:06:07.374673",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "module",
+  "template",
+  "template3",
+  "template4",
+  "template5",
+  "template6",
+  "template7",
+  "candidate_name",
+  "mail",
+  "position",
+  "position_name",
+  "job_id",
+  "column_break_4",
+  "subject1",
+  "assignment",
+  "subject2",
+  "subject3",
+  "subject4",
+  "subject5",
+  "employee",
+  "manager_name",
+  "designation",
+  "hr_manager",
+  "hr_name",
+  "section_break_8",
+  "get_template",
+  "body",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:(doc.template=='Job Interview');",
+   "fieldname": "subject1",
+   "fieldtype": "Select",
+   "label": "Subject",
+   "options": "\nAcknowledgement\nIntake meeting to Hiring Manager\nSuccessful Candidate\nAssignment\nUpdate to Hiring Manager\nInterview Cancellation\nInterview Confirmation\nNo Show\nInterview remainder\nPhone interview Confirmation\nPhone Interview Email\nReschedule Interview\nScheduling interview\nSecond Interview Confirmation\nSecond Interview Email\nSkype Invitation\nVideo Call Interview\nText Messages"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HR Templates",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.subject1=='Intake meeting to Hiring Manager' || doc.subject1=='Update to Hiring Manager' || doc.subject1=='Interview Confirmation' || doc.subject1=='Interview remainder' || doc.subject1=='Phone nterview Confirmation' || doc.subject1=='Second Interview Email' || doc.subject2=='Contract Employee');",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Hiring Manager",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "manager_name",
+   "fieldtype": "Data",
+   "label": "Hiring Manager Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.subject1!='Intake meeting to Hiring Manager' && doc.subject1!='Update to Hiring Manager')",
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "label": "Candidate Name"
+  },
+  {
+   "fieldname": "mail",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_id",
+   "fieldtype": "Link",
+   "label": "Job ID",
+   "options": "Job App",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.template=='Job Offer');",
+   "fieldname": "subject2",
+   "fieldtype": "Select",
+   "label": "Subject",
+   "options": "\nBackground Verification\nContract Employee\nDeveloper Job\nFormal Job\nInformal Job\nInternal Promotion\nJob Offer\nSample Offer\nPart Time to Full Time\nSalary Negotiation\nSales Job Offer"
+  },
+  {
+   "depends_on": "eval:(doc.template=='Referral');",
+   "fieldname": "subject3",
+   "fieldtype": "Select",
+   "label": "Subject",
+   "options": "\nEmployee Referral Bonus\nEmployee Referral Program\nEmployee Referral from  External Network\nRefer A Friend\nReferral Program Procedure\nReferred Candidate Email Template"
+  },
+  {
+   "depends_on": "eval:(doc.template=='Rejection')",
+   "fieldname": "subject4",
+   "fieldtype": "Select",
+   "label": "Subject",
+   "options": "\nApplicant Rejection Letter\nCandidate Rejection Email\nCandidate Rejection Letter\nInterview Feedback\nApplication Rejection\nPost Interview Sample Letter\nRejecting Overqualified Candidate"
+  },
+  {
+   "depends_on": "eval:(doc.template=='Sourcing')",
+   "fieldname": "subject5",
+   "fieldtype": "Select",
+   "label": "Subject",
+   "options": "\nSourcing a Referred Candidate\nInternal Job posting\nJob Opportunities\nKeeping Candidates Warm\nPassive Candidate\nRecruiter Introduction to Candidate\nRecruiting Bilingual Candidate\nSourcing Developer Candidate\nFrom Employer to Recruitment Agency\nSourcing Marketing Candidate\nSourcing Veteran Candidate\nSourcing Sales Candidate"
+  },
+  {
+   "fieldname": "get_template",
+   "fieldtype": "Button",
+   "label": "Get Template"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "depends_on": "eval:(doc.subject1=='Assignment')",
+   "fieldname": "assignment",
+   "fieldtype": "Select",
+   "label": "Assignmemt",
+   "options": "\nSend a Task\nTask Received"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Select",
+   "label": "Module",
+   "options": "\nRecruitment\nEmployee Onboarding\nPerformance Management Process\nRecord and Formats\nHR Letters"
+  },
+  {
+   "depends_on": "eval:(doc.module=='Employee Onboarding')",
+   "fieldname": "template3",
+   "fieldtype": "Select",
+   "label": "Template",
+   "options": "\nJoining Bonus\nJob Offer\nNew Employee Announcement\nNew Employee Welcome"
+  },
+  {
+   "depends_on": "eval:(doc.module=='Employee Policy')",
+   "fieldname": "template4",
+   "fieldtype": "Select",
+   "label": "Template",
+   "options": "\nBreach Of Employment"
+  },
+  {
+   "depends_on": "eval:(doc.module=='Performance Management Process')",
+   "fieldname": "template5",
+   "fieldtype": "Select",
+   "label": "Template",
+   "options": "\nAppraisal\nWarning"
+  },
+  {
+   "depends_on": "eval:(doc.module=='Record and Formats')",
+   "fieldname": "template6",
+   "fieldtype": "Select",
+   "label": "Template",
+   "options": "\nAcceptance of Employee Apology\nAdhoc Designation Change Certificate\nAdhoc Increment Certificate\nAppraisal Certificate\nAppraisal Certificate with Promotion\nExperience or Relieving Letter with Praise\nExperience or Relieving Letter\nFirst Attendance Warning\nBehavioral Final Warning\nFinal Performance Warning\nFinal Settlement with Confirmation\nIntern Offer\nIntern Experience with Praise\nIntern Experience\nSuspension\nLay-off due to Shutdown\nLetter to Bank\nWorkshop NOC\nBank Account NOC\nCredit Card NOC\nDouble Shift NOC\nWork in Other Organization NOC\nOrganizing Event NOC\nPart- Time NOC\nPersonal Loan NOC\nTourist Visa NOC\nTrainee Student NOC\nVisiting Abroad NOC\nDepartment Change NOC\nJob Change NOC\nStudies NOC\nVisa NOC\nPost Probation Increment\nRelieving after Resignation\nResignation Acceptance - Key Employee\nResignation Acceptance\nResignation Withdrawal for Growth Prospects\nResignation Withdrawal for Role Change\nStationary Request\nAttendance Warning\nGeneral Behavioral Warning\nMisbehavior Warning\nPerformance Warning"
+  },
+  {
+   "depends_on": "eval:(doc.module=='Recruitment')",
+   "fieldname": "template",
+   "fieldtype": "Select",
+   "label": "Template",
+   "options": "\nJob Interview\nJob Offer\nReferral\nRejection\nSourcing"
+  },
+  {
+   "depends_on": "eval:(doc.module=='HR Letters')",
+   "fieldname": "template7",
+   "fieldtype": "Select",
+   "label": "Template",
+   "options": "\nBackground Check\nBirthday Wish\nBonus Announcement\nBranch Transfer\nBreach of Employment\nCondolence Letter\nContract Termination\nCritical Employee Talent Pool\nDemotion Letter\nEducational Reference Check\nEmployee Recognition\nEmployee Retention\nFarewell Letter\nFestival Bonus\nDiwali Festival\nIndependence Day\nChristmas\nEID\nHoli\nFollow Up\nGranting Permission\nIncident Report\nInter-Department Transfer Letter\nJob Transfer\nLetter Commenting for Emergency\nOpportunities for Voluntary Services\nInviting Employee to Investigatory Interview\nLetter for Appointment\nEmployee Pending Disciplinary Investigation\nCollege Internship\nEmployee Disciplinary Hearing - Confirming\nEmployee Disciplinary Hearing - Dismissal\nEmployee Disciplinary Hearing - Final Warning\nEmployee Inviting to Disciplinary Appeal Hearing\nMediclaim\nInvite Employee to Disciplinary Hearing\nReschedule Meeting\nPromotion\nQuery Letter to Employee\nQuotation Approval\nQuotation Negotiation\nQuotation Rejection\nQuotation Request\nRecommendation for Scholarship\nRequest for Background Verification\nRequest for Labour Officer\nRequest to Bank Reference\nShift Change Letter\nTDS Defaulter\nTermination (Absenteeism)\nTermination (Substance Abuse)\nEmployment Termination\nAccount Termination\nThanking for Award Nomination\nThanking for Award Received\nWork Anniversary"
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Link",
+   "label": "HR Manager",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "hr_manager.employee_name",
+   "fieldname": "hr_name",
+   "fieldtype": "Data",
+   "label": "Manager Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.position=='OTHERS')",
+   "fieldname": "position_name",
+   "fieldtype": "Data",
+   "label": "Position Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-21 10:43:41.080920",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "HR Templates",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "candidate_name"
+}

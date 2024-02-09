@@ -1,0 +1,847 @@
+{
+ "actions": [],
+ "creation": "2021-12-31 10:09:28.934254",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "plant_designed_capasity",
+  "plant_running_capacity",
+  "column_break10",
+  "type_of_effluent",
+  "no_of_streams",
+  "types_of_the_streams",
+  "section_break",
+  "flow1",
+  "ar1",
+  "flow2",
+  "ar2",
+  "flow3",
+  "ar3",
+  "flow4",
+  "ar4",
+  "flow5",
+  "ar5",
+  "flow6",
+  "ar6",
+  "flow7",
+  "ar7",
+  "flow8",
+  "ar8",
+  "flow9",
+  "ar9",
+  "flow10",
+  "ar10",
+  "flow11",
+  "sec_break",
+  "parameters",
+  "mfuf",
+  "mf_feed",
+  "ro",
+  "ro_table",
+  "nf",
+  "nf_table",
+  "evaporator",
+  "evaporator_table",
+  "section_break16",
+  "column_break9",
+  "html19",
+  "ro_skids",
+  "html20",
+  "nf_skids",
+  "section_break15",
+  "html1",
+  "diffuser_quantity",
+  "blower_capacity",
+  "blower_quantity",
+  "column_break",
+  "html2",
+  "mechanism",
+  "html3",
+  "press_type",
+  "section_break4",
+  "html4",
+  "filtration",
+  "no_of_membrane",
+  "no_of_skid",
+  "column_break2",
+  "html7",
+  "membrane_make",
+  "membrane_model",
+  "section_break5",
+  "html5",
+  "tank_capacity",
+  "no_of_tanks",
+  "moc_of_tank",
+  "section_break6",
+  "html6",
+  "chemical1",
+  "chemical2",
+  "chemical3",
+  "chemical4",
+  "chemical5",
+  "section_break7",
+  "html8",
+  "no_of_tanks2",
+  "column_break3",
+  "html9",
+  "moc_of_tank2",
+  "section_break8",
+  "html10",
+  "cartridge_housing",
+  "filter",
+  "column_break4",
+  "html11",
+  "filter_type",
+  "size_of_catridge",
+  "section_break9",
+  "html12",
+  "designed_capacity",
+  "running_capacity",
+  "calendria",
+  "frequency_of_cip",
+  "no_of_prefilter",
+  "column_break6",
+  "html13",
+  "frequency_of_prefilter_change",
+  "no_of_cooling_tower",
+  "vacuum_pressure",
+  "steam_pressure",
+  "section_break12",
+  "html14",
+  "designed_capacity2",
+  "running_capacity2",
+  "calendria2",
+  "no_of_falling_film",
+  "no_of_forced_circulation",
+  "frequency_of_cip2",
+  "column_break7",
+  "html15",
+  "no_of_surface_condenser",
+  "no_of_vacuum_separator",
+  "no_of_cooling_tower2",
+  "vacuum_pressure2",
+  "steam_pressure2",
+  "section_break13",
+  "html16",
+  "designed_capacity3",
+  "running_capacity3",
+  "frequency_of_cip3",
+  "no_of_cooling_tower3",
+  "column_break8",
+  "html17",
+  "cooling_type",
+  "temperature",
+  "steam_pressure3",
+  "salt",
+  "section_break14",
+  "html18",
+  "designed_capacity4",
+  "running_capacity4"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PLANT NAME",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diffuser_quantity",
+   "fieldtype": "Data",
+   "label": "Diffuser quantity"
+  },
+  {
+   "fieldname": "blower_capacity",
+   "fieldtype": "Data",
+   "label": "Blower capacity"
+  },
+  {
+   "fieldname": "blower_quantity",
+   "fieldtype": "Data",
+   "label": "Blower quantity"
+  },
+  {
+   "fieldname": "mechanism",
+   "fieldtype": "Select",
+   "label": "Mechanism",
+   "options": "\nWith Mechanism\nWithout Mechanism"
+  },
+  {
+   "fieldname": "press_type",
+   "fieldtype": "Select",
+   "label": "Press Type",
+   "options": "\nBelt press\nFilter press"
+  },
+  {
+   "fieldname": "section_break4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_of_membrane",
+   "fieldtype": "Select",
+   "label": "No of membranes",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "no_of_skid",
+   "fieldtype": "Select",
+   "label": "No of Skid",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "membrane_make",
+   "fieldtype": "Data",
+   "label": "Membrane make"
+  },
+  {
+   "fieldname": "membrane_model",
+   "fieldtype": "Data",
+   "label": "Membrane model"
+  },
+  {
+   "fieldname": "filtration",
+   "fieldtype": "Select",
+   "label": "Filtration",
+   "options": "\nUltra Filtration\nMicro Filtration"
+  },
+  {
+   "fieldname": "section_break5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tank_capacity",
+   "fieldtype": "Data",
+   "label": "Tank Capacity"
+  },
+  {
+   "fieldname": "no_of_tanks",
+   "fieldtype": "Select",
+   "label": "No of tanks",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "moc_of_tank",
+   "fieldtype": "Data",
+   "label": "MOC of tank"
+  },
+  {
+   "fieldname": "section_break6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html2",
+   "fieldtype": "HTML",
+   "options": "<h4><u>SLUDGE THICKENER</u></h4>"
+  },
+  {
+   "fieldname": "html3",
+   "fieldtype": "HTML",
+   "options": "<br><br><h4><u>SLUDGE DEWATERING</u></h4>"
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break",
+   "label": "FLOW SCHEME"
+  },
+  {
+   "fieldname": "html4",
+   "fieldtype": "HTML",
+   "options": "<h4><u>ULTRA / MICRO FILTRATION</u></h4>"
+  },
+  {
+   "fieldname": "html5",
+   "fieldtype": "HTML",
+   "options": "<h4><u>CIP TANK</u></h4>"
+  },
+  {
+   "fieldname": "html6",
+   "fieldtype": "HTML",
+   "options": "<h4><u>CHEMICAL USED</u></h4>"
+  },
+  {
+   "fieldname": "chemical1",
+   "fieldtype": "Data",
+   "label": "Chemical Name"
+  },
+  {
+   "fieldname": "chemical2",
+   "fieldtype": "Data",
+   "label": "Chemical Name"
+  },
+  {
+   "fieldname": "chemical3",
+   "fieldtype": "Data",
+   "label": "Chemical Name"
+  },
+  {
+   "fieldname": "chemical4",
+   "fieldtype": "Data",
+   "label": "Chemical Name"
+  },
+  {
+   "fieldname": "chemical5",
+   "fieldtype": "Data",
+   "label": "Chemical Name"
+  },
+  {
+   "fieldname": "column_break2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html7",
+   "fieldtype": "HTML",
+   "options": "<br><br>"
+  },
+  {
+   "fieldname": "section_break7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html8",
+   "fieldtype": "HTML",
+   "options": "<h4><u>CHEMICAL STORAGE TANK</u></h4>"
+  },
+  {
+   "fieldname": "no_of_tanks2",
+   "fieldtype": "Select",
+   "label": "No of tanks",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "moc_of_tank2",
+   "fieldtype": "Data",
+   "label": "MOC Of Tank"
+  },
+  {
+   "fieldname": "column_break3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html9",
+   "fieldtype": "HTML",
+   "options": "<br><br>"
+  },
+  {
+   "fieldname": "section_break8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html10",
+   "fieldtype": "HTML",
+   "options": "<h4><u>CARTRIDGE FILTER</u></h4>"
+  },
+  {
+   "fieldname": "cartridge_housing",
+   "fieldtype": "Select",
+   "label": "No of cartridge housing for UF/MF,RO,NF & CIP ",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "filter",
+   "fieldtype": "Select",
+   "label": "No of filter in each housing",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html11",
+   "fieldtype": "HTML",
+   "options": "<br><br>"
+  },
+  {
+   "fieldname": "filter_type",
+   "fieldtype": "Select",
+   "label": "Type of filter",
+   "options": "\nSpun\nWoonded"
+  },
+  {
+   "fieldname": "size_of_catridge",
+   "fieldtype": "Select",
+   "label": "Size of cartridge filter",
+   "options": "\n20\"\n30\"\n40\""
+  },
+  {
+   "fieldname": "section_break9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html12",
+   "fieldtype": "HTML",
+   "options": "<h4><u>MVRE\n</u></h4>"
+  },
+  {
+   "fieldname": "designed_capacity",
+   "fieldtype": "Data",
+   "label": "Designed Capacity & TDS"
+  },
+  {
+   "fieldname": "running_capacity",
+   "fieldtype": "Data",
+   "label": "Running capacity & TDS"
+  },
+  {
+   "fieldname": "frequency_of_cip",
+   "fieldtype": "Select",
+   "label": "Frequency of CIP ",
+   "options": "\nDaily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "no_of_prefilter",
+   "fieldtype": "Select",
+   "label": "No of Pre-filter (Bag / Cartridge)",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "frequency_of_prefilter_change",
+   "fieldtype": "Data",
+   "label": "Frequency of Pre-filter change"
+  },
+  {
+   "fieldname": "no_of_cooling_tower",
+   "fieldtype": "Data",
+   "label": "No of Cooling tower"
+  },
+  {
+   "fieldname": "vacuum_pressure",
+   "fieldtype": "Data",
+   "label": "Vacuum pressure maintained in pump & system "
+  },
+  {
+   "fieldname": "steam_pressure",
+   "fieldtype": "Data",
+   "label": "Steam pressure at inlet"
+  },
+  {
+   "fieldname": "html13",
+   "fieldtype": "HTML",
+   "options": "<br><br>"
+  },
+  {
+   "fieldname": "section_break12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "calendria",
+   "fieldtype": "Data",
+   "label": "No of Calendria of complete plant"
+  },
+  {
+   "fieldname": "html14",
+   "fieldtype": "HTML",
+   "options": "<h4><u>EVAPORATOR</u></h4>"
+  },
+  {
+   "fieldname": "designed_capacity2",
+   "fieldtype": "Data",
+   "label": "Designed Capacity & TDS"
+  },
+  {
+   "fieldname": "running_capacity2",
+   "fieldtype": "Data",
+   "label": "Running capacity & TDS "
+  },
+  {
+   "fieldname": "calendria2",
+   "fieldtype": "Data",
+   "label": "No of Calendria of complete plant"
+  },
+  {
+   "fieldname": "no_of_falling_film",
+   "fieldtype": "Data",
+   "label": "No of falling film"
+  },
+  {
+   "fieldname": "no_of_forced_circulation",
+   "fieldtype": "Data",
+   "label": "No of Forced circulation"
+  },
+  {
+   "fieldname": "frequency_of_cip2",
+   "fieldtype": "Select",
+   "label": "Frequency of CIP",
+   "options": "\nDaily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "column_break7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html15",
+   "fieldtype": "HTML",
+   "options": "<br><br>"
+  },
+  {
+   "fieldname": "no_of_surface_condenser",
+   "fieldtype": "Data",
+   "label": "No of surface condenser"
+  },
+  {
+   "fieldname": "no_of_vacuum_separator",
+   "fieldtype": "Data",
+   "label": "No of Vacuum separator"
+  },
+  {
+   "fieldname": "no_of_cooling_tower2",
+   "fieldtype": "Data",
+   "label": "No of Cooling tower"
+  },
+  {
+   "fieldname": "vacuum_pressure2",
+   "fieldtype": "Data",
+   "label": "Vacuum pressure maintained in pump & system "
+  },
+  {
+   "fieldname": "steam_pressure2",
+   "fieldtype": "Data",
+   "label": "Steam pressure at inlet"
+  },
+  {
+   "fieldname": "section_break13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html16",
+   "fieldtype": "HTML",
+   "options": "<h4><u>CRYSTALLIZER</u></h4>"
+  },
+  {
+   "fieldname": "designed_capacity3",
+   "fieldtype": "Data",
+   "label": "Designed Capacity & TDS"
+  },
+  {
+   "fieldname": "running_capacity3",
+   "fieldtype": "Data",
+   "label": "Running capacity & TDS"
+  },
+  {
+   "fieldname": "frequency_of_cip3",
+   "fieldtype": "Select",
+   "label": "Frequency of CIP",
+   "options": "\nDaily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "no_of_cooling_tower3",
+   "fieldtype": "Data",
+   "label": "No of Cooling tower"
+  },
+  {
+   "fieldname": "column_break8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html17",
+   "fieldtype": "HTML",
+   "options": "<br><br>"
+  },
+  {
+   "fieldname": "cooling_type",
+   "fieldtype": "Select",
+   "label": "Cooling Type",
+   "options": "\nSteam Air\nCompressed Air"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "label": "Temperature maintained in the system"
+  },
+  {
+   "fieldname": "steam_pressure3",
+   "fieldtype": "Data",
+   "label": "Steam pressure at inlet / compressed air pressure"
+  },
+  {
+   "fieldname": "salt",
+   "fieldtype": "Data",
+   "label": "Quantity of salt recovered per day"
+  },
+  {
+   "fieldname": "section_break14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html18",
+   "fieldtype": "HTML",
+   "options": "<h4><u>ATFD\n</u></h4>"
+  },
+  {
+   "fieldname": "designed_capacity4",
+   "fieldtype": "Data",
+   "label": "Designed Capacity & TDS"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html19",
+   "fieldtype": "HTML",
+   "options": "<br><h4><u>RO SKIDS</u></h4>"
+  },
+  {
+   "fieldname": "running_capacity4",
+   "fieldtype": "Data",
+   "label": "Running capacity & TDS"
+  },
+  {
+   "fieldname": "html1",
+   "fieldtype": "HTML",
+   "options": "<h4><u>BIOLOGICAL</u></h4>"
+  },
+  {
+   "fieldname": "plant_designed_capasity",
+   "fieldtype": "Data",
+   "label": "PLANT DESIGNED CAPACITY "
+  },
+  {
+   "fieldname": "plant_running_capacity",
+   "fieldtype": "Data",
+   "label": "PLANT RUNNING CAPACITY"
+  },
+  {
+   "fieldname": "type_of_effluent",
+   "fieldtype": "Data",
+   "label": "TYPE OF EFFLUENT"
+  },
+  {
+   "fieldname": "no_of_streams",
+   "fieldtype": "Data",
+   "label": "NO OF STREAMS"
+  },
+  {
+   "fieldname": "types_of_the_streams",
+   "fieldtype": "Data",
+   "label": "TYPES OF THE STREAMS"
+  },
+  {
+   "fieldname": "column_break10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "PARAMETERS",
+   "options": "Parameters"
+  },
+  {
+   "fieldname": "section_break15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mfuf",
+   "fieldtype": "Select",
+   "label": "MF or UF System Present",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:(doc.mfuf=='Yes')",
+   "fieldname": "mf_feed",
+   "fieldtype": "Table",
+   "options": "MF Feed"
+  },
+  {
+   "fieldname": "ro",
+   "fieldtype": "Select",
+   "label": "RO System Present",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:(doc.ro=='Yes')",
+   "fieldname": "ro_table",
+   "fieldtype": "Table",
+   "options": "RO System"
+  },
+  {
+   "fieldname": "nf",
+   "fieldtype": "Select",
+   "label": "NF Present",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:(doc.nf=='Yes')",
+   "fieldname": "nf_table",
+   "fieldtype": "Table",
+   "options": "NF System"
+  },
+  {
+   "fieldname": "evaporator",
+   "fieldtype": "Select",
+   "label": "Evaporator Present",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:(doc.evaporator=='Yes')",
+   "fieldname": "evaporator_table",
+   "fieldtype": "Table",
+   "options": "Evaporator"
+  },
+  {
+   "fieldname": "section_break16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ro_skids",
+   "fieldtype": "Table",
+   "options": "RO Skids"
+  },
+  {
+   "fieldname": "html20",
+   "fieldtype": "HTML",
+   "options": "<br><h4><u>NF SKIDS</u></h4>"
+  },
+  {
+   "fieldname": "nf_skids",
+   "fieldtype": "Table",
+   "options": "NF Skids"
+  },
+  {
+   "fieldname": "sec_break",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "flow1",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar1",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow2",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar2",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow3",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar3",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow4",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar4",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow5",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar5",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow6",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar6",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow7",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar7",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow8",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "flow9",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar8",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "ar9",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow10",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "ar10",
+   "fieldtype": "HTML",
+   "options": "<span style=\"font-size: 50px;\">&#8595;</span>"
+  },
+  {
+   "fieldname": "flow11",
+   "fieldtype": "Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-05 10:38:27.709041",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "O and M Enquiries",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "plant",
+ "track_changes": 1
+}

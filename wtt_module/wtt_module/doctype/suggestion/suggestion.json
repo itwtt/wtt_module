@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-04-12 11:14:51.465907",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "suggestion_to",
+  "to_employee",
+  "to_employee_name",
+  "to_department",
+  "to_designation",
+  "suggestion"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "suggestion_to",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Suggestion To",
+   "options": "\nCompany\nEmployee\nHR\nGM\nMD"
+  },
+  {
+   "depends_on": "eval:(doc.suggestion_to=='Employee' || doc.suggestion_to=='Company');",
+   "fieldname": "to_employee",
+   "fieldtype": "Dynamic Link",
+   "ignore_user_permissions": 1,
+   "label": "Name",
+   "options": "suggestion_to"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:(doc.suggestion_to=='Employee');",
+   "fetch_from": "to_employee.employee_name",
+   "fieldname": "to_employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "to_employee.department",
+   "fieldname": "to_department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "to_employee.designation",
+   "fieldname": "to_designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "suggestion",
+   "fieldtype": "Small Text",
+   "label": "Suggestion"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "SUG-"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-27 12:50:53.618006",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Suggestion",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name"
+}

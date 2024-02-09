@@ -1,0 +1,49 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-03-28 13:46:52.911598",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Reports",
+ "links": [],
+ "modified": "2022-03-28 13:50:56.836325",
+ "modified_by": "venkat@wttindia.com",
+ "module": "wtt_module",
+ "name": "Reports",
+ "owner": "venkat@wttindia.com",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Material Tracking",
+   "link_to": "Material Tracking",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Accounts Payable",
+   "link_to": "Accounts Payable",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Accounts Receivable",
+   "link_to": "Accounts Receivable",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Employee Master Data",
+   "link_to": "Employee Master Data",
+   "type": "Report"
+  }
+ ]
+}

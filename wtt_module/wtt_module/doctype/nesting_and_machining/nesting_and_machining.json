@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-26 13:46:50.024784",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "project",
+  "project_name",
+  "parent_item",
+  "purpose_for",
+  "parent_description",
+  "parent_technical_description",
+  "nesting_and_machining_table",
+  "date",
+  "company",
+  "inward_items",
+  "outward_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "parent_item",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Parent Item",
+   "options": "Item",
+   "unique": 1
+  },
+  {
+   "fieldname": "nesting_and_machining_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Nesting and Machining Table",
+   "options": "Nesting and Machining Table"
+  },
+  {
+   "fetch_from": "parent_item.description",
+   "fieldname": "parent_description",
+   "fieldtype": "Text Editor",
+   "hidden": 1,
+   "label": "Parent Description",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "parent_item.technical_description",
+   "fieldname": "parent_technical_description",
+   "fieldtype": "Text Editor",
+   "hidden": 1,
+   "label": "Parent Technical Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "NEST-MACH-"
+  },
+  {
+   "fieldname": "purpose_for",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Purpose For",
+   "options": "\nNesting\nMachining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project.project_name",
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "inward_items",
+   "fieldtype": "Table",
+   "label": "Inward Items",
+   "options": "Inward Job Order"
+  },
+  {
+   "fieldname": "outward_items",
+   "fieldtype": "Table",
+   "label": "Outward Items",
+   "options": "Outward Job Order"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-20 10:32:52.841914",
+ "modified_by": "Administrator",
+ "module": "wtt_module",
+ "name": "Nesting and Machining",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "parent_description"
+}
